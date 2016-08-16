@@ -38,6 +38,12 @@
     <td>Microwave Energy Satellite</td>
     <td>Energy Collection</td>
     </tr>
+    
+    <tr>
+    <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/satellitePrimaryFunction4.png"/>Ore Mapper</td>
+    <td>Ore Mapper</td>
+    <td>Utility</td>
+    </tr>
     </table>
     
     <br><br>

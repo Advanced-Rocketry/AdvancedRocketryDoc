@@ -23,7 +23,7 @@
 <ul class="menu">
   <li><a href="/AdvancedRocketry">Home</a></li>
   <li><a href="/AdvancedRocketry/blocks">Blocks </a></li>
-  <li><a href="#">Items</a></li>
+  <li><a href="/AdvancedRocketry/items">Items</a></li>
   <li><a href="#">Planets/Space Stations<br/>
     </a></li>
   <li>Links</li>

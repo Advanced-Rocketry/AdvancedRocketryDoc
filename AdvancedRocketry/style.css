@@ -6,6 +6,10 @@ body {
   text-align: left;
 }
 
+table, th, td {
+    border: 1px solid black;
+}
+
 #container {
   margin: 0px auto;
   width: 1300px;
@@ -114,6 +118,7 @@ ul.menu li.current_page_item ul.menu li.current_page_item a:link, ul.menu li.cur
   display: block;
   position: relative;
 }
+
 #content .left a {
   color: #405b5b;
 }

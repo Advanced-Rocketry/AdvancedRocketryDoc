@@ -4,6 +4,7 @@ body {
   color: #3a3838;
   font-size: 12pt;
   text-align: left;
+  background-color: #A0A0A0;
 }
 
 table, th, td {
@@ -137,7 +138,7 @@ ul.menu li.current_page_item ul.menu li.current_page_item a:link, ul.menu li.cur
   color: #6b7372;
   font-size: 11pt;
   text-align: justify;
-  background-color: #f3f2f2;
+  background-color: #cccccc;
 }
 #content .right h3 {
   color: #73817f;

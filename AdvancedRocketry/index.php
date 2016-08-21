@@ -14,6 +14,18 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
+<h3>0.7.0</h3>
+<ul>
+<li>Implemented <a href="items/modularSpaceSuit.php">Modular space suits</a></li>
+<li>Added Jetpack</li>
+<li>Added Bionic Legs</li>
+<li>Moved multiblock blocks/items to a new item group in creative</li>
+<li>Added Aluminum</li>
+<li>Added <a href="items/pressureTank.php">pressure tanks</a></li>
+<li>Oxygen Charger renamed to <a href="blocks/gasCharger.php">Gas Charger</a></li>
+<li>Gas Charger now can fill hydrogen tanks in spacesuits</li>
+<li><font color="#990000">Massive Refactor of code!  May require liquid/data/satellites hatches to be replaced!</font></li>
+</ul>
 <h3>0.6.8</h3>
 <ul>
 <li>Fixed Rockets being stuck in the air on space stations</li>

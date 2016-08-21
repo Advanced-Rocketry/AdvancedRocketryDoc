@@ -6,6 +6,7 @@
 <p>Information about blocks can be found in the following list:<br /></p>
 <ul>
 <li><img class="icon" src="../img/fuelTank_icon.png"> <a href="FuelTank.php">Fuel Tank</a></li>
+<li><img class="icon" src="../img/gasChargePad_icon.png"> <a href="gasCharger.php">Gas Charger</a></li>
 <li><img class="icon" src="../img/guidanceComputer_icon.png"> <a href="GuidanceComputer.php">Guidance Computer</a></li>
 <li><img class="icon" src="../img/laserDrill_icon.png"> <a href="LaserDrill.php">Laser Drill</a></li>
 <li><img class="icon" src="../img/launchPad_icon.png"> <a href="LaunchPad.php">Launch Pad</a></li>
@@ -17,6 +18,7 @@
 <li><img class="icon" src="../img/satelliteHatch_icon.png"> <a href="SatelliteHatch.php">Satellite Bay</a></li>
 <li><img class="icon" src="../img/seat_icon.png"> <a href="Seat.php">Seat</a></li>
 <li><img class="icon" src="../img/structureTower_icon.png"> <a href="StructureTower.php">Structure Tower</a></li>
+<li><img class="icon" src="../img/suitWorkstation_icon.png"> <a href="suitWorkstation.php">Suit Workstation</a></li>
 
 </ul>';
     

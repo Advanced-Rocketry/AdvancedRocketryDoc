@@ -25,6 +25,7 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <li>Added Nitrogen</li>
 <li>Added Buckets for Oxygen, Nitrogen, and Hydrogen</li>
 <li>Added <a href="items/modularSpaceSuit.php#atmAnalyser">Atmosphere Analyser</a></li>
+<li>Added sounds</li>
 <li>Mobs now take damage from the vacuum</li>
 <li>Added Biome Changer Satellite and <a href="items/biomeChanger.php">Biome Changer Satellite Remote</a></li>
 <li>Increased planet variety</li>
@@ -34,12 +35,13 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <li><a href="blocks/Hatches.php">Rocket fluid loader and fluid unloader</a></li>
 <li>Rockets can now be automated to fly between destinations using <a href="blocks/DockingPad.php">Docking Pads</a></li>
 <li><a href="blocks/DockingPad.php">Docking Pads</a> now accept <a href="items/linker.php">linkers</a> as an item</li>
-<li>Added sounds</li>
+<li><a href="items/holoProjector.php">Holo-Projector</a> now will align the hologram to a machine when used to rightclick a machine control block
 <li>Fixed warp effect not working in multiplayer sometimes</li>
 <li>Fixed solar satellites not being created properly</li>
 <li>Fixed graphics on pipes/Microwave Reciever not being shaded</li>
 <li>Fixed the delete satellite button not updating the itemstack on the server</li>
 <li>Fixed laser drill missing texture</li>
+<li>Now Requires LibVulpes 0.1.2</li>
 </ul>
 <h3>0.7.0</h3>
 <ul>

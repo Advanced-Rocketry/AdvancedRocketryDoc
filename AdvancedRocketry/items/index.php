@@ -6,6 +6,7 @@
 <p>Information about items can be found in the following list:<br /></p>
 <ul>
 <li><img class="icon" src="../img/items/biomeChanger.png"> <a href="biomeChanger.php">Biome Changer</a></li>
+<li><img class="icon" src="../img/items/holoProjector.png"> <a href="holoProjector.php">Holo-Projector</a></li>
 <li><img class="icon" src="../img/items/linker.png"> <a href="linker.php">Linker</a></li>
 <li><img class="icon" src="../img/oreScanner_icon.png"> <a href="oreScanner.php">Ore Scanner</a></li>
 <li><img class="icon" src="../img/items/pressureTank0.png"> <a href="pressureTank.php">Pressure Tank</a></li>

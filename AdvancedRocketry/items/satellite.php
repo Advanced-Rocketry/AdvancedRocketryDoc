@@ -44,6 +44,12 @@
     <td>Ore Mapper</td>
     <td>Utility</td>
     </tr>
+    
+    <tr>
+    <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/items/satellitePrimaryFunction5.png"/>Biome Changer</td>
+    <td>Biome Changer</td>
+    <td>Utility</td>
+    </tr>
     </table>
     
     <br><br>
@@ -75,8 +81,13 @@
     </tr>
     
     <tr>
-    <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/battery0.png"/>Small Battery</td>
+    <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/items/battery0.png"/>Small Battery</td>
     <td>100 RF</td>
+    </tr>
+    
+    <tr>
+    <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/items/battery1.png"/>2x Small Battery</td>
+    <td>400 RF</td>
     </tr>
     </table>
     
@@ -89,7 +100,7 @@
     </tr>
     
     <tr>
-    <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/dataUnit0.png"/>Data Storage Unit</td>
+    <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/items/dataUnit0.png"/>Data Storage Unit</td>
     <td>1,000 Data Units</td>
     </tr>
     </table>';

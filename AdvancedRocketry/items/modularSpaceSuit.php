@@ -30,6 +30,14 @@
     <td><img align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/items/itemUpgrade1.png"/>Flight Speed Control Upgrade</td>
     <td>If a jetpack is installed in the chestplate then the Flight Speed Control Upgrade increases the speed at which the player flies by 0.4 m/s for each item installed.</td>
     </tr>
+    <tr>
+    <td id="atmAnalyser"><img  width=16px align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/items/atmosphereAnalyzer.png"/>Atmosphere Analyzer</td>
+    <td>If equipped in the spacesuit, a display in the lwer left hand corner of the screen displaying current atmosphere and breathability will be shown.<br>The same information can be displayed if the item is right clicked in the world</td>
+    </tr>
+    <tr>
+    <td id="foggles"><img  width=16px align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/items/itemUpgrade4.png"/>Anti-Fog Visor</td>
+    <td>If equipped in the spacesuit, it will allow you to easily see through the fog on high pressure planets.</td>
+    </tr>
     </table>
     
     <br><br>

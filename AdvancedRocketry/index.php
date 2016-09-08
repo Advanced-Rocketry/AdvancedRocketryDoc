@@ -1,5 +1,5 @@
 <?php
-    $title = 'index';
+    $title = 'Advanced Rocketry';
     
     $mainContent = '<h2>Advanced Rocketry Documentation</h2>
 <br />
@@ -14,6 +14,33 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
+<h3>0.8.0</h3>
+<ul>
+<li>Added Gas Giants and Gas Giant Mining</li>
+<li>Added <a href="blocks/UnmannedVehicleAssembler.php">Unmanned Vehicle Assembler</a></li>
+<li>Added <a href="blocks/Terraformer.php">Terraformer</a></li>
+<li>Added <a href="items/modularSpaceSuit.php#foggles">Anti-Fog visor</a></li>
+<li>Added Titanium Aluminide</li>
+<li>Added recipe for bonemeal in the chemical reactor</li>
+<li>Added Nitrogen</li>
+<li>Added Buckets for Oxygen, Nitrogen, and Hydrogen</li>
+<li>Added <a href="items/modularSpaceSuit.php#atmAnalyser">Atmosphere Analyser</a></li>
+<li>Mobs now take damage from the vacuum</li>
+<li>Added Biome Changer Satellite and <a href="items/biomeChanger.php">Biome Changer Satellite Remote</a></li>
+<li>Increased planet variety</li>
+<li>Infrastructure can now be linked to Docking Pads which will in turn link to any rocket that lands on the Docking Pad</li>
+<li>New algorithm for warp fuel calculations</li>
+<li>Redid Fog effect for planets (again)</li>
+<li><a href="blocks/Hatches.php">Rocket fluid loader and fluid unloader</a></li>
+<li>Rockets can now be automated to fly between destinations using <a href="blocks/DockingPad.php">Docking Pads</a></li>
+<li><a href="blocks/DockingPad.php">Docking Pads</a> now accept <a href="items/linker.php">linkers</a> as an item</li>
+<li>Added sounds</li>
+<li>Fixed warp effect not working in multiplayer sometimes</li>
+<li>Fixed solar satellites not being created properly</li>
+<li>Fixed graphics on pipes/Microwave Reciever not being shaded</li>
+<li>Fixed the delete satellite button not updating the itemstack on the server</li>
+<li>Fixed laser drill missing texture</li>
+</ul>
 <h3>0.7.0</h3>
 <ul>
 <li>Implemented <a href="items/modularSpaceSuit.php">Modular space suits</a></li>

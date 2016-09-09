@@ -14,6 +14,10 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
+<h3>0.8.1 (Upcoming)</h3>
+<ul>
+<li>Backward Compatibility: Create Gas Giants in worlds made in previous versions of AR</li>
+</ul>
 <h3>0.8.0</h3>
 <ul>
 <li>Added Gas Giants and Gas Giant Mining</li>
@@ -68,6 +72,6 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <li>Actual documentation for some of the mod on this site</li>
 </ul>';
     
-    $infoBarContent = 'infoBarContent';
+    $infoBarContent = '';
     include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
 ?>

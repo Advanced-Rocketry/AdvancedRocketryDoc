@@ -51,7 +51,8 @@ table, th, td {
   text-decoration: none;
   color: #666666;
   float: left;
-  padding-right: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
   padding-top: 5px;
 }
 #navigation ul li a:hover {

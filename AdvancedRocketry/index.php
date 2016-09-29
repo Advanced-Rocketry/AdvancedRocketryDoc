@@ -14,9 +14,14 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
-<h3>0.8.1 (Upcoming)</h3>
+<h3>0.8.1</h3>
 <ul>
 <li>Backward Compatibility: Create Gas Giants in worlds made in previous versions of AR</li>
+<li>Fix Dilithium not generating on galacticraft\'s moon</li>
+<li>Fix crash caused by unregistering gas giant dimensions</li>
+<li>Reduced the amount of smoke in large rockets</li>
+<li>Added config to increase output of MicrowaveRecievers</li>
+<li>Fixed crash involving blocks that do not properly return an itemstack in the rocket GUI</li>
 </ul>
 <h3>0.8.0</h3>
 <ul>

@@ -14,6 +14,18 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
+<h3>0.8.2</h3>
+<ul>
+<li>Added Decorative light</li>
+<li>Fixed rare bug where client would crash when going between worlds</li>
+<li>Optimized Rocket renders with GLLists</li>
+<li>Data pipes can now pull data from Satellite Terminal with requiring the connect button to be pressed, now allows fully automated Data harvesting</li>
+<li>Added more stars</li>
+<li>Fixed Sun being out in the rain</li>
+<li>[MC 1.10.2] Added <a href="blocks/SolarGenerator.php">Solar Generators</a></li>
+<li>[MC 1.10.2] Added <a href="blocks/Cables.php">Energy cables</a> and implementing Forges Energy system to replace the... lack of energy systems in 1.10</li>
+<li>[MC 1.10.2] Added Coal generators (takes anything that\'ll burn in a furnace</li>
+</ul>
 <h3>0.8.1</h3>
 <ul>
 <li>Backward Compatibility: Create Gas Giants in worlds made in previous versions of AR</li>

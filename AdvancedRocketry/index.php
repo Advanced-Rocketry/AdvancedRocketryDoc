@@ -14,6 +14,18 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
+<h3>0.8.3</h3>
+<ul>
+<li>Added config option for blacklisting biomes to prevent them from spawning on planets</li>
+<li>Added config option to prevent any vanilla biomes from spawning on planets</li>
+<li>Added config option to register high pressure biomes</li>
+<li>Added config option to register biomes that span entire worlds</li>
+<li>[MC 1.7.10] Powersuits now also protect from the vacuum of space</li>
+<li>Upon Death player should spawn in overworld, preventing infinite death loops</li>
+<li>[MC 1.7.10] Fixed bug causing the first space station to be built being assigned an invalid number</li>
+<li>Fix warp controller causing crash if placed in world</li>
+<li>[MC 1.10.2] Fixed glow affect for space suit HUD not working</li>
+</ul>
 <h3>0.8.2</h3>
 <ul>
 <li>Added Decorative light</li>

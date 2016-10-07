@@ -14,6 +14,18 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
+<h3>0.8.5</h3>
+<ul>
+<li>Fixed not being able to warp to moons from same planet</li>
+<li>Fixed incorrect usage of fuel when clicking warp while already in warp</li>
+<li>Fixed generating a world with a bonus chest causing a crash</li>
+<li>[MC 1.7.10] Thermos support courtesy of RecursiveG</li>
+</ul>
+<h3>0.8.4</h3>
+<ul>
+<li>Config for laser drill power multiplier</li>
+<li>Small bugfixes</li>
+</ul>
 <h3>0.8.3</h3>
 <ul>
 <li>Added config option for blacklisting biomes to prevent them from spawning on planets</li>

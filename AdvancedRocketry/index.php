@@ -14,6 +14,13 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
+<h3>0.9.1</h3>
+<ul>
+<li>Requires LibVulpes 0.1.5</li>
+<li>Added Altitude Controller (allows modification of Altitude of space stations, simply by placing in a station and opening the interface)</li>
+<li>Fix bug with Blast Furnace where in rare circumtances can have the machine form on the server but not the client</li>
+<li>Hopefully fix a bug where the holo projector causes a crash</li>
+</ul>
 <h3>0.9.0</h3>
 <ul>
 <li>Requires LibVulpes 0.1.4</li>
@@ -31,6 +38,7 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <li>Fix NPE with <a href="items/holoProjector.php">holo projector</a></li>
 <li>[Mc 1.10.2] Fix crash when placing data cables next to energy cables</li>
 <li>Fixed nasty bug where some space stations over ID 3 return the wrong id from block coords</li>
+<li>Fixed <a href="items/oreScanner.php">Ore Scanner</a> Being uncraftable</li>
 </ul>
 <h3>0.8.5</h3>
 <ul>

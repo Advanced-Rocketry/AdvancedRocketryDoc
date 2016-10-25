@@ -4,7 +4,7 @@
     $mainContent = '<h1>'.$title.'</h1><hr><h2><center>Overview</center></h2><p>
     <img align=left src="../img/oreScanner_gui.png">&nbsp;&nbsp;&nbsp;&nbsp;The Ore Scanner is an item that when paired with a satellite can be used to detect ores near the player.</p>
     <p>The maximum detectable distance from the player is a function of the satellite\'s ability to generate energy.  The more energy the satellite generates the farther the player can see, however there is an upper (Technical) limit to the distance that can be viewed.</p>
-    <p>When first crafted the Ore Scanner will not do anything.  To make it work it must be connected to a satellite.  This can be done in the <a href=../blocks/SatelliteAssemblingMachine.php>Satellite Assembling Machine</a>.</p>
+    <p>When first crafted the Ore Scanner will not do anything.  To make it work it must be connected to a satellite.  This can be done in the <a href=../blocks/SatelliteAssemblingMachine.php>Satellite Assembling Machine</a> by using an unprogrammed Ore Scanner in the place of a satellite ID chip.</p>
     <p>If at least 3,000 data storage is availble on the satellite, then the scanner can filter by ore.</p>
     <p>If a connected Ore Scanner is placed in the Main Component slot in the <a href=../blocks/SatelliteAssemblingMachine.php>Satellite Assembling Machine</a> and another Ore Scanner is placed in the copy slot, the connection can be copied to the second ore scanner</p>
     

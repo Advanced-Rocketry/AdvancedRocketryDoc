@@ -14,6 +14,23 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
+<h3>0.9.2</h3>
+<ul>
+<li>Nerfed Max returns of an asteriod mining mission from 20k+ stacks to 100 stacks of ore"</li>
+<li>Added the /advRocketry filldata command</li>
+<li>Added capability for multiple star systems and commands for manipulating stars"</li>
+<li>Putting a station id chip in a guidance computer while launching a station no longer sticks the rocket inside the station</li>
+<li>Requires LibVulpes 0.1.6</li>
+<li>Holo Projector now displays amounts and types of blocks needed to build a structure</li>
+<li>Rockets now display errors when ridden and unable to launch</li>
+<li>Rockets can only travel within planet moon systems now, use warp to go to other planets</li>
+<li>Added config to make orbital laser not destroy the world, laser no longer mines world by default</li>
+<li>Added config to set valid oredict entries for ores when laser is in non-destructive mode</li>
+<li>Orbital laser is now a multiblock structure</li>
+<li>[MC 1.10.2] Orbital laser no longer crashed the game when breaking the block</li>
+<li>[MC 1.10.2] Orbital laser actually functions now</li>
+<li>[MC 1.10.2]Fixes certain configurations with the seat causing player to spawn under bedrock on dismount</li>
+</ul>
 <h3>0.9.1</h3>
 <ul>
 <li>Requires LibVulpes 0.1.5</li>

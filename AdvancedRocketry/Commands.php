@@ -26,6 +26,14 @@
         <li>skyColor [decimal RED] [decimal GREEN] [decmial BLUE]: Color of the sky.</li>
         </ul>
     <li><b>/advancedRocketry planet get [property]</b>: prints the specified property (see /advancedRocketry planet set) to console of the planet that the player is currently on</li>
+    <li><b>/advancedRocketry star generate [name] [temperature] [x position] [y position]</b>: Generates a new star with the supplied name, temperature and coordinates.  The temperature has the range of 0 to 1000, where the 100 is Sol-like</li>
+    <li><b>/advancedRocketry star set [star id] [property] ...</b>: sets the specified property</li>
+        <ul>
+        <li>temperature [integer]: the temperature of the star from 0 to 1000 (100 is Sol-like)</li>
+        <li>pos [integer x] [integer y]: the coordinates of the star</li>
+        </ul>
+    <li><b>/advancedRocketry star get [star id] [property]</b>: returns the specified property, same properties as set, but with the additional "planets" property, which list planets orbiting said star</li>
+    <li><b>/advancedRocketry star list</b>: lists existing stars</li>
     </ul>
     </p>';
     

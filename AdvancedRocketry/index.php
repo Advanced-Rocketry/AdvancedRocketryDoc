@@ -14,11 +14,24 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
-<h3>0.9.2</h3>
+<h3>1.0.0</h3>
 <ul>
-<li>Nerfed Max returns of an asteriod mining mission from 20k+ stacks to 100 stacks of ore"</li>
+<li>Satellites can now be accessed from space stations orbiting the same planet as the satellite</li>
+<li>Sky colors now differ on newly generated planets</li>
+<li>Planets may now rotate along their own axis</li>
+<li>Added four stars to generate by default</li>
+<li>Sealing and oxygenating a room on planets with heavy atmospheres now removes the fog indoors</li>
+<li>Artifical atmospheres now show up as "pressurizedAir"</li>
+<li>Fixed a few small desyncs with the warp controller</li>
+<li>Beds no longer explode on other planets</li>
+<li>Added Railgun</li>
+<li>Added <a href="concepts/RecipeConfiguration.php">XML Recipe modification</a> support</li>
+<li>Fixed memory leak that can occur while logging in a out frequently</li>
+<li>Added planet orbital mechanics</li>
+<li>Added solar eclipses</li>
+<li>Nerfed Max returns of an asteriod mining mission from 20k+ stacks to 100 stacks of ore</li>
 <li>Added the /advRocketry filldata command</li>
-<li>Added capability for multiple star systems and commands for manipulating stars"</li>
+<li>Added capability for multiple star systems and commands for manipulating stars</li>
 <li>Putting a station id chip in a guidance computer while launching a station no longer sticks the rocket inside the station</li>
 <li>Requires LibVulpes 0.1.6</li>
 <li>Holo Projector now displays amounts and types of blocks needed to build a structure</li>
@@ -27,9 +40,11 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <li>Added config to make orbital laser not destroy the world, laser no longer mines world by default</li>
 <li>Added config to set valid oredict entries for ores when laser is in non-destructive mode</li>
 <li>Orbital laser is now a multiblock structure</li>
+<li>[MC 1.10.2] Fixed issue where the holo projector would sometimes not show the structure due to Player entity not being in the entity list</li>
 <li>[MC 1.10.2] Orbital laser no longer crashed the game when breaking the block</li>
 <li>[MC 1.10.2] Orbital laser actually functions now</li>
-<li>[MC 1.10.2]Fixes certain configurations with the seat causing player to spawn under bedrock on dismount</li>
+<li>[MC 1.10.2] Fixes certain configurations with the seat causing player to spawn under bedrock on dismount</li>
+<li>[MC 1.7.10] Fix incorrect Geode generation</li>
 </ul>
 <h3>0.9.1</h3>
 <ul>

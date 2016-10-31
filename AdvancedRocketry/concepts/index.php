@@ -6,6 +6,7 @@
 <p>Information about important concepts in the mod can be found in the following list:<br /></p>
 <ul>
 <li><img class="icon" src="../img/items/biomeChanger.png"> <a href="biomeChanger.php">Biome Changer</a></li>
+<li><img class="icon" src="../img/launchPad_icon.png"> <a href="RecipeConfiguration.php">Recipe Configuration</a></li>
 </ul>';
     
     $infoBarContent = ' Index of Advanced Rocketry Items';

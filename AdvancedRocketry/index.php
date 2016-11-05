@@ -16,6 +16,9 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <h2>What\'s New?</h2>
 <h3>1.0.0</h3>
 <ul>
+<li>Added <a href="concepts/OreConfiguration.php">XML config</a> for ore generation on different planet types</li>
+<li>Added config to add more harvestable fluids in gas giants</li>
+<li>Added tags to the <a href="concepts/AdvancedPlanetConfiguration.php">Advanced Planet generation XML</a> to allow manually specifying <a href="concepts/AdvancedPlanetConfiguration.php#dimId">DIMID</a> and <a href="concepts/AdvancedPlanetConfiguration.php#dimMapping"> mapping dims</a> from other mods as planets (including GC planets)</li>
 <li>Satellites can now be accessed from space stations orbiting the same planet as the satellite</li>
 <li>Sky colors now differ on newly generated planets</li>
 <li>Planets may now rotate along their own axis</li>
@@ -24,7 +27,7 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <li>Artifical atmospheres now show up as "pressurizedAir"</li>
 <li>Fixed a few small desyncs with the warp controller</li>
 <li>Beds no longer explode on other planets</li>
-<li>Added Railgun</li>
+<li>Added <a href="blocks/Railgun.php">Railgun</a></li>
 <li>Added <a href="concepts/RecipeConfiguration.php">XML Recipe modification</a> support</li>
 <li>Fixed memory leak that can occur while logging in a out frequently</li>
 <li>Added planet orbital mechanics</li>
@@ -34,16 +37,22 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <li>Added capability for multiple star systems and commands for manipulating stars</li>
 <li>Putting a station id chip in a guidance computer while launching a station no longer sticks the rocket inside the station</li>
 <li>Requires LibVulpes 0.1.6</li>
-<li>Holo Projector now displays amounts and types of blocks needed to build a structure</li>
+<li><a href="items/holoProjector.php">Holo Projector</a> now displays amounts and types of blocks needed to build a structure</li>
 <li>Rockets now display errors when ridden and unable to launch</li>
 <li>Rockets can only travel within planet moon systems now, use warp to go to other planets</li>
 <li>Added config to make orbital laser not destroy the world, laser no longer mines world by default</li>
 <li>Added config to set valid oredict entries for ores when laser is in non-destructive mode</li>
-<li>Orbital laser is now a multiblock structure</li>
+<li><a href="blocks/LaserDrill.php">Orbital laser</a> is now a multiblock structure</li>
+<li>Fixed off-by-one error causing suffocation near walls in sealed rooms</li>
+<li>Fixed suffocation while standing near IC2 or enderIO pipes in a sealed room</li>
+<li>Fixed Space Station Modules being placed facing backward</li>
+<li>[MC 1.10.2] Fix inventory checks being ignored globally</li>
+<li>[MC 1.10.2] Fix packet leak when in single player</li>
 <li>[MC 1.10.2] Fixed issue where the holo projector would sometimes not show the structure due to Player entity not being in the entity list</li>
 <li>[MC 1.10.2] Orbital laser no longer crashed the game when breaking the block</li>
 <li>[MC 1.10.2] Orbital laser actually functions now</li>
 <li>[MC 1.10.2] Fixes certain configurations with the seat causing player to spawn under bedrock on dismount</li>
+<li>[MC 1.10.2] Fixed duplicate packet execution.
 <li>[MC 1.7.10] Fix incorrect Geode generation</li>
 </ul>
 <h3>0.9.1</h3>

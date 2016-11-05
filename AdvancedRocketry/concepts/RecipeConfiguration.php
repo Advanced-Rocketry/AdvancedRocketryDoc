@@ -7,8 +7,8 @@
 This document will guide you through manually adding recipes to AR\'s various machines.<br />Each machine will generate a "MACHINENAME.xml" in the config/advancedRocketry folder with an empty set of "Recipes" tags.</p>
 
 
-<p>Explaination of usable tags:</p>
-<hr>
+<p><h3>Explaination of usable tags:</h3></p>
+<hr style="border-width: 5px;">
 <p>The "Recipe" tag surrounds each recipe entry, this tag contains the "timeRequired" and "power" attributes, which determines the amount of time in ticks and the power consumption in RF/t respectivly.</p>
 
 <p>Each recipe node must contain an input and output node.</p>
@@ -18,7 +18,7 @@ This document will guide you through manually adding recipes to AR\'s various ma
 <ul>
 <li>"itemStack" node: \'<itemStack>"namespace:unlocallized_name OR blockid/itemid" size meta</itemStack>\' where size and meta are optional</li>
 <li>"oreDict" node: \'<oreDict>"oreDictionaryName" size</oreDict>\' where size (the stack size) is optional</li>
-<li>"fluidStack" nade: \'<fluidStack>"fluidName" size</fluidStack>\' where size (the number of millibuckets) is optional</li>
+<li>"fluidStack" node: \'<fluidStack>"fluidName" size</fluidStack>\' where size (the number of millibuckets) is optional</li>
 </ul>
 
 <p>Example (2 spruce logs and five iron ore makes 1 gold ore)<br />
@@ -37,6 +37,6 @@ This document will guide you through manually adding recipes to AR\'s various ma
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;/Recipe&#62;<br />
 &#60;/Recipes&#62;</p></code></div>';
     
-    $infoBarContent = ' Index of Advanced Rocketry Items';
+    $infoBarContent = 'Advanced Rocketry Recipe configuration';
     include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
 ?>

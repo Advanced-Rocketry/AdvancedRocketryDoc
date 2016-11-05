@@ -30,8 +30,8 @@ This document will guide you through manually configuring ore for spawning on AR
 <i>Note: this table may be moved to a planets concept page in the future</i>
 
 <br />
-<p>Explanation of usable tags:</p>
-<hr>
+<p><h3>Explanation of usable tags:</h3></p>
+<hr style="border-width: 5px;">
 <p>
 <h3>OreGen tag</h3>
 The "OreGen" defines a new type of planet to define the ore generation for.  The "OreGen" tag contains "pressure" and "temp" attributes.  These attributes specify the type of planet for which to define ore gen.  Both attributes use integers corresponding to the temperature and pressure tables above and at least one of the tags must be present.</p>

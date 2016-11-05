@@ -1,14 +1,16 @@
 <?php
     $title = 'Concepts';
     
-    $mainContent = '<h2>Advanced Rocketry Items</h2>
+    $mainContent = '<h2>Advanced Rocketry Concepts</h2>
 <br />
 <p>Information about important concepts in the mod can be found in the following list:<br /></p>
 <ul>
-<li><img class="icon" src="../img/items/biomeChanger.png"> <a href="biomeChanger.php">Biome Changer</a></li>
+<li><img class="icon" src="../img/launchPad_icon.png"> <a href="AdvancedPlanetConfiguration.php">Advanced Planet Configuration</a></li>
 <li><img class="icon" src="../img/launchPad_icon.png"> <a href="RecipeConfiguration.php">Recipe Configuration</a></li>
+<li><img class="icon" src="../img/rocket_icon.png"> <a href="Rockets.php">Rockets</a></li>
+<li><img class="icon" src="../img/rocketAssemblingMachine_icon.png"> <a href="OreConfiguration.php">Ore Configuration</a></li>
 </ul>';
     
-    $infoBarContent = ' Index of Advanced Rocketry Items';
+    $infoBarContent = ' Index of Advanced Rocketry Concepts';
     include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
 ?>

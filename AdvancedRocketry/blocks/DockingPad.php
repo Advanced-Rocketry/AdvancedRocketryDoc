@@ -9,7 +9,7 @@
     <br>
     <p>Any infrastructure block connected to the Docking Pad will be connected to any rocket than lands on the docking pad.</p>
 
-    <p>The coordnites of the Docking pad itself can be programmed into a linker.  If a linker programmed with another docking pad is placed in the inventory of another docking pad then any rocket taking off from the pad will travel to the destination pad set in the linker if the rocket\'s guidance computer is empty.</p>
+    <p>The coordnites of the Docking pad itself can be programmed into a linker.  If a linker programmed with the coords of docking pad is placed in the inventory of a different docking pad, then any rocket taking off from the pad containing the linker will travel to the pad programmed into the linker if there is nothing in the rocket\'s guidance computer.</p>
     <p>Putting a linker into a Docking Pad reserves the pad for use and will not allow incoming craft to land on it.</p>
     <p>Using this ability and the redstone features of the infrastructure is it possible to automate cargo transport between worlds.</p>';
     

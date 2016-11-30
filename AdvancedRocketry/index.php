@@ -14,7 +14,49 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
-<h3>1.0.0</h3>
+<h3>1.0.2</h3>
+<ul>
+<li>Requires Libvulpes 1.10</li>
+<li>Added Basic Laser gun (beta item, uncraftable)</li>
+<li>[libvulpes] Fix XML recipe registration allowing recipes with no outputs</li>
+<li>Fixed not being able to travel to planets with ids higher than 256 due to forgetting to remove legacy code</li>
+<li>Fixed some Achievments not working</li>
+<li>[1.7.10] Fixed XML recipe handler not being able to read unlocalized item names</li>
+<li>[1.10.2] [libvulpes] Re-added IC2 plugs</li>
+<li>[1.10.2] [libvulpes] Fixed linker not working with spongeForge</li>
+<li>[1.10.2] Fixed Crash when right clicking extinguished torch</li>
+<li>[1.10.2] [libvulpes] Implemented Tesla API support for energy</li>
+<li>[1.10.2] [libvulpes] Fixed bug causing metal blocks and coils built into machines to throw an exception upon harvesting</li>
+</ul>
+<h3>1.0.1</h3>
+<ul>
+<li>Added list of entities that ignore atmosphere effects</li>
+<li>Fixed crash caused by trying to fly a rocket with an unprogrammed chip</li>
+<li>[1.10.2] Fixed rockets being offset by one</li>
+</ul>
+<h3>1.0.0RC3</h3>
+<ul>
+<li>Added <a href="Commands.php">command</a> to generate moons</li>
+<li>Added comments to default XML recipe file</li>
+<li>Added config to reset planet config in the AR config</li>
+<li>Fix crash on startup caused by oredict items without blocks attempting to be used by the holo projector as blocks</li>
+<li>Make ores generate again</li>
+<li>Fix bug causing planet IDs higher than 256 overwriting the overworld\'s properties</li>
+<li>[1.10.2] Fixes unmanned vehicle assembler off by 1 error</li>
+<li>[1.7.10] Fix Data cable being overridden by energy cable</li>
+</ul>
+<h3>1.0.0RC2</h3>
+<ul>
+<li>Requires LibVulpes 0.1.7</li>
+<li>Fixed O2 sealing crash with blocks with null BBs</li>
+<li>Added missing dust -> ingot recipes</li>
+<li>small plate presser ore -> dust recipe doubled</li>
+<li>other small fixes</li>
+<li>[1.7.10] Fix crash with orbital laser</li>
+<li>[1.7.10] Fixed crash with holo-projector</li>
+<li>[1.7.10] Fixed crash on join on multiplayer</li>
+</ul>
+<h3>1.0.0RC1</h3>
 <ul>
 <li>Added <a href="concepts/OreConfiguration.php">XML config</a> for ore generation on different planet types</li>
 <li>Added config to add more harvestable fluids in gas giants</li>
@@ -32,7 +74,7 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <li>Fixed memory leak that can occur while logging in a out frequently</li>
 <li>Added planet orbital mechanics</li>
 <li>Added solar eclipses</li>
-<li>Nerfed Max returns of an asteriod mining mission from 20k+ stacks to 100 stacks of ore</li>
+<li>Nerfed Max returns of an asteriod mining <a href="concepts/Missions.php">mission</a> from 20k+ stacks to 100 stacks of ore</li>
 <li>Added the /advRocketry filldata command</li>
 <li>Added capability for multiple star systems and commands for manipulating stars</li>
 <li>Putting a station id chip in a guidance computer while launching a station no longer sticks the rocket inside the station</li>

@@ -25,7 +25,7 @@
 
 <p>This document will guide you through manually or semi-manually defining planets for your world!</p>
 
-<p>To use manual xml planet configuration, download and modify <a href"https://github.com/zmaster587/AdvancedRocketry/blob/master/Template.xml">this template</a> and rename it to "planetDefs.xml" in the config/advancedRocketry folder.</p></div>
+<p>To use manual xml planet configuration, download and modify <a href="https://github.com/zmaster587/AdvancedRocketry/blob/master/Template.xml">this template</a> and rename it to "planetDefs.xml" in the config/advancedRocketry folder.</p></div>
 
 <p> <br /><h3>Explaination of usable tags:</h3></p>
 <hr style="border-width: 5px;"><br />

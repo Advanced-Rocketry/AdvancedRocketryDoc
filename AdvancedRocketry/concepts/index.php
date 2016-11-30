@@ -6,6 +6,7 @@
 <p>Information about important concepts in the mod can be found in the following list:<br /></p>
 <ul>
 <li><img class="icon" src="../img/launchPad_icon.png"> <a href="AdvancedPlanetConfiguration.php">Advanced Planet Configuration</a></li>
+<li><img class="icon" src="../img/rocket_icon.png"> <a href="Missions.php">Missions</a></li>
 <li><img class="icon" src="../img/launchPad_icon.png"> <a href="RecipeConfiguration.php">Recipe Configuration</a></li>
 <li><img class="icon" src="../img/rocket_icon.png"> <a href="Rockets.php">Rockets</a></li>
 <li><img class="icon" src="../img/rocketAssemblingMachine_icon.png"> <a href="OreConfiguration.php">Ore Configuration</a></li>

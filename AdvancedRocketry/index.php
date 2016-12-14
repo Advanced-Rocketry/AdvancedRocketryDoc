@@ -14,6 +14,22 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
+<h3>1.0.4</h3>
+<ul>
+<li>Fix Aluminum ore not generating</li>
+<li>Allow the entity bypass to use entity class names</li>
+<li>Update Russian translation</li>
+<li>Add Ukrainian translation</li>
+<li>[ LibVulpes ] Fixed crash caused by putting an AR tank into an empty fluid hatch</li>
+<li>[ LibVulpes ] Fix error in recipe XML template</li>
+</ul>
+<h3>1.0.3</h3>
+<ul>
+<li>Fix off by one with rocket assembler</li>
+<li>[1.10.2] [Libvulpes] Fix recipe loading</li>
+<li>[1.7.10] [Libvulpes] Fix imcompatibility with ICBM</li>
+<li>[1.7.10] Fix rocket not being able to launch</li>
+</ul>
 <h3>1.0.2</h3>
 <ul>
 <li>Requires Libvulpes 1.10</li>

@@ -49,7 +49,7 @@
     </tr>
     <tr>
     <td><img align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/items/jetpack.png"/>Jetpack</td>
-    <td>Allows the player to fly in one of two modes while consuming Hydrogen Gas during flight:<br><br>
+    <td>Allows the player to fly in one of two modes(toggled by shift+toggle jetpack key) while consuming Hydrogen Gas during flight:<br><br>
     <i>Normal mode</i>: Accelerates the player upward when the jump key is held<br>
     <i>Hover mode</i>: Allows the player to fly in a method similar to creative mode flight, however a Hover Upgrade must be installed in the helmet.</td>
     </tr>

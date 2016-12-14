@@ -24,7 +24,8 @@
   <li><a href="/AdvancedRocketry">Home</a></li>
   <li><a href="/AdvancedRocketry/blocks">Blocks </a></li>
   <li><a href="/AdvancedRocketry/items">Items</a></li>
-  <li><a href="/AdvancedRocketry/concepts">Concepts<br/>
+  <li><a href="/AdvancedRocketry/guides">Guides</a></li>
+  <li><a href="/AdvancedRocketry/config">Configuration<br/>
   <li><a href="/AdvancedRocketry/Commands.php">Commands</a></li>
 </ul>
 </div>

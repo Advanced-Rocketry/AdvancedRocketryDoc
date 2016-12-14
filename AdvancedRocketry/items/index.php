@@ -5,14 +5,18 @@
 <br />
 <p>Information about items can be found in the following list:<br /></p>
 <ul>
+<li><img class="icon" src="../img/items/stationIdChip.png"> <a href="idChip.php">Asteroid Id Chip</a></li>
 <li><img class="icon" src="../img/items/biomeChanger.png"> <a href="biomeChanger.php">Biome Changer</a></li>
 <li><img class="icon" src="../img/items/dataStorageUnit.png"> <a href="datachip.php">Data Storage Unit</a></li>
 <li><img class="icon" src="../img/items/holoProjector.png"> <a href="holoProjector.php">Holo-Projector</a></li>
 <li><img class="icon" src="../img/items/chipSeq.gif"> <a href="idChip.php">Id Chips</a></li>
 <li><img class="icon" src="../img/items/linker.png"> <a href="linker.php">Linker</a></li>
 <li><img class="icon" src="../img/oreScanner_icon.png"> <a href="oreScanner.php">Ore Scanner</a></li>
+<li><img class="icon" src="../img/items/planetIdChip.png"> <a href="idChip.php">Planet Id Chip</a></li>
 <li><img class="icon" src="../img/items/pressureTank0.png"> <a href="pressureTank.php">Pressure Tank</a></li>
 <li><img class="icon" src="../img/satellite_icon.png"> <a href="satellite.php">Satellite</a></li>
+<li><img class="icon" src="../img/items/satelliteIdChip.png"> <a href="idChip.php">Satellite Id Chip</a></li>
+<li><img class="icon" src="../img/items/stationIdChip.png"> <a href="idChip.php">Station Id Chip</a></li>
 <li><img class="icon" src="../img/items/space_chestplate.png"> <a href="modularSpaceSuit.php">Space Suit</a></li>
 </ul>';
     

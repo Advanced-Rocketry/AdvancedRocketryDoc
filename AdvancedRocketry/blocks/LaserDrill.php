@@ -3,8 +3,10 @@
     
     $mainContent = '<h1>'.$title.'</h1><hr><img align="left" src="/AdvancedRocketry/img/laserDrill_demo.jpg" /><p><h2 style="text-align: center;">Overview</h2>&nbsp;&nbsp;&nbsp;&nbsp;The Laser Drill is a mining device that can be placed on a space station to mine the planet below at the cost of an extreme amount of energy.</p>
     <p>The Laser Drill must be placed on a space station and must have a clear line of sight to the bottom of the world in order to function.  In future releases may also require the station pointing downward.</p>
-    <p>While Running the laser drill will attempt to mine the planet specified by coordnites and will place collected blocks into an adjacent chest.  It will NOT place items into a chest on the front of the drill.</p>
-    <p>If the chests are all full the drill will jam and turn itself off.  Clicking the "reset" button in it\'s GUI will cause to to attempt to continue running if the jam is cleared.</p>
+    <br>
+    <p>While Running the laser drill will attempt to mine the planet at the specified coordinates if "laserDrillPlanet" is set to true.  If "laserDrillPlanet" is set to false the laser drill will not actually damage the planet below</p>
+    <p>Collected blocks will be placed into an <a href="Hatches.php">output hatch</a>.  It will NOT place items into a chest on the front of the hatch.  Items will need to be removed by hand or some piping mechanism.</p>
+    <p>If the hatches are all full the drill will jam and turn itself off.  Clicking the "reset" button in it\'s GUI will cause to to attempt to continue running if the jam is cleared.</p>
     <p>The laser drill requires a redstone signal to turn on and will stop running if the redstone signal is cut.</p>
     <hr>
     <h2 style="text-align: center;">Usage</h2>

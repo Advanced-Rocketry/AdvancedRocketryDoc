@@ -20,8 +20,22 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <li>Allow the entity bypass to use entity class names</li>
 <li>Update Russian translation</li>
 <li>Add Ukrainian translation</li>
+<li>Fix issue where the plate presser will not properly reconise the block if it\'s not the first register for that oreDict entry</li>
+<li>Fix rare NPEs with multiblock machine where sometimes it tries to render a null item</li>
+<li>Fix fuelling stations eating all the buckets</li>
+<li>Fix possible crash with Dynamic Surround</li>
+<li>Potential fix for rare crash from pipes</li>
+<li>Rename "Laser Drill" to "Orbital Laser Drill" and fix name inconsistancies</li>
+<li>Fix exploit where sitting in a seat not mounted on a rocket allows players to pick up distant items</li>
 <li>[ LibVulpes ] Fixed crash caused by putting an AR tank into an empty fluid hatch</li>
 <li>[ LibVulpes ] Fix error in recipe XML template</li>
+<li>[ LibVulpes ] RF can now be extracted from the IC2 plug</li>
+<li>[ LibVulpes ] Fix Compatibility with energy from other ForgeEnergy supporting mods</li>
+<li>[1.10.2][ LibVulpes ]Fix IC2 Energy handler attempting to register on client</li>
+<li>[1.10.2][ LibVulpes ]Fix crash trying to get rotation</li>
+<li>[1.10.2][ LibVulpes ]Fix bug where IC2 plug does not actually drain power from IC2 sources</li>
+<li>[1.10.2] Fix death when dismounting from seat in very specific configurations</li>
+<li>[1.7.10] Fix missing recipe for carbon scrubber</li>
 </ul>
 <h3>1.0.3</h3>
 <ul>

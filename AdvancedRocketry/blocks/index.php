@@ -14,11 +14,12 @@
 <li><img class="icon" src="../img/gasChargePad_icon.png"> <a href="gasCharger.php">Gas Charger</a></li>
 <li><img class="icon" src="../img/guidanceComputer_icon.png"> <a href="GuidanceComputer.php">Guidance Computer</a></li>
 <li><img class="icon" src="../img/hatch_icon.png"> <a href="Hatches.php">Hatches and Loaders</a></li>
-<li><img class="icon" src="../img/laserDrill_icon.png"> <a href="LaserDrill.php">Laser Drill</a></li>
 <li><img class="icon" src="../img/launchPad_icon.png"> <a href="LaunchPad.php">Launch Pad</a></li>
 <li><img class="icon" src="../img/microwaveReciever_icon.png"> <a href="MicrowaveReciever.php">Microwave Reciever</a></li>
+<li><img class="icon" src="../img/laserDrill_icon.png"> <a href="LaserDrill.php">Orbital Laser Drill (formerly Laser Drill)</a></li>
 <li><img class="icon" src="../img/oxygenVent_icon.png"> <a href="OxygenVent.php">Oxygen Vent</a></li>
 <li><img class="icon" src="../img/rocketAssemblingMachine_icon.png"> <a href="RocketAssemblingMachine.php">Rocket Assembling Machine</a></li>
+<li><img class="icon" src="../img/railgun_icon.png"> <a href="Railgun.php">Railgun</a></li>
 <li><img class="icon" src="../img/rocketEngine_icon.png"> <a href="RocketEngine.php">Rocket Engine</a></li>
 <li><img class="icon" src="../img/monitoringStation_icon.png"> <a href="RocketMonitoringStation.php">Rocket Monitoring Station</a></li>
 <li><img class="icon" src="../img/satelliteAssemblingMachine_icon.png"> <a href="SatelliteAssemblingMachine.php">Satellite Assembling Machine</a></li>

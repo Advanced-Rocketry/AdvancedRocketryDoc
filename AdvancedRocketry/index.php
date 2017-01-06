@@ -14,12 +14,35 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
+<h3>1.0.5</h3>
+<ul>
+<li>Fixes Stack Overflow error caused by placing two airlock doors next to each other and attempting to seal a room</li>
+<li>Fix Astrobody data processor requiring the switch flipped if it runs out of data.</li>
+<li>Fix duplication of lightwood saplings with bonemeal</li>
+<li>Added missing recipes for rods</li>
+<li>Space Station chips now store location on a per planet basis now. <b>This may break return coordinates for existing rockets</b></li>
+<li>Fixed solar generators not pushing RF like they should</li>
+<li>Planet ID chips no longer store data</li>
+<li>Rocket now shows destination planet/station ID onscreen before takeoff</li>
+<li>Fixed lack of destination dimension syncing, fixes seeminly random "Cannot Reach destination" errors</li>
+<li>Riding a rocket with a new space station to the same new station no longer acts funny</li>
+<li>Recipes made cheaper</li>
+<ul>
+    <li>3 ingots -> 4 rods in crafting table</li>
+    <li>1 block -> 4 plates in small plate presser</li>
+    <li>recipe for batteries now makes 4</li>
+    <li>recipe for machine structure now takes 4 plate and 4 rods</li>
+    <li>recipe for machine structure now makes 4</li>
+</ul>
+<li>[ LibVulpes ] Fixed coal generators not pushing RF like it should</li>
+<li>[1.7.10] Fix no rotation occuring with orientation controller if no warp controller placed.</li>
+</ul>
 <h3>1.0.4</h3>
 <ul>
 <li>Fix Aluminum ore not generating</li>
 <li>Allow the entity bypass to use entity class names</li>
-<li>Update Russian translation</li>
-<li>Add Ukrainian translation</li>
+<li>Update Russian translation ( Thank you m3gagluk)</li>
+<li>Add Ukrainian translation (Thank you wlich!)</li>
 <li>Fix issue where the plate presser will not properly reconise the block if it\'s not the first register for that oreDict entry</li>
 <li>Fix rare NPEs with multiblock machine where sometimes it tries to render a null item</li>
 <li>Fix fuelling stations eating all the buckets</li>
@@ -30,7 +53,7 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <li>[ LibVulpes ] Fixed crash caused by putting an AR tank into an empty fluid hatch</li>
 <li>[ LibVulpes ] Fix error in recipe XML template</li>
 <li>[ LibVulpes ] RF can now be extracted from the IC2 plug</li>
-<li>[ LibVulpes ] Fix Compatibility with energy from other ForgeEnergy supporting mods</li>
+<li>[1.10.2][ LibVulpes ] Fix Compatibility with energy from other ForgeEnergy supporting mods</li>
 <li>[1.10.2][ LibVulpes ]Fix IC2 Energy handler attempting to register on client</li>
 <li>[1.10.2][ LibVulpes ]Fix crash trying to get rotation</li>
 <li>[1.10.2][ LibVulpes ]Fix bug where IC2 plug does not actually drain power from IC2 sources</li>

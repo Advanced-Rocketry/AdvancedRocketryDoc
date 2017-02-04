@@ -8,6 +8,8 @@
     <ol style="padding-left:15px;">
     <li><a href="#basicSpec">Basic Specification</a></li>
     <li><a href="#planetSpec">Planet Specification</a></li>
+    <li><a href="#rings">Rings</a></li>
+    <li><a href="#gasGiant">Gas Giant</a></li>
     <li><a href="#fogColor">Fog Color</a></li>
     <li><a href="#skyColor">Sky Color</a></li>
     <li><a href="#atmDensity">Atmosphere Density</a></li>
@@ -74,7 +76,45 @@ named "Luna" and another manually specified planet "Mars"</p>
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
 &#60;/galaxy&#62;<br />
 </div></code></div>
+
 <br /><hr>
+<a name="rings"></a>
+<center><h3>Rings (1.1.0+)</h3></center>
+
+<p>The "hasRings" tag specifes whether a planet has rings.  By default a planet will not have a ring system.</p>
+<p>Example usage; Gives Mars rings</p>
+<div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
+<code>
+<div style="width:1200px">
+&#60;galaxy&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Mars"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;hasRings&#62true&#60;/hasRings&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
+&#60;/galaxy&#62;<br />
+</div></code></div>
+<br /><hr>
+<a name="gasGiant"></a>
+<center><h3>Gas Giant (1.0.8+)</h3></center>
+
+<p>The "GasGiant" tag specifes whether a planet is a Gas Giant.  Gas Giants cannot be landed on but can be used as sources of gasses</p>
+<p>Example usage; creates a planet named "Jupiter" and makes it a gas giant</p>
+<div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
+<code>
+<div style="width:1200px">
+&#60;galaxy&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Jupiter"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;GasGiant&#62true&#60;/GasGiant&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
+&#60;/galaxy&#62;<br />
+</div></code></div>
+<br /><hr>
+
 <a name="fogColor"></a>
 <center><h3>Fog Color</h3></center>
 
@@ -305,14 +345,14 @@ motion sickness inducing.</p>
 <li>Min: 1</li>
 </ul>
 
-<p>Example usage; specifes a planet to start exactly opposite the sun from Earth</p>
+<p>Example usage; specifes a planet named Beebop to have a 10 minute day/night cycle</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
 <div style="width:1200px">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;orbitalTheta&#62;180&#60;/orbitalTheta&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Beebop"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;rotationalPeriod&#62;12000&#60;/rotationalPeriod&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />

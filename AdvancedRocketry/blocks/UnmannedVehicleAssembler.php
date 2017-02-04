@@ -16,6 +16,6 @@
     <p>A bar must extend from the top of the vertical tower to determine the length of the area to build.</p>
     <p>The video to the left illistrates the effects of modifying the size of the gantry in various ways, where the white box indicates the valid building area for the machine.</p>';
     
-    $infoBarContent = $title.'<hr><img src="../img/rocketAssemblingMachine_block.png" /><hr>Hardness: 3<br />Blast Resistance: 0<br />Requires Tool: Yes<br />Full Block: yes<br />Sealable: Yes<br />Tile Entity: Yes<hr>Min Structure Size: 3x3x3<br />Max Structure Size: 12x12x12';
+    $infoBarContent = $title.'<hr><img src="../img/rocketAssemblingMachine_block.png" /><hr>Hardness: 3<br />Blast Resistance: 0<br />Requires Tool: Yes<br />Full Block: yes<br />Sealable: Yes<br />Tile Entity: Yes<hr>Min Structure Size: 3x3x3<br />Max Structure Size: 16x16x16';
     include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
 ?> 

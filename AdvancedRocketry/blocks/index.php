@@ -6,9 +6,9 @@
 <p>Information about blocks can be found in the following list:<br /></p>
 <ul>
 <li><img class="icon" src="../img/abdp_icon.png"> <a href="Abdp.php">Astrobody Data Proccessor</a></li>
-<li><img class="icon" src="../img/dockingPad_icon.png"> <a href="DockingPad.php">Docking Pad</a></li>
 <li><img class="icon" src="../img/energyCable_icon.png"> <a href="Cables.php">Cable and pipes</a></li>
 <li><img class="icon" src="../img/oxygenScrubber_icon.png"> <a href="OxygenScrubber.php">CO2 Scrubber</a></li>
+<li><img class="icon" src="../img/dockingPad_icon.png"> <a href="DockingPad.php">Docking Pad</a></li>
 <li><img class="icon" src="../img/fuelTank_icon.png"> <a href="FuelTank.php">Fuel Tank</a></li>
 <li><img class="icon" src="../img/fuellingStation_icon.png"> <a href="FuellingStation.php">Fuelling Station</a></li>
 <li><img class="icon" src="../img/gasChargePad_icon.png"> <a href="gasCharger.php">Gas Charger</a></li>

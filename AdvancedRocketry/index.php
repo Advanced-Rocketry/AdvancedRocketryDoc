@@ -14,6 +14,55 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
+<h3>1.0.9</h3>
+<ul>
+<li>Fixed iron ingot -> rod recipe in the lathe returning only 1 rod</li>
+<li>Fix missing isRemote check in the loader, causing client/server desync with the number of items in the loader</li>
+<li>fixed skycolor and fog color not properly taking hex</li>
+<li>O2 bar and suit HUD can now be dragged with middle click if lockUI=false in config</li>
+<li>Spacesuits can now let you breathe underwater</li>
+<li>[LibVulpes/Advanced rocketry] Fixed solar panels working if placed under solar panels</li>
+<li>[1.10.2] Fixed bad logic making it impossible to respawn on planets
+<li>[1.10.2] [LibVulpes] Fix solar panels shoving energy into adjacent solar panels</li>
+<li>[1.10.2] Fix crash when installed with <a href="https://minecraft.curseforge.com/projects/perfect-spawn">perfect spawn</a></li>
+<li>[LibVulpes] Fix fluid hatches and pressurized fluid tanks from eating buckets if you try to fill it with a different fluid than the one it contains</li>
+</ul>
+<h3>1.0.8</h3>
+<ul>
+<li>Add time multiplier config for asteriod mining missions</li>
+<li>Fix possible threading issue causing <a href="https://github.com/zmaster587/AdvancedRocketry/issues/346">a CME on connecting</a></li>
+<li>Seperated configs for ore spawn for geodes and asteroids</li>
+<li>Fix possible crash when generating geode if an item without a block is specified in the config</li>
+<li>Fix issue with atmosphere system where non-full blocks become deoxygenated when placed</li>
+<li>Possible fix for crashes with experimental atmosphere options</li>
+<li>Changed Unmanned Vehicle Assembler bounds to 16</li>
+<li>Fix armor stands consuming Oxygen (Avoid bothering the Doctor)</li>
+<li>Fix Observetory recipe not using oredict</li>
+<li>Fix issue where station components that face opposite directions on the ground get turned 90 degrees</li>
+<li>Fix possible render crash with orbital laser as seen from planet surface</li>
+<li>Fix issue when mapping planets via the config AR would try to register a dimension belonging to another mod depending on load order</li>
+<li>Added the <a href="config/AdvancedPlanetConfiguration.php#gasGiant">Gas Giant tag</a> to the planet config</li>
+<li>[1.7.10] Fix possible crash when generating a planet with only one biome</li>
+<li>[ Libvulpes ] Fix double ticking of multiblock machines</li>
+<li>[ LibVulpes ] Remove attempted energy transfers on client</li>
+<li>[ LibVulpes ] Fix machines pulling from the top slot in the fluid hatches</li>
+<li>[ LibVulpes/Advanced Rocketry ] Fix possible load issues involving locale
+</ul>
+<h3>1.0.7</h3>
+<ul>
+<li>Increased output of concrete recipe</li>
+<li>Fix landing pads not working properly if not placed by player or sent up in a station package thing</li>
+<li>Added redstone state to oxygen vent</li>
+<li>Fix steel recipe.  Should use charcoal, not coal</li>
+<li>Fix sawmill damage being linked to time of day</li>
+<li>[1.10.2] Fix rocket monitoring station not obeying redstone signals</li>
+</ul>
+<h3>1.0.6</h3>
+<ul>
+<li>Fix Data not being pulled from satellite monitoring station under certain conditions</li>
+<li>Fixed missing color cleanup in lathe renderer</li>
+<li>Fixed rocket behavior when falling back to a planet upon not landing on a space station</li>
+</ul>
 <h3>1.0.5</h3>
 <ul>
 <li>Fixes Stack Overflow error caused by placing two airlock doors next to each other and attempting to seal a room</li>

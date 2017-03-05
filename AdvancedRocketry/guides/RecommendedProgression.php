@@ -32,11 +32,11 @@
     <img align="left" src="../img/blastFurnace_demo.jpg" /><center><h2>Making Steel and Titanium</h2></center>
     <p>Steel is another important ingredient in Advanced Rocketry recipes and must be made in the <a href="../blocks/ElectricArcFurnace">Electric Arc Furnance</a> supplied with power in the plugs and an iron ingot and coal in the <a href="../blocks/Hatches.php">input hatch(s)</a>.</p>
     <p><i>It is recommended you start early with this step as it takes a long time to make steel!</i></p>
-    <br><p>Titanium is another material that can be made using the Electric Arc Furnace and will be required later</p>
+    <br><p>Titanium is another material that can be made using the Electric Arc Furnace and will be required later.</p>
     <hr>
     <a name="infrastructure"></a>
     <center><h2>Building basic Infrastructure</h2></center>
-    <p>In order to build the remaining components required for space travel certain processing machines are required.</p>
+    <p>In order to build the remaining components required for space travel certain processing machines are required.  The blueprints for these machines can be found in the <a href="../items/holoProjector.php">Holoprojector</a>.</p>
     <p>These machine do not have to be built in any particular order however you will need at least one of each of the following:
     <ul>
     <li>Lathe</li>
@@ -74,6 +74,7 @@
     <b>Rocket Materials</b>
     <li>One <a href="../blocks/Seat.php">Seat</a></li>
     <li>One <a href="../blocks/GuidanceComputer.php">Guidance computer</a></li>
+    <li>One <a href="../items/idChip.php">Planet ID chip</a></li>
     <li>At least one <a href="../blocks/RocketEngine.php">Rocket Engine</a></li>
     <li>At least one <a href="../blocks/FuelTank.php">fuel tank</a></li>
     </ul>

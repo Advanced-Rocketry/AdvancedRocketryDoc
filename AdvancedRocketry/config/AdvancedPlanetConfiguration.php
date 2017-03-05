@@ -17,6 +17,7 @@
     <li><a href="#orbitalDist">Orbital Distance</a></li>
     <li><a href="#orbitalTheta">Orbital Theta</a></li>
     <li><a href="#orbitalPhi">Orbital Phi</a></li>
+    <li><a href="#oregen">OreGen</a></li>
     <li><a href="#rotationalPeriod">Rotational Period</a></li>
     <li><a href="#biomeIds">Biome Ids</a></li>
     <li><a href="#dimId">Dim ID</a></li>
@@ -53,8 +54,10 @@ tag.</p>
 
 <p>The "planet" tag surrounds the definition of a planet.  If a planet tag is used in the body of another planet tag, the inner
 planet tag defines a moon of the outer planet.  The planet tag can have the attribute "name".  The name attribute specifies the
-name of the planet.  If the name attribute is not present then the planet is automatically named "Sol-planet_id".  The "numPlanet" attribute defines how many random planets should be defined in the solar systems, if not specified then
-AR will default to six.</p>
+name of the planet.  If the name attribute is not present then the planet is automatically named "Sol-planet_id".</p>  
+
+<p>The "numPlanet" attribute defines how many random (non-user specified) rocky planets should be defined in the solar systems, if not specified then
+AR will default to six.  The "numGasGiants" attribute defines how many gas giants are created in the solar system.</p>
 
 <p>Example usage; generates one random planet and one planet with manually specified properties named "Earth" with a moon
 named "Luna" and another manually specified planet "Mars"</p>
@@ -63,7 +66,7 @@ named "Luna" and another manually specified planet "Mars"</p>
 <code>
 <div style="width:1200px">
 &#60;galaxy&#62;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1" numGasGiants="0"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Luna"&#62;<br />
@@ -326,6 +329,26 @@ For moons, this value has no effect on temperatures.</p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;orbitalPhi&#62;180&#60;/orbitalPhi&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
+&#60;/galaxy&#62;<br />
+</div></code></div>
+
+<br /><hr>
+<a name="oregen"></a>
+<center><h3>OreGen</h3></center>
+<p>The "oreGen" tag allows configuration of ore spawn on a planet-by-planet basis.  Exact specifics on how to use the tag are documented in more detail <a href="./OreConfiguration.php">here</a>.</p>
+
+<p>Note: unless the dimid of the planet is explicitly specifed with the <a href="#dimId"> dimid tag</a>, adding or removing planets to an already existing world in the AR config could result in unpredictable behavior</p>
+<div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
+<code>
+<div style="width:1200px">
+&#60;galaxy&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Pootis"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;OreGen&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/OreGen&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
 &#60;/galaxy&#62;<br />

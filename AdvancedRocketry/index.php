@@ -14,6 +14,44 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
+<h3>1.0.13</h3>
+<ul>
+<li>Rather than crashing, air blocks that are rejected now just print warnings and are "rescheduled" with threaded atmosphere calculation</li>
+<li>Fix jetpack being broken in the 1.0.12 build</li>
+<li>Fix client crash with lathe and rolling machine when used with AE</li>
+<li>Fix incorrect O2 readout on spacestations</li>
+<li>Fixed holo-projector menu overshooting its render</li>
+<li>Update Ff_FR (Thanks Thysium!)</li>
+</ul>
+<h3>1.0.12</h3>
+<ul>
+<li>Fix compat recipes where the lathe would only output 1 rod instead of 2</li>
+<li>Fix iron ingots -> iron rod recipe in the crafting table yeilding only 1 rod instead of 4</li>
+<li>Hostile mobs now spawn on planets</li>
+<li>Fix XML config not working due to a bug introduced in 1.0.11</li>
+<li>Added config to change the force of thrust of the jetpack</li>
+<li>Added config to disable the landing boots upgrade on normal and higher gravity planets</li>
+<li>Logs actually print</li>
+</ul>
+<h3>1.0.11</h3>
+<ul>
+<li>Fix Ore properties specified in the planet XML not working in singleplayer</li>
+<li>Fix Rocket load dupe bug</li>
+<li>Fix NPE in the orbital laser when trying to save NBT state when set to spiral mode</li>
+<li>XML recipes can now properly load oredict entries in the output tag</li>
+<li>XML recipes will now override the default recipes if the input and outputs match</li>
+<li>[1.10.2] Fix crash with underwater utilities</li>
+<li>[1.10.2] fix possible render crash with leaves and grass on rockets</li>
+<li>[LibVulpes] Fix free item bug with machine deconstruction and holograms</li>
+<li>[LibVulpes] Fix crash when using multiple small plate pressers next to each other in the same tick</li>
+</ul>
+<h3>1.0.10</h3>
+<ul>
+<li>Fix ABDP not actually using data</li>
+<li>Add config for solar generator power output</li>
+<li>Fix crash with orbital laser where the config to allow it to mine the planet is set to false</li>
+<li>Possible fix for crash causing a CME to occur if using experimental atmosphere settings</li>
+</ul>
 <h3>1.0.9</h3>
 <ul>
 <li>Fixed iron ingot -> rod recipe in the lathe returning only 1 rod</li>
@@ -21,10 +59,15 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <li>fixed skycolor and fog color not properly taking hex</li>
 <li>O2 bar and suit HUD can now be dragged with middle click if lockUI=false in config</li>
 <li>Spacesuits can now let you breathe underwater</li>
-<li>[LibVulpes/Advanced rocketry] Fixed solar panels working if placed under solar panels</li>
-<li>[1.10.2] Fixed bad logic making it impossible to respawn on planets
+<li>Fix CME with cables</li>
+<li>Added config for O2 vent radius</li>
+<li>[1.10.2] Fixed stack overflow exception with pressurized tanks</li>
+<li>[1.10.2] Fix GUI for ore scanner</li>
+<li>[1.10.2] Fixed bad logic making it impossible to respawn on planets</li>
+<li>[1.10.2] Fixed active texture on block not showing sometimes</li>
 <li>[1.10.2] [LibVulpes] Fix solar panels shoving energy into adjacent solar panels</li>
 <li>[1.10.2] Fix crash when installed with <a href="https://minecraft.curseforge.com/projects/perfect-spawn">perfect spawn</a></li>
+<li>[LibVulpes/Advanced rocketry] Fixed solar panels working if placed under solar panels</li>
 <li>[LibVulpes] Fix fluid hatches and pressurized fluid tanks from eating buckets if you try to fill it with a different fluid than the one it contains</li>
 </ul>
 <h3>1.0.8</h3>

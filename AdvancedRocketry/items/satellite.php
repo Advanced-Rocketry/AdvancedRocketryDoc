@@ -46,11 +46,12 @@
     </tr>
     
     <tr>
-    <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/items/satellitePrimaryFunction5.png"/>Biome Changer</td>
+    <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/items/satellitePrimaryFunction5.png"/>Biome Changer*</td>
     <td>Biome Changer</td>
     <td>Utility</td>
     </tr>
     </table>
+    <font size=2px>*In order to construct a biome changer satellite, the <a href="biomeChanger.php">Biome Changer Remote</a> must be used instead of a satellite id chip in the <a href="../blocks/SatelliteAssemblingMachine.php">satellite assembling machine</a></font>
     
     <br><br>
     <table style="width:100%">
@@ -61,7 +62,7 @@
     </tr>
     
     <tr>
-    <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/satellitePowerSource0.png"/>Basic Solar Panel*</td>
+    <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/satellitePowerSource0.png"/>Basic Solar Panel**</td>
     <td>0.1 RF/t</td>
     </tr>
     
@@ -70,7 +71,7 @@
     <td>1 RF/t</td>
     </tr>
     </table>
-    <font size=2px>* Does not work with Microwave Transmitter unless it has storage</font>
+    <font size=2px>** Does not work with Microwave Transmitter unless it has storage</font>
     
     <br><br>
     <table style="width:100%">

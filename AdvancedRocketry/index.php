@@ -14,14 +14,24 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
+<h3>For Changlog for the 1.1.x builds, see <a href="./alphachangelog.php">here</a>.</h3>
+<h3>1.0.14</h3>
+<ul>
+<li>Fix Class not found exception on server when using the orbital laser drill</li>
+<li>[MC 1.10.2] Fix lightwood leaves dropping oak saplings instead of lightwood saplings</li>
+<li>[MC 1.10.2] Fix quartz cruicible not showing up in creative menu</li>
+</ul>
 <h3>1.0.13</h3>
 <ul>
+<li>Update Ff_FR (Thanks Thysium!)</li>
 <li>Rather than crashing, air blocks that are rejected now just print warnings and are "rescheduled" with threaded atmosphere calculation</li>
 <li>Fix jetpack being broken in the 1.0.12 build</li>
 <li>Fix client crash with lathe and rolling machine when used with AE</li>
 <li>Fix incorrect O2 readout on spacestations</li>
 <li>Fixed holo-projector menu overshooting its render</li>
-<li>Update Ff_FR (Thanks Thysium!)</li>
+<li>Fix changing of distance block not updating the O2 system in certain conditions</li>
+<li>Fix render corruption when the Atmosphere analyser is not the first upgrade in the helmet</li>
+<li>Gas giants can now be deleted</li>
 </ul>
 <h3>1.0.12</h3>
 <ul>

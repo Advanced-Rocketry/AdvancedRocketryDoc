@@ -8,6 +8,7 @@
     <ol style="padding-left:15px;">
     <li><a href="#basicSpec">Basic Specification</a></li>
     <li><a href="#planetSpec">Planet Specification</a></li>
+    <li><a href="#isKnown">isKnown</a></li>
     <li><a href="#rings">Rings</a></li>
     <li><a href="#gasGiant">Gas Giant</a></li>
     <li><a href="#fogColor">Fog Color</a></li>
@@ -22,13 +23,15 @@
     <li><a href="#biomeIds">Biome Ids</a></li>
     <li><a href="#dimId">Dim ID</a></li>
     <li><a href="#dimMapping">Dim mapping</a></li>
+    <li><a href="#customIcon">Custom Icon</a></li>
     </ol>
 </div>
 <p>Welcome to the Advanced Rocketry(AR) advanced configuration readme!</p>
 
 <p>This document will guide you through manually or semi-manually defining planets for your world!</p>
 
-<p>To use manual xml planet configuration, download and modify <a href="https://github.com/zmaster587/AdvancedRocketry/blob/master/Template.xml">this template</a> and rename it to "planetDefs.xml" in the config/advancedRocketry folder.</p></div>
+<p>To use manual xml planet configuration, download and modify <a href="https://github.com/zmaster587/AdvancedRocketry/blob/master/Template.xml">this template</a> and rename it to "planetDefs.xml" in the config/advancedRocketry folder.</p>
+<p><b>IMPORTANT:</b> As of Advanced Rocketry 1.1.3 the overworld is no longer added to the solar system automatically.  Instead the overworld must now be <a href="#dimMapping">dimmapped</a> to a star.  This was done to allow for more flexibilty (ability to rename overworld, not require luna, etc).</p></div>
 
 <p> <br /><h3>Explaination of usable tags:</h3></p>
 <hr style="border-width: 5px;"><br />
@@ -56,7 +59,7 @@ tag.</p>
 planet tag defines a moon of the outer planet.  The planet tag can have the attribute "name".  The name attribute specifies the
 name of the planet.  If the name attribute is not present then the planet is automatically named "Sol-planet_id".</p>  
 
-<p>The "numPlanet" attribute defines how many random (non-user specified) rocky planets should be defined in the solar systems, if not specified then
+<p>The "numPlanet" attribute defines how many random (extra planets that are randomly generated in addition to planets specified with the planet tag) rocky planets should be defined in the solar systems, if not specified then
 AR will default to six.  The "numGasGiants" attribute defines how many gas giants are created in the solar system.</p>
 
 <p>Example usage; generates one random planet and one planet with manually specified properties named "Earth" with a moon
@@ -78,6 +81,34 @@ named "Luna" and another manually specified planet "Mars"</p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
 &#60;/galaxy&#62;<br />
+</div></code></div>
+
+<br /><hr>
+
+<a name="isKnown"></a>
+<center><h3>Is Known</h3></center>
+
+<p>The "isKnown" tag determines whether or not a planet is visible to the player without being researched in the warp controller.  
+If the tag is not present the default is false.  This tag as no effect on moons, if the parent planet is visible the moons are also visible.</p>  
+
+<div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
+<code>
+<div style="width:1200px">
+&#60;galaxy&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1" numGasGiants="0"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Luna"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Mars"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;isKnown&#62;True&#60;/isKnown&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
+&#60;/galaxy&#62;<br />
+
 </div></code></div>
 
 <br /><hr>
@@ -180,7 +211,7 @@ Hex color can also be specified by prepending the code with "0x".</p>
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;fogColor&#62;0x7FFFFFF&#60;/fogColor&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;skyColor&#62;0x7FFFFFF&#60;/skyColor&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
@@ -446,7 +477,74 @@ must be accompanied by a DIMID tag!!!</p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
 &#60;/galaxy&#62;<br />
-</div></code></div>';
+</div></code></div>
+
+<br /><hr>
+
+<a name="customIcon"></a>
+<center><h3>Custom Icon (1.0.16+/1.1.5+)</h3></center>
+<p>The "customIcon" attribute allows a user to specify the icon used for a planet.  Currently only planet icons that come with Advanced Rocketry can be used</p>
+
+<table>
+    <tr> <th>Name</th> 
+         <th>1.0.x</th>
+         <th>1.1.x+</th> 
+    </tr>
+    <tr>
+        <td>EarthLike</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/Earthlike.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/Earthlike.png?raw=true"></td>
+    </tr>
+    <tr>
+        <td>GasGiantBlue</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/GasGiantBlue.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/GasGiantBlue.png?raw=true"></td>
+    </tr>
+    <tr>
+        <td>GasGiantRed</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/GasGiantOrange.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/GasGiantOrange.png?raw=true"></td>
+    </tr>
+    <tr>
+        <td>IceWorld</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/IceWorld.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/IceWorld.png?raw=true"></td>
+    </tr>
+    <tr>
+        <td>Lava</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/Lava.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/Lava.png?raw=true"></td>
+    </tr>
+    <tr>
+        <td>WaterWorld</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/WaterWorld.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/WaterWorld.png?raw=true"></td>
+    </tr>
+    <tr>
+        <td>MarsLike</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/marslike.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/marslike.png?raw=true"></td>
+    </tr>
+    <tr>
+        <td>moon</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/moon.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/moon.png?raw=true"></td>
+    </tr>
+</table>
+
+<p>Example usage; Makes the overworld have the texture of a red gas giant</p>
+<div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
+<code>
+<div style="width:1200px">
+&#60;galaxy&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Overworld" DIMID="0" dimMapping="" customIcon="gasgiantred"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
+&#60;/galaxy&#62;<br />
+</div></code></div>
+';
     
     $infoBarContent = ' Index of Advanced Rocketry Items';
     include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');

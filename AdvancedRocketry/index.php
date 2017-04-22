@@ -15,11 +15,51 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <hr>
 <h2>What\'s New?</h2>
 <h3>For Changlog for the 1.1.x builds, see <a href="./alphachangelog.php">here</a>.</h3>
+<h3>1.0.18</h3>
+<ul>
+<li>[1.7.10] fix stations not being able to be built</li>
+</ul>
+<h3>1.0.17</h3>
+<ul>
+<li>fix rocket engines in the automated vehicle assembler facing the wrong way when built along N/S</li>
+<li>Add config for terraformer fluid consumption rate</li>
+<li>Fix planets becoming gas giants if they have a planet ID higher than 255</li>
+<li>Force stations orbit nonexistant planets to move to overworld upon startup</li>
+<li>Fix rocket thrust configuration not affecting rocket acceleration</li>
+<li>Fix CME with pressurized tanks</li>
+<li>[1.7.10] pressurized tanks actually can recieve fluid from AR pipes apparently BC and several other mods do not actually run canFill checks</li>
+<li>[libvulpes] Massive speed increases for the atmosphere calculation algorithm
+</ul>
+<h3>1.0.16</h3>
+<ul>
+<li>Fix rocket duplication... again</li>
+<li>Added config options for geode generation</li>
+<li>Fix planets with moons always using the first star as its host</li>
+<li>Fix temperature not being set right on planets loaded from XML</li>
+<li>Add XML for small plate presser</li>
+<li>Fix ore scanner not being able to scan for diamonds or emeralds</li>
+<li>Ore scanner displays player location</li>
+<li>Planet icons can now be set via the <a href="config/AdvancedPlanetConfiguration.php#customIcon">customIcon</a> tag</li>
+</ul>
+<h3>1.0.15</h3>
+<ul>
+<li>Fix dupe bug with missions</li>
+<li>Fix crash with gas mining missions</li>
+<li>[1.10.2][ Libvulpes ] Fix Creative battery not outputting to neighboring tiles</li>
+<li>[1.7.10] Fix crash when trying to assemble on a pad with nothing there</li>
+</ul>
 <h3>1.0.14</h3>
 <ul>
+<li>I\'ve actually now forgotten what else has been fixed.. sorry</li>
+<li>Added the <a href="Commands.php">givestation</a> command</li>
+<li>Add missing recipe for the railgun</li>
+<li>Fix crash if a chip programmed with the id of an oremapping satellite is placed in the satellite monitoring station</li>
 <li>Fix Class not found exception on server when using the orbital laser drill</li>
+<li>Fix CME with rocket/mining drill return</li>
+<li>[MC 1.10.2] Fix researching distance consuming mass data in the ABDP</li>
 <li>[MC 1.10.2] Fix lightwood leaves dropping oak saplings instead of lightwood saplings</li>
 <li>[MC 1.10.2] Fix quartz cruicible not showing up in creative menu</li>
+<li>[MC 1.10.2] Fix render offset for the prescision assembler</li>
 </ul>
 <h3>1.0.13</h3>
 <ul>

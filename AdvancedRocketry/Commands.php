@@ -4,7 +4,9 @@
     $mainContent = '<h1>'.$title.'</h1><hr><p>List of commands provided by Advanced Rocketry as of 0.8.1 unless otherwise specified:</p>
     <p>
     <ul>
-    <li><b>/advancedRocketry help</b>: Prints a list of commands.</li>
+    <li><b>/advancedRocketry help</b>: Prints a list of commands. (non functional?)</li>
+    <li><b>/advancedRocketry filldata [datatype] [amountFill]</b>: If the player is holding an item capable of handling all the datatypes the datatype specified is set to contain amountFill data.  If amountFill is not specified then then the item is completely filled with that data type.  If no datatype is specified then all datatypes are completely filled.</li>
+    <li><b>/advancedRocketry givestation [stationID]</b>: Give the player a station id chip with destination of stationID.</li>
     <li><b>/advancedRocketry goto [dimid]</b>: Teleports the player executing the command to the given dimension at the same coordinates (It may stick you in a wall!!!).
     <li><b>/advancedRocketry goto station [stationId]</b>: Teleports the player executing the command to the spawn point of the station passed in the command.
     <li><b>/advancedRocketry fetch [playerName]</b>: Brings the specified player to your current coordinates and dimension.

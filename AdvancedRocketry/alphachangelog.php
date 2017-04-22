@@ -14,8 +14,22 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
+<h3>1.1.7</h3>
+<ul>
+<li>fix moon being missing with default setup</li>
+</ul>
+<h3>1.1.6</h3>
+<ul>
+<li>fixes from 1.0.17</li>
+<li>Fix some of the coils not speeding up of the arc furnace properly</li>
+</ul>
+<h3>1.1.4</h3>
+<ul>
+<li>Fix crash when starting world with gravity generator disabled</li>
+</ul>
 <h3>1.1.3</h3>
 <ul>
+<li>Stable build features from 1.0.14</li>
 <li>If using the custom planet XML earth must now be <a href="config/AdvancedPlanetConfiguration.php#dimMapping">dimmapped</a> to planet ID 0</li>
 <li>Fixed not being able to put data into the Observatory</li>
 <li>/advRocketry reloadRecipes command added to reload recipes from XML ingame</li>

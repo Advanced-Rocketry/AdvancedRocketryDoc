@@ -15,6 +15,19 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <hr>
 <h2>What\'s New?</h2>
 <h3>For Changlog for the 1.1.x builds, see <a href="./alphachangelog.php">here</a>.</h3>
+<h3>1.0.19</h3>
+<ul>
+<li>Fix jetpack overriding flight from items from other mods if both are worn at the same time</li>
+<li>Fix handling for GC gravity if GC moon is not registered to AR</li>
+<li>Add seperate sound for lathe</li>
+<li>Jackhammer can now break blocks properly</li>
+<li><a href="items/pressureTank.php">pressure tanks</a> can no longer stack</li>
+<li>Yet another attempt to prevent machines from stopping when placed across chunk boundries</li>
+<li>Fix error with breaking a single pipe breaking the entire network</li>
+<li>modified hatch recipes</li>
+<li>[1.10.2] [Libvulpes] fix machines unloading if straddling chunks</li>
+<li>[1.7.10] Fix NEI handling for fluids</li>
+</ul>
 <h3>1.0.18</h3>
 <ul>
 <li>[1.7.10] fix stations not being able to be built</li>
@@ -28,6 +41,7 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <li>Fix rocket thrust configuration not affecting rocket acceleration</li>
 <li>Fix CME with pressurized tanks</li>
 <li>[1.7.10] pressurized tanks actually can recieve fluid from AR pipes apparently BC and several other mods do not actually run canFill checks</li>
+<li>Fix issue with O2 system where metachanges outside the sealed area can cause nearby areas to unseal</li>
 <li>[libvulpes] Massive speed increases for the atmosphere calculation algorithm
 </ul>
 <h3>1.0.16</h3>

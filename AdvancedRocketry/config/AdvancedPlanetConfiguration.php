@@ -11,6 +11,7 @@
     <li><a href="#isKnown">isKnown</a></li>
     <li><a href="#rings">Rings</a></li>
     <li><a href="#gasGiant">Gas Giant</a></li>
+    <li><a href="#gas">Gas</a></li>
     <li><a href="#fogColor">Fog Color</a></li>
     <li><a href="#skyColor">Sky Color</a></li>
     <li><a href="#atmDensity">Atmosphere Density</a></li>
@@ -24,15 +25,16 @@
     <li><a href="#dimId">Dim ID</a></li>
     <li><a href="#dimMapping">Dim mapping</a></li>
     <li><a href="#customIcon">Custom Icon</a></li>
+    <li><a href="#artifact">Artifact</a></li>
     </ol>
 </div>
 <p>Welcome to the Advanced Rocketry(AR) advanced configuration readme!</p>
-
-<p>This document will guide you through manually or semi-manually defining planets for your world!</p>
-
 <p>To use manual xml planet configuration, download and modify <a href="https://github.com/zmaster587/AdvancedRocketry/blob/master/Template.xml">this template</a> and rename it to "planetDefs.xml" in the config/advancedRocketry folder.</p>
-<p><b>IMPORTANT:</b> As of Advanced Rocketry 1.1.3 the overworld is no longer added to the solar system automatically.  Instead the overworld must now be <a href="#dimMapping">dimmapped</a> to a star.  This was done to allow for more flexibilty (ability to rename overworld, not require luna, etc).</p></div>
+<p>This document will guide you through manually or semi-manually defining planets for your world using the planetDefs.xml file.  This file can be located in either the "config/advRocketry" folder or in the "[path to world]/advRocketry" folder.</p>
+<p>Advanced Rocketry will prioritize loading the version in the world folder to allow for each world to have its own configuration.  If the world is being created for the first time then the file in "config/advRocketry/planetDefs.xml" is copied to "[path to world]/advRocketry/planetDefs.xml" automatically.</p>
 
+<p><b>IMPORTANT:</b> As of Advanced Rocketry 1.1.3 the overworld is no longer added to the solar system automatically.  Instead the overworld must now be <a href="#dimMapping">dimmapped</a> to a star.  This was done to allow for more flexibilty (ability to rename overworld, not require luna, etc).</p></div>
+<p><b>IMPORTANT:</b>As of Advanced Rocketry 0.2.0, the [path to world]/advRocketry/planetDefs.xml file reflects current state of the galaxy.  It is possible to modify this config and reload the server and see changes relfected in the world without using the resetFromXML config setting.</p>
 <p> <br /><h3>Explaination of usable tags:</h3></p>
 <hr style="border-width: 5px;"><br />
 <a name="basicSpec" ></a>
@@ -142,6 +144,29 @@ If the tag is not present the default is false.  This tag as no effect on moons,
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Jupiter"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;GasGiant&#62true&#60;/GasGiant&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
+&#60;/galaxy&#62;<br />
+</div></code></div>
+<br /><hr>
+
+<a name="gas"></a>
+<center><h3>Gas tag (1.2.0+)</h3></center>
+
+<p>The "gas" tag specifes a gas that is allowed to be mined from the planet.  
+This tag is only effective on <a href="#gasGiant">Gas Giant</a> planets.  Multiple copies of this tag per planet are allowed.
+The text inside the tag consists of a fluid name from Advanced Rocketry or another mod.</p>
+<p>Example usage; creates a planet named "Jupiter" and makes it a gas giant containing only oxygen and nitrogen</p>
+<div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
+<code>
+<div style="width:1200px">
+&#60;galaxy&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Jupiter"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;GasGiant&#62true&#60;/GasGiant&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;gas&#62nitrogen&#60;/gas&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;gas&#62oxygen&#60;/gas&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
@@ -343,7 +368,7 @@ For moons, this value has no effect on temperatures.</p>
 <br /><hr>
 <a name="orbitalPhi"></a>
 <center><h3>Orbital Phi</h3></center>
-<p>The "orbitalPhi" tag specifes the angle of the plane on which the planet rotates around the star or it\'s host planet, 90 will cause the planet or sun to rise and set in the north and south (the planet would orbit such that it would pass over both poles) whereas 0 with be the normal procession (like orbit over the equator)</p>
+<p>The "orbitalPhi" tag specifes the angle of the plane on which the planet rotates around the star or it\'s host planet, 90 will cause the planet or sun to rise and set in the north and south (the planet would orbit such that it would pass over both poles) whereas 0 would cause the sun to rise in the east and set in the west</p>
 
 <ul>
 <li>Max: 360  </li>
@@ -351,14 +376,14 @@ For moons, this value has no effect on temperatures.</p>
 <li>Min: 0    </li>
 </ul>
 
-<p>Example usage; specifes a planet to start exactly opposite the sun from Earth</p>
+<p>Example usage; sun rises in the north and sets in the south</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
 <div style="width:1200px">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;orbitalPhi&#62;180&#60;/orbitalPhi&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;orbitalPhi&#62;90&#60;/orbitalPhi&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
@@ -541,6 +566,30 @@ must be accompanied by a DIMID tag!!!</p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Overworld" DIMID="0" dimMapping="" customIcon="gasgiantred"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
+&#60;/galaxy&#62;<br />
+</div></code></div>
+
+<br /><hr>
+
+<a name="artifact"></a>
+<center><h3>Artifact (0.1.8+)</h3></center>
+<p>The "artifact" attribute allows a user to specify an item requirement for travelling to the planet.  The artifacts must all be in the <a href="">warp controller</a> every time the user wishes to warp to that planet.  Also if the "planetsMustBeDiscovered" is set to true
+then in order for the planet to be discovered in the <a href="">warp controller</a> the specifed artifacts must be placed in the machine.</p>
+<p>Each item can be specifed by &#60;modname&#62;:&#60;blockname&#62; &#60;meta&#62;</p>
+
+<p>Example usage; Makes a planet by the of "CoalLand" require charcoal (coal with meta 1) in the warp controller to warp to in a warpship</p>
+<div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
+<code>
+<div style="width:1200px">
+&#60;galaxy&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="CoalLand"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;artifact&#62;minecraft:coal 1&#60;/artifact&#62;</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
 &#60;/galaxy&#62;<br />
 </div></code></div>

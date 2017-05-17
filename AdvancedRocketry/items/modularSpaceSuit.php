@@ -38,6 +38,10 @@
     <td id="foggles"><img  width=16px align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/items/itemUpgrade4.png"/>Anti-Fog Visor</td>
     <td>If equipped in the spacesuit, it will allow you to easily see through the fog on high pressure planets.</td>
     </tr>
+    <tr>
+    <td id="foggles"><img  width=16px align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/items/beaconFinder.png"/>Beacon Finder</td>
+    <td>If equipped in the spacesuit, it will display arrows at the top of the screen pointing to active <a href="../blocks/Beacon.php">beacons</a> on the same planet.</td>
+    </tr>
     </table>
     
     <br><br>

@@ -2,7 +2,7 @@
     $title = 'Observatory';
     
     $mainContent = '<h1>'.$title.'</h1><hr><img align="left" src="../img/observatory_demo.jpg" /><p><center><h3>Overview</h3></center>
-    The Observatory is a large multiblock structure that is capable of peering out into the cosmos and pinpoint distant asteroid that may contain valuble materials.  It\'s primary function is to locate these distant objects.</p>
+    The Observatory is a large multiblock structure that is capable of peering out into the cosmos and pinpoint distant asteroid that may contain valuble materials.  It\'s primary function is to locate these distant objects and program their coordinates into asteroid chips.</p>
     <p>In order for the Obervatory to function, the structure must have at least one data bus with at least 100 distance data.  The Observatory must also be in a dark place with a clear view of the sky.</p>
     <br><br><p>The Obervatory also has a maximum observable distance which is a hard requirement for detecting certain kinds of asteroids (see configuring asteroid types <a href="../config/AsteroidConfiguration.php">here</a>).  The maximum observable distance is determined by the type of <a href="Motors.php">motor</a> and glass used in construction of the multiblock structure.  Higher teir motors provide greater observable distances.  Exchanging the glass for lens blocks also increases the maximum observable distance.</p>
     <hr>

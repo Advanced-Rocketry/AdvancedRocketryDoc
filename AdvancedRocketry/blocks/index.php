@@ -7,6 +7,7 @@
 <ul>
 <li><img class="icon" src="../img/abdp_icon.png"> <a href="Abdp.php">Astrobody Data Proccessor</a></li>
 <li><img class="icon" src="../img/beacon_icon.png"> <a href="Beacon.php">Beacon</a></li>
+<li><img class="icon" src="../img/biomeScanner_icon.png"> <a href="BiomeScanner.php">Biome Scanner</a></li>
 <li><img class="icon" src="../img/energyCable_icon.png"> <a href="Cables.php">Cable and pipes</a></li>
 <li><img class="icon" src="../img/oxygenScrubber_icon.png"> <a href="OxygenScrubber.php">CO2 Scrubber</a></li>
 <li><img class="icon" src="../img/coil_icon.png"> <a href="Coils.php">Coils</a></li>

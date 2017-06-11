@@ -14,6 +14,32 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
+<h3>1.2.2</h3>
+<li>Fix incorrect handling of recipes with multiple outputs in machines</li>
+<li>Fix rocket unloaders not working</li>
+<li>Number of machine blocks per recipe 4 => 16</li>
+<li>Removed circuit from IO board recipes in the prescision assembler so the recipes are actually useful</li>
+<li>Dropped tanks now retain fluid</li>
+<li>JEI now moves out of the way</li>
+<li>AR will now respect the initial spawn dimension setting in JED</li>
+<li>Fixed bug where having only one of each item in the station builder caused it to eat the items and not do anything</li>
+<h3>1.2.1</h3>
+<ul>
+<li>Satellites chassis must be crafted before building in a satellite builder</li>
+<li>Satellites can be retrieved from orbit by placing a satellite chip into a guidance computer on a rocket with an empty satellite bay</li>
+<li>Possible crash with Terraformer fixed</li>
+<li>cleaned up space elevator behavior a bit</li>
+<li>added time multipler option for asteroids</li>
+<li>added config option for extinguished torches to drop extinguished torches rather than vanilla torches</li>
+<li>Gas mining ships will now function even with low view distance</li>
+<li>[1.11.2/1.10.2]Fix impossible amount of energy required for space elevators</li>
+<li>[1.11.2] Pipes visually connect</li>
+<li>[1.11.2] Fix Observatory not being able to program chips</li>
+<li>[1.11.2] Fix Beds not being usable on planets</li>
+<li>[1.11.2] Fix Orbital laser causing crash on rightclick</li>
+<li>[1.11.2] Fix clientside only calls upon orbit being reached causing crashes in some instances</li>
+<li>[1.7.10] Fix missing motor names in en_US</li>
+</ul>
 <h3>1.2.0</h3>
 <ul>
 <li>Advanced Rocketry now looks for the planet config as "<world dir>/advRocketry/planetDefs.xml" before checking the config folder.  This allows for each save to have its own config</li>

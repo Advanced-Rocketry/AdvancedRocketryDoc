@@ -1,5 +1,5 @@
 <?php
-    $title = 'Getting to Space Guide';
+    $title = 'Guide: Getting to Space';
     
     $mainContent = '<h1>'.$title.'</h1>
     
@@ -30,7 +30,7 @@
     <hr>
     <a name="steel"></a>
     <img align="left" src="../img/blastFurnace_demo.jpg" /><center><h2>Making Steel and Titanium</h2></center>
-    <p>Steel is another important ingredient in Advanced Rocketry recipes and must be made in the <a href="../blocks/ElectricArcFurnace">Electric Arc Furnance</a> supplied with power in the plugs and an iron ingot and coal in the <a href="../blocks/Hatches.php">input hatch(s)</a>.</p>
+    <p>Steel is another important ingredient in Advanced Rocketry recipes and must be made in the <a href="../blocks/ElectricArcFurnace.php">Electric Arc Furnance</a> supplied with power in the plugs and an iron ingot and coal in the <a href="../blocks/Hatches.php">input hatch(s)</a>.</p>
     <p><i>It is recommended you start early with this step as it takes a long time to make steel!</i></p>
     <br><p>Titanium is another material that can be made using the Electric Arc Furnace and will be required later.</p>
     <hr>

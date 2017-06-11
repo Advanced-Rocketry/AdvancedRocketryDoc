@@ -15,6 +15,13 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <hr>
 <h2>What\'s New?</h2>
 <h3>For Changlog for the 1.1.x builds, see <a href="./alphachangelog.php">here</a>.</h3>
+<h3>1.0.20</h3>
+<ul>
+<li>Update Terraformer UI</li>
+<li>Rocket assembling machine now displays build complete on a successful build</li>
+<li>Station assembling machines no longer consumes items when structure is invalid and build is pressed</li>
+<li>[1.10.2/1.11.2]FluidStacks display in JEI</li>
+</ul>
 <h3>1.0.19</h3>
 <ul>
 <li>Fix jetpack overriding flight from items from other mods if both are worn at the same time</li>

@@ -11,6 +11,7 @@
 <li><img class="icon" src="../img/energyCable_icon.png"> <a href="Cables.php">Cable and pipes</a></li>
 <li><img class="icon" src="../img/oxygenScrubber_icon.png"> <a href="OxygenScrubber.php">CO2 Scrubber</a></li>
 <li><img class="icon" src="../img/coil_icon.png"> <a href="Coils.php">Coils</a></li>
+<li><img class="icon" src="../img/electricArcFurnace_icon.png"> <a href="ElectricArcFurnace.php">Electric Arc Furnace</a></li>
 <li><img class="icon" src="../img/forceField_icon.png"> <a href="ForceField.php">Force Field Projector</a></li>
 <li><img class="icon" src="../img/fuelTank_icon.png"> <a href="FuelTank.php">Fuel Tank</a></li>
 <li><img class="icon" src="../img/fuellingStation_icon.png"> <a href="FuellingStation.php">Fuelling Station</a></li>

@@ -19,6 +19,7 @@
     <li><b>richness</b> - The ratio of the ore to rock content of the asteroid, 1.0 would make the asteroid 100% ore.</li>
     <li><b>richnessVariability</b> - The range of uncertainty of the ratio of ore to stone.</li>
     <li><b>probability</b> - The probability relative to other asteroids of showing up in the list during gameplay.  Note that the probabilities are normallized so sums of probabilities greater than 1 are allowed.</li>
+    <li><b>timeMultiplier</b> - The multiplier on the amount of time requires to mine an asteroid.</li>
     </ul></p>
     <p>
     The only tags allowed inside the asteroid specification are "ore" tags.  The ore tags contain an "itemstack" and "chance" field.  The "itemstack" field should contain the unlocaillized name of a block or item optionally followed by a space and meta value.  The "chance" field should contain an integer and its purpose is to specify the chances of that particular stack being mined compared to other stacks in the asteroid.  Most asteroids should contain a healthy mix of all the stacks specified.

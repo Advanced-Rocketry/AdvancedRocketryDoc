@@ -3,7 +3,7 @@
     
     $mainContent = '<h1 title="2Greggy4me">'.$title.'</h1><hr><h2><center>Overview</center></h2>
     <img align="left" src="../img/terraformer_demo.jpg" />
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;The terraformer can increase and decrease the atmosphere pressure on an entire planet planet.</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;The terraformer can increase and decrease the atmosphere pressure on an entire planet planet by using connected <a href="../items/biomeChanger.php">Biome changing remote</a>.</p>
     <p>The Terraformer requires 40 mb/t of nitrogen and oxygen and 1000RF/t for the duration of the terraforming process.</p>
     <p>The Terraformer takes about an 15 minutes (configurable) to raise/lower the atmosphere by 0.01%</p>
     <br>

@@ -15,6 +15,7 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <hr>
 <h2>What\'s New?</h2>
 <h3>1.2.2</h3>
+<ul>
 <li>Fix incorrect handling of recipes with multiple outputs in machines</li>
 <li>Fix rocket unloaders not working</li>
 <li>Number of machine blocks per recipe 4 => 16</li>
@@ -23,6 +24,14 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <li>JEI now moves out of the way</li>
 <li>AR will now respect the initial spawn dimension setting in JED</li>
 <li>Fixed bug where having only one of each item in the station builder caused it to eat the items and not do anything</li>
+<li>Fix issue where docking pad does not show up in rocket UI if it is unnamed and the server has not restarted after placement</li>
+<li>Fixed placeholder in satellite builder UI</li>
+<li>Fixed moons not showing up in list in planet selection UIs</li>
+<li>Clicking planets to zoom in no longer resets selection to earth</li>
+<li>Fix lathe integration</li>
+<li>[1.7.10 Libvulpes] Creative battery backported</li>
+<li>[Libvulpes] added UI bounds getter</li>
+</ul>
 <h3>1.2.1</h3>
 <ul>
 <li>Satellites chassis must be crafted before building in a satellite builder</li>

@@ -11,7 +11,7 @@
     <li><b>/advancedRocketry goto station [stationId]</b>: Teleports the player executing the command to the spawn point of the station passed in the command.
     <li><b>/advancedRocketry fetch [playerName]</b>: Brings the specified player to your current coordinates and dimension.
     <li><b>/advancedRocketry planet delete [dimid]</b>: Deletes the specified dimension and its moons, but does NOT delete the world files on disk.</li>
-    <li><b>/advancedRocketry planet generate [starId] [name] [atmosphere randomness] [distance Randomness] [gravity randomness] (atmosphere base) (distance base) (gravity base)</b>: Creates a planet with the specified name and properties as follows: atmosphere = atmosphere base +/- atmosphere randomness, distance = distance base +/- distance randomness, gravity = gravity base +/- gravity randomness.  If no base is specified than overworld-like base is used.x</li>
+    <li><b>/advancedRocketry planet generate [starId] [name] [atmosphere randomness] [distance Randomness] [gravity randomness] (atmosphere base) (distance base) (gravity base)</b>: Creates a planet with the specified name and properties as follows: atmosphere = atmosphere base +/- atmosphere randomness, distance = distance base +/- distance randomness, gravity = gravity base +/- gravity randomness.  If no base is specified than overworld-like base is used.  For starId see "/advancedRocketry star list"</li>
     <li><b>/advancedRocketry planet generate [starId] gas [name] [atmosphere randomness] [distance Randomness] [gravity randomness] (atmosphere base) (distance base) (gravity base)</b>: Creates a Gas Giant with the specified properties.  Gas Giants cannot be landed on, but this may mean something in the future.</li>
     <li><b>/advancedRocketry planet generate [planetId] moon (gas) [name] [atmosphere randomness] [distance Randomness] [gravity randomness] (atmosphere base) (distance base) (gravity base)</b>: Creates a moon around the planet specified with the given properties.  By including gas after moon it is possible to generate a gas giant as a moon.</li>
     <li><b>/advancedRocketry planet list</b>: Lists the dimension names and their IDs to chat.</li>
@@ -36,7 +36,7 @@
         <li>pos [integer x] [integer y]: the coordinates of the star</li>
         </ul>
     <li><b>/advancedRocketry star get [star id] [property]</b>: returns the specified property, same properties as set, but with the additional "planets" property, which list planets orbiting said star</li>
-    <li><b>/advancedRocketry star list</b>: lists existing stars</li>
+    <li><b>/advancedRocketry star list</b>: lists existing stars\' ids, names, and number of planets</li>
     </ul>
     </p>';
     

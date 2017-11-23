@@ -14,6 +14,15 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
+<h3>1.2.3</h3>
+<ul>
+<li>Fix satellites not working on moons</li>
+<li>Structure tower recipe now makes 8</li>
+<li>[1.10.2/1.11.2]fix bounding box on cables</li>
+<li>[LibVulpes] Fixed machines dissassembling again</li>
+<li>[LibVulpes] Fix IC2 handling unloading at the wrong time</li>
+<li>[1.11.2] Fix crashing with creative menu in the advanced rocketry tab</li>
+</ul>
 <h3>1.2.2</h3>
 <ul>
 <li>Fix incorrect handling of recipes with multiple outputs in machines</li>

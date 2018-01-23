@@ -26,6 +26,7 @@
     <li><a href="#dimMapping">Dim mapping</a></li>
     <li><a href="#customIcon">Custom Icon</a></li>
     <li><a href="#artifact">Artifact</a></li>
+    <li><a href="#oceanBlock">OceanBlock</a></li>
     </ol>
 </div>
 <p>Welcome to the Advanced Rocketry(AR) advanced configuration readme!</p>
@@ -574,8 +575,8 @@ must be accompanied by a DIMID tag!!!</p>
 
 <a name="artifact"></a>
 <center><h3>Artifact (0.1.8+)</h3></center>
-<p>The "artifact" attribute allows a user to specify an item requirement for travelling to the planet.  The artifacts must all be in the <a href="">warp controller</a> every time the user wishes to warp to that planet.  Also if the "planetsMustBeDiscovered" is set to true
-then in order for the planet to be discovered in the <a href="">warp controller</a> the specifed artifacts must be placed in the machine.</p>
+<p>The "artifact" attribute allows a user to specify an item requirement for travelling to the planet.  The artifacts must all be in the <a href="/AdvancedRocketry/blocks/WarpController.php">warp controller</a> every time the user wishes to warp to that planet.  Also if the "planetsMustBeDiscovered" is set to true
+then in order for the planet to be discovered in the <a href="/AdvancedRocketry/blocks/WarpController.php">warp controller</a> the specifed artifacts must be placed in the machine.</p>
 <p>Each item can be specifed by &#60;modname&#62;:&#60;blockname&#62; &#60;meta&#62;</p>
 
 <p>Example usage; Makes a planet by the of "CoalLand" require charcoal (coal with meta 1) in the warp controller to warp to in a warpship</p>
@@ -587,6 +588,28 @@ then in order for the planet to be discovered in the <a href="">warp controller<
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="CoalLand"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;artifact&#62;minecraft:coal 1&#60;/artifact&#62;</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
+&#60;/galaxy&#62;<br />
+</div></code></div>
+
+<a name="oceanBlock"></a>
+<center><h3>Artifact (0.1.8+)</h3></center>
+<p>The "oceanBlock" attribute allows a user to specify a block in the game by any mod for a ocean full of that fluid or block.</p>
+<p><pfont=4>Do not do any block like a chest!</h2></p>
+<p style="font-size:30px">Do not do any block like a chest!</p>
+
+<p>Example usage; Makes a planet by the of "CoalLand" require charcoal (coal with meta 1) in the warp controller to warp to in a warpship</p>
+<div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
+<code>
+<div style="width:1200px">
+&#60;galaxy&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="CoalLand"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;oceanBlock&#62;thermalfoundation:fluid_pyrotheum&#60;/oceanBlock&#62;</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</br>

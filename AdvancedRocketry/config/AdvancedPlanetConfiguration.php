@@ -579,7 +579,7 @@ must be accompanied by a DIMID tag!!!</p>
 then in order for the planet to be discovered in the <a href="/AdvancedRocketry/blocks/WarpController.php">warp controller</a> the specifed artifacts must be placed in the machine.</p>
 <p>Each item can be specifed by &#60;modname&#62;:&#60;blockname&#62; &#60;meta&#62;</p>
 
-<p>Example usage; Makes a planet by the of "CoalLand" require charcoal (coal with meta 1) in the warp controller to warp to in a warpship</p>
+<p>Example usage: Makes a planet by the of "CoalLand" require charcoal (coal with meta 1) in the warp controller to warp to in a warpship</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
 <div style="width:1200px">
@@ -596,11 +596,11 @@ then in order for the planet to be discovered in the <a href="/AdvancedRocketry/
 </div></code></div>
 
 <a name="oceanBlock"></a>
-<center><h3>Artifact (0.1.8+)</h3></center>
-<p>The "oceanBlock" attribute allows a user to specify a block in the game by any mod for a ocean full of that fluid or block.</p>
-<p style="font-size:30px">Do not do any block like a chest!</p>
+<center><h3>OceanBlock (1.2.7+)</h3></center>
+<p>The "oceanBlock" attribute allows a user to specify a block that is used instead of water for an ocean on a given planet.</p>
+<p style="font-size:10px">Do not do any tile entity such as a chest or you may find the world unplayable!</p>
 
-<p>Example usage; Makes a planet by the of "CoalLand" require charcoal (coal with meta 1) in the warp controller to warp to in a warpship</p>
+<p>Example usage: creates a planet where the ocean is made of pyrotheum</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
 <div style="width:1200px">

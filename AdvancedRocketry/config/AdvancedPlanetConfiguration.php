@@ -598,7 +598,6 @@ then in order for the planet to be discovered in the <a href="/AdvancedRocketry/
 <a name="oceanBlock"></a>
 <center><h3>Artifact (0.1.8+)</h3></center>
 <p>The "oceanBlock" attribute allows a user to specify a block in the game by any mod for a ocean full of that fluid or block.</p>
-<p><pfont=4>Do not do any block like a chest!</h2></p>
 <p style="font-size:30px">Do not do any block like a chest!</p>
 
 <p>Example usage; Makes a planet by the of "CoalLand" require charcoal (coal with meta 1) in the warp controller to warp to in a warpship</p>

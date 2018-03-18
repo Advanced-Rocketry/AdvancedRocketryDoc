@@ -36,7 +36,7 @@
     <img align="left" width="256px" src="../img/stationBuildTutorial_1.png" />
     <p>
     Now that the construction pad is complete, it\'s time to actually build a space station!  Exactly what the station should look like is entirely up to you, though you should consider some things when building a station.</p>
-    <p>The first time you go to your new station the rocket will land in the center of the first module you send up, so it is advised that the structure either be a landing platform of some kind or have a landing platform on top.  It\'s possible to change where the rockets land later by placing <a href="../blocks/DockingPads.php">landing pads</a> on the station while in orbit.</p>
+    <p>The first time you go to your new station the rocket will land in the center of the first module you send up, so it is advised that the structure either be a landing platform of some kind or have a landing platform on top.  It\'s possible to change where the rockets land later by placing <a href="../blocks/LandingPad.php">docking pads</a> on the station while in orbit.</p>
     <p>
     Once you\'ve built your station on the construction platform, you must scan and build the station.  In order to build the station you must have a <a href="../blocks/SatelliteHatch.php">satellite bay</a> in the upper left slot of the station builder, and an unprogrammed station chip in the top right slot.</p>
     <p>It is important that the chip be unprogrammed because programmed chips change the behavior of the machine!  Running a scan first is advised because it will tell you if anything is wrong with your structure, but if you\'re confident, there is no reason you cannot build right away.</p>

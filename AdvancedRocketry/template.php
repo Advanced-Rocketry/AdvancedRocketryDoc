@@ -27,6 +27,7 @@
   <li><a href="/AdvancedRocketry/guides">Guides</a></li>
   <li><a href="/AdvancedRocketry/config">Configuration<br/>
   <li><a href="/AdvancedRocketry/Commands.php">Commands</a></li>
+  <li><a href="/AdvancedRocketry/misc">Misc</a></li>
 </ul>
 </div>
 <div id="content">

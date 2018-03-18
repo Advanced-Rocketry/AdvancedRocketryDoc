@@ -274,7 +274,7 @@ Min: 0</p>
 <br /><hr>
 <a name="gravMult"></a>
 <center><h3>Gravitational Multiplier</h3></center>
-<p>The "gravitationalMultiplier" tag specifes the density of the atmosphere on a planet.  100 is earthlike.  Any value less than 100
+<p>The "gravitationalMultiplier" tag specifes the density of the gravitational pull on a planet.  100 is earthlike.  Any value less than 100
 will result in a gravitational pull less than that of Earth.  Any value higher than 110 may result in players being UNABLE to jump
 up blocks without assistance from stairs.  Values very close to 0 ( &#60; 10) may result in players being unable to fall.
 YOU HAVE BEEN WARNED.</p>
@@ -512,48 +512,39 @@ must be accompanied by a DIMID tag!!!</p>
 
 <table>
     <tr> <th>Name</th> 
-         <th>1.0.x</th>
-         <th>1.1.x+</th> 
+         <th>Icon</th>
     </tr>
     <tr>
         <td>EarthLike</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/Earthlike.png?raw=true"></td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/Earthlike.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/Earthlike.png?raw=true"></td>
     </tr>
     <tr>
         <td>GasGiantBlue</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/GasGiantBlue.png?raw=true"></td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/GasGiantBlue.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/GasGiantBlue.png?raw=true"></td>
     </tr>
     <tr>
         <td>GasGiantRed</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/GasGiantOrange.png?raw=true"></td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/GasGiantOrange.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/GasGiantOrange.png?raw=true"></td>
     </tr>
     <tr>
         <td>IceWorld</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/IceWorld.png?raw=true"></td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/IceWorld.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/IceWorld.png?raw=true"></td>
     </tr>
-    <tr>
+    <!-- <tr>
         <td>Lava</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/Lava.png?raw=true"></td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/Lava.png?raw=true"></td>
-    </tr>
-    <tr>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/Lava.png?raw=true"></td>
+    </tr> -->
+    <!-- <tr>
         <td>WaterWorld</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/WaterWorld.png?raw=true"></td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/WaterWorld.png?raw=true"></td>
-    </tr>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/WaterWorld.png?raw=true"></td>
+    </tr> -->
     <tr>
         <td>MarsLike</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/marslike.png?raw=true"></td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/marslike.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/marslike.png?raw=true"></td>
     </tr>
     <tr>
         <td>moon</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/moon.png?raw=true"></td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/moon.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/moon.png?raw=true"></td>
     </tr>
 </table>
 

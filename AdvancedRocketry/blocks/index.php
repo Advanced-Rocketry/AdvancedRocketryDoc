@@ -45,6 +45,7 @@
 <li><img class="icon" src="../img/rocketAssemblingMachine_icon.png"> <a href="UnmannedVehicleAssembler.php">Unmanned Vehicle Assembler</a></li>
 <li><img class="icon" src="../img/warpController_icon.png"> <a href="WarpController.php">Warp Controller</a></li>
 <li><img class="icon" src="../img/warpCore_icon.png"> <a href="WarpCore.php">Warp Core</a></li>
+<li><img class="icon" src="../img/wirelessTransciever_icon.png"> <a href="WirelessTransciever.php">Wireless Transciever</a></li>
 </ul>';
     
     $infoBarContent = ' Index of Advanced Rocketry Blocks and Machines';

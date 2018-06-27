@@ -41,7 +41,7 @@
     Once you\'ve built your station on the construction platform, you must scan and build the station.  In order to build the station you must have a <a href="../blocks/SatelliteHatch.php">satellite bay</a> in the upper left slot of the station builder, and an unprogrammed station chip in the top right slot.</p>
     <p>It is important that the chip be unprogrammed because programmed chips change the behavior of the machine!  Running a scan first is advised because it will tell you if anything is wrong with your structure, but if you\'re confident, there is no reason you cannot build right away.</p>
     <p>
-    Once the station is finished building the station builder will produce a chip programmed with the ID of your station as well as a space station container.  The station chip is used to get to that particular station in a rocket.  It is highly recommended that a copy of the chip is made in the <a href="../blocks/SatelliteBuilder.php">satellite builder</a> ASAP!
+    Once the station is finished building the station builder will produce a chip programmed with the ID of your station as well as a space station container.  The station chip is used to get to that particular station in a rocket.  It is highly recommended that a copy of the chip is made in the <a href="../blocks/SatelliteAssemblingMachine.php">satellite builder</a> ASAP!
     </p>
     
     <hr>

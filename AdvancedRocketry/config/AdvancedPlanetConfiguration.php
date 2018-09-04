@@ -24,6 +24,7 @@
     <li><a href="#fillerBlock">Filler Block</a>
     <li><a href="#oceanBlock">Ocean Block</a></li>
     <li><a href="#seaLevel">Sea Level</a></li>
+    <li><a href="#spawnable">Spawnable</a></li>
     <li><a href="#biomeIds">Biome Ids</a></li>
     <li><a href="#dimId">Dim ID</a></li>
     <li><a href="#dimMapping">Dim mapping</a></li>
@@ -500,6 +501,33 @@ motion sickness inducing.</p>
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="WaterWorld"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;seaLevel&#62;128&#60;/seaLevel&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
+&#60;/galaxy&#62;<br />
+</div></code></div>
+
+<br /><hr>
+<a name="spawnable"></a>
+<center><h3>Spawnable</h3></center>
+
+<p>The "spawnable" tag tells Advanced Rocketry to attempt to spawn a provided entity on a given planet.  You can have more than one tag per planet.  The tag has an entity name as the inner data plus three attributes:</p>
+
+<ul>
+<li>weight: how likely it is to spawn compared to the others (default 100)</li>
+<li>groupMin: minimum number of entities to spawn in a cluster (default 1)</li>
+<li>groupMax: maximum number of entities to spawn in a cluster (default 1)</li>
+</ul>
+
+<p>Example usage; specifes a planet named Squidville and spawns villagers and sheep in the wild where each group contains between 1 and 5 members.</p>
+<div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
+<code>
+<div style="width:1200px">
+&#60;galaxy&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Squidville"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;spawnable weight="1" groupMin="1" groupMax="5"&#62;minecraft:villager&#60;/spawnable&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;spawnable weight="1" groupMin="1" groupMax="5"&#62;minecraft:sheep&#60;/spawnable&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />

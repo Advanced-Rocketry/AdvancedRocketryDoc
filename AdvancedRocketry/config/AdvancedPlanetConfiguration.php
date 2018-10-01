@@ -68,6 +68,8 @@ name of the planet.  If the name attribute is not present then the planet is aut
 <p>The "numPlanet" attribute defines how many random (extra planets that are randomly generated in addition to planets specified with the planet tag) rocky planets should be defined in the solar systems, if not specified then
 AR will default to six.  The "numGasGiants" attribute defines how many gas giants are created in the solar system.</p>
 
+<p>The "blackHole" attribute determines whether or not a star is a black hole or not.  Space stations can orbit black holes and use the Black Hole Generator to create power from items being thrown into the black hole</p>
+
 <p>Example usage; generates one random planet and one planet with manually specified properties named "Earth" with a moon
 named "Luna" and another manually specified planet "Mars"</p>
 
@@ -75,7 +77,7 @@ named "Luna" and another manually specified planet "Mars"</p>
 <code>
 <div style="width:1200px">
 &#60;galaxy&#62;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1" numGasGiants="0"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1" numGasGiants="0" blackHole="false"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Luna"&#62;<br />

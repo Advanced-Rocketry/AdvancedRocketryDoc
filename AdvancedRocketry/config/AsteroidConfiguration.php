@@ -14,10 +14,10 @@
     <li><b>name</b> - The name of the asteroid type.</li>
     <li><b>distance</b> - The minimum viewable distance the observatory must have to be able to discover this asteroid type.</li>
     <li><b>mass</b> - The total amount of blocks that can be harvested from this asteroid.</li>
-    <li><b>massVariability</b> - The range of uncertainty of the number of blocks in an asteroid. (number = mass +/- massVariability).</li>
+    <li><b>massVariability</b> - The range of uncertainty of the number of blocks in an asteroid (must be between 0 and 1). (number = mass +/- 0.5*mass*massVariability)</li>
     <li><b>minLevel</b> - unused, to be removed.</li>
     <li><b>richness</b> - The ratio of the ore to rock content of the asteroid, 1.0 would make the asteroid 100% ore.</li>
-    <li><b>richnessVariability</b> - The range of uncertainty of the ratio of ore to stone.</li>
+    <li><b>richnessVariability</b> - The range of uncertainty of the ratio of ore to stone (must be between 0 and 1).</li>
     <li><b>probability</b> - The probability relative to other asteroids of showing up in the list during gameplay.  Note that the probabilities are normallized so sums of probabilities greater than 1 are allowed.</li>
     <li><b>timeMultiplier</b> - The multiplier on the amount of time requires to mine an asteroid.</li>
     </ul></p>

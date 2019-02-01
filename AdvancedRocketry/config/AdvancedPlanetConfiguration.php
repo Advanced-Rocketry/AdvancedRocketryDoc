@@ -1,12 +1,13 @@
 <?php
-    $title = 'Advanced Rocketry Ore Configuration';
+    $title = 'Advanced Rocketry Planet Configuration';
     
-    $mainContent = '<center><h2>Advanced Rocketry Ore Configuration</h2></center>
+    $mainContent = '<center><h2>Advanced Rocketry Planet Configuration</h2></center>
 
 <div style="display: inline-block"><div align=left style="float: left; margin-right:30px; width:250px; border-width: 1px; border-style: dashed; padding: 15px; padding-top: 0px; padding-bottom: 0px; background-color: #DDD;">
     <h3>Table of Contents:</h3>
     <ol style="padding-left:15px;">
     <li><a href="#basicSpec">Basic Specification</a></li>
+    <li><a href="#starSpec">Binary Star Specification</a></li>
     <li><a href="#planetSpec">Planet Specification</a></li>
     <li><a href="#isKnown">isKnown</a></li>
     <li><a href="#rings">Rings</a></li>
@@ -55,6 +56,27 @@ tag.</p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
 &#60;/galaxy&#62;</div></code></div>
+
+<br /><hr>
+
+<a name="starSpec" ></a>
+<center><h3>Binary Star Specification</h3></center>
+<p>In addition to having single star systems, Advanced rocketry allows Binary, Trinary, and even n-body star systems (As many stars as you want!).  It is much like defining a <a href="#basicSpec">normal star</a> except there\'s a slightly different set of tags.  Namely the \'x\', \'y\', \'numPlanets\', and \'numGasGiants\' tags are absent.  Additionally, there is a new \'seperation\' tag.  The \'speration\' tag determines how far from the host star the sister star is located in solar radii.</p>
+<p>Unlike the top level star tag, when defining a binary or trinary system, the star tag must go inside the top level star tag immediately before the planet tags.  The name tag is currently unused.  Additionally, sister stars CAN be black holes.</p>
+
+<p>Example usage; generates a trinary star system with the planet Jole:</p>
+<div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
+<code>
+<div style="width:1200px">
+&#60;galaxy&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1" numGasGiants="0" blackHole="false"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol-2" temp="200" seperation=10.0 /&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Jole"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
+&#60;/galaxy&#62;<br />
+</div></code></div>
 
 <br /><hr>
 

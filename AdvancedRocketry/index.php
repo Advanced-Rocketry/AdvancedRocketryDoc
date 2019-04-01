@@ -13,27 +13,27 @@ can build rockets out of blocks to travel to these other worlds.<br />
 </p>
 <hr>
 <h2>What\'s New?</h2>
-<h3>1.4.x</h3>
-<ul>
+<a id="update-title" data-toggle="collapse" href="#update4x">1.4.x</a>
+<ul id="update4x" class="collapse">
 <li>\'Secret\' hidden in-testing terrain generation option added to <a href="config/AdvancedPlanetConfiguration.php">Advanced Planet config</a>.  As if nether terrain gen didn\'t lag bad enough</li>
 <li>Misc bugfixes</li>
 <li>More stuff I don\'t remember because it has been too long since I updated this page</li>
 </ul>
-<h3>1.3.x</h3>
-<ul>
+<a id="update-title" data-toggle="collapse" href="#update3x">1.3.x</a>
+<ul id="update3x" class="collapse">
 <li>Overworld can now be Terraformed if enabled in the config</li>
 <li>Sealevel, water block type added to the <a href="config/AdvancedPlanetConfiguration.php">Advanced Planet config</a>.</li>
 <li><a href="blocks/Cables.php">Pipes and Cables are being removed and replaced with <a href="blocks/WirelessTransciever.php">the wireless transciver</a></li>
 <li>Many more bugfixes</li>
 </ul>
-<h3>1.2.x</h3>
-<ul>
+<a id="update-title" data-toggle="collapse" href="#update2x">1.2.x</a>
+<ul id="update2x" class="collapse">
 <li>Oxygen vent has tracers so you can see where leaks occur</li>
 <li>So many bugfixes that I really need a nap</li>
 <li>There was that Halloween event that went horribly wrong... RIP 31/10/2017</li>
 </ul>
-<h3>1.2.3</h3>
-<ul>
+<a id="update-title" data-toggle="collapse" href="#update23">1.2.3</a>
+<ul id="update23" class="collapse">
 <li>Fix satellites not working on moons</li>
 <li>Structure tower recipe now makes 8</li>
 <li>[1.10.2/1.11.2]fix bounding box on cables</li>
@@ -41,8 +41,8 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <li>[LibVulpes] Fix IC2 handling unloading at the wrong time</li>
 <li>[1.11.2] Fix crashing with creative menu in the advanced rocketry tab</li>
 </ul>
-<h3>1.2.2</h3>
-<ul>
+<a id="update-title" data-toggle="collapse" href="#update22">1.2.2</a>
+<ul id="update22" class="collapse">
 <li>Fix incorrect handling of recipes with multiple outputs in machines</li>
 <li>Fix rocket unloaders not working</li>
 <li>Number of machine blocks per recipe 4 => 16</li>
@@ -59,8 +59,8 @@ can build rockets out of blocks to travel to these other worlds.<br />
 <li>[1.7.10 Libvulpes] Creative battery backported</li>
 <li>[Libvulpes] added UI bounds getter</li>
 </ul>
-<h3>1.2.1</h3>
-<ul>
+<a id="update-title" data-toggle="collapse" href="#update21">1.2.1</a>
+<ul id="update21" class="collapse">
 <li>Satellites chassis must be crafted before building in a satellite builder</li>
 <li>Satellites can be retrieved from orbit by placing a satellite chip into a guidance computer on a rocket with an empty satellite bay</li>
 <li>Possible crash with Terraformer fixed</li>

@@ -4,6 +4,14 @@
   <meta http-equiv="Content-Type" content="text/html;  charset=iso-8859-1" />
   <meta name="description" content="" />
   <meta name="keywords" content="" />
+  
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+
   <link rel="stylesheet" type="text/css" href="/AdvancedRocketry/style.css" media="all" />
 
 <!--[if lt IE 6]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if lt IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]-->
@@ -24,6 +32,7 @@
   <li><a href="/AdvancedRocketry">Home</a></li>
   <li><a href="/AdvancedRocketry/blocks">Blocks </a></li>
   <li><a href="/AdvancedRocketry/items">Items</a></li>
+  <li><a href="/AdvancedRocketry/machines">Machines</a></li>
   <li><a href="/AdvancedRocketry/guides">Guides</a></li>
   <li><a href="/AdvancedRocketry/config">Configuration<br/>
   <li><a href="/AdvancedRocketry/Commands.php">Commands</a></li>

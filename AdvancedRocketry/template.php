@@ -24,67 +24,74 @@
 </head>
 <body>
 <div id="container">
-<div id="header">
-<h1>Advanced Rocketry<br /></h1>
-</div>
-<div id="navigation">
-<ul class="menu">
-  <li><a href="/AdvancedRocketry">Home</a></li>
-  <li><a href="/AdvancedRocketry/blocks">Blocks </a></li>
-  <li><a href="/AdvancedRocketry/items">Items</a></li>
-  <li><a href="/AdvancedRocketry/guides">Guides</a></li>
-  <li><a href="/AdvancedRocketry/config">Configuration<br/>
-  <li><a href="/AdvancedRocketry/Commands.php">Commands</a></li>
-  <li><a href="/AdvancedRocketry/misc">Misc</a></li>
-</ul>
-</div>
-
-<div id="content">
-<!--- MAIN CONTENT -->
-  <div class="left">
-    <h1><?php echo $title; ?></h1><hr>
-    <center><h2>Overview</h2></center>
-    <img align="left" src="../img/<?php echo $imageDemoName ?>" />  
-    <?php echo $description1 ?><hr>
-    
-    <?php if (!empty($descriptionGUI)){?>
-
-      <center><h2>Usage</h2></center>
-      <img align="left" src="../img/<?php echo $imageGUI ?>"/>
-      <?php echo $descriptionGUI ?>
-    <?php } ?>
+  <div id="header">
+    <h1>Advanced Rocketry<br /></h1>
   </div>
-
-<!--- SIDEBAR -->
-  <div class="right">
-    <img style="width: 100%;" alt="Advanced Rocketry Logo" src="/AdvancedRocketry/logo.png" /><hr />
-    <?php echo $title ?><hr>
-    <?php if (!empty($sidebarImage)){?>
-      <img src="../img/<?php echo $sidebarImage ?>" /><hr>
-    <?php } ?>
-    <?php if (!empty($hardness)){?>
-      Hardness: <?php echo $hardness ?><br>
-    <?php } ?>
-    <?php if (!empty($blastResistance)){?>
-      Blast Resistance: <?php echo $blastResistance ?><br>
-    <?php } ?>
-    <?php if (!empty($requiresTool)){?>
-      Requires Tool: <?php echo $requiresTool ?><br>
-    <?php } ?>
-    <?php if (!empty($fullBlock)){?>
-      full Block: <?php echo $fullBlock ?><br>
-    <?php } ?>
-    <?php if (!empty($sealable)){?>
-      Sealable: <?php echo $sealable ?><br>
-    <?php } ?>
-    <?php if (!empty($tileEntity)){?>
-      Tile Entity: <?php echo $tileEntity ?><br>
-    <?php } ?>
+  <div id="navigation">
+    <ul class="menu">
+      <li><a href="/AdvancedRocketry">Home</a></li>
+      <li><a href="/AdvancedRocketry/blocks">Blocks </a></li>
+      <li><a href="/AdvancedRocketry/items">Items</a></li>
+      <li><a href="/AdvancedRocketry/guides">Guides</a></li>
+      <li><a href="/AdvancedRocketry/config">Configuration<br/>
+      <li><a href="/AdvancedRocketry/Commands.php">Commands</a></li>
+      <li><a href="/AdvancedRocketry/misc">Misc</a></li>
+    </ul>
   </div>
-</div>
-<div id="footer">
-  <p></p> 
-</div>
+  <div id="content">
+    <div class="left">
+      <h1><?php echo $title; ?></h1><hr>
+      <center><h2>Overview</h2></center>
+      <?php if (!empty($imageDemoName)){?>
+        <img align="left" src="../img/<?php echo $imageDemoName ?>" />
+      <?php } ?>      
+      <?php echo $description1 ?><hr>
+      
+      <?php if (!empty($descriptionGUI)){?>
+
+        <center><h2>Usage</h2></center>
+        <?php if (!empty($imageGUI)){?>
+          <img align="left" src="../img/<?php echo $imageGUI ?>"/>
+      <?php } ?>
+        <?php echo $descriptionGUI ?>
+      <?php } ?>
+    </div>
+    <div class="right">
+      <img style="width: 100%;" alt="Advanced Rocketry Logo" src="/AdvancedRocketry/logo.png" /><hr />
+      <?php echo $title ?><hr>
+      <?php if (!empty($sidebarImage)){?>
+        <img src="../img/<?php echo $sidebarImage ?>" /><hr>
+      <?php } ?>
+      <?php if (!empty($hardness)||($hardness == 0)){?>
+        Hardness: <?php echo $hardness ?><br>
+      <?php } ?>
+      <?php if (!empty($blastResistance)||($blastResistance == 0)){?>
+        Blast Resistance: <?php echo $blastResistance ?><br>
+      <?php } ?>
+      <?php if (!empty($requiresTool)){?>
+        Requires Tool: <?php echo $requiresTool ?><br>
+      <?php } ?>
+      <?php if (!empty($fullBlock)){?>
+        Full Block: <?php echo $fullBlock ?><br>
+      <?php } ?>
+      <?php if (!empty($sealable)){?>
+        Sealable: <?php echo $sealable ?><br>
+      <?php } ?>
+      <?php if (!empty($tileEntity)){?>
+        Tile Entity: <?php echo $tileEntity ?><br>
+      <?php } ?>
+      <?php if (!empty($multiBlock)){?>
+        Multiblock: <?php echo $multiBlock ?><br>
+      <?php } ?>
+      <hr>
+      <?php if (!empty($other)){?>
+        <?php echo $other ?><br>
+      <?php } ?>
+    </div>
+  </div>
+  <div id="footer">
+    <p></p> 
+  </div>
 </div>
 </body>
 </html>

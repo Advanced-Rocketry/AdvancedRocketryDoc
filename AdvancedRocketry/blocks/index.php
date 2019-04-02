@@ -18,9 +18,10 @@
 <li><img class="icon" src="../img/gasChargePad_icon.png"> <a href="gasCharger.php">Gas Charger</a></li>
 <li><img class="icon" src="../img/gravityController_icon.png"> <a href="GravityController.php">Gravity Controller</a></li>
 <li><img class="icon" src="../img/guidanceComputer_icon.png"> <a href="GuidanceComputer.php">Guidance Computer</a></li>
-<li><img class="icon" src="../img/hatch_icon.png"> <a href="Hatches.php">Hatches and Loaders</a></li>
-<li><img class="icon" src="../img/dockingPad_icon.png"> <a href="LandingPad.php">Landing Pad</a></li>
+<li><img class="icon" src="../img/hatch_icon.png"> <a href="Hatches.php">Hatches</a></li>
+<li><img class="icon" src="../img/dockingPad_icon.png"> <a href="LandingPad.php">Docking Pad</a></li>
 <li><img class="icon" src="../img/launchPad_icon.png"> <a href="LaunchPad.php">Launch Pad</a></li>
+<li><img class="icon" src="../img/hatch_icon.png"> <a href="Loaders.php">Loaders and Unloaders</a></li>
 <li><img class="icon" src="../img/microwaveReciever_icon.png"> <a href="MicrowaveReciever.php">Microwave Reciever</a></li>
 <li><img class="icon" src="../img/motor_icon.png"> <a href="Motors.php">Motors</a></li>
 <li><img class="icon" src="../img/oxygenVent_icon.png"> <a href="Observatory.php">Observatory</a></li>
@@ -49,5 +50,5 @@
 </ul>';
     
     $infoBarContent = ' Index of Advanced Rocketry Blocks and Machines';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?>

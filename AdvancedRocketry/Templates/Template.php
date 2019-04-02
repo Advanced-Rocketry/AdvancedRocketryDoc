@@ -36,6 +36,8 @@
     $fullBlock = '';
     $sealable = '';
     $tileEntity = '';
+    $multiBlock = '';
+    $other ='';
 
     include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
 ?> 

@@ -18,5 +18,5 @@
     <p>A gas harvesting mission must be launched from a space station orbiting a gas giant.</p>';
     
     $infoBarContent = $title.'<hr>';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?> 

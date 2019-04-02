@@ -68,5 +68,5 @@ The "ore" tag specifies an entry for a type of ore to spawn.  This tag has the f
 &#60;/OreConfig></div></code></div>';
     
     $infoBarContent = ' Index of Advanced Rocketry Items';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?>

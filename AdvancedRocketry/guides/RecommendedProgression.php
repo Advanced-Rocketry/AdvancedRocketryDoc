@@ -90,5 +90,5 @@
     <script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>';
     
     $infoBarContent = $title.'<hr>';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?> 

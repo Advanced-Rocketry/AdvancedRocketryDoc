@@ -7,5 +7,5 @@
     <p>To program the linker, shift right click on the block you wish to link from.  To link with a programmed linker, shift right click on the destination block.  To clear the Linker, shift right click while not looking at anything.</p>';
     
     $infoBarContent = $title.'<hr><img height=128px style="image-rendering: -webkit-optimize-contrast; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: crisp-edges;" src="../img/items/linker.png" /><hr>Has NBT: Yes';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?> 

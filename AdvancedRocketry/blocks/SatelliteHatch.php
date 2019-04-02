@@ -17,36 +17,30 @@
     */    
     
     //NAME OF BLOCK
-    $title = '';
+    $title = 'Satellite Bay';
 
-    $imageDemoName = '';
+    $imageDemoName = 'satelliteHatch_demo.jpg';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>YOUR TEXT HERE</p>';
+    $description1 = '<p>The Satellite Bay is a special block for rockets that holds a satellite to be released upon reaching orbit.</p>
+    <p>This block can be placed anywhere on the rocket and can be accessed once built by crouching and right clicking the rocket.</p>
+    <p><h3>Future Plans:</h3></p>
+    <p>Require different Teirs for larger/heavier satellites</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';
     $descriptionGUI =''; 
     
-    $sidebarImage = '';
+    $sidebarImage = 'satelliteHatch_block.png';
 
-    $hardness = '';
-    $blastResistance = '';
-    $requiresTool = '';
-    $fullBlock = '';
-    $sealable = '';
-    $tileEntity = '';
+    $hardness = '3';
+    $blastResistance = '0';
+    $requiresTool = 'YES';
+    $fullBlock = 'YES';
+    $sealable = 'YES';
+    $tileEntity = 'YES';
+    $multiBlock = 'NO';
+    $other ='<b>Teir 1</b><br />Weight Capacity:<br>Unlimited<br />Maximum Size:<br> Unlimited';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
-?> 
-<?php
-    $title = 'Satellite Bay';
-    
-    $mainContent = '<h1>'.$title.'</h1><hr><img align="left" src="/AdvancedRocketry/img/satelliteHatch_demo.jpg" /><p>&nbsp;&nbsp;&nbsp;&nbsp; The Satellite Bay is a special block for rockets that holds a satellite to be released upon reaching orbit.</p>
-    <p>This block can be placed anywhere on the rocket and can be accessed once built by crouching and right clicking the rocket.</p>
-    <p><h3>Future Plans:</h3></p>
-    <p>Require different Teirs for larger/heavier satellites</p>';
-    
-    $infoBarContent = $title.'<hr><img src="/AdvancedRocketry/img/satelliteHatch_block.png" /><hr>Hardness: 3<br />Blast Resistance: 0<br />Requires Tool: Yes<br />Full Block: Yes<br />Sealable: Yes<br />Tile Entity: Yes<hr><center>Teir 1</center><br />Weight Capacity: Unlimited<br />Maximum Size: Unlimited';
     include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
 ?> 

@@ -14,5 +14,5 @@
     <p>Note: The satellite itself requires power storage and a power supply, the satellite will pull up to 100RF/t at 10RF per block.</p>';
     
     $infoBarContent = $title.'<hr><img height=128px style="image-rendering: -webkit-optimize-contrast; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: crisp-edges;" src="../img/items/biomeChanger.png" /><hr>Has NBT: Yes';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?> 

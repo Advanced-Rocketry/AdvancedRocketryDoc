@@ -17,38 +17,16 @@
     */    
     
     //NAME OF BLOCK
-    $title = '';
+    $title = 'Warp Controller';
 
-    $imageDemoName = '';
+    $imageDemoName = 'warpController_demo.jpg';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>YOUR TEXT HERE</p>';
+    $description1 = '<p>The warp controller is the control station block in a starship.  Simply placing the warp controller and <a href="WarpCore.php">warp core</a> anywhere on a space station can turn it into a mobile starship capable of warping between planets and even solar systems.  The control panel offered by the warp controller allows a player to view their current location as well as select destinations as well as view fuel storage on the starship.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
-    $imageGUI = '';
-    $descriptionGUI =''; 
-    
-    $sidebarImage = '';
-
-    $hardness = '';
-    $blastResistance = '';
-    $requiresTool = '';
-    $fullBlock = '';
-    $sealable = '';
-    $tileEntity = '';
-
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
-?> 
-<?php
-    $title = 'Warp Controller';
-    
-    $mainContent = '<h1>'.$title.'</h1><hr><img align="left" src="../img/warpController_demo.jpg" /><p><center><h2>Overview</h2></center>
-    The warp controller is the control station block in a starship.  Simply placing the warp controller and <a href="WarpCore.php">warp core</a> anywhere on a space station can turn it into a mobile starship capable of warping between planets and even solar systems.  The control panel offered by the warp controller allows a player to view their current location as well as select destinations as well as view fuel storage on the starship.</p>
-    <br>
-    <br>
-    <hr>
-    <img align="left" src="../img/warpController_gui.png" /><p><center><h2>Basic Usage</h2></center>
-    <p>The first tab contains information about the ship\'s current location as well as its destination.  The planet the ship is currently in orbit around is displayed with an icon and name under the "orbiting" panel.  If the starship is currently in warp, no icon is displayed and the planet name is "space".</p>
+    $imageGUI = 'warpController_gui.png';
+    $descriptionGUI ='<p>The first tab contains information about the ship\'s current location as well as its destination.  The planet the ship is currently in orbit around is displayed with an icon and name under the "orbiting" panel.  If the starship is currently in warp, no icon is displayed and the planet name is "space".</p>
     <p>
     A destination planet may be selected by clicking the "select planet" button.
     </p>
@@ -78,8 +56,18 @@
     <p>
     Depending on the configuration of the world, some planet may need a certain artifact to be able to discover and visit.  If an artifact pertaining to a planet is placed in the artifact slots then when trying to discover a planet a planet with those artifacts is garunteed to be discovered.  If all planets with that set of artifacts are already known, then a random planet may be discovered instead.
     </p>
-    <p>As a side note: planets contained active <a href="Beacon.php">beacons</a> can be seen by all players, even if they have not yet discovered the planet.</p>';
+    <p>As a side note: planets contained active <a href="Beacon.php">beacons</a> can be seen by all players, even if they have not yet discovered the planet.</p>'; 
     
-    $infoBarContent = $title.'<hr><img src="../img/warpController_block.png" /><hr>Hardness: 3<br />Blast Resistance: 0<br />Requires Tool: Yes<br />Full Block: Yes<br />Sealable: Yes<br />Tile Entity: Yes';
+    $sidebarImage = 'warpController_block.png';
+
+    $hardness = '3';
+    $blastResistance = '0';
+    $requiresTool = 'YES';
+    $fullBlock = 'YES';
+    $sealable = 'YES';
+    $tileEntity = 'YES';
+    $multiBlock = 'YES';
+    $other ='';
+
     include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
 ?> 

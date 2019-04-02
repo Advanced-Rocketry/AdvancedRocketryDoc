@@ -42,19 +42,31 @@
     <div class="left">
       <h1><?php echo $title; ?></h1><hr>
       <center><h2>Overview</h2></center>
-      <?php if (!empty($imageDemoName)){?>
-        <img align="left" src="../img/<?php echo $imageDemoName ?>" />
-      <?php } ?>      
-      <?php echo $description1 ?><hr>
-      
-      <?php if (!empty($descriptionGUI)){?>
-
-        <center><h2>Usage</h2></center>
-        <?php if (!empty($imageGUI)){?>
-          <img align="left" src="../img/<?php echo $imageGUI ?>"/>
-      <?php } ?>
-        <?php echo $descriptionGUI ?>
-      <?php } ?>
+      <div class='row'>
+        <div class='col-4'>        
+        <?php if (!empty($imageDemoName)){?>
+          <img align="left" width='100%' src="../img/<?php echo $imageDemoName ?>" />
+        <?php } ?>
+        </div>
+        <div class=col-8>      
+        <?php echo $description1 ?>
+        </div>
+      </div>
+      <hr>
+        <?php if (!empty($descriptionGUI)){?>
+          <center><h2>Usage</h2></center>
+          <div class='row'>
+          <div class='col-4'> 
+            <?php if (!empty($imageGUI)){?>
+              <img align="left" width='100%' src="../img/<?php echo $imageGUI ?>"/>
+          <?php } ?>
+          </div>
+          <div class=col-8>
+            <?php echo $descriptionGUI ?>
+          </div>
+          </div> 
+        <?php } ?>
+         
     </div>
     <div class="right">
       <img style="width: 100%;" alt="Advanced Rocketry Logo" src="/AdvancedRocketry/logo.png" /><hr />
@@ -62,10 +74,10 @@
       <?php if (!empty($sidebarImage)){?>
         <img src="../img/<?php echo $sidebarImage ?>" /><hr>
       <?php } ?>
-      <?php if (!empty($hardness)||($hardness == 0)){?>
+      <?php if (!empty($hardness)||($hardness === '0')){?>
         Hardness: <?php echo $hardness ?><br>
       <?php } ?>
-      <?php if (!empty($blastResistance)||($blastResistance == 0)){?>
+      <?php if (!empty($blastResistance)||($blastResistance === '0')){?>
         Blast Resistance: <?php echo $blastResistance ?><br>
       <?php } ?>
       <?php if (!empty($requiresTool)){?>

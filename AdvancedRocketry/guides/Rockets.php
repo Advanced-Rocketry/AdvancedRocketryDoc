@@ -29,5 +29,5 @@
     </ul>';
     
     $infoBarContent = $title.'<hr>';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?> 

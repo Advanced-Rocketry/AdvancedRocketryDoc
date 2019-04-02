@@ -15,5 +15,5 @@
     <p>Clicking on a square on the display will update the coordnites on the left to indicate the in-world position selected and the value of the ore at that location (higher is better).</p>';
     
     $infoBarContent = $title.'<hr><img height=128px style="image-rendering: -webkit-optimize-contrast; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: crisp-edges;" src="/AdvancedRocketry/img/oreScanner_icon.png" /><hr>Has NBT: Yes';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?> 

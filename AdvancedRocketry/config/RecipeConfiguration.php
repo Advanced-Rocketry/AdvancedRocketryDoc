@@ -105,5 +105,5 @@ Each recipe type has essentially the same tags.  The recipe types are as follows
 ';
     
     $infoBarContent = 'Advanced Rocketry Recipe configuration';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?>

@@ -707,5 +707,5 @@ then in order for the planet to be discovered in the <a href="">warp controller<
 ';
     
     $infoBarContent = ' Index of Advanced Rocketry Items';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?>

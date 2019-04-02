@@ -1,224 +1,221 @@
 body {
-  margin: 0;
-  font-family: "Trebuchet MS";
-  color: #3a3838;
-  font-size: 12pt;
-  text-align: left;
-  background-color: #A0A0A0;
-}
-
-table, th, td {
-    border: 1px solid black;
-}
-
-#container {
-  margin: 0px auto;
-  width: 1300px;
-}
-#header {
-  background: #4a4947 none repeat scroll 0%;
-  /*margin-top: -35px;*/
-  width: 100%;
-  height: 86px;
-}
-#header h1 {
-  color: #ffffff;
-  font-size: 35pt;
-  padding-left: 10px;
-  padding-top: 10px;
-}
-
-#update-title{
-  font-size:1.75rem;
-  display:block;
-}
-
-#navigation {
-  border-left: 1px solid #dbdad5;
-  border-right: 1px solid #dbdad5;
-  border-bottom: 1px solid #dbdad5;
-  background: #e6e5e0 none repeat scroll 0%;
-  height: 35px;
-  text-align: right;
-}
-
-#navigation ul {
-  margin: 0px auto;
-  list-style-type: none;
-  list-style-image: none;
-  list-style-position: outside;
-}
-#navigation ul li {
-  display: inline;
-  text-transform: uppercase;
-}
-#navigation ul li a {
-  letter-spacing: -1px;
-  text-decoration: none;
-  color: #666666;
-  float: left;
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-top: 5px;
-}
-#navigation ul li a:hover {
-  background: transparent url(avnav.gif) repeat-x scroll 50% 0px;
-  color: #464646;
-}
-li.current_page_item {
-  background: transparent url(avnav.gif) repeat-x scroll 50% 0px;
-  color: #464646;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-ul.menu li.current_page_item ul.menu li.current_page_item a:link, ul.menu li.current_page_item a:visited, ul.menu li.current_page_item a:hover, ul.menu li.current_page_item a:active {
-  background: transparent url(avnav.gif) repeat-x scroll 50% 0px;
-  color: #464646;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-#content {
-  width: 1300px;
-  margin: 0px auto;
-  height: auto;
-}
-#content .commentbox {
-  border-top: 3px solid #d4cbb4;
-  padding: 2px 5px;
-  color: #918e85;
-  background-color: #fbf4e2;
-  text-transform: uppercase;
-  font-size: 11px;
-}
-#content .left {
-  float: left;
-  width: 75%;
-  background-color: #cccccc;
-  padding: 10px;
-  border: 1px solid #a9a9a9;
-}
-
-#content .left h2 {
-  color: #405b5b;
-}
-#content .left h1 {
-  color: #405b5b;
-  font-size: 40pt;
-}
-#content .left p {
-  font-size: 12pt;
-}
-#content .left blockquote {
-  border-left: 3px solid #dbdad5;
-  padding: 5px;
-  background-color: #f3f2f2;
-  color: #7c7b7b;
-  text-align: justify;
-  font-size: 9pt;
-  width: 600px;
-  font-style: italic;
-}
-#content .left img {
-  border: 1px solid #a9a9a9;
-  margin: -6px 6px 6px -6px;
-  padding: 4px;
-  display: block;
-  position: relative;
-}
-
-#content .left a {
-  color: #405b5b;
-}
-
-#content .left li {
-    margin: 16px;
-}
-
-#content .right {
-  border: 1px solid #e6e4e4;
-  padding: 10px;
-  margin-top: 0px;
-  margin-left: 10px;
-  float: right;
-  width: 200px;
-  color: #6b7372;
-  font-size: 11pt;
-  text-align: justify;
-  background-color: #cccccc;
-}
-#content .right h3 {
-  color: #73817f;
-  font-size: 11pt;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-#content .right ul {
-  list-style-type: none;
-  list-style-image: none;
-  list-style-position: outside;
-  margin-left: 0;
-  padding-left: 1em;
-  text-indent: -1em;
-}
-#content .right li {
-  padding: 2px;
-  font-size: 12px;
-}
-#content .right li a {
-  text-decoration: none;
-  color: #8a8a8a;
-}
-#content .right li a:hover {
-  border-bottom: 1px dashed #8a8a8a;
-}
-
-#content img.icon {
-    height: 16px;
-    width: 16px;
+    margin: 0;
+    font-family: "Trebuchet MS";
+    color: #3a3838;
+    font-size: 12pt;
+    text-align: left;
+    background-color: #A0A0A0;
+  }
+  
+  table, th, td {
+      border: 1px solid black;
+  }
+  
+  #container {
+    margin: 0px auto;
+    width: 1300px;
+  }
+  #header {
+    background: #4a4947 none repeat scroll 0%;
+    /*margin-top: -35px;*/
+    width: 100%;
+    height: 86px;
+  }
+  #header h1 {
+    color: #ffffff;
+    font-size: 35pt;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  
+  #update-title{
+    font-size:1.75rem;
+    display: block;
+    width: fit-content;
+  }
+  
+  #navigation {
+    border: 1px solid #dbdad5;
+    border-left: 1px solid #dbdad5;
+    border-right: 1px solid #dbdad5;
+    border-bottom: 1px solid #dbdad5;
+    background-image: url("example.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background: #e6e5e0 none repeat scroll 0%;*/
+    height: 35px;
+    text-align: right;
+  }
+  
+  #navigation ul {
+    margin: 0px auto;
+    list-style-type: none;
+    list-style-image: none;
+    list-style-position: outside;
+  }
+  #navigation ul li {
     display: inline;
-    padding: 0px;
-    margin: 0px;
-    border: none;
-}
-
-
-#footer {
-  padding: 10px;
-  clear: both;
-  text-align: center;
-  font-size: 8pt;
-  width: 1300px;
-}
-#footer a {
-  color: #405b5b;
-  text-decoration: none;
-}
-
-#content .left ul {
-    list-style: outside disc;
-}
-
-#content .left ul li {
-    position: relative;
-    padding-right: 1em;  
+    text-transform: uppercase;
+  }
+  #navigation ul li a {
+    letter-spacing: -1px;
+    text-decoration: none;
+    color: #464646;
+    float: left;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 5px;
+  }
+  #navigation ul li a:hover {
+    background: transparent url(avnav.gif) repeat-x scroll 50% 2px;
+    color: #666666;
+  }
+  li.current_page_item, .active{
+    background: transparent url(avnav.gif) repeat-x scroll 50% 2px;
+    color: #464646;
+    font-weight: bolder;
+  }
+  #content {
+    width: 1300px;
+    margin: 0px auto;
+    height: auto;
+  }
+  #content .commentbox {
+    border-top: 3px solid #d4cbb4;
+    padding: 2px 5px;
+    color: #918e85;
+    background-color: #fbf4e2;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+  #content .left {
+    float: left;
+    width: 75%;
+    background-color: #cccccc;
+    padding: 10px;
+    border: 1px solid #a9a9a9;
+  }
+  
+  #content .left h2 {
+    color: #405b5b;
+  }
+  #content .left h1 {
+    color: #405b5b;
+    font-size: 40pt;
+  }
+  #content .left p {
+    font-size: 12pt;
+  }
+  #content .left blockquote {
+    border-left: 3px solid #dbdad5;
+    padding: 5px;
+    background-color: #f3f2f2;
+    color: #7c7b7b;
+    text-align: justify;
+    font-size: 9pt;
+    width: 600px;
     font-style: italic;
-}​
-
-#content .left ol {
-    list-style: outside disc;
-}
-
-#content .left ol li {
+  }
+  #content .left img {
+    border: 1px solid #a9a9a9;
+    margin: -6px 6px 6px -6px;
+    padding: 4px;
+    display: block;
     position: relative;
-    padding-right: 1em;
-    font-style: italic;
-}​
-
-#update-title{
-  font-weight:bolder;
-  font-size:32px;
-}
-code{
-  color:#405b5b;
-}
+  }
+  
+  #content .left a {
+    color: #405b5b;
+  }
+  
+  #content .left li {
+      margin: 16px;
+  }
+  
+  #content .right {
+    border: 1px solid #e6e4e4;
+    padding: 10px;
+    margin-top: 0px;
+    margin-left: 10px;
+    float: right;
+    width: 200px;
+    color: #6b7372;
+    font-size: 11pt;
+    text-align: justify;
+    background-color: #cccccc;
+  }
+  #content .right h3 {
+    color: #73817f;
+    font-size: 11pt;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  #content .right ul {
+    list-style-type: none;
+    list-style-image: none;
+    list-style-position: outside;
+    margin-left: 0;
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+  #content .right li {
+    padding: 2px;
+    font-size: 12px;
+  }
+  #content .right li a {
+    text-decoration: none;
+    color: #8a8a8a;
+  }
+  #content .right li a:hover {
+    border-bottom: 1px dashed #8a8a8a;
+  }
+  
+  #content img.icon {
+      height: 16px;
+      width: 16px;
+      display: inline;
+      padding: 0px;
+      margin: 0px;
+      border: none;
+  }
+  
+  
+  #footer {
+    padding: 10px;
+    clear: both;
+    text-align: center;
+    font-size: 8pt;
+    width: 1300px;
+  }
+  #footer a {
+    color: #405b5b;
+    text-decoration: none;
+  }
+  
+  #content .left ul {
+      list-style: outside disc;
+  }
+  
+  #content .left ul li {
+      position: relative;
+      padding-right: 1em;  
+      font-style: italic;
+  }​
+  
+  #content .left ol {
+      list-style: outside disc;
+  }
+  
+  #content .left ol li {
+      position: relative;
+      padding-right: 1em;
+      font-style: italic;
+  }​
+  
+  #update-title{
+    font-weight:bolder;
+    font-size:32px;
+  }
+  code{
+    color:#405b5b;
+  }

@@ -31,15 +31,15 @@
     $descriptionGUI ='<p>
     The first tab contains information about the structure such as amount of data stored in the machine, the observable distance, and amount of power stored.  The data indicators only appear if there\'s a data bus with that particular data type built into the structure.</p>
     <p>The power bar is on the far left and the on/off switch is on the top right.  The observable distance range is displayed on the bottom.
-    </p><br><br><br><br><br><br><hr>
-    <img align="right" src="../img/observatory_gui2.png"/><p>
+    </p>'; 
+    
+    $optionalSection = '<img align="left" src="../img/observatory_gui2.png"/><p>
     The second tab contains information about asteroid searches.  When first opened the Asteroids and Composition areas may be empty.  Clicking the scan button will initiate a scan for asteroids but will consume 100 distance data to do so.  Once a scan is completed the Asteroids panel will populate with observed asteroids.</p>
     <p>Clicking on an Asteroid will bring up information about the selected asteroid in the Composition panel.  The Composition panel will estimates of how much of what kind of ore is in the selected asteroid.  Having Composition and mass data in the observatory (up to 2000 each) will decrease the amount of uncertainty of each type of ore.
     </p>
-    <p>To program an asteroid chip with the location of the selected asteroid, put an unprogrammed asteroid chip into the slot with the chip icon, then once you have the desired asteroid selected, click on the gears between the two slots.  Programming the chip will use all the composition and mass data in the observatory as well as 500RF of energy.</p>'; 
+    <p>To program an asteroid chip with the location of the selected asteroid, put an unprogrammed asteroid chip into the slot with the chip icon, then once you have the desired asteroid selected, click on the gears between the two slots.  Programming the chip will use all the composition and mass data in the observatory as well as 500RF of energy.</p>';
     
     $sidebarImage = 'observatory_block.png';
-
     $hardness = '2';
     $blastResistance = '0';
     $requiresTool = 'YES';

@@ -30,16 +30,14 @@
     <p>
     A destination planet may be selected by clicking the "select planet" button.
     </p>
-    <p>
-    The second panel contains the currently selected destination planet\'s icon and name.  Depending on the distance from the orbiting planet to the destination the fuel cost may increase or decrease.  Fuel cost is calculated by distance between the two planets.  So if you are activly trying to conserve fuel it may be beneficial to wait until two planets near each other in their orbits.</p>
-    <br>
-    <p><h3>Warp System status</h3>
+    <p>The second panel contains the currently selected destination planet\'s icon and name.  Depending on the distance from the orbiting planet to the destination the fuel cost may increase or decrease.  Fuel cost is calculated by distance between the two planets.  So if you are activly trying to conserve fuel it may be beneficial to wait until two planets near each other in their orbits.</p>
+    <h3>Warp System Status</h3><p>
     Traveling from a planet to its moon is very cheap because they are so close together.  Though it may be easier to just use a rocket or <a href="spaceElevator.php">space elevator</a> at that point.  Warp ships are also able to travel between star systems.  However travelling to planets in other star systems is a very fuel consuming task due to the distances involved.</p>
     <p>
     The core status indicator show the current status of the warp system.  If the destination and orbiting planets are the same then "nowhere to go" is displayed.  The status indicator will also warn if you do not have enough fuel to make the jump or if the warp system is ready to go.
-    </p>
-    <hr>
-    <img align="left" src="../img/warpController_gui2.png" /><p><center><h2>Advanced Usage</h2></center>
+    </p>';
+    
+    $optionalSection ='<img align="left" src="../img/warpController_gui2.png" /><p><center><h2>Advanced Usage</h2></center>
     <p>
     If planet hiding is enabled in the advanced rocketry config file then it may be required to discover planets before being able to visit them.  In that case the second and third tabs of the warp controller may be used.</p>
     <p>The second tab displays the amount of different kinds of data contained in the warp controller.  The third tab (pictured left) contains slots for artifacts as well as a progress bar, slot for a planet ID chip, and several controls.
@@ -56,7 +54,7 @@
     <p>
     Depending on the configuration of the world, some planet may need a certain artifact to be able to discover and visit.  If an artifact pertaining to a planet is placed in the artifact slots then when trying to discover a planet a planet with those artifacts is garunteed to be discovered.  If all planets with that set of artifacts are already known, then a random planet may be discovered instead.
     </p>
-    <p>As a side note: planets contained active <a href="Beacon.php">beacons</a> can be seen by all players, even if they have not yet discovered the planet.</p>'; 
+    <p>As a side note: planets contained active <a href="Beacon.php">beacons</a> can be seen by all players, even if they have not yet discovered the planet.</p>';
     
     $sidebarImage = 'warpController_block.png';
 

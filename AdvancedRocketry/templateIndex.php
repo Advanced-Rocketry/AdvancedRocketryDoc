@@ -24,7 +24,7 @@
 </head><body>
 <div id="container">
 <div id="header">
-<h1>Advanced Rocketry<br />
+  <h1>Advanced Rocketry<br />
 </h1>
 </div>
 <div id="navigation">

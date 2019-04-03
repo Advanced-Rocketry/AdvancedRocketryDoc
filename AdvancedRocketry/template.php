@@ -2,16 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
   
   <meta http-equiv="Content-Type" content="text/html;  charset=iso-8859-1" />
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <link rel="stylesheet" type="text/css" href="/AdvancedRocketry/style.css" media="all" />
+  <meta name="description" content="The Official Advanced Rocketry Wiki" />
+  <meta name="keywords" content="advanced rocketry wiki minecraft mc rockets planets space exploration 1.12.2 mods" />
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  
-
 
   <link rel="stylesheet" type="text/css" href="/AdvancedRocketry/style.css" media="all" />
 <!--[if lt IE 6]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if lt IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]-->
@@ -30,9 +27,9 @@
   <div id="navigation">
     <ul class="menu">
       <li><a href="/AdvancedRocketry">Home</a></li>
-      <li><a href="/AdvancedRocketry/blocks">Blocks </a></li>
-      <li><a href="/AdvancedRocketry/items">Items</a></li>
       <li><a href="/AdvancedRocketry/guides">Guides</a></li>
+      <li><a href="/AdvancedRocketry/blocks">Blocks </a></li>
+      <li><a href="/AdvancedRocketry/items">Items</a></li>      
       <li><a href="/AdvancedRocketry/config">Configuration<br/>
       <li><a href="/AdvancedRocketry/Commands.php">Commands</a></li>
       <li><a href="/AdvancedRocketry/misc">Misc</a></li>
@@ -40,14 +37,14 @@
   </div>
   <div id="content">
     <div class="left">
-      <h1><?php echo $title; ?></h1><hr>
+      
+      <h1><?php echo $title; ?></h1><hr>      
       <?php if (!empty($imageDemoName)){?>
         <center><h2>Overview</h2></center>
         <div class='row'>
           <div class='col-4'>            
             <img align="left" width='100%' src="../img/<?php echo $imageDemoName ?>" />         
-          </div>
-          
+          </div>          
           <div class=col-8>                   
             <?php echo $description1 ?>
           </div>
@@ -67,19 +64,16 @@
           </div>
           <div class='col-4'>            
             <img align="left" width='100%' src="../img/<?php echo $imageGUI ?>" />         
-          </div>
-          
+          </div>          
         </div>
         <hr>
       <?php }else if(!empty($descriptionGUI)){?>
-        
         <center><h2>Usage</h2></center>       
         <?php echo $descriptionGUI ?>
         <hr>
       <?php } ?>
       
       <?php if (!empty($optionalSection)){?>
-        
         <?php echo $optionalSection ?> 
         <hr>    
       <?php } ?>

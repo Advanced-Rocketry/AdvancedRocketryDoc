@@ -3,7 +3,7 @@
     
     $mainContent = ' <h2>Advanced Rocketry Documentation</h2>
     <br />
-    <p>&nbsp;&nbsp;&nbsp; Welcome to the documentation page for Advanced
+    <p>Welcome to the documentation page for Advanced
         Rocketry!&nbsp; Now in Beta and releasing on ti... Who am I kidding, it\'ll be stable soon(TM)</p>
     <p>Advanced Rocketry is a Minecraft mod designed to add random or
         player specified planets to the game.&nbsp; These planets each have

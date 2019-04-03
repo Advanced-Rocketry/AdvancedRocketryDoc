@@ -41,38 +41,55 @@
   <div id="content">
     <div class="left">
       <h1><?php echo $title; ?></h1><hr>
-      <center><h2>Overview</h2></center>
-      <div class='row'>
-        <div class='col-4'>        
-        <?php if (!empty($imageDemoName)){?>
-          <img align="left" width='100%' src="../img/<?php echo $imageDemoName ?>" />
-        <?php } ?>
-        </div>
-        <div class=col-8>      
-        <?php echo $description1 ?>
-        </div>
-      </div>
-      <hr>
-        <?php if (!empty($descriptionGUI)){?>
-          <center><h2>Usage</h2></center>
-          <div class='row'>
-          <div class='col-4'> 
-            <?php if (!empty($imageGUI)){?>
-              <img align="left" width='100%' src="../img/<?php echo $imageGUI ?>"/>
-          <?php } ?>
+      <?php if (!empty($imageDemoName)){?>
+        <center><h2>Overview</h2></center>
+        <div class='row'>
+          <div class='col-4'>            
+            <img align="left" width='100%' src="../img/<?php echo $imageDemoName ?>" />         
           </div>
+          
+          <div class=col-8>                   
+            <?php echo $description1 ?>
+          </div>
+        </div>
+        <hr>
+      <?php }else{?>
+        <center><h2>Overview</h2></center>       
+        <?php echo $description1 ?>
+        <hr>
+      <?php } ?>
+      
+      <?php if (!empty($imageGUI)){?>
+        <center><h2>Usage</h2></center>
+        <div class='row'>
           <div class=col-8>
             <?php echo $descriptionGUI ?>
           </div>
-          </div> 
-        <?php } ?>
-         
+          <div class='col-4'>            
+            <img align="left" width='100%' src="../img/<?php echo $imageGUI ?>" />         
+          </div>
+          
+        </div>
+        <hr>
+      <?php }else if(!empty($descriptionGUI)){?>
+        
+        <center><h2>Usage</h2></center>       
+        <?php echo $descriptionGUI ?>
+        <hr>
+      <?php } ?>
+      
+      <?php if (!empty($optionalSection)){?>
+        
+        <?php echo $optionalSection ?> 
+        <hr>    
+      <?php } ?>
+
     </div>
     <div class="right">
       <img style="width: 100%;" alt="Advanced Rocketry Logo" src="/AdvancedRocketry/logo.png" /><hr />
       <?php echo $title ?><hr>
       <?php if (!empty($sidebarImage)){?>
-        <img src="../img/<?php echo $sidebarImage ?>" /><hr>
+        <img class="sidebarImage" src="../img/<?php echo $sidebarImage ?>" /><hr>
       <?php } ?>
       <?php if (!empty($hardness)||($hardness === '0')){?>
         Hardness: <?php echo $hardness ?><br>
@@ -94,6 +111,9 @@
       <?php } ?>
       <?php if (!empty($multiBlock)){?>
         Multiblock: <?php echo $multiBlock ?><br>
+      <?php } ?>
+      <?php if (!empty($hasNBT)){?>
+        Has NBT: <?php echo $hasNBT ?><br>
       <?php } ?>
       <hr>
       <?php if (!empty($other)){?>

@@ -1,7 +1,7 @@
 <?php
     $title = 'Asteroid Configuration';
     
-    $mainContent = '<h2>Advanced Rocketry Asteroid Configuration (1.1.6+)</h2>
+    $mainContent = '<h1>Advanced Rocketry Asteroid Configuration (1.1.6+)</h1><hr><br>
     <p>Welcome to the Advanced Rocketry asteroid Configuration readme!  This document will list and explain the meanings of the different settings availible.</p>
     <p>The asteroid config is located in the "./config/advRocketry/asteroidConfig.xml" file.  This config is used to specify the traits of asteroids that can be found in the <a href="../blocks/Observatory.php">observatory</a> ingame.</p>
     <p>The configuration must be surrounded with "Asteroids" tags</p>
@@ -27,7 +27,7 @@
     <p>Example asteroid:  contains iron, gold, redstone ores, and charcoal (coal with metavalue 1)</p>
     
     <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
-    <code><div style="width:1600px">
+    <code><div style="width:100%">
     &#60;Asteroids&#62;<br>
     &nbsp;&nbsp;&nbsp;&nbsp;...<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&#60;asteroid name="Large Asteroid" distance="10" mass="1000" massVariability="0.5" minLevel="0" probability="1" richness="0.8" richnessVariability="0.5"&#62;<br>

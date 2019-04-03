@@ -1,23 +1,44 @@
 <?php
+    /*  HOW TO USE THIS TEMPLATE
+        If you are unsure how to use this, please see any of the other pages for a reference. 
+
+        Descriptions can include any HTML tags. Please link to other pages when you reference a block or item the first time. 
+
+        <a href="Cables.php">data pipes</a>
+
+        Please follow these naming conventions when submitting images for blocks:
+            
+            PAGE IMAGE = nameOfBlock_demo.png
+            SIDE BAR IMAGE = nameOfBlock_block.png
+            ICON IMAGE FOR LIST PAGE = nameOfBlock_icon.png
+        
+        Place images in the img folder. Be sure to update blocks/index.html with a link to your block page.
+    
+    */    
+    
+    //NAME OF BLOCK
     $title = 'Modular Space Suits';
+
+    $imageDemoName = 'spacesuit_demo.jpg';
     
-    $mainContent = '<h1>'.$title.'</h1><hr><img align="left" src="../img/spacesuit_demo.jpg" /><h2><center>Overview</center></h2>&nbsp;&nbsp;&nbsp;&nbsp;Modular Space Suits not only protect players from the vacuum of space, but also offer various components that can be used to enhance the player in other ways.</p>
-    <p>The Space Suits themselves can be crafted in a crafting table, however components must be added to the suit in the <a href="../blocks/suitWorkstation.php">Suit Workstation</a>.</p>
+    //USE <p></p> to make a new paragraph 
+    $description1 = 'Modular Space Suits not only protect players from the vacuum of space, but also offer various components that can be used to enhance the player in other ways.</p>
+    <p>The Space Suits themselves can be crafted in a crafting table, however components must be added to the suit in the <a href="../blocks/suitWorkstation.php">Suit Workstation</a>.';
     
-    
-    <hr><h2><center>Usage</center></h2>
-    <p><img align=left src="../img/spacesuit_gui.png" />The space suit by itself does not provide any armor, however it will also not take any damage or disintegrate.</p>
+    //FILL IN THIS PART IF THE BLOCK HAS A GUI
+    $imageGUI = 'spacesuit_gui.png';
+    $descriptionGUI ='The space suit by itself does not provide any armor, however it will also not take any damage or disintegrate.</p>
     <p>The Modular spacesuit can be used like any other set of armor, just put it on.  However without any components installed the only protection the spacesuit provides is protection against the vacuum of space.</p>
     <p>The space suit will prevent damage in space only if all the pieces are worn and there is some oxygen in the chestplate\'s tank.</p>
     <p>Unlike the hydrogen fuel required for the jetpack, the chestplate has its own internal oxygen storage tank which provides 30 minutes of oxygen by default (see "spaceSuitO2Buffer" in config file).</p>
     <br>
     <p>The internal tank can be filled with oxygen by stepping on a powered <a href="">Gas Charge Pad</a> containing Oxygen gas.  Pressure tanks mounted in the suit can be charged in a similar manner.</p>
     <p>When wearing a Chestplate an O2 bar will appear above the food bar indicating the amount of Oxygen stored in the suit.  IF a jetpack is mounted in the chestplate, a red H2 fuel bar will also appear.</p>
-    <p>When wearing the modular helmet, a display indicating what components are installed on what parts of the suit in the top left corner of the screen.</p>
+    <p>When wearing the modular helmet, a display indicating what components are installed on what parts of the suit in the top left corner of the screen.</p>';
     
-    <hr><h2><center>Space Suit Components</center></h2>
+    $optionalSection = '<h2><center>Space Suit Components</center></h2>
     <table style="width:100%">
-    <caption><h3><center><img align=center style="image-rendering: -webkit-optimize-contrast; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: crisp-edges; border: none" width=32px src="../img/items/space_helmet.png" /></center>Helmet Components</h3></caption>
+    <thead class="center"><h3><center><img align=center style="image-rendering: -webkit-optimize-contrast; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: crisp-edges; border: none" width=32px src="../img/items/space_helmet.png" />Helmet Components</h3></center></thead>
     <tr>
     <th>Item</th>
     <th>Function</th>
@@ -43,10 +64,9 @@
     <td>If equipped in the spacesuit, it will display arrows at the top of the screen pointing to active <a href="../blocks/Beacon.php">beacons</a> on the same planet.</td>
     </tr>
     </table>
-    
-    <br><br>
+    <br>
     <table style="width:100%">
-    <caption><h3><center><img align=center style="image-rendering: -webkit-optimize-contrast; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: crisp-edges; border: none" width=32px src="../img/items/space_chestplate.png" /></center>Chestplate Components</h3></caption>
+    <thead><h3><center><img align=center style="image-rendering: -webkit-optimize-contrast; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: crisp-edges; border: none" width=32px src="../img/items/space_chestplate.png" />Chestplate Components</h3></thead></center>
     <tr>
     <th>Item</th>
     <th>Function</th>
@@ -62,10 +82,9 @@
     <td>Adds gas/liquid storage capacity for the suit.  See the Pressure Tank <a href="pressureTank.php">page</a> for more details.</td>
     </tr>
     </table>
-    
-    <br><br>
+    <br>
     <table style="width:100%">
-    <caption><h3><center><img align=center style="image-rendering: -webkit-optimize-contrast; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: crisp-edges; border: none" width=32px src="../img/items/space_leggings.png" /></center>Legging Components</h3></caption>
+    <thead><h3><center><img align=center style="image-rendering: -webkit-optimize-contrast; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: crisp-edges; border: none" width=32px src="../img/items/space_leggings.png" />Legging Components</h3></thead></center>
     <tr>
     <th>Item</th>
     <th>Function</th>
@@ -78,7 +97,7 @@
     
     <br><br>
     <table style="width:100%">
-    <caption><h3><center><img align=center style="image-rendering: -webkit-optimize-contrast; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: crisp-edges; border: none" width=32px src="../img/items/space_boots.png" /></center>Boot Components</h3></caption>
+    <thead><h3><center><img align=center style="image-rendering: -webkit-optimize-contrast; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: crisp-edges; border: none" width=32px src="../img/items/space_boots.png" />Boot Components</h3></thead></center>
     <tr>
     <th>Item</th>
     <th>Function</th>
@@ -89,6 +108,17 @@
     </tr>
     </table>';
     
-    $infoBarContent = $title.'<hr><img height=128px style="image-rendering: -webkit-optimize-contrast; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: crisp-edges;" src="../img/items/spacesuit.gif" /><hr>Has NBT: Yes';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
-?> 
+    $sidebarImage = 'items/spacesuit.gif';
+
+    $hardness = '';
+    $blastResistance = '';
+    $requiresTool = '';
+    $fullBlock = '';
+    $sealable = '';
+    $tileEntity = '';
+    $multiBlock = '';
+    $hasNBT = 'YES';
+    $other ='';
+
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+?>

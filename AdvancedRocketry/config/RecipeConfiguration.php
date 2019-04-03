@@ -1,7 +1,7 @@
 <?php
     $title = 'Advanced Rocketry Recipe Configuration';
     
-    $mainContent = '<h2>Advanced Rocketry Recipe Configuration</h2>
+    $mainContent = '<h1>Advanced Rocketry Recipe Configuration</h1><hr>
 <br />
 <p>Welcome to the Advanced Rocketry advanced recipe configuration readme!<br /></p>
 

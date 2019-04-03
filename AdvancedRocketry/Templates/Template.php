@@ -26,10 +26,11 @@
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';
-    $descriptionGUI =''; 
+    $descriptionGUI ='';
+    
+    $optionalSection='';
     
     $sidebarImage = '';
-
     $hardness = '';
     $blastResistance = '';
     $requiresTool = '';
@@ -37,6 +38,7 @@
     $sealable = '';
     $tileEntity = '';
     $multiBlock = '';
+    $hasNBT = '';
     $other ='';
 
     include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');

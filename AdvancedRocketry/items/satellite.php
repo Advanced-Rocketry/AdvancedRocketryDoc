@@ -1,14 +1,35 @@
 <?php
+    /*  HOW TO USE THIS TEMPLATE
+        If you are unsure how to use this, please see any of the other pages for a reference. 
+
+        Descriptions can include any HTML tags. Please link to other pages when you reference a block or item the first time. 
+
+        <a href="Cables.php">data pipes</a>
+
+        Please follow these naming conventions when submitting images for blocks:
+            
+            PAGE IMAGE = nameOfBlock_demo.png
+            SIDE BAR IMAGE = nameOfBlock_block.png
+            ICON IMAGE FOR LIST PAGE = nameOfBlock_icon.png
+        
+        Place images in the img folder. Be sure to update blocks/index.html with a link to your block page.
+    
+    */    
+    
+    //NAME OF BLOCK
     $title = 'Satellite';
+
+    $imageDemoName = '';
     
-    $mainContent = '<h1>'.$title.'</h1><hr><h2><center>Overview</center></h2>&nbsp;&nbsp;&nbsp;&nbsp;Satellites are objects you can <a href="../blocks/SatelliteAssemblingMachine.php">build</a> and launch into orbit using <a href="../blocks/SatelliteHatch.php">Satellite Bay</a> on a rocket that can perform useful actions such as collect energy and data, or even be used to (Some day) terraform a planet.</p>
-    <p>Satellites are built in the Satellite Builder.  The machine will take components and a Satellite id chip and produce a satellite and a programmed Satellite id chip.</p>
-    <p></p>
+    //USE <p></p> to make a new paragraph 
+    $description1 = '<p>Satellites are objects you can <a href="../blocks/SatelliteAssemblingMachine.php">build</a> and launch into orbit using <a href="../blocks/SatelliteHatch.php">Satellite Bay</a> on a rocket that can perform useful actions such as collect energy and data, or even be used to (Some day) terraform a planet.</p>
+    <p>Satellites are built in the Satellite Builder.  The machine will take components and a Satellite id chip and produce a satellite and a programmed Satellite id chip.</p>';
     
-    
-    <hr><h2><center>Satellite Compenents</center></h2>
+    //FILL IN THIS PART IF THE BLOCK HAS A GUI
+    $imageGUI = '';
+    $descriptionGUI ='<h2><center>Satellite Compenents</center></h2>
     <table style="width:100%">
-    <caption><h3>Satellite Types</h3></caption>
+    <thead><h3>Satellite Types</h3></thead>
     <tr>
     <th>Item</th>
     <th>Satellite Name</th>
@@ -56,7 +77,7 @@
     
     <br><br>
     <table style="width:100%">
-    <caption><h3>Energy Generation</h3></caption>
+    <thead><h3>Energy Generation</h3></thead>
     <tr>
     <th>Item</th>
     <th>Energy Generation</th>
@@ -76,7 +97,7 @@
     
     <br><br>
     <table style="width:100%">
-    <caption><h3>Energy Storage</h3></caption>
+    <thead><h3>Energy Storage</h3></thead>
     <tr>
     <th>Item</th>
     <th>Energy Storage</th>
@@ -95,7 +116,7 @@
     
     <br><br>
     <table style="width:100%">
-    <caption><h3>Data Storage</h3></caption>
+    <thead><h3>Data Storage</h3></thead>
     <tr>
     <th>Item</th>
     <th>Data Storage</th>
@@ -105,8 +126,19 @@
     <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/items/dataUnit0.png"/>Data Storage Unit</td>
     <td>1,000 Data Units</td>
     </tr>
-    </table>';
+    </table>'; 
     
-    $infoBarContent = $title.'<hr><img height=128px style="image-rendering: -webkit-optimize-contrast; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: crisp-edges;" src="/AdvancedRocketry/img/satellite_icon.png" /><hr>Has NBT: Yes';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
-?> 
+    $sidebarImage = 'satellite_icon.png';
+
+    $hardness = '';
+    $blastResistance = '';
+    $requiresTool = '';
+    $fullBlock = '';
+    $sealable = '';
+    $tileEntity = '';
+    $multiBlock = '';
+    $hasNBT = 'YES';
+    $other ='';
+
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+?>

@@ -90,7 +90,7 @@ li.current_page_item, .active{
 }
 #content .left {
   float: left;
-  width: 75%;
+  width: 80%;
   background-color: #cccccc;
   padding: 10px;
   border: 1px solid #a9a9a9;
@@ -125,7 +125,10 @@ li.current_page_item, .active{
 }
 
 #content .left a {
-  color: #405b5b;
+  /*color: #405b5b;*/
+  /*color:#003864;*/
+  color:#005C8F;
+
 }
 
 #content .left li {
@@ -138,10 +141,10 @@ li.current_page_item, .active{
   margin-top: 0px;
   margin-left: 10px;
   float: right;
-  width: 200px;
+  width: 250px;
   color: #6b7372;
   font-size: 11pt;
-  text-align: justify;
+  /*text-align: justify;*/
   background-color: #cccccc;
 }
 #content .right h3 {
@@ -170,12 +173,26 @@ li.current_page_item, .active{
   border-bottom: 1px dashed #8a8a8a;
 }
 
+#content .sidebarImage{
+  height: 128px;
+  image-rendering: -webkit-optimize-contrast; 
+  image-rendering: -moz-crisp-edges; 
+  image-rendering: -o-crisp-edges; 
+  image-rendering: crisp-edges;
+}
+
+#content .imageGUI{
+  image-rendering: -webkit-optimize-contrast; 
+  image-rendering: -moz-crisp-edges; 
+  image-rendering: -o-crisp-edges; 
+  image-rendering: crisp-edges;
+}
+
 #content img.icon {
     height: 16px;
     width: 16px;
-    display: inline;
     padding: 0px;
-    margin: 0px;
+    margin: 2px;
     border: none;
 }
 

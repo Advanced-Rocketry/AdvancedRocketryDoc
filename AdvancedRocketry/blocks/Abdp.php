@@ -31,13 +31,12 @@
     $descriptionGUI ='<p><h3>Programming asteroid ID Chips</h3>
     The Slot on the top right is the input slot for unprogrammed asteroid ID chips.  Placing an unprogrammed asteriod ID chip in this slot and clicking the gear icon will begin programming the chip.  The programmed asteriod ID chip will be placed in the output hatch if there is room, or the output slot underneath the gears if the output hatch is full.</p>
     <p><i>Please note that the above has changed in the 1.1.x builds, the chips are now programmed in the <a href="Observatory.php">observatory</a>.</i></p>
-    <p>The input slot in the bottom left holds the asteriod ID chip to store data to.  The Astrobody Data Processor has three data buffers, one for Mass data, one for Distance Data, and one for Composition data.  Toggling the switches enables/disables programming of each data type.</p>
+    <p>The input slot in the bottom left holds the asteriod ID chip to store data to.  The Astrobody Data Processor has three data buffers, one for Mass data, one for Distance Data, and one for Composition data.  Toggling the switches enables/disables programming of each data type.</p>';
     
-    <p><h3>Automation</h3>
-    The Astrobody data processor is also fully automatable.  Unprogrammed asteroid ID chips inserted into the input hatch are automatically placed into the top right slot.  Programmed asteriod ID chips are automatically placed into the data write slot.  When an asteroid ID chip in the data write slot is full it is automatically moved to the output hatch as soon as room is availible.</p>'; 
-    
+    $optionalSection='<p><h3>Automation</h3>
+    The Astrobody data processor is also fully automatable.  Unprogrammed asteroid ID chips inserted into the input hatch are automatically placed into the top right slot.  Programmed asteriod ID chips are automatically placed into the data write slot.  When an asteroid ID chip in the data write slot is full it is automatically moved to the output hatch as soon as room is availible.</p>';            
+        
     $sidebarImage = 'abdp_block.png';
-
     $hardness = '2';
     $blastResistance = '0';
     $requiresTool = 'YES';

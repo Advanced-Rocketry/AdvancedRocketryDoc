@@ -1,5 +1,5 @@
 <?php
-    $title = 'Missions';
+    $title = 'Mission Control';
     
     $mainContent = '<h1>'.$title.'</h1><hr><img align="left" src="../img/rocket_demo.jpg" /><center><h2>Overview</h2></center><p>Missions are a useful undertaking to collect resources and explore.  In Advanced Rocketry missions can be performed to collect ore or harvest gasses from gas giants and return them to your base.</p>
     <p>Missions can be monitored from a <a href="../blocks/RocketMonitoringStation.php">rocket monitoring station</a>.</p>

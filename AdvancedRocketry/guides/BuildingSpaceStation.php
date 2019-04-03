@@ -1,18 +1,10 @@
 <?php
-    $title = 'Guide: Building a Space Station';
+    $title = 'Intergalactic Travel';
     
-    $mainContent = '<h1>'.$title.'</h1>
+    $mainContent = '<h1>'.$title.'</h1><hr><br>
     <center><h2>Introduction</h2></center>
-    <div style="display: inline-block"><div align=left style="float: left; margin-right:30px; width:250px; border-width: 1px; border-style: dashed; padding: 15px; padding-top: 0px; padding-bottom: 0px; background-color: #DDD;">
-    <h3>Table of Contents:</h3>
-    <ol style="padding-left:15px;">
-    <li><a href="#basics">Building a Construction Pad</a></li>
-    <li><a href="#building">Constucting the Station</a></li>
-    <li><a href="#launching">Launching the Station</a></li>
-    <li><a href="#modules">Adding Modules To the station</a></li>
-    </ol>
-    </div>
-    <p>Space stations, in addition to being cool.  Also provide a platform to mine ores, travel throughout the galaxy, and mine gas from gas giants.</p>
+    <div style="display: inline-block">
+    <p>Space stations, in addition to being cool, also provide a platform to mine ores, travel throughout the galaxy, and mine gas from gas giants.</p>
     </div>
     
     <hr>
@@ -68,6 +60,13 @@
     <p>When the build button on the station builder is pressed, it\'ll build the module, but this time it will only give you a station module.  You must launch the station module onboard another rocket.  When the rocket reaches orbit the module will be rotated such that the station docking port on the module is facing the station docking port already in orbit on the station.</p>
     ';
     
-    $infoBarContent = $title.'<hr>';
+    $infoBarContent = $title.'<hr>
+    <h3>Table of Contents:</h3>
+    <ol style="padding-left:15px;">
+    <li><a href="#basics">Building a Construction Pad</a></li>
+    <li><a href="#building">Constucting the Station</a></li>
+    <li><a href="#launching">Launching the Station</a></li>
+    <li><a href="#modules">Adding Modules To the station</a></li>
+    </ol>';
     include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?> 

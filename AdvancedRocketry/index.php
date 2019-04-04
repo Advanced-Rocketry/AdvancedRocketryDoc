@@ -1,7 +1,7 @@
 <?php
     $title = 'Advanced Rocketry';
     
-    $mainContent = ' <h2>Advanced Rocketry Documentation</h2>
+    $mainContent = ' <h2>Advanced Rocketry Documentation</h2><hr>
     <br />
     <p>Welcome to the documentation page for Advanced
         Rocketry!&nbsp; Now in Beta and releasing on ti... Who am I kidding, it\'ll be stable soon(TM)</p>

@@ -1,7 +1,7 @@
 <?php
     $title = 'Intergalactic Travel';
     
-    $mainContent = '<h1>'.$title.'</h1><hr><br>
+    $mainContent = '<h2>'.$title.'</h2><hr><br>
     <center><h2>Introduction</h2></center>
     <div style="display: inline-block">
     <p>Space stations, in addition to being cool, also provide a platform to mine ores, travel throughout the galaxy, and mine gas from gas giants.</p>

@@ -1,7 +1,7 @@
 <?php
     $title = 'Concepts';
     
-    $mainContent = '<h1>Advanced Rocketry Configurations</h1><hr>
+    $mainContent = '<h2>Advanced Rocketry Configurations</h2><hr>
 <br />
 <p>Information about important concepts in the mod can be found in the following list:<br /></p>
 <ul>

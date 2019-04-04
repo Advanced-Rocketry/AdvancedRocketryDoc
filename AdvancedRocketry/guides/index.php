@@ -1,7 +1,7 @@
 <?php
     $title = 'Concepts';
     
-    $mainContent = '<h1>Advanced Rocketry Concepts</h1><hr>
+    $mainContent = '<h2>Advanced Rocketry Guides</h2><hr>
 <p>Your goal to journey among the stars will not be an easy one. There is much you must do, and getting started is the hardest part. To begin, you will need a <a href="../items/holoProjector.php"><img class="icon" src="../img/items/holoProjector.png">Holo-Projector</a>, a healthy supply of iron and tin, and if you have some lime dye and a few magma cream lying around, that will help as well.</p>
 <p>To reach distant planets, you will need to work through four phases:
 </p>

@@ -1,7 +1,7 @@
 <?php
     $title = 'Infrastructure';
     
-    $mainContent = '<h1>'.$title.'</h1><hr><br>
+    $mainContent = '<h2>'.$title.'</h2><hr><br>
     
     <div style="visiblity:hidden">
     <center><h2>Introduction</h2></center>

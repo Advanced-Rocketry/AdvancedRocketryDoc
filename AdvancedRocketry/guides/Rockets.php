@@ -1,8 +1,19 @@
 <?php
-    $title = 'Rockets';
+    $title = 'Rockets - Journey to the Moon';
     
-    $mainContent = '<h1>'.$title.'</h1><hr><img align="left" src="../img/rocket_demo.jpg" /><center><h2>Overview</h2></center><p>Rockets are the primary means of transportation between planets.  Rockets can be built out of any block in the game.</p>
-    <p>In order to fly however a rocket must have <a href="../blocks/RocketEngine.php">engines</a>.  Engines provide thrust and consume fuel.  Every block you put on your rocket has a mass and more mass requires more engines to provide enough thrust to escape the planet\'s gravity well.</p>
+    $mainContent = '<h2>'.$title.'</h2><hr><center><h2>Overview</h2></center><img align="left" src="../img/rocket_demo.jpg" /><p>Rockets are key to your space program\'s success. They can act as cargo shuttles, launch satellites, go on mining missions and transport you to a planet\'s moon and back. But its not as easy as plopping down a few blocks and pressing a button. The rocket will need to be assembled, fueled, launched and recovered.</p>
+
+    <hr><center><h2>Assembly</h2></center>
+    <p>What good is a space program without some fancy platforms for building and launching rockets? Advanced Rocketry provides launch pads for this purpose. The launch pad is where you will assemble, load/unload and launch your rockets. See the <a href="../blocks/LaunchPad.php" >launch pads</a> page for specifications on how to build the launch pad.</p>
+    <p>Once you have a launch pad, you will need to place a <a href="../blocks/RocketAssemblingMachine.php">rocket assembling machine</a>. This machine verifies your rocket build to make sure it has enough thrust and fuel for its weight. It needs power and it needs to be placed one block higher than the launch pad.</p>
+    <p>Now, we can finally begin to build the rocket. There are a few things to consider before we begin, after all, this IS rocket science.
+    <ol>
+        <li>Every block you put on your rocket has a mass and more mass requires more thrust to escape the planet\'s gravity well.</li>
+        <li>Fuel is required for any rocket transport. Be sure you have enough fuel to make it back home.</li>
+        <li>A successful build requires a balance between mass, thrust, and fuel carrying capability.</li>
+        <li>Rockets can only fly between a planet and its moon, or much later, a space station and other planetary beings. A rocket CANNOT transport from planet to planet.</li>
+    </ol>
+    <p>In order to fly however a rocket must have <a href="../blocks/RocketEngine.php">engines</a>.  Engines provide thrust and consume fuel.  </p>
     <p>The engines require some amount of fuel to run, fuel can be carried in <a href="../blocks/FuelTank.php">fuel tanks</a> built on the rocket.</p>
     <p>A successful build requires a balance between mass, thrust, and fuel carrying capability.  Rockets can be verified and built in the <a href="../blocks/RocketAssemblingMachine.php">rocket assembling machine</a>.</p>
     <hr>

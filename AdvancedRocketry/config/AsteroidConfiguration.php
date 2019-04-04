@@ -1,7 +1,7 @@
 <?php
     $title = 'Asteroid Configuration';
     
-    $mainContent = '<h1>Advanced Rocketry Asteroid Configuration (1.1.6+)</h1><hr><br>
+    $mainContent = '<h2>Advanced Rocketry Asteroid Configuration (1.1.6+)</h2><hr><br>
     <p>Welcome to the Advanced Rocketry asteroid Configuration readme!  This document will list and explain the meanings of the different settings availible.</p>
     <p>The asteroid config is located in the "./config/advRocketry/asteroidConfig.xml" file.  This config is used to specify the traits of asteroids that can be found in the <a href="../blocks/Observatory.php">observatory</a> ingame.</p>
     <p>The configuration must be surrounded with "Asteroids" tags</p>

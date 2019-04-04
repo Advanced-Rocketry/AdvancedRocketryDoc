@@ -1,7 +1,7 @@
 <?php
     $title = 'Advanced Rocketry Ore Configuration';
     
-    $mainContent = '<h1>Advanced Rocketry Ore Configuration</h1><hr>
+    $mainContent = '<h2>Advanced Rocketry Ore Configuration</h2><hr>
 <br />
 <p>Welcome to the Advanced Rocketry(AR) advanced ore configuration readme!<br />
 This document will guide you through manually configuring ore for spawning on AR\'s various planets.</p>

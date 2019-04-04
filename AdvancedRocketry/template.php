@@ -38,7 +38,7 @@
   <div id="content">
     <div class="left">
       
-      <h1><?php echo $title; ?></h1><hr>      
+      <h2><?php echo $title; ?></h2><hr>      
       <?php if (!empty($imageDemoName)){?>
         <center><h2>Overview</h2></center>
         <div class='row'>

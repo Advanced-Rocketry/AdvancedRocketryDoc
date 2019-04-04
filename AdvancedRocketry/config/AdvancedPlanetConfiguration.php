@@ -1,7 +1,7 @@
 <?php
     $title = 'Advanced Rocketry Planet Configuration';
     
-    $mainContent = '<h1>Advanced Rocketry Planet Configuration</h1><hr><br>
+    $mainContent = '<h2>Advanced Rocketry Planet Configuration</h2><hr><br>
 
 <div style="display: inline-block">
 <p>Welcome to the Advanced Rocketry(AR) advanced configuration readme!</p>

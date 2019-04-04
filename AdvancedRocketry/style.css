@@ -1,8 +1,9 @@
 body {
   margin: 0;
   font-family: "Trebuchet MS";
-  color: #3a3838;
-  font-size: 12pt;
+  color: #666666;
+  font-size: 13pt;
+  letter-spacing: -0.5px;
   text-align: left;
   background-color: #A0A0A0;
 }
@@ -17,7 +18,6 @@ table, th, td {
 }
 #header {
   background: #4a4947 none repeat scroll 0%;
-  /*margin-top: -35px;*/
   width: 100%;
   height: 86px;
   
@@ -44,7 +44,6 @@ table, th, td {
   background-image: url("example.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /*background: #e6e5e0 none repeat scroll 0%;*/
   height: 35px;
   text-align: right;
 }
@@ -54,23 +53,27 @@ table, th, td {
   list-style-type: none;
   list-style-image: none;
   list-style-position: outside;
+  
 }
 #navigation ul li {
   display: inline;
   text-transform: uppercase;
 }
 #navigation ul li a {
-  letter-spacing: -1px;
+  letter-spacing: 1px;
   text-decoration: none;
-  color: #464646;
+  color:whitesmoke;
   float: left;
   padding-right: 50px;
   padding-left: 50px;
-  padding-top: 5px;
+  padding-top:3px;
+  font-size: 18px;
+  text-shadow: 0.5px 0.5px 0.5px #666666;
 }
 #navigation ul li a:hover {
   background: transparent url(avnav.gif) repeat-x scroll 50% 0px;
   color: #666666;
+  text-shadow: 0.5px 0.5px 0.5px #7c7b7b;
 }
 li.current_page_item, .active{
   background: transparent url(avnav.gif) repeat-x scroll 50% 0px;
@@ -105,10 +108,11 @@ li.current_page_item, .active{
   color: #405b5b;
   font-size: 40pt;
 }
-#content .left p {
+/*#content .left p {
   font-size: 12pt;
   vertical-align: top;
-}
+}*/
+
 #content .left blockquote {
   border-left: 3px solid #dbdad5;
   padding: 5px;
@@ -127,11 +131,7 @@ li.current_page_item, .active{
 }
 
 #content .left a {
-  /*color: #405b5b;*/
-  /*color:#003864;*/
   color:#005C8F;
-  text-shadow: 0.5px 0.5px 1px #7c7b7b;
-
 }
 
 #content .left li {
@@ -147,12 +147,11 @@ li.current_page_item, .active{
   width: 250px;
   color: #6b7372;
   font-size: 11pt;
-  /*text-align: justify;*/
   background-color: #cccccc;
 }
 #content .right h3 {
   color: #73817f;
-  font-size: 11pt;
+  font-size: 16pt;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -166,7 +165,7 @@ li.current_page_item, .active{
 }
 #content .right li {
   padding: 2px;
-  font-size: 12px;
+  font-size: 16px;
 }
 #content .right li a {
   text-decoration: none;

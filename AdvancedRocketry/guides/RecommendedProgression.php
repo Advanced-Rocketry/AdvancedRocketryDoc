@@ -47,32 +47,6 @@
     <p>In order to be able to survive in space a protective <a href="../items/modularSpaceSuit.php">spacesuit</a> must be worn on any planet without an atmosphere.  The recipe for the spacesuit itself seen in an in-game recipe viewer such as NEI or JEI.</p>
     <p>Once you have completed your spacesuit, you can add oxygen to it by standing on a <a href="../blocks/gasCharger.php">Gas Charge Pad</a> filled with oxygen.  The space suit has enough oxygen to last 30 minutes in a vacuum.  Once the suit is out of oxygen you will begin to take damage.</p>
     <hr>
-    <a name="final"></a>
-    <center><h2>Putting it all Together</h2></center>
-    <p>
-    Now that you\'ve got all the infrastructure and protective equipment constructed, it is now time to put everything together and build your rocket.</p>
-    <p>Using an in-game recipe viewer like JEI or NEI, you must construct the following:
-    <ul>
-    <b>Rocket Assembing Infrastructure</b>
-    <li><a href="../blocks/RocketAssemblingMachine.php">Rocket Assembling Machine</a></li>
-    <li>Minimum of 4 <a href="../blocks/StructureTower.php">Structure Towers</a></li>
-    <li>Minimum of 9 concrete blocks</li>
-    <br>
-    <b>Rocket Materials</b>
-    <li>One <a href="../blocks/Seat.php">Seat</a></li>
-    <li>One <a href="../blocks/GuidanceComputer.php">Guidance computer</a></li>
-    <li>One <a href="../items/idChip.php">Planet ID chip</a></li>
-    <li>At least one <a href="../blocks/RocketEngine.php">Rocket Engine</a></li>
-    <li>At least one <a href="../blocks/FuelTank.php">fuel tank</a></li>
-    </ul>
-    </p>
-    
-    <p>
-    Once the above materials are aquired, you must build the Rocket Assembling Machine as shown <a href="../blocks/RocketAssemblingMachine.php">here</a>.
-    </p>
-    <p>
-    Once the Rocket Assembling Machine is constructed, you must build a rocket on the launch pad.  The rocket has no strict structure and can be built with creative freedom as long as thrust and size requirements are met.  The requirements are detailed at the bottom of the page <a href="../blocks/RocketAssemblingMachine.php">here</a>.
-    </p>
     
     <script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>';
     
@@ -83,7 +57,6 @@
     <li><a href="#infrastructure">Basic Infrastructure</a></li>
     <li><a href="#fuelinfrastructure">Fuel Infrastructure</a></li>
     <li><a href="#suitConstruction">Spacesuit Construction</a></li>
-    <li><a href="#final">Putting it all together</a></li>
     </ol>';
     include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?> 

@@ -12,39 +12,35 @@
     
     </div>
     
-    <hr><img align="left" src="../img/smallPlatePresser_demo.jpg" /><img align="right" src="../img/rodCrafting.jpg" />
-    <a name="basics"></a>
-    <center><h2>Obtaining Basic Materials</h2></center>
-    <p>Plates are one of the most basic materials you will need for progression in Advanced Rocketry.  Plates are required to build machines and various components for the mod.</p>
-    <p>Early game plates can be made via the <a href="../blocks/SmallPlatePresser.php">Small Plate Presser</a>.  The small plate presser can press a block of metal into 3 plates of the same type of metal.</p>
-    <p>Rods are another important ingredient in many Advanced Rocketry recipes.  Rods can be crafted in the crafting bench like in the image to the upper left of the page.</p>
+    <hr><center><h2>Obtaining Basic Materials</h2></center><img align="left" src="../img/smallPlatePresser_demo.jpg" /><img align="right" src="../img/rodCrafting.jpg" />
+    <a name="basics"></a>    
+    <p>To begin, you\'ll need a healthy stockpile of copper, iron, redstone, and titanium. Additionally, have some diamonds on hand and if you have some lime dye and magma cream lying around, you\'ll need those too.</p>
+    <p>Plates and rods are vital for bulding your infrastructure. The most basic construction block, Machine Structure, requires 4 of each.<p>Rods can be crafted according the recipe. Early game plates can be made via the <a href="../blocks/SmallPlatePresser.php">Small Plate Presser</a>.  However, it only presses a block of metal into 3 plates of the same type of metal.</p>
+    <p>To save on resources, only make enough to build the more effecient machines as they greatly reduce cost and increase time.</p>
     <hr>
     <a name="steel"></a>
-    <img align="left" src="../img/blastFurnace_demo.jpg" /><center><h2>Making Steel and Titanium</h2></center>
-    <p>Steel is another important ingredient in Advanced Rocketry recipes and must be made in the <a href="../blocks/ElectricArcFurnace.php">Electric Arc Furnance</a> supplied with power in the plugs and an iron ingot and coal in the <a href="../blocks/Hatches.php">input hatch(s)</a>.</p>
-    <p><i>It is recommended you start early with this step as it takes a long time to make steel!</i></p>
-    <br><p>Titanium is another material that can be made using the Electric Arc Furnace and will be required later.</p>
+    <img align="left" src="../img/blastFurnace_demo.jpg" /><center><h2>Steel and Titanium</h2></center>
+    <p>Steel is another important ingredient in Advanced Rocketry recipes and must be made in the <a href="../blocks/ElectricArcFurnace.php">Electric Arc Furnance</a>.<p>You will need a power source to supply it with power vis the input plugs. Items can be inserted via the <a href="../blocks/Hatches.php">input hatch(s)</a>. An iron ingot and coal takes 300s, 5 minutes, to produce 1 steel. It is recommended you start early with this step!</p><p>In addition to steel, the Arc Furnace smelts Rutile Ore into Titanium (5s). If no other mods are present, sand can be smelted to silicon, but takes twice as long as steel. You will need a good portion of titanium and silicon as you progress further. </p>
     <hr>
     <a name="infrastructure"></a>
-    <center><h2>Building basic Infrastructure</h2></center>
-    <p>In order to build the remaining components required for space travel certain processing machines are required.  The blueprints for these machines can be found in the <a href="../items/holoProjector.php">Holoprojector</a>.</p>
+    <center><h2>Basic Infrastructure</h2></center>
+    <p>Intergalactic travel requires a bit of effort. You will need a number of machines to make all the parts required to maintain and build your space program.</p>
     <p>These machine do not have to be built in any particular order however you will need at least one of each of the following:
     <ul>
-    <li>Lathe</li>
-    <li>Crystallizer</li>
-    <li>Cutting machine</li>
-    <li>Precision Assembler</li>
-    <li><a href="../items/modularSpaceSuit.php">Space Suit Construction</a></li>
+    <li><a href="../blocks/Lathe.php">Lathe</a></li>
+    <li><a href="../blocks/Crystallizer.php">Crystallizer</a></li>
+    <li><a href="../blocks/Cutting.php">Cutting Machine</a> </li>
+    <li><a href="../blocks/PrecisionAssembler.php">Precision Assembler</a></li>
+    <li><a href="../items/modularSpaceSuit.php">Suit Workstation</a></li>
     </ul>
-    
-    With these machines you will be able to manufacture basic circuits by constructing the recipe found in an in-game recipe book such as NEI or JEI.
+    The blueprints for these machines can be found in the <a href="../items/holoProjector.php">Holoprojector</a>. Together, they allow you to manufacture basic circuits, required by the components needed for space travel. Use the NEI or JEI to construct all the needed pieces. 
     </p>
     <hr>
     <a name="fuelinfrastructure"></a>
-    <center><h2>Fuel infrastructure</h2></center>
-    <p>Now that you\'ve got all the infrastructure required to build the rocket, you need to make sure you can fuel it.</p>
-    <p>In order to create fuel you must build both an Electrolyser and Chemical Reactor.  The Electrolyser must then be filled with water via the liquid input hatch and powered and turned on via the GUI.  The Electrolyser will then begin to convert the water to Oxygen and Hydrogen.</p>
-    <p>The Oxygen and hydrogen must be pumped from the liquid output hatches on the Electrolyser and transported to the liquid input hatches in the Chemical Reactor.  Please note that some Oxygen will be required to fill your spacesuit in the next step.</p>
+    <center><h2>Fuel Infrastructure</h2></center>
+    <p>Rockets require fuel, so you\'ll need to make some rocket fuel. This requires two more machines, the <a href="../blocks/Electrolyser.php">Electrolyser</a> and the <a href="../blocks/ChemicalReactor.php">Chemical Reactor</a>.</p>
+    <p>The Electrolyser must then be filled with water via the liquid input hatch and powered and turned on via the GUI. Currently, there are no components in the mod to transport water, but it is compatible with other mods. Water can be inserted using buckets, if no other method exists. The Electrolyser will then begin to convert the water to oxygen and hydrogen.</p>
+    <p>The Chemical Reactor then combines the two into rocket fuel. The oxygen and hydrogen must be pumped from the liquid output hatches on the Electrolyser and transported to the liquid input hatches in the Chemical Reactor.  Please note that some oxygen will be required to fill your spacesuit, so you may want to portion some out to a pressurized tank or other liquid container. The rocket fuel can be transported out of the liquid output hatch to either a liquid container or a <a href="../blocks/Fuelling.php">Fuelling Station</a>. This will be discussed more in the next guide, <a href="/Rockets.php">Rockets</a>.</p>
     <hr>
     <a name="suitConstruction"></a>
     <center><h2>Spacesuit Construction</h2></center>

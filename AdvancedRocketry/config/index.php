@@ -1,7 +1,7 @@
 <?php
     $title = 'Concepts';
     
-    $mainContent = '<h2>Advanced Rocketry Concepts</h2>
+    $mainContent = '<h2>Advanced Rocketry Configurations</h2><hr>
 <br />
 <p>Information about important concepts in the mod can be found in the following list:<br /></p>
 <ul>
@@ -12,5 +12,5 @@
 </ul>';
     
     $infoBarContent = ' Index of Advanced Rocketry Concepts';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?>

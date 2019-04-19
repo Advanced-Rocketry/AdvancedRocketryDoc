@@ -1,7 +1,7 @@
 <?php
     $title = 'Advanced Rocketry Recipe Configuration';
     
-    $mainContent = '<h2>Advanced Rocketry Recipe Configuration</h2>
+    $mainContent = '<h2>Advanced Rocketry Recipe Configuration</h2><hr>
 <br />
 <p>Welcome to the Advanced Rocketry advanced recipe configuration readme!<br /></p>
 
@@ -105,5 +105,5 @@ Each recipe type has essentially the same tags.  The recipe types are as follows
 ';
     
     $infoBarContent = 'Advanced Rocketry Recipe configuration';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?>

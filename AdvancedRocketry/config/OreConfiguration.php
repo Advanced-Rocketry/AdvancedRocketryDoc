@@ -1,7 +1,7 @@
 <?php
     $title = 'Advanced Rocketry Ore Configuration';
     
-    $mainContent = '<h2>Advanced Rocketry Ore Configuration</h2>
+    $mainContent = '<h2>Advanced Rocketry Ore Configuration</h2><hr>
 <br />
 <p>Welcome to the Advanced Rocketry(AR) advanced ore configuration readme!<br />
 This document will guide you through manually configuring ore for spawning on AR\'s various planets.</p>
@@ -55,7 +55,7 @@ The "ore" tag specifies an entry for a type of ore to spawn.  This tag has the f
 <p><h3>Example</h3> All planets with no atmosphere will spawn large quantities of iron blocks except those with high temperature, which will instead spawn gold blocks<br />
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 --- ./config/advancedRocketry/OreConfiguration.xml ---<br />
 
 &#60;OreConfig&#62;<br />
@@ -68,5 +68,5 @@ The "ore" tag specifies an entry for a type of ore to spawn.  This tag has the f
 &#60;/OreConfig></div></code></div>';
     
     $infoBarContent = ' Index of Advanced Rocketry Items';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?>

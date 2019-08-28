@@ -393,6 +393,8 @@ For moons, this value has no effect on temperatures.</p>
 <a name="oregen"></a>
 <center><h3>OreGen</h3></center>
 <p>The "oreGen" tag allows configuration of ore spawn on a planet-by-planet basis.  Exact specifics on how to use the tag are documented in more detail <a href="./OreConfiguration.php">here</a>.</p>
+<p>Please note that this is the vanilla veinSize property; this is not the number of ore blocks in a vein. Vanilla coal has a size of 16, while iron has a size of 8. </p>
+<p>SIZES OVER 100 CAN MEAN VEINS THE SIZE OF VILLAGES WITH 5k+ ORE!!!</p>
 
 <p>Note: unless the dimid of the planet is explicitly specifed with the <a href="#dimId"> dimid tag</a>, adding or removing planets to an already existing world in the AR config could result in unpredictable behavior</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">

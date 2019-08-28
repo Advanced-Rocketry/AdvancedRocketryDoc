@@ -45,7 +45,16 @@ The "ore" tag specifies an entry for a type of ore to spawn.  This tag has the f
 <li><b>meta</b>: optional attribute to specify the meta value of the block</li>
 <li><b>minHeight</b>: minimum height at which to  spawn the ore (between 1 and maxHeight)</li>
 <li><b>maxHeight</b>: maximum height at which to spawn the ore (between minHeight and 255)</li>
-<li><b>clumpSize</b>: amount of ores to generate in each clump</li>
+<li><b>clumpSize</b>: amount of ores to generate in each clump
+<ul>
+<li> The vanilla veinSize property</li>
+<li>This is not the number of ore blocks in a vein; that is a more complex nonlinear relationship</li>
+<li>Vanilla coal has a size of 16, while iron has a size of 8</li>
+<li>Please note that sizes over 100 can mean veins the size of villages, yielding 5k+ ore</li>
+<Sizes over 48 are not reccomended to be spawned more than a few times pre chunk, as they can become unreasonably large and common</li>
+</ul>
+</li>
+
 <li><b>chancePerChunk</b>: maximum number of clumps that can be spawned in a given chunk</li>
 </ul>
 </p>

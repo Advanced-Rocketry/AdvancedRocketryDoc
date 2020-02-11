@@ -247,12 +247,12 @@ Hex color can also be specified by prepending the code with "0x".</p>
 <center><h3>Atmosphere Density</h3></center>
 <p>The "atmosphereDensity" tag specifes the density of the atmosphere on a planet.  Any value greater than 75 is breathable, 
 100 is Earthlike, anything higher than 100 has a denser atmosphere than Earth and will have thicker fog.  Any value less than 75
-is unbreathable and will require a spacesuit and will generate craters.</p>
+is unbreathable and will require a spacesuit and will generate craters. Any value over 200 will cause bad status effects</p>
 
 <p>Atmosphere density also has an impact on the temerature of the planets, planets with thinner will be colder 
 and planets with thicker atmospheres will be warmer.</p>
 
-<p>Max: 200<br />
+<p>Max: 1600<br />
 Default: 100<br />
 Min: 0</p>
 
@@ -279,7 +279,7 @@ up blocks without assistance from stairs.  Values very close to 0 ( &#60; 10) ma
 YOU HAVE BEEN WARNED.</p>
 
 <ul>
-<li>Max: 200</li>
+<li>Max: 400</li>
 <li>Default: 100</li>
 <li>Min: 0</li>
 <li>Recommended Max: 110</li>
@@ -320,7 +320,7 @@ For MOONS orbiting other planets: <br />
 For moons, this value has no effect on temperatures.</p>
 
 <ul>
-<li>Max: 200</li>
+<li>Max: MAX_INT</li>
 <li>Default: 100</li>
 <li>Min: 0</li>
 </ul>
@@ -393,8 +393,7 @@ For moons, this value has no effect on temperatures.</p>
 <a name="oregen"></a>
 <center><h3>OreGen</h3></center>
 <p>The "oreGen" tag allows configuration of ore spawn on a planet-by-planet basis.  Exact specifics on how to use the tag are documented in more detail <a href="./OreConfiguration.php">here</a>.</p>
-<p>Please note that this is the vanilla veinSize property; this is not the number of ore blocks in a vein. Vanilla coal has a size of 16, while iron has a size of 8. </p>
-<p>SIZES OVER 100 CAN MEAN VEINS THE SIZE OF VILLAGES WITH 5k+ ORE!!!</p>
+<p>Please note that this is the vanilla veinSize property, this is not the number of ore blocks in a vein. Vanilla coal has a size of 16, while iron has a size of 8. Sizes over 100 can mean veins the size of small villages with 5k+ ore, be wary.</p>
 
 <p>Note: unless the dimid of the planet is explicitly specifed with the <a href="#dimId"> dimid tag</a>, adding or removing planets to an already existing world in the AR config could result in unpredictable behavior</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
@@ -444,6 +443,7 @@ motion sickness inducing.</p>
 <center><h3>Filler Block</h3></center>
 
 <p>The "fillerBlock" tag specifes the block to be used to fill most of the world.  As a note, this may be better used in conjuntion with the OreGen config as many ores may only spawn in stone.</p>
+<p>This will prevent ALL top blocks and filler blocks (Think grass and dirt respectively) from spawning, use BiomeTweaker to fix this</p>
 
 <p>Example usage; Creates a netherrack world</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">

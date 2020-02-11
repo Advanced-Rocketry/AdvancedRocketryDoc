@@ -31,7 +31,8 @@
     <hr><center><h2>Gas Harvesting Missions</h2></center>
     <img align="left" src="../img/missionGasMission.jpg" />
     <p>Gas harvesting missions are the primary method of obtaining large amounts of gasses such as oxygen, nitrogen, and hydrogen.  Gas Harvesting missions cannot be performed by standard rockets.  Only craft built in the <a href="../blocks/UnmannedVehicleAssembler.php">unmanned vehicle assembler</a> can be used in gas harvesting missions.</p>
-    <p>A gas harvesting mission must be launched from a space station orbiting a gas giant.</p>';
+    <p>A gas harvesting mission must be launched from a space station orbiting a gas giant.</p>
+    <p>Gas mining missions are the easiest way to refuel your rocket on the go while on the space station, often allowing a single stop at a gas giant to acquire more than enough rocket fuel for a while. They are extremely net positive on gas, and the only way to obtain nitrogen for terraforming planets within Advanced Rocketry itself. Once you have a space station, it is often easier to run a couple of gas mining missions and store the results for late fuel processing than to electrolyse water for hydrogen and oxygen</p>';
     
     $infoBarContent = '<h3>Table of Contents:</h3>
     <ol style="padding-left:15px;">

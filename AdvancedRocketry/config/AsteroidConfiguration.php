@@ -12,7 +12,7 @@
     <p>The "asteroid" tag is used to begin and end the Specification of a new type of asteroid.  The tag has several fields:
     <ul>
     <li><b>name</b> - The name of the asteroid type.</li>
-    <li><b>distance</b> - The minimum viewable distance the observatory must have to be able to discover this asteroid type.</li>
+    <li><b>distance</b> - The minimum viewable distance the observatory must have to be able to discover this asteroid type. Note that the max distance is 200 and the min distance is 35, and asteroid wieghts are calculated out of the available asteroids at the distance</li>
     <li><b>mass</b> - The total amount of blocks that can be harvested from this asteroid.</li>
     <li><b>massVariability</b> - The range of uncertainty of the number of blocks in an asteroid (must be between 0 and 1). (number = mass +/- 0.5*mass*massVariability)</li>
     <li><b>minLevel</b> - unused, to be removed.</li>

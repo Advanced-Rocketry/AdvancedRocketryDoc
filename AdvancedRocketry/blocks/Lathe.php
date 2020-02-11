@@ -22,7 +22,7 @@
     $imageDemoName = 'lathe_demo.png';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The Lathe is a multi-block construction which allows for faster and cheaper construction of rods. Use the <a href="../items/holoProjector.php">Holo-Projector</a> to complete the structure, then right click the Lathe machine block.</p><p>Items are inserted via the input hatch and the rods can be retrieved from the output hatch.</p>';
+    $description1 = '<p>The Lathe is a multi-block construction which allows for faster and cheaper construction of rods. The Lathe allows rods at a 2:1 from ingots, making the creation of machine structures much cheaper. Along with the Rolling Machine, it is one of the first machines you want to make, as it will decrease the costs of further machines significantly. Use the <a href="../items/holoProjector.php">Holo-Projector</a> to complete the structure, then right click the Lathe machine block.</p><p>Items are inserted via the input hatch and the rods can be retrieved from the output hatch.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';

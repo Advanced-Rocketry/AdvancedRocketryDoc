@@ -28,7 +28,7 @@
     <p>These satellites must be in orbit around the same planet that the Microwave Reciever is built on otherwise the satellites will be unable to transmit power.</p>
     <p>Even if the Microwave Reciever is turned off or not connected to a satellite, the satellites in orbit will continue to generate power which can be stored on a satellite\'s internal buffer.</p>
     <p>The reciever itself can be toggled on and off using the GUI in the Microwave Reciever control block</p>
-    <p>Because of the efficiency of the satellites placed in geosynchronous orbit and their constant view of the sun, the Microwave Reciever can generate a large amount of power, appropriate for the amount of glowstone, redstone, and gold invested into the multiblock and it\'s satellites. It is reccomended to have as many input hatches on the multiblock as can fit, so the maximum amount of satellites can be connected to one multiblock reciever.</p>
+    <p>Because of the efficiency of the satellites placed in geosynchronous orbit and their constant view of the sun, the Microwave Receiver can generate a large amount of power, appropriate for the amount of glowstone, redstone, and gold invested into the multiblock and it\'s satellites. It is recommended to have as many input hatches on the multiblock as can fit, so the maximum amount of satellites can be connected to one multiblock reciever.</p>
 
     <p>Power generated is stored to the Output Plugs built into the structure.</p>
     <p><font color=#CC0000><b>Warning:</b></font> Entities, items, and blocks that happen to be above the Microwave Reciever while in operation will be incinerated!!!</p>';

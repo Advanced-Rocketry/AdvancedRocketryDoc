@@ -22,11 +22,11 @@
     $imageDemoName = 'terraformer_demo.jpg';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The terraformer can increase and decrease the atmosphere pressure on an entire planet planet by using connected <a href="../items/biomeChanger.php">Biome changing remote</a>.</p>
+    $description1 = '<p>The terraformer can increase and decrease the atmosphere pressure on an entire planet planet by using connected <a href="../items/biomeChanger.php">Biome changing remote</a>. This allows for changing [revious;y uninhabitable planets to habitable ones, and allows customising things like star visibility and crater generation on a per-planet basis. The Terraformer is quite an expensive machine, requiring a very large amount of titanium to get off the ground, through many advanced machine structures. It also requires copious amounts of power and gasses to run.</p>
     <p>The Terraformer requires 40 mb/t of nitrogen and oxygen and 1000RF/t for the duration of the terraforming process.</p>
     <p>The Terraformer takes about an 15 minutes (configurable) to raise/lower the atmosphere by 0.01%</p>
     <p>Each 0.01% increase/decrease in atmosphere requires 720 buckets of Oxygen and Nitrogen as well as 18 Million RF</p>
-    <p>Once the atmosphere on a planet reaches a critical point (0.25atm, 0.75atm, 1.25atm) the planet\'s biomes will be modified to reflect the change.</p>
+    <p>Once the atmosphere on a planet reaches a critical point (0.25atm, 0.75atm, 2.00atm) the planet\'s biomes will be modified to reflect the change.</p>
     <p>Chunks that have not been loaded will appear to have been generated with the new biomes, chunks that have alredy been loaded will slowly change to the new biome set.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI

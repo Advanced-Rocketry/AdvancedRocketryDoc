@@ -25,6 +25,8 @@
     $description1 = '<p>The Laser Drill is a mining device that can be placed on a space station to mine the planet below at the cost of an extreme amount of energy.</p>
     <p>The Laser Drill must be placed on a space station and must have a clear line of sight to the bottom of the world in order to function.  In future releases may also require the station pointing downward.</p>
     <br>
+    <p>The laser drill can require around 20kRF/t, at the benefit of mining one block per tick, or 20 blocks per second. Not every block will be an ore, but it is still reccomended to have robust power generation and item transport before setting a drill up, as is having robust ore processing to deal with the ore income. Something like and Immersive Engineering Arc Furnace or a Mekanism factories ore processing line is recommended to be able to keep up with the drill. To create the power, a good solution is as many satellites will fit into a <a href="MicrowaveReciever.php">microwave receiver</a> with as many large solar panels as you can fit into them.</p>
+    <br>
     <p>While Running the laser drill will attempt to mine the planet at the specified coordinates if "laserDrillPlanet" is set to true.  If "laserDrillPlanet" is set to false the laser drill will not actually damage the planet below</p>
     <p>Collected blocks will be placed into an <a href="Hatches.php">output hatch</a>.  It will NOT place items into a chest on the front of the hatch.  Items will need to be removed by hand or some piping mechanism.</p>
     <p>If the hatches are all full the drill will jam and turn itself off.  Clicking the "reset" button in it\'s GUI will cause to to attempt to continue running if the jam is cleared.</p>

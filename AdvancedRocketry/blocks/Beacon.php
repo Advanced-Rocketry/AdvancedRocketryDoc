@@ -22,7 +22,7 @@
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The Beacon is a fairly cheap multiblock structure that has several purposes.</p>
-    <p>If Advanced Rocketry is configured in such a way that planets must be discovered before visiting them, then placing a beacon on a planet and activating it makes that planet visible to all players in the game.  Turning the beacon off will render the planet invisible again to players that have not discovered it.
+    <p>If Advanced Rocketry is configured in such a way that planets must be discovered before visiting them, then placing a beacon on a planet and activating it makes that planet visible to all players in the game.  Turning the beacon off will render the planet invisible again to players that have not discovered it. Though the controller has a bar for the RF input to the multiblock, the Beacon does not consume any power, and has no way to input it. It has little use when most players have minimaps, though the planet revealing function can be used by players who have discovered a planet to let friends onto it.
     </p>
     <p>
     The beacon also has a secondary function of showing a waypoint when wearing the beacon finder goggles.  the waypoint only shows if the player is in the same world as the beacon though.

@@ -22,10 +22,11 @@
     $imageDemoName = 'electricArcFurnace_demo.jpg';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The Electric Arc Furnace is a multiblock machine that uses electricity to raise the internal temperatures to extreme levels in order to melt and smelt most materials.
+    $description1 = '<p>The Electric Arc Furnace is a multiblock machine that uses electricity to raise the internal temperatures to extreme levels in order to melt and smelt specialised materials.
     </p>
     <p>
     In Advanced Rocketry the Electric Arc Furnace is primarily used to smelt steel, titanium, silicon, and a few other alloys.  The structure itself can have multiple inputs and outputs allowing for easier automation.
+    Steel takes a minute with copper coils, a silcion ingot 10 minutes. Because of the relative slow operation of silicon production, it is recommended to build multiple EAFs, which is feasible due to the small amount of resources needed for the bricks. Silicon\'s processing power is simply 1 RF/t, allowing even a single solar panel to run a blast furnace making silicon. More advanced alloys, such as TiAL or TiIr, will require more time and greater RF/t to smelt, as will the production of Titanium ingots from Rutile ore, which requires a small amount of RF and a short time.
     </p>
     <p>The blast furnace is initially fairly slow, but using more advanced <a href="Coils.php">coils</a> can increase the speed at which it operates.</p>';
     

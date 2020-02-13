@@ -23,7 +23,8 @@
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The Satellite Assembling Machine build constructs Satellites from components documented <a href="../items/satellite.php">here</a>.</p>
-    <p>Note: In order to build the Satellite Assembling Machine it must be placed on top of an input plug.</p>';
+    <p>Note: In order to build the Satellite Assembling Machine it must be placed on top of an input plug.</p>
+    <p>There are five types of satellites that can be made, satellites with any one of these scanners used for asteroid prospecting: Distance, Mass, or Composition, satellites with an Ore Mapper to allow for planetary ore prospecting, and lastly satellites with microwave transmitters to allow power generation with the <a href="MicrowaveReciever.php">Microwave Reciever</a></p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = 'SatelliteBuild_gui.png';

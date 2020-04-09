@@ -29,7 +29,7 @@
 <li><img class="icon" src="../img/motor_icon.png"> <a href="Motors.php">Motors</a></li>
 <li><img class="icon" src="../img/oxygenVent_icon.png"> <a href="Observatory.php">Observatory</a></li>
 <li><img class="icon" src="../img/oxygenScrubber_icon.png"> <a href="OxygenScrubber.php">CO2 Scrubber</a></li>
-<li><img class="icon" src="../img/laserDrill_icon.png"> <a href="LaserDrill.php">Orbital Laser Drill/a></li>
+<li><img class="icon" src="../img/laserDrill_icon.png"> <a href="LaserDrill.php">Orbital Laser Drill</a></li>
 <li><img class="icon" src="../img/oxygenVent_icon.png"> <a href="OxygenVent.php">Oxygen Vent</a></li>
 <li><img class="icon" src="../img/precision_icon.png"> <a href="PrecisionAssembler.php">Precision Assembling Machine</a></li>
 <li><img class="icon" src="../img/rocketAssemblingMachine_icon.png"> <a href="RocketAssemblingMachine.php">Rocket Assembling Machine</a></li>

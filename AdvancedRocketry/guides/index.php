@@ -6,10 +6,15 @@
 <p>To reach distant planets, you will need to work through four phases:
 </p>
 <ul>
+<li>Basic Advanced Rocketry Mechanics </li>
 <li><img class="icon" src="../img/rocket_icon.png"> <a href="RecommendedProgression.php">Infrastructure</a> - Machines and Manufacturing</li>
 <li><img class="icon" src="../img/rocket_icon.png"> <a href="Rockets.php">Rockets</a> - Prepping, Building and Launching Rockets</li>
 <li><img class="icon" src="../img/rocket_icon.png"> <a href="Missions.php">Mission Control</a> - Satellites, Data and Mining Missions</li>
 <li><img class="icon" src="../img/rocket_icon.png"> <a href="BuildingSpaceStation.php">Intergalactic Travel</a> - Building a Space Station, Exploration and Travel</li>
+<li>Pack Creation & Other Advanced Topics</li>
+<li><img class="icon" src="../img/rocket_icon.png"> <a href="ARNative.php">Making Interesting Planets</a> - Advanced Rocketry Native Options</li>
+<li><img class="icon" src="../img/rocket_icon.png"> <a href="ARExtended.php">Making Interesting Planets</a> - Extending AR With Other Mods</li>
+<li><img class="icon" src="../img/rocket_icon.png"> <a href="Asteroids.php">Making Interesting Asteroids</a></li>
 </ul>';
     
     $infoBarContent = 'Advanced Rocketry Concepts';

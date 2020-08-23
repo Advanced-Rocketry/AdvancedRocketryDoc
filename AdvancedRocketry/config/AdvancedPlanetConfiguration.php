@@ -173,6 +173,25 @@ The text inside the tag consists of a fluid name from Advanced Rocketry or anoth
 </div></code></div>
 <br /><hr>
 
+<a name="gentype"></a>
+<center><h3>genType tag</h3></center>
+
+<p>The "genType" tag specifies the type of generation that the planet it is modifying will experience. ALL generation that is not type 0 (standard planets) is in development and may cause problems with your world. Type 1 is a Nether-like cave world though it can be extremely laggy and it\'s not reccommended to be used. Type 2 is an asteroid type planet with RCS enabled and chunks of rock and ores scattered throughout a void world.</p>
+<p>Example usage; creates a planet with asteroids</p>
+<div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
+<code>
+<div style="width:100%">
+&#60;galaxy&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Jupiter"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;genType&#622&#60;/genType&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
+&#60;/galaxy&#62;<br />
+</div></code></div>
+<br /><hr>
+
 <a name="fogColor"></a>
 <center><h3>Fog Color</h3></center>
 

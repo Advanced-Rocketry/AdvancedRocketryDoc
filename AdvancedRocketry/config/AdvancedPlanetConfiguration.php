@@ -710,6 +710,7 @@ then in order for the planet to be discovered in the <a href="">warp controller<
     <li><a href="#isKnown">isKnown</a></li>
     <li><a href="#rings">Rings</a></li>
     <li><a href="#gasGiant">Gas Giant</a></li>
+    <li><a href="#genType">Generation Type</a></li>
     <li><a href="#gas">Gas</a></li>
     <li><a href="#fogColor">Fog Color</a></li>
     <li><a href="#skyColor">Sky Color</a></li>

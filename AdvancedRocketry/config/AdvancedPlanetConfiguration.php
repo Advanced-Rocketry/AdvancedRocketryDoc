@@ -247,8 +247,9 @@ Hex color can also be specified by prepending the code with "0x".</p>
 <center><h3>Atmosphere Density</h3></center>
 <p>The "atmosphereDensity" tag specifes the density of the atmosphere on a planet.  Any value greater than 75 is breathable, 
 100 is Earthlike, anything higher than 100 has a denser atmosphere than Earth and will have thicker fog.  Any value less than 75
-is unbreathable and will require a spacesuit and will generate craters. Any value over 200 will cause bad status effects</p>
-
+is unbreathable and will require a spacesuit and will generate craters. Any value over 200 will cause bad status effects. With default configs, any world with no oxygen will cause nausea.</p>
+<p>&#60;hasOxygen&#62; tags allow you to specify whether the atmosphere of this type has oxygen, independent of the pressure. Overly hot atmospheres or overly high pressure ones with no oxygen can kill the player very
+quickly, be warned!</p>
 <p>Atmosphere density also has an impact on the temerature of the planets, planets with thinner will be colder 
 and planets with thicker atmospheres will be warmer.</p>
 
@@ -305,8 +306,8 @@ YOU HAVE BEEN WARNED.</p>
 <center><h3>Orbital Distance</h3></center>
 <p>The "orbitalDistance" tag specifes the distance of the planet from the body it is orbiting.
 For planets orbiting the SUN:<br />
-    <div>100 is defined as an earthlike and will result in the sun appearing normal in size.  200 is very far from the sun and will result
-    in the sun appearing very small.  0 is nearly touching the surface of the host star and will result in the host star taking up a
+    <div>100 is defined as an earthlike and will result in the sun appearing normal in size.  1600 is very far from the sun and will result
+    in the sun appearing very small.  1 is nearly touching the surface of the host star and will result in the host star taking up a
     majority of the sky.
     Orbital distance also has an impact on the temerature of the planets, planets far away will be colder and planets closer to the host
     star will be warmer.</div><br />
@@ -601,7 +602,7 @@ must be accompanied by a DIMID tag!!!</p>
 
 <a name="customIcon"></a>
 <center><h3>Custom Icon (1.0.16+/1.1.5+)</h3></center>
-<p>The "customIcon" attribute allows a user to specify the icon used for a planet.  Currently only planet icons that come with Advanced Rocketry can be used</p>
+<p>The "customIcon" attribute allows a user to specify the icon used for a planet. You can load your own custom icons with mods like ResourceLoader by specifing the file name in the planetDefs.xml file.</p>
 
 <table class="table table-bordered">
     <thead> 
@@ -613,29 +614,35 @@ must be accompanied by a DIMID tag!!!</p>
          <th>Icon</th>
     </thead>
     <tr>
-        <td>EarthLike</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/Earthlike.png?raw=true"></td>
+        <td>GasGiantBlue</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/gasgiantblue.png?raw=true"></td>
         <td>GasGiantRed</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/GasGiantOrange.png?raw=true"></td>
-        <td>IceWorld</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/IceWorld.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/gasgiantorange.png?raw=true"></td>
+        <td>GasGiantBrown</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/gasgiantbrown.png?raw=true"></td>
+        <td>Venusian</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/venusian.png?raw=true"></td>
     </tr>
     <tr>
-        <td>GasGiantBlue</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/GasGiantBlue.png?raw=true"></td>
-        <td>MarsLike</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/marslike.png?raw=true"></td>
-        <td>Moon</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/moon.png?raw=true"></td>
-    </tr>
-    <!-- <tr>
         <td>Lava</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/Lava.png?raw=true"></td>
-    </tr> -->
-    <!-- <tr>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/lava.png?raw=true"></td>
+        <td>MarsLike</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/marslike.png?raw=true"></td>
+        <td>Moon</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/moon.png?raw=true"></td>
+        <td>CarbonWorld</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/carbonworld.png?raw=true"></td>
+    </tr>
+    <tr>
+        <td>EarthLike</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/Earthlike.png?raw=true"></td>
         <td>WaterWorld</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/WaterWorld.png?raw=true"></td>
-    </tr> -->
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/WaterWorld.png?raw=true"></td>
+        <td>DesertWorld</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/desertworld.png?raw=true"></td>
+        <td>IceWorld</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/iceworld.png?raw=true"></td>
+    </tr>
 </table>
 
 <p>Example usage; Makes the overworld have the texture of a red gas giant</p>

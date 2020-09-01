@@ -9,23 +9,29 @@
 <li><img class="icon" src="../img/beacon_icon.png"> <a href="Beacon.php">Beacon</a></li>
 <li><img class="icon" src="../img/biomeScanner_icon.png"> <a href="BiomeScanner.php">Biome Scanner</a></li>
 <li><img class="icon" src="../img/energyCable_icon.png"> <a href="Cables.php">Cable and pipes</a></li>
-<li><img class="icon" src="../img/oxygenScrubber_icon.png"> <a href="OxygenScrubber.php">CO2 Scrubber</a></li>
+<li><img class="icon" src="../img/chemicalReactor_icon.png"> <a href="ChemicalReactor.php">Chemical Reactor</a></li>
 <li><img class="icon" src="../img/coil_icon.png"> <a href="Coils.php">Coils</a></li>
+<li><img class="icon" src="../img/crystallizer_icon.png"> <a href="Crystallizer.php">Crystallizer</a></li>
+<li><img class="icon" src="../img/cutting_icon.png"> <a href="Cutting.php">Cutting Machine</a></li>
 <li><img class="icon" src="../img/electricArcFurnace_icon.png"> <a href="ElectricArcFurnace.php">Electric Arc Furnace</a></li>
+<li><img class="icon" src="../img/electrolyser_icon.png"> <a href="Electrolyser.php">Electrolyser</a></li>
 <li><img class="icon" src="../img/forceField_icon.png"> <a href="ForceField.php">Force Field Projector</a></li>
 <li><img class="icon" src="../img/fuelTank_icon.png"> <a href="FuelTank.php">Fuel Tank</a></li>
 <li><img class="icon" src="../img/fuellingStation_icon.png"> <a href="FuellingStation.php">Fuelling Station</a></li>
 <li><img class="icon" src="../img/gasChargePad_icon.png"> <a href="gasCharger.php">Gas Charger</a></li>
 <li><img class="icon" src="../img/gravityController_icon.png"> <a href="GravityController.php">Gravity Controller</a></li>
 <li><img class="icon" src="../img/guidanceComputer_icon.png"> <a href="GuidanceComputer.php">Guidance Computer</a></li>
-<li><img class="icon" src="../img/hatch_icon.png"> <a href="Hatches.php">Hatches and Loaders</a></li>
-<li><img class="icon" src="../img/dockingPad_icon.png"> <a href="LandingPad.php">Landing Pad</a></li>
+<li><img class="icon" src="../img/hatch_icon.png"> <a href="Hatches.php">Hatches</a></li>
+<li><img class="icon" src="../img/dockingPad_icon.png"> <a href="LandingPad.php">Docking Pad</a></li>
 <li><img class="icon" src="../img/launchPad_icon.png"> <a href="LaunchPad.php">Launch Pad</a></li>
+<li><img class="icon" src="../img/hatch_icon.png"> <a href="Loaders.php">Loaders and Unloaders</a></li>
 <li><img class="icon" src="../img/microwaveReciever_icon.png"> <a href="MicrowaveReciever.php">Microwave Reciever</a></li>
 <li><img class="icon" src="../img/motor_icon.png"> <a href="Motors.php">Motors</a></li>
 <li><img class="icon" src="../img/oxygenVent_icon.png"> <a href="Observatory.php">Observatory</a></li>
-<li><img class="icon" src="../img/laserDrill_icon.png"> <a href="LaserDrill.php">Orbital Laser Drill (formerly Laser Drill)</a></li>
+<li><img class="icon" src="../img/oxygenScrubber_icon.png"> <a href="OxygenScrubber.php">CO2 Scrubber</a></li>
+<li><img class="icon" src="../img/laserDrill_icon.png"> <a href="LaserDrill.php">Orbital Laser Drill</a></li>
 <li><img class="icon" src="../img/oxygenVent_icon.png"> <a href="OxygenVent.php">Oxygen Vent</a></li>
+<li><img class="icon" src="../img/precision_icon.png"> <a href="PrecisionAssembler.php">Precision Assembling Machine</a></li>
 <li><img class="icon" src="../img/rocketAssemblingMachine_icon.png"> <a href="RocketAssemblingMachine.php">Rocket Assembling Machine</a></li>
 <li><img class="icon" src="../img/railgun_icon.png"> <a href="Railgun.php">Railgun</a></li>
 <li><img class="icon" src="../img/rocketEngine_icon.png"> <a href="RocketEngine.php">Rocket Engine</a></li>
@@ -45,8 +51,9 @@
 <li><img class="icon" src="../img/rocketAssemblingMachine_icon.png"> <a href="UnmannedVehicleAssembler.php">Unmanned Vehicle Assembler</a></li>
 <li><img class="icon" src="../img/warpController_icon.png"> <a href="WarpController.php">Warp Controller</a></li>
 <li><img class="icon" src="../img/warpCore_icon.png"> <a href="WarpCore.php">Warp Core</a></li>
+<li><img class="icon" src="../img/wirelessTransciever_icon.png"> <a href="WirelessTransciever.php">Wireless Transciever</a></li>
 </ul>';
     
     $infoBarContent = ' Index of Advanced Rocketry Blocks and Machines';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?>

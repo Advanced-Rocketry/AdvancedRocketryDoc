@@ -1,18 +1,10 @@
 <?php
-    $title = 'Guide: Building a Space Station';
+    $title = 'Intergalactic Travel';
     
-    $mainContent = '<h1>'.$title.'</h1>
+    $mainContent = '<h2>'.$title.'</h2><hr><br>
     <center><h2>Introduction</h2></center>
-    <div style="display: inline-block"><div align=left style="float: left; margin-right:30px; width:250px; border-width: 1px; border-style: dashed; padding: 15px; padding-top: 0px; padding-bottom: 0px; background-color: #DDD;">
-    <h3>Table of Contents:</h3>
-    <ol style="padding-left:15px;">
-    <li><a href="#basics">Building a Construction Pad</a></li>
-    <li><a href="#building">Constucting the Station</a></li>
-    <li><a href="#launching">Launching the Station</a></li>
-    <li><a href="#modules">Adding Modules To the station</a></li>
-    </ol>
-    </div>
-    <p>Space stations, in addition to being cool.  Also provide a platform to mine ores, travel throughout the galaxy, and mine gas from gas giants.</p>
+    <div style="display: inline-block">
+    <p>Space stations, in addition to being cool, also provide a platform to mine ores, travel throughout the galaxy, and mine gas from gas giants.</p>
     </div>
     
     <hr>
@@ -36,12 +28,12 @@
     <img align="left" width="256px" src="../img/stationBuildTutorial_1.png" />
     <p>
     Now that the construction pad is complete, it\'s time to actually build a space station!  Exactly what the station should look like is entirely up to you, though you should consider some things when building a station.</p>
-    <p>The first time you go to your new station the rocket will land in the center of the first module you send up, so it is advised that the structure either be a landing platform of some kind or have a landing platform on top.  It\'s possible to change where the rockets land later by placing <a href="../blocks/DockingPads.php">landing pads</a> on the station while in orbit.</p>
+    <p>The first time you go to your new station the rocket will land in the center of the first module you send up, so it is advised that the structure either be a landing platform of some kind or have a landing platform on top.  It\'s possible to change where the rockets land later by placing <a href="../blocks/LandingPad.php">docking pads</a> on the station while in orbit.</p>
     <p>
     Once you\'ve built your station on the construction platform, you must scan and build the station.  In order to build the station you must have a <a href="../blocks/SatelliteHatch.php">satellite bay</a> in the upper left slot of the station builder, and an unprogrammed station chip in the top right slot.</p>
     <p>It is important that the chip be unprogrammed because programmed chips change the behavior of the machine!  Running a scan first is advised because it will tell you if anything is wrong with your structure, but if you\'re confident, there is no reason you cannot build right away.</p>
     <p>
-    Once the station is finished building the station builder will produce a chip programmed with the ID of your station as well as a space station container.  The station chip is used to get to that particular station in a rocket.  It is highly recommended that a copy of the chip is made in the <a href="../blocks/SatelliteBuilder.php">satellite builder</a> ASAP!
+    Once the station is finished building the station builder will produce a chip programmed with the ID of your station as well as a space station container.  The station chip is used to get to that particular station in a rocket.  It is highly recommended that a copy of the chip is made in the <a href="../blocks/SatelliteAssemblingMachine.php">satellite builder</a> ASAP!
     </p>
     
     <hr>
@@ -68,6 +60,13 @@
     <p>When the build button on the station builder is pressed, it\'ll build the module, but this time it will only give you a station module.  You must launch the station module onboard another rocket.  When the rocket reaches orbit the module will be rotated such that the station docking port on the module is facing the station docking port already in orbit on the station.</p>
     ';
     
-    $infoBarContent = $title.'<hr>';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    $infoBarContent = $title.'<hr>
+    <h3>Table of Contents:</h3>
+    <ol style="padding-left:15px;">
+    <li><a href="#basics">Building a Construction Pad</a></li>
+    <li><a href="#building">Constucting the Station</a></li>
+    <li><a href="#launching">Launching the Station</a></li>
+    <li><a href="#modules">Adding Modules To the station</a></li>
+    </ol>';
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?> 

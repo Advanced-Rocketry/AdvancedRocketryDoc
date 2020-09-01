@@ -1,38 +1,49 @@
 <?php
-    $title = 'Electric Arc Furnace';
+    /*  HOW TO USE THIS TEMPLATE
+        If you are unsure how to use this, please see any of the other pages for a reference. 
+
+        Descriptions can include any HTML tags. Please link to other pages when you reference a block or item the first time. 
+
+        <a href="Cables.php">data pipes</a>
+
+        Please follow these naming conventions when submitting images for blocks:
+            
+            PAGE IMAGE = nameOfBlock_demo.png
+            SIDE BAR IMAGE = nameOfBlock_block.png
+            ICON IMAGE FOR LIST PAGE = nameOfBlock_icon.png
+        
+        Place images in the img folder. Be sure to update blocks/index.html with a link to your block page.
     
-    $mainContent = '<h1>'.$title.'</h1><hr><img align="left" src="../img/electricArcFurnace_demo.jpg" /><p><center><h3>Overview</h3></center>
-    The Electric Arc Furnace is a multiblock machine that uses electricity to raise the internal temperatures to extreme levels in order to melt and smelt most materials.
+    */    
+    
+    //NAME OF BLOCK
+    $title = 'Electric Arc Furnace';
+
+    $imageDemoName = 'electricArcFurnace_demo.jpg';
+    
+    //USE <p></p> to make a new paragraph 
+    $description1 = '<p>The Electric Arc Furnace is a multiblock machine that uses electricity to raise the internal temperatures to extreme levels in order to melt and smelt specialised materials.
     </p>
     <p>
     In Advanced Rocketry the Electric Arc Furnace is primarily used to smelt steel, titanium, silicon, and a few other alloys.  The structure itself can have multiple inputs and outputs allowing for easier automation.
+    Steel takes a minute with copper coils, a silcion ingot 10 minutes. Because of the relative slow operation of silicon production, it is recommended to build multiple EAFs, which is feasible due to the small amount of resources needed for the bricks. Silicon\'s processing power is simply 1 RF/t, allowing even a single solar panel to run a blast furnace making silicon. More advanced alloys, such as TiAL or TiIr, will require more time and greater RF/t to smelt, as will the production of Titanium ingots from Rutile ore, which requires a small amount of RF and a short time.
     </p>
-    <p>The blast furnace is initially fairly slow, but using more advanced <a href="Coils.php">coils</a> can increase the speed at which it operates.</p>
-    <p>Below is a table containing the coil types and speed boosts:</p>
-    <table>
-        <tr>
-            <th>Coil Type</th>
-            <th>Speed multiplier</th>
-        </tr>
-        <tr>
-            <td>Gold</td>
-            <td>111%</td>
-        </tr>
-        <tr>
-            <td>Aluminum</td>
-            <td>125%</td>
-        </tr>
-        <tr>
-            <td>Titanium</td>
-            <td>133%</td>
-        </tr>
-        <tr>
-            <td>Iridium</td>
-            <td>200%</td>
-        </tr>
-    </table>
-    <p>Note: the modifier is multiplicative, so if an arc furnace had 3 Iridium coils the actual speed boost would be (200%/100)*(200%/100)*(200%/100)*100=800%</p>';
+    <p>The blast furnace is initially fairly slow, but using more advanced <a href="Coils.php">coils</a> can increase the speed at which it operates.</p>';
     
-    $infoBarContent = $title.'<hr><img src="../img/electricArcFurnace_block.png" /><hr>Hardness: 2<br />Blast Resistance: 0<br />Requires Tool: Yes<br />Full Block: Yes<br />Sealable: Yes<br />Tile Entity: Yes<br />MultiBlock';
+    //FILL IN THIS PART IF THE BLOCK HAS A GUI
+    $imageGUI = '';
+    $descriptionGUI =''; 
+    
+    $sidebarImage = 'electricArcFurnace_block.png';
+
+    $hardness = '2';
+    $blastResistance = '0';
+    $requiresTool = 'YES';
+    $fullBlock = 'YES';
+    $sealable = 'YES';
+    $tileEntity = 'YES';
+    $multiBlock = 'YES';
+    $other ='';
+
     include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
-?> 
+?>> 

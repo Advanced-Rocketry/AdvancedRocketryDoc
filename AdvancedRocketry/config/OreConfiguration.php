@@ -1,7 +1,7 @@
 <?php
     $title = 'Advanced Rocketry Ore Configuration';
     
-    $mainContent = '<h2>Advanced Rocketry Ore Configuration</h2>
+    $mainContent = '<h2>Advanced Rocketry Ore Configuration</h2><hr>
 <br />
 <p>Welcome to the Advanced Rocketry(AR) advanced ore configuration readme!<br />
 This document will guide you through manually configuring ore for spawning on AR\'s various planets.</p>
@@ -45,7 +45,16 @@ The "ore" tag specifies an entry for a type of ore to spawn.  This tag has the f
 <li><b>meta</b>: optional attribute to specify the meta value of the block</li>
 <li><b>minHeight</b>: minimum height at which to  spawn the ore (between 1 and maxHeight)</li>
 <li><b>maxHeight</b>: maximum height at which to spawn the ore (between minHeight and 255)</li>
-<li><b>clumpSize</b>: amount of ores to generate in each clump</li>
+<li><b>clumpSize</b>: amount of ores to generate in each clump
+<ul>
+<li> The vanilla veinSize property</li>
+<li>This is not the number of ore blocks in a vein; that is a more complex nonlinear relationship</li>
+<li>Vanilla coal has a size of 16, while iron has a size of 8</li>
+<li>Please note that sizes over 100 can mean veins the size of villages, yielding 5k+ ore</li>
+<Sizes over 48 are not reccomended to be spawned more than a few times pre chunk, as they can become unreasonably large and common</li>
+</ul>
+</li>
+
 <li><b>chancePerChunk</b>: maximum number of clumps that can be spawned in a given chunk</li>
 </ul>
 </p>
@@ -55,7 +64,7 @@ The "ore" tag specifies an entry for a type of ore to spawn.  This tag has the f
 <p><h3>Example</h3> All planets with no atmosphere will spawn large quantities of iron blocks except those with high temperature, which will instead spawn gold blocks<br />
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 --- ./config/advancedRocketry/OreConfiguration.xml ---<br />
 
 &#60;OreConfig&#62;<br />
@@ -68,5 +77,5 @@ The "ore" tag specifies an entry for a type of ore to spawn.  This tag has the f
 &#60;/OreConfig></div></code></div>';
     
     $infoBarContent = ' Index of Advanced Rocketry Items';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?>

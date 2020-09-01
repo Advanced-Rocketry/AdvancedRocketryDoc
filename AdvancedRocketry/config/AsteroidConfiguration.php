@@ -1,7 +1,7 @@
 <?php
     $title = 'Asteroid Configuration';
     
-    $mainContent = '<h2>Advanced Rocketry Asteroid Configuration (1.1.6+)</h2>
+    $mainContent = '<h2>Advanced Rocketry Asteroid Configuration (1.1.6+)</h2><hr><br>
     <p>Welcome to the Advanced Rocketry asteroid Configuration readme!  This document will list and explain the meanings of the different settings availible.</p>
     <p>The asteroid config is located in the "./config/advRocketry/asteroidConfig.xml" file.  This config is used to specify the traits of asteroids that can be found in the <a href="../blocks/Observatory.php">observatory</a> ingame.</p>
     <p>The configuration must be surrounded with "Asteroids" tags</p>
@@ -12,12 +12,12 @@
     <p>The "asteroid" tag is used to begin and end the Specification of a new type of asteroid.  The tag has several fields:
     <ul>
     <li><b>name</b> - The name of the asteroid type.</li>
-    <li><b>distance</b> - The minimum viewable distance the observatory must have to be able to discover this asteroid type.</li>
+    <li><b>distance</b> - The minimum viewable distance the observatory must have to be able to discover this asteroid type. Note that the max distance is 200 and the min distance is 35, and asteroid wieghts are calculated out of the available asteroids at the distance</li>
     <li><b>mass</b> - The total amount of blocks that can be harvested from this asteroid.</li>
-    <li><b>massVariability</b> - The range of uncertainty of the number of blocks in an asteroid. (number = mass +/- massVariability).</li>
+    <li><b>massVariability</b> - The range of uncertainty of the number of blocks in an asteroid (must be between 0 and 1). (number = mass +/- 0.5*mass*massVariability)</li>
     <li><b>minLevel</b> - unused, to be removed.</li>
     <li><b>richness</b> - The ratio of the ore to rock content of the asteroid, 1.0 would make the asteroid 100% ore.</li>
-    <li><b>richnessVariability</b> - The range of uncertainty of the ratio of ore to stone.</li>
+    <li><b>richnessVariability</b> - The range of uncertainty of the ratio of ore to stone (must be between 0 and 1).</li>
     <li><b>probability</b> - The probability relative to other asteroids of showing up in the list during gameplay.  Note that the probabilities are normallized so sums of probabilities greater than 1 are allowed.</li>
     <li><b>timeMultiplier</b> - The multiplier on the amount of time requires to mine an asteroid.</li>
     </ul></p>
@@ -27,7 +27,7 @@
     <p>Example asteroid:  contains iron, gold, redstone ores, and charcoal (coal with metavalue 1)</p>
     
     <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
-    <code><div style="width:1600px">
+    <code><div style="width:100%">
     &#60;Asteroids&#62;<br>
     &nbsp;&nbsp;&nbsp;&nbsp;...<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&#60;asteroid name="Large Asteroid" distance="10" mass="1000" massVariability="0.5" minLevel="0" probability="1" richness="0.8" richnessVariability="0.5"&#62;<br>
@@ -41,5 +41,5 @@
     </div></code></div>';
     
     $infoBarContent = 'Asteroid Configuration';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?>

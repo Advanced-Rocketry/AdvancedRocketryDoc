@@ -1,9 +1,44 @@
 <?php
+    /*  HOW TO USE THIS TEMPLATE
+        If you are unsure how to use this, please see any of the other pages for a reference. 
+
+        Descriptions can include any HTML tags. Please link to other pages when you reference a block or item the first time. 
+
+        <a href="Cables.php">data pipes</a>
+
+        Please follow these naming conventions when submitting images for blocks:
+            
+            PAGE IMAGE = nameOfBlock_demo.png
+            SIDE BAR IMAGE = nameOfBlock_block.png
+            ICON IMAGE FOR LIST PAGE = nameOfBlock_icon.png
+        
+        Place images in the img folder. Be sure to update blocks/index.html with a link to your block page.
+    
+    */    
+    
+    //NAME OF BLOCK
     $title = 'Data Storage Unit';
+
+    $imageDemoName = 'abdp_demo.jpg';
     
-    $mainContent = '<h1>'.$title.'</h1><hr><h2><center>Overview</center></h2>
-    <p>The data storage unit is used to store data of different types.  This is useful for transporting data from a <a href="../blocks/satelliteTerminal.php">Satellite Terminal</a> or Observetory to machines like the <a href="../blocks/Abdp.php">Astrobody Data Processor</a>.</p>';
+    //USE <p></p> to make a new paragraph 
+    $description1 = '<p>The data storage unit is used to store data of different types.  This is useful for transporting data from a <a href="../blocks/satelliteTerminal.php">Satellite Terminal</a> or Observetory to machines like the <a href="../blocks/Abdp.php">Astrobody Data Processor</a>.</p>';
     
-    $infoBarContent = $title.'<hr><img height=128px style="image-rendering: -webkit-optimize-contrast; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: crisp-edges;" src="../img/items/dataStorageUnit.png" /><hr>Has NBT: Yes<hr><center><h3>Teir 1</h3></center>Data Storage capacity: 500';
+    //FILL IN THIS PART IF THE BLOCK HAS A GUI
+    $imageGUI = '';
+    $descriptionGUI =''; 
+    
+    $sidebarImage = 'items/dataStorageUnit.png';
+
+    $hardness = '';
+    $blastResistance = '';
+    $requiresTool = '';
+    $fullBlock = '';
+    $sealable = '';
+    $tileEntity = '';
+    $multiBlock = '';
+    $hasNBT = 'YES';
+    $other ='<b><h3>Teir 1</h3></b>Data Storage capacity: 500';
+
     include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
-?> 
+?>

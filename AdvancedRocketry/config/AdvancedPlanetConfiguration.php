@@ -1,34 +1,9 @@
 <?php
-    $title = 'Advanced Rocketry Ore Configuration';
+    $title = 'Advanced Rocketry Planet Configuration';
     
-    $mainContent = '<center><h2>Advanced Rocketry Ore Configuration</h2></center>
+    $mainContent = '<h2>Advanced Rocketry Planet Configuration</h2><hr><br>
 
-<div style="display: inline-block"><div align=left style="float: left; margin-right:30px; width:250px; border-width: 1px; border-style: dashed; padding: 15px; padding-top: 0px; padding-bottom: 0px; background-color: #DDD;">
-    <h3>Table of Contents:</h3>
-    <ol style="padding-left:15px;">
-    <li><a href="#basicSpec">Basic Specification</a></li>
-    <li><a href="#planetSpec">Planet Specification</a></li>
-    <li><a href="#isKnown">isKnown</a></li>
-    <li><a href="#rings">Rings</a></li>
-    <li><a href="#gasGiant">Gas Giant</a></li>
-    <li><a href="#gas">Gas</a></li>
-    <li><a href="#fogColor">Fog Color</a></li>
-    <li><a href="#skyColor">Sky Color</a></li>
-    <li><a href="#atmDensity">Atmosphere Density</a></li>
-    <li><a href="#gravMult">Gravitational Multiplier</a></li>
-    <li><a href="#orbitalDist">Orbital Distance</a></li>
-    <li><a href="#orbitalTheta">Orbital Theta</a></li>
-    <li><a href="#orbitalPhi">Orbital Phi</a></li>
-    <li><a href="#oregen">OreGen</a></li>
-    <li><a href="#rotationalPeriod">Rotational Period</a></li>
-    <li><a href="#biomeIds">Biome Ids</a></li>
-    <li><a href="#dimId">Dim ID</a></li>
-    <li><a href="#dimMapping">Dim mapping</a></li>
-    <li><a href="#customIcon">Custom Icon</a></li>
-    <li><a href="#artifact">Artifact</a></li>
-    <li><a href="#oceanBlock">OceanBlock</a></li>
-    </ol>
-</div>
+<div style="display: inline-block">
 <p>Welcome to the Advanced Rocketry(AR) advanced configuration readme!</p>
 <p>To use manual xml planet configuration, download and modify <a href="https://github.com/zmaster587/AdvancedRocketry/blob/master/Template.xml">this template</a> and rename it to "planetDefs.xml" in the config/advancedRocketry folder.</p>
 <p>This document will guide you through manually or semi-manually defining planets for your world using the planetDefs.xml file.  This file can be located in either the "config/advRocketry" folder or in the "[path to world]/advRocketry" folder.</p>
@@ -46,12 +21,33 @@ tag.</p>
 <p>Example usage; generates one random planet around a star named Sol with the temperature of the sun at origin:</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
 &#60;/galaxy&#62;</div></code></div>
+
+<br /><hr>
+
+<a name="starSpec" ></a>
+<center><h3>Binary Star Specification</h3></center>
+<p>In addition to having single star systems, Advanced rocketry allows Binary, Trinary, and even n-body star systems (As many stars as you want!).  It is much like defining a <a href="#basicSpec">normal star</a> except there\'s a slightly different set of tags.  Namely the \'x\', \'y\', \'numPlanets\', and \'numGasGiants\' tags are absent.  Additionally, there is a new \'separation\' tag.  The \'speration\' tag determines how far from the host star the sister star is located in solar radii.</p>
+<p>Unlike the top level star tag, when defining a binary or trinary system, the star tag must go inside the top level star tag immediately before the planet tags.  The name tag is currently unused.  Additionally, sister stars CAN be black holes.</p>
+
+<p>Example usage; generates a trinary star system with the planet Jole:</p>
+<div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
+<code>
+<div style="width:100%">
+&#60;galaxy&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1" numGasGiants="0" blackHole="false"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol-2" temp="200" separation="10.0" /&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Jole"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
+&#60;/galaxy&#62;<br />
+</div></code></div>
 
 <br /><hr>
 
@@ -65,14 +61,16 @@ name of the planet.  If the name attribute is not present then the planet is aut
 <p>The "numPlanet" attribute defines how many random (extra planets that are randomly generated in addition to planets specified with the planet tag) rocky planets should be defined in the solar systems, if not specified then
 AR will default to six.  The "numGasGiants" attribute defines how many gas giants are created in the solar system.</p>
 
+<p>The "blackHole" attribute determines whether or not a star is a black hole or not.  Space stations can orbit black holes and use the Black Hole Generator to create power from items being thrown into the black hole</p>
+
 <p>Example usage; generates one random planet and one planet with manually specified properties named "Earth" with a moon
 named "Luna" and another manually specified planet "Mars"</p>
 
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1" numGasGiants="0"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1" numGasGiants="0" blackHole="false"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Luna"&#62;<br />
@@ -96,7 +94,7 @@ If the tag is not present the default is false.  This tag as no effect on moons,
 
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1" numGasGiants="0"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
@@ -122,7 +120,7 @@ If the tag is not present the default is false.  This tag as no effect on moons,
 <p>Example usage; Gives Mars rings</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Mars"&#62;<br />
@@ -140,7 +138,7 @@ If the tag is not present the default is false.  This tag as no effect on moons,
 <p>Example usage; creates a planet named "Jupiter" and makes it a gas giant</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Jupiter"&#62;<br />
@@ -161,7 +159,7 @@ The text inside the tag consists of a fluid name from Advanced Rocketry or anoth
 <p>Example usage; creates a planet named "Jupiter" and makes it a gas giant containing only oxygen and nitrogen</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Jupiter"&#62;<br />
@@ -184,7 +182,7 @@ Hex color can also be specified by prepending the code with "0x".</p>
 <p>Example usage; specifes a teal color fog using the RGB format.</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
@@ -198,7 +196,7 @@ Hex color can also be specified by prepending the code with "0x".</p>
 <p>Example usage; specifes the same teal color fog as the previous example using hex format.</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
@@ -220,7 +218,7 @@ Hex color can also be specified by prepending the code with "0x".</p>
 <p>Example usage; specifes a teal color sky using the RGB format.</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
@@ -233,7 +231,7 @@ Hex color can also be specified by prepending the code with "0x".</p>
 <p>Example usage; specifes the same teal color sky as the previous example using hex format.</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
@@ -249,19 +247,19 @@ Hex color can also be specified by prepending the code with "0x".</p>
 <center><h3>Atmosphere Density</h3></center>
 <p>The "atmosphereDensity" tag specifes the density of the atmosphere on a planet.  Any value greater than 75 is breathable, 
 100 is Earthlike, anything higher than 100 has a denser atmosphere than Earth and will have thicker fog.  Any value less than 75
-is unbreathable and will require a spacesuit and will generate craters.</p>
+is unbreathable and will require a spacesuit and will generate craters. Any value over 200 will cause bad status effects</p>
 
 <p>Atmosphere density also has an impact on the temerature of the planets, planets with thinner will be colder 
 and planets with thicker atmospheres will be warmer.</p>
 
-<p>Max: 200<br />
+<p>Max: 1600<br />
 Default: 100<br />
 Min: 0</p>
 
 <p>Example usage; specifes an atmosphere with the same density as Earth</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
@@ -275,13 +273,13 @@ Min: 0</p>
 <br /><hr>
 <a name="gravMult"></a>
 <center><h3>Gravitational Multiplier</h3></center>
-<p>The "gravitationalMultiplier" tag specifes the density of the atmosphere on a planet.  100 is earthlike.  Any value less than 100
+<p>The "gravitationalMultiplier" tag specifes the density of the gravitational pull on a planet.  100 is earthlike.  Any value less than 100
 will result in a gravitational pull less than that of Earth.  Any value higher than 110 may result in players being UNABLE to jump
 up blocks without assistance from stairs.  Values very close to 0 ( &#60; 10) may result in players being unable to fall.
 YOU HAVE BEEN WARNED.</p>
 
 <ul>
-<li>Max: 200</li>
+<li>Max: 400</li>
 <li>Default: 100</li>
 <li>Min: 0</li>
 <li>Recommended Max: 110</li>
@@ -291,7 +289,7 @@ YOU HAVE BEEN WARNED.</p>
 <p>Example usage; specifes an atmosphere with the same density as Earth</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
@@ -322,7 +320,7 @@ For MOONS orbiting other planets: <br />
 For moons, this value has no effect on temperatures.</p>
 
 <ul>
-<li>Max: 200</li>
+<li>Max: MAX_INT</li>
 <li>Default: 100</li>
 <li>Min: 0</li>
 </ul>
@@ -330,7 +328,7 @@ For moons, this value has no effect on temperatures.</p>
 <p>Example usage; specifes a distance from the host star to be the same as Earth</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
@@ -355,7 +353,7 @@ For moons, this value has no effect on temperatures.</p>
 <p>Example usage; specifes a planet to start exactly opposite the sun from Earth</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
@@ -380,7 +378,7 @@ For moons, this value has no effect on temperatures.</p>
 <p>Example usage; sun rises in the north and sets in the south</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
@@ -395,11 +393,12 @@ For moons, this value has no effect on temperatures.</p>
 <a name="oregen"></a>
 <center><h3>OreGen</h3></center>
 <p>The "oreGen" tag allows configuration of ore spawn on a planet-by-planet basis.  Exact specifics on how to use the tag are documented in more detail <a href="./OreConfiguration.php">here</a>.</p>
+<p>Please note that this is the vanilla veinSize property, this is not the number of ore blocks in a vein. Vanilla coal has a size of 16, while iron has a size of 8. Sizes over 100 can mean veins the size of small villages with 5k+ ore, be wary.</p>
 
 <p>Note: unless the dimid of the planet is explicitly specifed with the <a href="#dimId"> dimid tag</a>, adding or removing planets to an already existing world in the AR config could result in unpredictable behavior</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Pootis"&#62;<br />
@@ -428,11 +427,104 @@ motion sickness inducing.</p>
 <p>Example usage; specifes a planet named Beebop to have a 10 minute day/night cycle</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Beebop"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;rotationalPeriod&#62;12000&#60;/rotationalPeriod&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
+&#60;/galaxy&#62;<br />
+</div></code></div>
+
+<br /><hr>
+<a name="fillerBlock"></a>
+<center><h3>Filler Block</h3></center>
+
+<p>The "fillerBlock" tag specifes the block to be used to fill most of the world.  As a note, this may be better used in conjuntion with the OreGen config as many ores may only spawn in stone.</p>
+<p>This will prevent ALL top blocks and filler blocks (Think grass and dirt respectively) from spawning, use BiomeTweaker to fix this</p>
+
+<p>Example usage; Creates a netherrack world</p>
+<div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
+<code>
+<div style="width:100%">
+&#60;galaxy&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;fillerBlock&#62;minecraft:netherrack&#60;/fillerBlock&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
+</div></code></div>
+
+<br /><hr>
+<a name="oceanBlock"></a>
+<center><h3>Ocean Block</h3></center>
+<p>The "oceanBlock" tag specifes the block that should fill oceans.  It is \'Minecraft:water\' by default.  It can be any block in the game, however damage values are not accepted at this point in time.</p>
+<p>It is also ill advisable to use a block with a tile entity (like a furnace or chest) as an ocean block unless you have a really powerful computer.</p>
+
+<p>Example usage; Lava oceans</p>
+<div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
+<code>
+<div style="width:100%">
+&#60;galaxy&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Vulcan"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;oceanBlock&#62;Minecraft:lava&#60;/oceanBlock&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
+&#60;/galaxy&#62;<br />
+</div></code></div>
+
+<br /><hr>
+<a name="seaLevel"></a>
+<center><h3>Sea Level</h3></center>
+
+<p>The "seaLevel" tag specifes the height at which ocean generates on a world, only works on worlds generated by AR.</p>
+
+<ul>
+<li>Max: 255</li>
+<li>Default: 64</li>
+<li>Min: 1</li>
+</ul>
+
+<p>Example usage; specifes a planet named WaterWorld and gives it a sealevel of 128</p>
+<div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
+<code>
+<div style="width:100%">
+&#60;galaxy&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="WaterWorld"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;seaLevel&#62;128&#60;/seaLevel&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
+&#60;/galaxy&#62;<br />
+</div></code></div>
+
+<br /><hr>
+<a name="spawnable"></a>
+<center><h3>Spawnable</h3></center>
+
+<p>The "spawnable" tag tells Advanced Rocketry to attempt to spawn a provided entity on a given planet.  You can have more than one tag per planet.  The tag has an entity name as the inner data plus three attributes:</p>
+
+<ul>
+<li>weight: how likely it is to spawn compared to the others (default 100)</li>
+<li>groupMin: minimum number of entities to spawn in a cluster (default 1)</li>
+<li>groupMax: maximum number of entities to spawn in a cluster (default 1)</li>
+</ul>
+
+<p>Example usage; specifes a planet named Squidville and spawns villagers and sheep in the wild where each group contains between 1 and 5 members.</p>
+<div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
+<code>
+<div style="width:100%">
+&#60;galaxy&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Squidville"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;spawnable weight="1" groupMin="1" groupMax="5"&#62;minecraft:villager&#60;/spawnable&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;spawnable weight="1" groupMin="1" groupMax="5"&#62;minecraft:sheep&#60;/spawnable&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
@@ -452,7 +544,7 @@ A list of vanilla biomes can be found <a href=http://minecraft.gamepedia.com/Bio
 <p>Example usage; Planet will generate only ocean and ice plains</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth"&#62;<br />
@@ -473,7 +565,7 @@ and more control in general</p>
 <p>Example usage; Planet will generate with the dimid 99</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth" DIMID="99"&#62;<br />
@@ -495,7 +587,7 @@ must be accompanied by a DIMID tag!!!</p>
 <p>Example usage; Adding Twilight forests (with default configs) as a planet around Sol</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Earth" DIMID="7" dimMapping=""&#62;<br />
@@ -511,57 +603,45 @@ must be accompanied by a DIMID tag!!!</p>
 <center><h3>Custom Icon (1.0.16+/1.1.5+)</h3></center>
 <p>The "customIcon" attribute allows a user to specify the icon used for a planet.  Currently only planet icons that come with Advanced Rocketry can be used</p>
 
-<table>
-    <tr> <th>Name</th> 
-         <th>1.0.x</th>
-         <th>1.1.x+</th> 
-    </tr>
+<table class="table table-bordered">
+    <thead> 
+         <th>Name</th> 
+         <th>Icon</th>
+         <th>Name</th>
+         <th>Icon</th>
+         <th>Name</th>
+         <th>Icon</th>
+    </thead>
     <tr>
         <td>EarthLike</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/Earthlike.png?raw=true"></td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/Earthlike.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/Earthlike.png?raw=true"></td>
+        <td>GasGiantRed</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/GasGiantOrange.png?raw=true"></td>
+        <td>IceWorld</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/IceWorld.png?raw=true"></td>
     </tr>
     <tr>
         <td>GasGiantBlue</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/GasGiantBlue.png?raw=true"></td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/GasGiantBlue.png?raw=true"></td>
-    </tr>
-    <tr>
-        <td>GasGiantRed</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/GasGiantOrange.png?raw=true"></td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/GasGiantOrange.png?raw=true"></td>
-    </tr>
-    <tr>
-        <td>IceWorld</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/IceWorld.png?raw=true"></td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/IceWorld.png?raw=true"></td>
-    </tr>
-    <tr>
-        <td>Lava</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/Lava.png?raw=true"></td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/Lava.png?raw=true"></td>
-    </tr>
-    <tr>
-        <td>WaterWorld</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/WaterWorld.png?raw=true"></td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/WaterWorld.png?raw=true"></td>
-    </tr>
-    <tr>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/GasGiantBlue.png?raw=true"></td>
         <td>MarsLike</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/marslike.png?raw=true"></td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/marslike.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/marslike.png?raw=true"></td>
+        <td>Moon</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/moon.png?raw=true"></td>
     </tr>
-    <tr>
-        <td>moon</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/master/src/main/resources/assets/advancedrocketry/textures/planets/moon.png?raw=true"></td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/RoundPlanets1_10/src/main/resources/assets/advancedrocketry/textures/planets/moon.png?raw=true"></td>
-    </tr>
+    <!-- <tr>
+        <td>Lava</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/Lava.png?raw=true"></td>
+    </tr> -->
+    <!-- <tr>
+        <td>WaterWorld</td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/MC1.7/src/main/resources/assets/advancedrocketry/textures/planets/WaterWorld.png?raw=true"></td>
+    </tr> -->
 </table>
 
 <p>Example usage; Makes the overworld have the texture of a red gas giant</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="Overworld" DIMID="0" dimMapping="" customIcon="gasgiantred"&#62;<br />
@@ -575,14 +655,14 @@ must be accompanied by a DIMID tag!!!</p>
 
 <a name="artifact"></a>
 <center><h3>Artifact (0.1.8+)</h3></center>
-<p>The "artifact" attribute allows a user to specify an item requirement for travelling to the planet.  The artifacts must all be in the <a href="/AdvancedRocketry/blocks/WarpController.php">warp controller</a> every time the user wishes to warp to that planet.  Also if the "planetsMustBeDiscovered" is set to true
-then in order for the planet to be discovered in the <a href="/AdvancedRocketry/blocks/WarpController.php">warp controller</a> the specifed artifacts must be placed in the machine.</p>
+<p>The "artifact" attribute allows a user to specify an item requirement for travelling to the planet.  The artifacts must all be in the <a href="">warp controller</a> every time the user wishes to warp to that planet.  Also if the "planetsMustBeDiscovered" is set to true
+then in order for the planet to be discovered in the <a href="">warp controller</a> the specifed artifacts must be placed in the machine.</p>
 <p>Each item can be specifed by &#60;modname&#62;:&#60;blockname&#62; &#60;meta&#62;</p>
 
-<p>Example usage: Makes a planet by the of "CoalLand" require charcoal (coal with meta 1) in the warp controller to warp to in a warpship</p>
+<p>Example usage; Makes a planet by the of "CoalLand" require charcoal (coal with meta 1) in the warp controller to warp to in a warpship</p>
 <div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
 <code>
-<div style="width:1200px">
+<div style="width:100%">
 &#60;galaxy&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</br>
@@ -594,29 +674,35 @@ then in order for the planet to be discovered in the <a href="/AdvancedRocketry/
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
 &#60;/galaxy&#62;<br />
 </div></code></div>
-
-<a name="oceanBlock"></a>
-<center><h3>OceanBlock (1.2.7+)</h3></center>
-<p>The "oceanBlock" attribute allows a user to specify a block that is used instead of water for an ocean on a given planet.</p>
-<p style="font-size:10px">Do not do any tile entity such as a chest or you may find the world unplayable!</p>
-
-<p>Example usage: creates a planet where the ocean is made of pyrotheum</p>
-<div style="border-width: 1px; border-style: dashed; padding: 15px; background-color: #DDD; overflow: auto">
-<code>
-<div style="width:1200px">
-&#60;galaxy&#62;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;planet name="CoalLand"&#62;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;oceanBlock&#62;thermalfoundation:fluid_pyrotheum&#60;/oceanBlock&#62;</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/planet&#62;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&#60;/star&#62;<br />
-&#60;/galaxy&#62;<br />
-</div></code></div>
 ';
     
-    $infoBarContent = ' Index of Advanced Rocketry Items';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    $infoBarContent = ' <h3>Table of Contents:</h3>
+    <ol style="padding-left:15px;">
+    <li><a href="#basicSpec">Basic Specification</a></li>
+    <li><a href="#starSpec">Binary Star Specification</a></li>
+    <li><a href="#planetSpec">Planet Specification</a></li>
+    <li><a href="#isKnown">isKnown</a></li>
+    <li><a href="#rings">Rings</a></li>
+    <li><a href="#gasGiant">Gas Giant</a></li>
+    <li><a href="#gas">Gas</a></li>
+    <li><a href="#fogColor">Fog Color</a></li>
+    <li><a href="#skyColor">Sky Color</a></li>
+    <li><a href="#atmDensity">Atmosphere Density</a></li>
+    <li><a href="#gravMult">Gravitational Multiplier</a></li>
+    <li><a href="#orbitalDist">Orbital Distance</a></li>
+    <li><a href="#orbitalTheta">Orbital Theta</a></li>
+    <li><a href="#orbitalPhi">Orbital Phi</a></li>
+    <li><a href="#oregen">OreGen</a></li>
+    <li><a href="#rotationalPeriod">Rotational Period</a></li>
+    <li><a href="#fillerBlock">Filler Block</a>
+    <li><a href="#oceanBlock">Ocean Block</a></li>
+    <li><a href="#seaLevel">Sea Level</a></li>
+    <li><a href="#spawnable">Spawnable</a></li>
+    <li><a href="#biomeIds">Biome Ids</a></li>
+    <li><a href="#dimId">Dim ID</a></li>
+    <li><a href="#dimMapping">Dim mapping</a></li>
+    <li><a href="#customIcon">Custom Icon</a></li>
+    <li><a href="#artifact">Artifact</a></li>
+    </ol>';
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
 ?>

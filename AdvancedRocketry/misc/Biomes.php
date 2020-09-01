@@ -48,7 +48,18 @@
     <div style="display:flow-root">
     <h2>Stormland</h2>
     <img align="left" src="../img/stormland.png" /><p>The Stormland is a biome covered in burnt out trees made of Charcoal Logs. The grass here is colored black, and the biome seems to resemble a forest that was burnt down at some point. It has a biome temperature of 0.9.</p>
-    </div><hr>';
+    </div>
+    <hr>
+    <div style="display:flow-root">
+    <h2>Volcanic</h2>
+    <img align="left" src="../img/volcanic.png" /><p>The Volcanic biome a desolate wasteland of tall Basalt mountains, found only on the hottest of planets. It is a barren and inhospitable biome with volcanoes and normally, lava oceans. The singular resource it offers is enriched lava.</p>
+    </div>
+    <hr>
+    <div style="display:flow-root">
+    <h2>Volcanic Barren</h2>
+    <img align="left" src="../img/volcanic_barren.png" /><p>The Volcanic Barren biome is similar to the Volcanic, except the biome is much flatter and has fewer volcanoes. It still has lava oceans, and because of its lower height, can have  a larger percentage of its area covered in lava. </p>
+    </div>
+    <hr>';
 
     $infoBarContent = $title.'<hr>';
     include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');

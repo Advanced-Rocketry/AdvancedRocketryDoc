@@ -47,5 +47,5 @@
     $multiBlock = 'NO';
     $other ='<b>Motor</b><br />Speed Multiplier: 1x<hr><b>Advanced Motor</b><br />Speed Multiplier: 1.5x<hr><b>Enhanced Motor</b><br />Speed Multiplier: 2x<hr><b>Elite Motor</b><br />Speed Multiplier: 4x';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
 ?> 

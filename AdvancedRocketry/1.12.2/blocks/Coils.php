@@ -40,5 +40,5 @@
     $multiBlock = 'NO';
     $other = '<br><b>Other Coils</b><br>Speed Multiplier: 1x<hr><b>Gold Coil</b><br>Speed Multiplier: 1.11x<hr><b>Aluminum Coil</b><br>Speed Multiplier: 1.25x<hr><b>Titanium Coil</b><br>Speed Multiplier: 1.33x<hr><b>Iridium Coil</b><br>Speed Multiplier: 2x<hr><p>Note: The modifiers are multiplicative, so if an Arc Furnace had 3 Iridium coils the actual speed boost would be 8x (2x*2x*2x).</p>';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
 ?> 

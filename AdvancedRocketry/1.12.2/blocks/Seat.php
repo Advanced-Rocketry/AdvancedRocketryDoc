@@ -39,5 +39,5 @@
     $multiBlock = 'NO';
     $other ='<b>Teir 1</b><br />Comfort:<br> 10/10 Sit Again';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
 ?> 

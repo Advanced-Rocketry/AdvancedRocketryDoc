@@ -46,5 +46,5 @@
     $multiBlock = 'NO';
     $other ='<b>Structure Size:</b><br>1x2x1';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
 ?>

@@ -42,5 +42,5 @@
     $multiBlock = '';
     $other ='<b>Teir 1</b><br />Destination Storage: 1';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
 ?>

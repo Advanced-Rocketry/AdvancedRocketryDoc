@@ -11,5 +11,5 @@
 
     
     $infoBarContent='1.12.2 Documentation';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templeteIndex1.12.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex1.12.php');
 ?>

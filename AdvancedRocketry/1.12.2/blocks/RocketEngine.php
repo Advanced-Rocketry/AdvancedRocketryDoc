@@ -40,5 +40,5 @@
     $multiBlock = '';
     $other ='<b><h3>Teir 1</h3></b>Fuel Consumption: 1 mb/s<br />Thrust: 10N<br /><hr><b><h3>Teir 2</h3></b>Fuel Consumption: 2<br />Thrust: 50N';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
 ?> 

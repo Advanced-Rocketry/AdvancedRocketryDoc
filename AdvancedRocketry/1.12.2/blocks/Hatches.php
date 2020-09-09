@@ -51,5 +51,5 @@
     $multiBlock = '';
     $other ='<b>Teir 1</b><br />Number of slots: 4';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
 ?> 

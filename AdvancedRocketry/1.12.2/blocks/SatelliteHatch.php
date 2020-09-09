@@ -42,5 +42,5 @@
     $multiBlock = 'NO';
     $other ='<b>Teir 1</b><br />Weight Capacity:<br>Unlimited<br />Maximum Size:<br> Unlimited';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
 ?> 

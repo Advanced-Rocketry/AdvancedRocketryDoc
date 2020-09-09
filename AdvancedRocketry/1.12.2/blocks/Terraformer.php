@@ -44,5 +44,5 @@
     $multiBlock = 'YES';
     $other ='<b>Requires:</b><br>Nitrogen: 40 mb/s<br />Oxygen: 40 mb/s<br />Energy: 1000RF/t';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
 ?> 

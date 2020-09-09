@@ -22,7 +22,7 @@
     $imageDemoName = 'abdp_demo.jpg';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The Astrobody Data Processor is essentially a computer that analyses data brought in from <a href="../items/satellite.php">satellites</a> and telescopes.  The purpose of this machine is to process data and program the analysed data into asteriod ID chips for use with asteroid mining missions.</p>
+    $description1 = '<p>The Astrobody Data Processor is essentially a computer that analyses data brought in from <a href="../../items/satellite.php">satellites</a> and telescopes.  The purpose of this machine is to process data and program the analysed data into asteriod ID chips for use with asteroid mining missions.</p>
     <p>The Astrobody Data Processor can handle the three main data types and the data can either be loaded from a <a href="../items/datachip.php">data storage unit</a> or from <a href="WirelessTransciever.php">wireless transcievers</a>.</p>
     <p>The Astrobody Data processor is also responsible for completing the asteroid  ID chips.</p>';
     
@@ -46,5 +46,5 @@
     $multiBlock = 'YES';
     $other ='';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
 ?>

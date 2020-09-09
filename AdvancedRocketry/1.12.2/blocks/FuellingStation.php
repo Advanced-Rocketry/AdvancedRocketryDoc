@@ -40,5 +40,5 @@
     $multiBlock = '';
     $other ='<b>Teir 1</b><br>Fuel Storage: 500mb';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
 ?>

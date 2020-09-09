@@ -8,7 +8,6 @@
 <li><img class="icon" src="../../img/abdp_icon.png"> <a href="Abdp.php">Astrobody Data Proccessor</a></li>
 <li><img class="icon" src="../../img/beacon_icon.png"> <a href="Beacon.php">Beacon</a></li>
 <li><img class="icon" src="../../img/biomeScanner_icon.png"> <a href="BiomeScanner.php">Biome Scanner</a></li>
-<li><img class="icon" src="../../img/energyCable_icon.png"> <a href="Cables.php">Cable and pipes</a></li>
 <li><img class="icon" src="../../img/crystallizer_icon.png"> <a href="ChemicalReactor.php">Chemical Reactor</a></li>
 <li><img class="icon" src="../../img/coil_icon.png"> <a href="Coils.php">Coils</a></li>
 <li><img class="icon" src="../../img/crystallizer_icon.png"> <a href="Crystallizer.php">Crystallizer</a></li>
@@ -55,5 +54,5 @@
 </ul>';
     
     $infoBarContent = ' Index of Advanced Rocketry Blocks and Machines';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex1.12.php');
 ?>

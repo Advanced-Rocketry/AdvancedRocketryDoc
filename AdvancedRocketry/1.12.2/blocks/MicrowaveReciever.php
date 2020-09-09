@@ -50,5 +50,5 @@
     $multiBlock = 'YES';
     $other ='<b>Structure Size:</b><br>5x1x5<br><b>Power Generation:</b><br>  Variable';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
 ?>

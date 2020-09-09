@@ -9,7 +9,7 @@
 <li><img class="icon" src="../../img/beacon_icon.png"> <a href="Beacon.php">Beacon</a></li>
 <li><img class="icon" src="../../img/biomeScanner_icon.png"> <a href="BiomeScanner.php">Biome Scanner</a></li>
 <li><img class="icon" src="../../img/energyCable_icon.png"> <a href="Cables.php">Cable and pipes</a></li>
-<li><img class="icon" src="../../img/chemicalReactor_icon.png"> <a href="ChemicalReactor.php">Chemical Reactor</a></li>
+<li><img class="icon" src="../../img/crystallizer_icon.png"> <a href="ChemicalReactor.php">Chemical Reactor</a></li>
 <li><img class="icon" src="../../img/coil_icon.png"> <a href="Coils.php">Coils</a></li>
 <li><img class="icon" src="../../img/crystallizer_icon.png"> <a href="Crystallizer.php">Crystallizer</a></li>
 <li><img class="icon" src="../../img/cutting_icon.png"> <a href="Cutting.php">Cutting Machine</a></li>

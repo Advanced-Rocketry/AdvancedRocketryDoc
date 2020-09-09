@@ -23,7 +23,7 @@
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The linker is a tool that is used to link various things together.</p>
-    <p>The most common use of the linker is to link <a href="../blocks/Hatches.php">hatches</a> to Rockets, <a href="../blocks/LandingPad.php">Landing Pads</a>, and <a href="../blocks/RocketAssemblingMachine.php">Rocket Assembling Machines</a>.</p>
+    <p>The most common use of the linker is to link <a href="/AdvancedRocketry/1.12.2/blocks/Hatches.php">hatches</a> to Rockets, <a href="/AdvancedRocketry/1.12.2/blocks/LandingPad.php">Landing Pads</a>, and <a href="/AdvancedRocketry/1.12.2/blocks/RocketAssemblingMachine.php">Rocket Assembling Machines</a>.</p>
     <p>To program the linker, shift right click on the block you wish to link from.  To link with a programmed linker, shift right click on the destination block.  To clear the Linker, shift right click while not looking at anything.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI

@@ -37,25 +37,25 @@
     <th>Storage Size</th>
     </tr>
     <tr>
-    <td><img align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/items/pressureTank0.png"/>Low Pressure Tank</td>
+    <td><img align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/items/pressureTank0.png"/>Low Pressure Tank</td>
     <td>Iron</td>
     <td>1000Mb</td>
     </tr>
     
     <tr>
-    <td><img align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/items/pressureTank1.png"/>Pressure Tank</td>
+    <td><img align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/items/pressureTank1.png"/>Pressure Tank</td>
     <td>Steel</td>
     <td>2000Mb</td>
     </tr>
     
     <tr>
-    <td><img align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/items/pressureTank2.png"/>High Pressure Tank</td>
+    <td><img align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/items/pressureTank2.png"/>High Pressure Tank</td>
     <td>Aluminum</td>
     <td>4000Mb</td>
     </tr>
     
     <tr>
-    <td><img align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="../img/items/pressureTank3.png"/>High Pressure Tank</td>
+    <td><img align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/items/pressureTank3.png"/>High Pressure Tank</td>
     <td>Titanium</td>
     <td>8000Mb</td>
     </tr>

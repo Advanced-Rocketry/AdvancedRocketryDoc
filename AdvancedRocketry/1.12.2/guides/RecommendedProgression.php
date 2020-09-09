@@ -12,40 +12,40 @@
     
     </div>
     
-    <hr><center><h2>Obtaining Basic Materials</h2></center><img align="left" src="../img/smallPlatePresser_demo.jpg" /><img align="right" src="../img/rodCrafting.jpg" />
+    <hr><center><h2>Obtaining Basic Materials</h2></center><img align="left" src="/AdvancedRocketry/img/smallPlatePresser_demo.jpg" /><img align="right" src="/AdvancedRocketry/img/rodCrafting.jpg" />
     <a name="basics"></a>    
     <p>To begin, you\'ll need a healthy stockpile of copper, iron, redstone, and titanium. Additionally, have some diamonds on hand and if you have some lime dye and magma cream lying around, you\'ll need those too.</p>
-    <p>Plates and rods are vital for bulding your infrastructure. The most basic construction block, Machine Structure, requires 4 of each.<p>Rods can be crafted according the recipe. Early game plates can be made via the <a href="../blocks/SmallPlatePresser.php">Small Plate Presser</a>.  However, it only presses a block of metal into 3 plates of the same type of metal.</p>
+    <p>Plates and rods are vital for bulding your infrastructure. The most basic construction block, Machine Structure, requires 4 of each.<p>Rods can be crafted according the recipe. Early game plates can be made via the <a href="/AdvancedRocketry/blocks/SmallPlatePresser.php">Small Plate Presser</a>.  However, it only presses a block of metal into 3 plates of the same type of metal.</p>
     <p>To save on resources, only make enough to build the more effecient machines as they greatly reduce cost and increase time.</p>
     <hr>
     <a name="steel"></a>
-    <img align="left" src="../img/blastFurnace_demo.jpg" /><center><h2>Steel and Titanium</h2></center>
-    <p>Steel is another important ingredient in Advanced Rocketry recipes and must be made in the <a href="../blocks/ElectricArcFurnace.php">Electric Arc Furnance</a>.<p>You will need a power source to supply it with power vis the input plugs. Items can be inserted via the <a href="../blocks/Hatches.php">input hatch(s)</a>. An iron ingot and coal takes 300s, 5 minutes, to produce 1 steel. It is recommended you start early with this step!</p><p>In addition to steel, the Arc Furnace smelts Rutile Ore into Titanium (5s). If no other mods are present, sand can be smelted to silicon, but takes twice as long as steel. You will need a good portion of titanium and silicon as you progress further. </p>
+    <img align="left" src="/AdvancedRocketry/img/blastFurnace_demo.jpg" /><center><h2>Steel and Titanium</h2></center>
+    <p>Steel is another important ingredient in Advanced Rocketry recipes and must be made in the <a href="/AdvancedRocketry/blocks/ElectricArcFurnace.php">Electric Arc Furnance</a>.<p>You will need a power source to supply it with power vis the input plugs. Items can be inserted via the <a href="/AdvancedRocketry/blocks/Hatches.php">input hatch(s)</a>. An iron ingot and coal takes 300s, 5 minutes, to produce 1 steel. It is recommended you start early with this step!</p><p>In addition to steel, the Arc Furnace smelts Rutile Ore into Titanium (5s). If no other mods are present, sand can be smelted to silicon, but takes twice as long as steel. You will need a good portion of titanium and silicon as you progress further. </p>
     <hr>
     <a name="infrastructure"></a>
     <center><h2>Basic Infrastructure</h2></center>
     <p>Intergalactic travel requires a bit of effort. You will need a number of machines to make all the parts required to maintain and build your space program.</p>
     <p>These machine do not have to be built in any particular order however you will need at least one of each of the following:
     <ul>
-    <li><a href="../blocks/Lathe.php">Lathe</a></li>
-    <li><a href="../blocks/Crystallizer.php">Crystallizer</a></li>
-    <li><a href="../blocks/Cutting.php">Cutting Machine</a> </li>
-    <li><a href="../blocks/PrecisionAssembler.php">Precision Assembler</a></li>
-    <li><a href="../items/modularSpaceSuit.php">Suit Workstation</a></li>
+    <li><a href="/AdvancedRocketry/1.12.2/blocks/Lathe.php">Lathe</a></li>
+    <li><a href="/AdvancedRocketry/1.12.2/blocks/Crystallizer.php">Crystallizer</a></li>
+    <li><a href="/AdvancedRocketry/1.12.2/blocks/Cutting.php">Cutting Machine</a> </li>
+    <li><a href="/AdvancedRocketry/1.12.2/blocks/PrecisionAssembler.php">Precision Assembler</a></li>
+    <li><a href="/AdvancedRocketry/1.12.2/items/modularSpaceSuit.php">Suit Workstation</a></li>
     </ul>
-    The blueprints for these machines can be found in the <a href="../items/holoProjector.php">Holoprojector</a>. Together, they allow you to manufacture basic circuits, required by the components needed for space travel. Use the NEI or JEI to construct all the needed pieces. 
+    The blueprints for these machines can be found in the <a href="/AdvancedRocketry/items/holoProjector.php">Holoprojector</a>. Together, they allow you to manufacture basic circuits, required by the components needed for space travel. Use the NEI or JEI to construct all the needed pieces. 
     </p>
     <hr>
     <a name="fuelinfrastructure"></a>
     <center><h2>Fuel Infrastructure</h2></center>
-    <p>Rockets require fuel, so you\'ll need to make some rocket fuel. This requires two more machines, the <a href="../blocks/Electrolyser.php">Electrolyser</a> and the <a href="../blocks/ChemicalReactor.php">Chemical Reactor</a>.</p>
+    <p>Rockets require fuel, so you\'ll need to make some rocket fuel. This requires two more machines, the <a href="/AdvancedRocketry/1.12.2/blocks/Electrolyser.php">Electrolyser</a> and the <a href="/AdvancedRocketry/1.12.2/blocks/ChemicalReactor.php">Chemical Reactor</a>.</p>
     <p>The Electrolyser must then be filled with water via the liquid input hatch and powered and turned on via the GUI. Currently, there are no components in the mod to transport water, but it is compatible with other mods. Water can be inserted using buckets, if no other method exists. The Electrolyser will then begin to convert the water to oxygen and hydrogen.</p>
-    <p>The Chemical Reactor then combines the two into rocket fuel. The oxygen and hydrogen must be pumped from the liquid output hatches on the Electrolyser and transported to the liquid input hatches in the Chemical Reactor.  Please note that some oxygen will be required to fill your spacesuit, so you may want to portion some out to a pressurized tank or other liquid container. The rocket fuel can be transported out of the liquid output hatch to either a liquid container or a <a href="../blocks/Fuelling.php">Fuelling Station</a>. This will be discussed more in the next guide, <a href="/Rockets.php">Rockets</a>.</p>
+    <p>The Chemical Reactor then combines the two into rocket fuel. The oxygen and hydrogen must be pumped from the liquid output hatches on the Electrolyser and transported to the liquid input hatches in the Chemical Reactor.  Please note that some oxygen will be required to fill your spacesuit, so you may want to portion some out to a pressurized tank or other liquid container. The rocket fuel can be transported out of the liquid output hatch to either a liquid container or a <a href="/AdvancedRocketry/1.12.2/blocks/Fuelling.php">Fuelling Station</a>. This will be discussed more in the next guide, <a href="/AdvancedRocketry/1.12.2/guides/Rockets.php">Rockets</a>.</p>
     <hr>
     <a name="suitConstruction"></a>
     <center><h2>Spacesuit Construction</h2></center>
-    <p>In order to be able to survive in space a protective <a href="../items/modularSpaceSuit.php">spacesuit</a> must be worn on any planet without an atmosphere.  The recipe for the spacesuit itself seen in an in-game recipe viewer such as NEI or JEI.</p>
-    <p>Once you have completed your spacesuit, you can add oxygen to it by standing on a <a href="../blocks/gasCharger.php">Gas Charge Pad</a> filled with oxygen.  The space suit has enough oxygen to last 30 minutes in a vacuum.  Once the suit is out of oxygen you will begin to take damage.</p>
+    <p>In order to be able to survive in space a protective <a href="/AdvancedRocketry/1.12.2/items/modularSpaceSuit.php">spacesuit</a> must be worn on any planet without an atmosphere.  The recipe for the spacesuit itself seen in an in-game recipe viewer such as NEI or JEI.</p>
+    <p>Once you have completed your spacesuit, you can add oxygen to it by standing on a <a href="/AdvancedRocketry/1.12.2/blocks/gasCharger.php">Gas Charge Pad</a> filled with oxygen.  The space suit has enough oxygen to last 30 minutes in a vacuum.  Once the suit is out of oxygen you will begin to take damage.</p>
     <hr>
     
     <script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>';

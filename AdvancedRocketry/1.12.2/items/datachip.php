@@ -22,7 +22,7 @@
     $imageDemoName = 'abdp_demo.jpg';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The data storage unit is used to store data of different types.  This is useful for transporting data from a <a href="../blocks/satelliteTerminal.php">Satellite Terminal</a> or Observetory to machines like the <a href="../blocks/Abdp.php">Astrobody Data Processor</a>.</p>';
+    $description1 = '<p>The data storage unit is used to store data of different types.  This is useful for transporting data from a <a href="/AdvancedRocketry/1.12.2/blocks/satelliteTerminal.php">Satellite Terminal</a> or Observetory to machines like the <a href="/AdvancedRocketry/1.12.2/blocks/Abdp.php">Astrobody Data Processor</a>.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';

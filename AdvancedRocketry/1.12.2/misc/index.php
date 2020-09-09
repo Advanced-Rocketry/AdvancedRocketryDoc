@@ -5,7 +5,7 @@
     <br />
     <p>Information about items can be found in the following list:<br /></p>
     <ul>
-	    <li><img class="icon" src="../img/rocket_icon.png"> <a href="Biomes.php">Biomes</a></li>
+	    <li><img class="icon" src="/AdvancedRocketry/img/rocket_icon.png"> <a href="Biomes.php">Biomes</a></li>
     </ul>';
     
     $infoBarContent = ' Index of Advanced Rocketry Items';

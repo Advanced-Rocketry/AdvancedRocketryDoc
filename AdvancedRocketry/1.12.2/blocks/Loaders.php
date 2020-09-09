@@ -22,7 +22,7 @@
     $imageDemoName = 'hatch_demo2.jpg';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>Loaders and Unloaders are used to load/unload fluids and items from the rocket.</p><p>They can be linked directly to a rocket, a rocket assembler, or Docking Pad using a <a href="../items/linker.php">Linking tool</a>.</p>
+    $description1 = '<p>Loaders and Unloaders are used to load/unload fluids and items from the rocket.</p><p>They can be linked directly to a rocket, a rocket assembler, or Docking Pad using a <a href="/AdvancedRocketry/1.12.2/items/linker.php">Linking tool</a>.</p>
     <p>When linked to a Docking Pad or rocket assembler, any rocket that lands on the Docking Pad or on the landing pad will automatically be linked to the loaders and they will automatically unload/load their payload.</p></p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI

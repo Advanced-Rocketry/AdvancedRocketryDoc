@@ -30,7 +30,7 @@
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = 'railgun_gui.png';
     $descriptionGUI ='<p>Once the structure is built, the control terminal will be accessible via right click bringing up a GUI similar to the image on the left.</p>
-    <p>The slot on the far left must be occupied by a <a href="../items/linker.php">Linker</a> programmed with the coordinates of the destination railgun.  If being used as reciever only, this slot may be empty.  The linker can be programmed with the coordinates of another railgun simply by shift-rightclicking the terminal of another railgun.</p>
+    <p>The slot on the far left must be occupied by a <a href="/AdvancedRocketry/1.12.2/items/linker.php">Linker</a> programmed with the coordinates of the destination railgun.  If being used as reciever only, this slot may be empty.  The linker can be programmed with the coordinates of another railgun simply by shift-rightclicking the terminal of another railgun.</p>
     <br /><p>The "Min Transfer Size" box allows a player to specify the smallest stack size the railgun is allowed to send.  If no input hatch has a stack that large, the railgun will wait until a stack becomes larger than that value.</p>
     <p>The button with the redstone icon on the top right allows a player to choose under what redstone conditions the machine is allowed to operate, by default redstone control is disabled.</p>
     <p>The power swtich is to the left of the redstone control button, if the power switch is in the off position the machine will not fire, however if swtiched on, then the machine will fire assuming other conditions are met.</p>'; 

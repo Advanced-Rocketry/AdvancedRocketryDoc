@@ -27,7 +27,7 @@
     <p>Fluid hatches, when built into a machine provides the capacity for the machine to accept fluids, this is nessessary for some recpies</p>
     <p>Item Hatches are used to provide a way of getting items into and out of a machine.  Most will move an itemstack over if there is room if the output stack cannot fit in the last slot.</p>
     <p>Energy Hatches are used to accept or output energy from a machine.</p>
-    <p>Hatches can be linked directly to a rocket, a rocket assembler, or Docking Pad using a <a href="../items/linker.php">Linking tool</a>.</p>
+    <p>Hatches can be linked directly to a rocket, a rocket assembler, or Docking Pad using a <a href="/AdvancedRocketry/1.12.2/items/linker.php">Linking tool</a>.</p>
     <p>When linked to a Docking Pad or rocket assembler, any rocket that lands on the Docking Pad or on the landing pad will automatically be linked to the hatches.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI

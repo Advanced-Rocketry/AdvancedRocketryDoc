@@ -26,7 +26,7 @@
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = 'wirelessTransciever_gui.jpg';
-    $descriptionGUI ='<p>The Wireless Transciever can be placed on any block that accepts a data connection.  The rear of the wireless Transciever must be touching a valid data I/O port however.  Wireless Transcievers can be linked using the <a href="../items/Linker.php">Linker</a>.  At this point in time, each Transciever can connect to only one other Transciever otherwise the dataflow may be garbled and can become unpredictable.</p>
+    $descriptionGUI ='<p>The Wireless Transciever can be placed on any block that accepts a data connection.  The rear of the wireless Transciever must be touching a valid data I/O port however.  Wireless Transcievers can be linked using the <a href="../AdvancedRocketry/1.12.2/items/Linker.php">Linker</a>.  At this point in time, each Transciever can connect to only one other Transciever otherwise the dataflow may be garbled and can become unpredictable.</p>
     <p>The <font color="#009900">power toggle</font> turns the Transciever on and off.  Then the Wireless Transciever is turned off, it will not emit nor accept any data from the remote Transciever or the block its connected to.</p>
     <p>The <font color="#990000">extract</font> toggle button changes the device from accept mode to extract mode when activated.  In Extract mode, the Wireless Transciever will pull data from the block it\'s connected to and send it to the remote Transciever.  If both Transcievers in the same network are in extract mode, no data will be sent as the airwaves will be jammed.</p>'; 
     

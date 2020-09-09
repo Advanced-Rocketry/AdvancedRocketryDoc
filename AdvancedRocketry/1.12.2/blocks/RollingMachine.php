@@ -22,7 +22,7 @@
     $imageDemoName = 'rolling_demo.png';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The Rolling Machine requires water and power to create plates. It\'s more efficient and easier to automate than the <a href="/SmallPlatePresser.php">Small Plate Presser</a></p><p>Use the <a href="/items/holoProjector.php">Holo-Projector</a> to complete the structure, then right click the Lathe machine block.</p>';
+    $description1 = '<p>The Rolling Machine requires water and power to create plates. It\'s more efficient and easier to automate than the <a href="SmallPlatePresser.php">Small Plate Presser</a></p><p>Use the <a href="/AdvancedRocketry/1.12.2/items/holoProjector.php">Holo-Projector</a> to complete the structure, then right click the Lathe machine block.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';

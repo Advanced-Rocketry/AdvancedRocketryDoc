@@ -22,7 +22,7 @@
     $imageDemoName = 'suitWorkstation_demo.jpg';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>Due to the nature of difficult nature of working with a <a href="../items/modularSpaceSuit.php">modular spacesuit</a>, a Suit Workstation must be used to install, remove, and modify components built into the <a href="../items/modularSpaceSuit.php">modular spacesuit</a>.</p>
+    $description1 = '<p>Due to the nature of difficult nature of working with a <a href="/AdvancedRocketry/1.12.2/items/modularSpaceSuit.php">modular spacesuit</a>, a Suit Workstation must be used to install, remove, and modify components built into the <a href="/AdvancedRocketry/1.12.2/items/modularSpaceSuit.php">modular spacesuit</a>.</p>
     <p>The Suit Workstation does not require any power or tools to operate.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI

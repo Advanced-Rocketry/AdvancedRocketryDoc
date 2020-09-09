@@ -22,7 +22,7 @@
     $imageDemoName = 'cutting_demo.png';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The Cutting Machine\'s primary purpose is to cut silicon boules into silicon wafers and circuit plates into basic circuits. By default you get four circuits per plate, making them a relatively cheap but high-processing material. Use the <a href="/items/holoProjector.php">Holo-Projector</a> to complete the structure, then right click the Cutting machine block.</p><p>Additionally, it can cut logs into 6 planks instead of crafting them into 4. Use higher tier <a href="Coils.php".php">Coils</a> and <a href="/Motors.php">Motors</a> to increase performance.</p> ';
+    $description1 = '<p>The Cutting Machine\'s primary purpose is to cut silicon boules into silicon wafers and circuit plates into basic circuits. By default you get four circuits per plate, making them a relatively cheap but high-processing material. Use the <a href="/AdvancedRocketry/1.12.2/items/holoProjector.php">Holo-Projector</a> to complete the structure, then right click the Cutting machine block.</p><p>Additionally, it can cut logs into 6 planks instead of crafting them into 4. Use higher tier <a href="Coils.php".php">Coils</a> and <a href="Motors.php">Motors</a> to increase performance.</p> ';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';

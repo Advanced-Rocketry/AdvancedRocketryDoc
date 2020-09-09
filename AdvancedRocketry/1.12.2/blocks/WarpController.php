@@ -37,7 +37,7 @@
     The core status indicator show the current status of the warp system.  If the destination and orbiting planets are the same then "nowhere to go" is displayed.  The status indicator will also warn if you do not have enough fuel to make the jump or if the warp system is ready to go.
     </p>';
     
-    $optionalSection ='<img align="left" src="../img/warpController_gui2.png" /><p><center><h2>Advanced Usage</h2></center>
+    $optionalSection ='<img align="left" src="/AdvancedRocketry/img/warpController_gui2.png" /><p><center><h2>Advanced Usage</h2></center>
     <p>
     If planet hiding is enabled in the advanced rocketry config file then it may be required to discover planets before being able to visit them.  In that case the second and third tabs of the warp controller may be used.</p>
     <p>The second tab displays the amount of different kinds of data contained in the warp controller.  The third tab (pictured left) contains slots for artifacts as well as a progress bar, slot for a planet ID chip, and several controls.

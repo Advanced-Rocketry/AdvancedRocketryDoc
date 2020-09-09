@@ -26,7 +26,7 @@
     <p>Because drones are launched from orbit, and are not designed to land, they have a reduced fuel requirement compared to standard rockets.</p>
     <br>
     <p>Other than construction, the usage of the Unmanned Vehicle Assembler is similar to the <a href="./RocketAssemblingMachine.php#usage">Rocket Assembling Machine</a>.</p>
-    <p>Like the <a href="./RocketAssemblingMachine.php#usage">Rocket Assembling Machine</a>, infrastructure can be linked to drones through the Unmanned Vehicle Assembler using the <a href="../items/linker.php">Linking tool</a>.</p>
+    <p>Like the <a href="./RocketAssemblingMachine.php#usage">Rocket Assembling Machine</a>, infrastructure can be linked to drones through the Unmanned Vehicle Assembler using the <a href="../AdvancedRocketry/1.12.2/items/linker.php">Linking tool</a>.</p>
     <p>When the drones are launched, they will descent before travelling in the direction facing away from the Unmanned Vehicle Assembler.  In future builds, there may be an option to change the direction of launch.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI

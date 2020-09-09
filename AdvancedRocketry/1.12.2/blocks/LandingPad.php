@@ -24,7 +24,7 @@
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The Docking Pad can be placed on a space station to specify a landing location for rockets on space stations.</p>
     <p>If all the Docking Pads on a space station are full or reserved, then an incoming rocket will land at the origin.</p>
-    <p>Infrastructure such as <a href="Hatches.php#rocket">Rocket loaders/unloaders</a>, fuel loaders, and <a href="RocketMonitoringStation.php">Rocket Monitoring Stations</a> can be connected to it using the <a href="../items/linker.php">linker</a>.</p>
+    <p>Infrastructure such as <a href="Hatches.php#rocket">Rocket loaders/unloaders</a>, fuel loaders, and <a href="RocketMonitoringStation.php">Rocket Monitoring Stations</a> can be connected to it using the <a href="/AdvancedRocketry/1.12.2/items/linker.php">linker</a>.</p>
     <br>
     <p>Any infrastructure block connected to the Docking Pad will be connected to any rocket than lands on the landing pad.</p>';
     

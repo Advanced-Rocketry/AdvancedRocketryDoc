@@ -27,7 +27,7 @@
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = 'spaceElevator_gui.png';
-    $descriptionGUI ='<p>In order to use the space elevator, a space elevator chip must be placed in both the sending and recieving elevator.  The chips initially contain no destinations.  To add a destination to the chip, shift rightclick one space elevator with a <a href="../items/linker.php">linker</a> then shift rightclick the target elevator with the programmed linker.  If successful the coordinates of both elevators will be programmed into both chips.  It is possible to link more than two elevators together.</p>
+    $descriptionGUI ='<p>In order to use the space elevator, a space elevator chip must be placed in both the sending and recieving elevator.  The chips initially contain no destinations.  To add a destination to the chip, shift rightclick one space elevator with a <a href="/AdvancedRocketry/1.12.2/items/linker.php">linker</a> then shift rightclick the target elevator with the programmed linker.  If successful the coordinates of both elevators will be programmed into both chips.  It is possible to link more than two elevators together.</p>
     <p>Once you have at least one destination programmed into a space elevator, clicking on the "select dst" button will bring up a page with possible destinations.  Destinations in red are unreachable and destinations in green are availible for selection.</p>
     <p>Once you\'ve made sure you have a valid destination selected, make sure the machine is turned on and powered, then step onto the platform to initiate the launch.</p>'; 
     

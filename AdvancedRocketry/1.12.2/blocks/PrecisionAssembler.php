@@ -22,7 +22,7 @@
     $imageDemoName = 'precision_demo.png';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The Precision Assembler is the workhorse of your infrastructure set-up. Many of the crafting items you need to craft the other blocks are made with this machine cheaper and more efficiently. Use the <a href="/items/holoProjector.php">Holo-Projector</a> to complete the structure, then right click the Precision Assembler machine block.</p>
+    $description1 = '<p>The Precision Assembler is the workhorse of your infrastructure set-up. Many of the crafting items you need to craft the other blocks are made with this machine cheaper and more efficiently. Use the <a href="/AdvancedRocketry/1.12.2/items/holoProjector.php">Holo-Projector</a> to complete the structure, then right click the Precision Assembler machine block.</p>
     <p>You will use this machine to assemble upgrades for your space suit, assemble functional scanners for your ore mapping satellites, and create many of the circuits ubiquitous within the mod for cheaper, with often a 4x cost reduction in their main resource sink, a removal of a diamond, and the addition of a small bit of silicon.</p>
     <p>Some recipes for the machine requires 5 item inputs. You need to build it with an additional <a href="/Hatches.php">input hatch</a> or if resources are tight, add one later when needed.</p>';
     

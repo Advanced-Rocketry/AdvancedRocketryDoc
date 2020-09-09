@@ -33,7 +33,7 @@
     <p>The power bar is on the far left and the on/off switch is on the top right.  The observable distance range is displayed on the bottom.
     </p>'; 
     
-    $optionalSection = '<img align="left" src="../img/observatory_gui2.png"/><p>
+    $optionalSection = '<img align="left" src="/AdvancedRocketry/img/observatory_gui2.png"/><p>
     The second tab contains information about asteroid searches.  When first opened the Asteroids and Composition areas may be empty.  Clicking the scan button will initiate a scan for asteroids but will consume 100 distance data to do so.  Once a scan is completed the Asteroids panel will populate with observed asteroids.</p>
     <p>Clicking on an Asteroid will bring up information about the selected asteroid in the Composition panel.  The Composition panel will estimates of how much of what kind of ore is in the selected asteroid.  Having Composition and mass data in the observatory (up to 2000 each) will decrease the amount of uncertainty of each type of ore.
     </p>

@@ -22,7 +22,7 @@
     $imageDemoName = 'gasChargePad_demo.jpg';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The Gas Charger provides an easy way for the player to fill their <a href="../items/modularSpaceSuit.php">modular space suit</a> with various gasses such as Oxygen and Hydrogen.';
+    $description1 = '<p>The Gas Charger provides an easy way for the player to fill their <a href="/AdvancedRocketry/1.12.2/items/modularSpaceSuit.php">modular space suit</a> with various gasses such as Oxygen and Hydrogen.';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = 'gasChargePad_gui.png';

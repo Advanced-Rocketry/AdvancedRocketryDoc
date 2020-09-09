@@ -22,7 +22,7 @@
     $imageDemoName = 'electrolyser_demo.png';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The Electrolyser is a multi-block construction which breaks down water into Hydrogen and Oxygen. Use the <a href="/items/holoProjector.php">Holo-Projector</a> to complete the structure, then right click the Electrolyser machine block.</p><p>Water is pumped into the input fluid hatch via water buckets or other fluid transport methods from other mods. The Hydrogen is pumped out on one side via the output fluid hatch, and Oxygen the other. One electrolyser, even with iridium coils, is not normally enough to sustain a medium sized all-oxygen pressurised room, and as such if you want to pressurise a room it is recommended you with install carbon scrubbing cartridges and scrubbers or you increase the amount of electrolysers you are running.</p>';
+    $description1 = '<p>The Electrolyser is a multi-block construction which breaks down water into Hydrogen and Oxygen. Use the <a href="/AdvancedRocketry/1.12.2/items/holoProjector.php">Holo-Projector</a> to complete the structure, then right click the Electrolyser machine block.</p><p>Water is pumped into the input fluid hatch via water buckets or other fluid transport methods from other mods. The Hydrogen is pumped out on one side via the output fluid hatch, and Oxygen the other. One electrolyser, even with iridium coils, is not normally enough to sustain a medium sized all-oxygen pressurised room, and as such if you want to pressurise a room it is recommended you with install carbon scrubbing cartridges and scrubbers or you increase the amount of electrolysers you are running.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';

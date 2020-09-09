@@ -68,5 +68,5 @@
     <li><a href="#launching">Launching the Station</a></li>
     <li><a href="#modules">Adding Modules To the station</a></li>
     </ol>';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex1.12.php');
 ?> 

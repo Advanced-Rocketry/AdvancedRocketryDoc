@@ -636,7 +636,7 @@ must be accompanied by a DIMID tag!!!</p>
         <td>GasGiantBlue</td>
         <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/gasgiantblue.png?raw=true"></td>
         <td>GasGiantRed</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/gasgiantorange.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/gasgiantred.png?raw=true"></td>
         <td>GasGiantBrown</td>
         <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/gasgiantbrown.png?raw=true"></td>
         <td>Venusian</td>
@@ -654,9 +654,9 @@ must be accompanied by a DIMID tag!!!</p>
     </tr>
     <tr>
         <td>EarthLike</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/Earthlike.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/earthlike.png?raw=true"></td>
         <td>WaterWorld</td>
-        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/WaterWorld.png?raw=true"></td>
+        <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/waterworld.png?raw=true"></td>
         <td>DesertWorld</td>
         <td><img height="64" width="64" src="https://github.com/zmaster587/AdvancedRocketry/blob/1.12/src/main/resources/assets/advancedrocketry/textures/planets/desertworld.png?raw=true"></td>
         <td>IceWorld</td>
@@ -731,5 +731,5 @@ then in order for the planet to be discovered in the <a href="">warp controller<
     <li><a href="#customIcon">Custom Icon</a></li>
     <li><a href="#artifact">Artifact</a></li>
     </ol>';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex1.12.php');
 ?>

@@ -40,5 +40,5 @@
     $hasNBT = 'YES';
     $other ='<b><h3>Teir 1</h3></b>Data Storage capacity: 500';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
 ?>

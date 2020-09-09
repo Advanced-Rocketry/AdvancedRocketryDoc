@@ -29,5 +29,5 @@
     <li><a href="#uniqueresources">Unique Resources</a></li>
     <li><a href="#gasgiants">Gas Giants</a></li>
     </ol>';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex1.12.php');
 ?> 

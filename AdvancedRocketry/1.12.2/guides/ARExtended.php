@@ -37,5 +37,5 @@
     <li><a href="#cofhworld">CoFH World</a></li>
     <li><a href="#biometweaker">BiomeTweaker</a></li>
     </ol>';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex1.12.php');
 ?> 

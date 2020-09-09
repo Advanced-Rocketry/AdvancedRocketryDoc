@@ -33,5 +33,5 @@
     <li><a href="#asteroids">Rocky And Icy Bodies</a></li>
     <li><a href="#derelicts">Space Junk</a></li>
     </ol>';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex1.12.php');
 ?> 

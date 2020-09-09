@@ -42,5 +42,5 @@
     <li><a href="#asteroidmining">Asteroid Mining</a></li>
     <li><a href="#gasmining">Gas Harvesting</a></li>
     </ol>';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex1.12.php');
 ?> 

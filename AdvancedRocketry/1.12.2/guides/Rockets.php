@@ -61,5 +61,5 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#moon">To The Moon</a></li>
     </ol>';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex1.12.php');
 ?> 

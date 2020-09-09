@@ -12,5 +12,5 @@
 </ul>';
     
     $infoBarContent = ' Index of Advanced Rocketry Concepts';
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex1.12.php');
 ?>

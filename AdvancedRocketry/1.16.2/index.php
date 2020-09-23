@@ -1,13 +1,12 @@
 <?php
     $title = 'Advanced Rocketry';
     
-    $mainContent = '<h2>Advanced Rocketry Documentation</h2>
+    $mainContent = '<h2>Advanced Rocketry Documentation for Minecraft version 1.16.2</h2>
 
-<p>Which version of Minecraft are you playing? </p>
+    Welcome to the 1.16.2 Documentation for Advanced Rocketry.';
 
-<a href="1.12.2">1.12.2</a></br>
-<a href="1.16.2">1.16.2</a>';
+    $infoBarContent = '';
     
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templateIndex.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/templeteIndex1.16.php');
 ?>

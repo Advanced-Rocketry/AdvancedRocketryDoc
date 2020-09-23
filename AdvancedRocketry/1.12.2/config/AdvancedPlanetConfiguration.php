@@ -681,8 +681,8 @@ must be accompanied by a DIMID tag!!!</p>
 
 <a name="artifact"></a>
 <center><h3>Artifact (0.1.8+)</h3></center>
-<p>The "artifact" attribute allows a user to specify an item requirement for travelling to the planet.  The artifacts must all be in the <a href="">warp controller</a> every time the user wishes to warp to that planet.  Also if the "planetsMustBeDiscovered" is set to true
-then in order for the planet to be discovered in the <a href="">warp controller</a> the specifed artifacts must be placed in the machine.</p>
+<p>The "artifact" attribute allows a user to specify an item requirement for travelling to the planet.  The artifacts must all be in the <a href="/AdvancedRocketry/1.12.2/blocks/WarpController.php">warp controller</a> every time the user wishes to warp to that planet.  Also if the "planetsMustBeDiscovered" is set to true
+then in order for the planet to be discovered in the <a href="/AdvancedRocketry/1.12.2/blocks/WarpController.php">warp controller</a> the specifed artifacts must be placed in the machine.</p>
 <p>Each item can be specifed by &#60;modname&#62;:&#60;blockname&#62; &#60;meta&#62;</p>
 
 <p>Example usage; Makes a planet by the of "CoalLand" require charcoal (coal with meta 1) in the warp controller to warp to in a warpship</p>

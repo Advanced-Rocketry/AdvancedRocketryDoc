@@ -27,12 +27,8 @@
 <div id="navigation">
 <ul class="menu">
   <li><a href="/AdvancedRocketry">Home</a></li>
-  <li><a href="/AdvancedRocketry/guides">Guides</a></li>
-  <li><a href="/AdvancedRocketry/blocks">Blocks </a></li>
-  <li><a href="/AdvancedRocketry/items">Items</a></li>  
-  <li><a href="/AdvancedRocketry/config">Configuration<br/>
-  <li><a href="/AdvancedRocketry/Commands.php">Commands</a></li>
-  <li><a href="/AdvancedRocketry/misc">Misc</a></li>
+  <li><a href="/AdvancedRocketry/1.12.2">1.12.2</a></li>
+  <li><a href="/AdvancedRocketry/1.16.2">1.16.2 </a></li>
 </ul>
 </div>
 <div id="content">

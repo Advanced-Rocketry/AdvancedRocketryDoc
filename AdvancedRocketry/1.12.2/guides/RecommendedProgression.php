@@ -20,7 +20,7 @@
     <hr>
     <a name="steel"></a>
     <img align="left" src="/AdvancedRocketry/img/blastFurnace_demo.jpg" /><center><h2>Steel and Titanium</h2></center>
-    <p>Steel is another important ingredient in Advanced Rocketry recipes and must be made in the <a href="/AdvancedRocketry/blocks/ElectricArcFurnace.php">Electric Arc Furnance</a>.<p>You will need a power source to supply it with power vis the input plugs. Items can be inserted via the <a href="/AdvancedRocketry/blocks/Hatches.php">input hatch(s)</a>. An iron ingot and coal takes 300s, 5 minutes, to produce 1 steel. It is recommended you start early with this step!</p><p>In addition to steel, the Arc Furnace smelts Rutile Ore into Titanium (5s). If no other mods are present, sand can be smelted to silicon, but takes twice as long as steel. You will need a good portion of titanium and silicon as you progress further. </p>
+    <p>Steel is another important ingredient in Advanced Rocketry recipes and must be made in the <a href="/AdvancedRocketry/1.12.2/blocks/ElectricArcFurnace.php">Electric Arc Furnance</a>.<p>You will need a power source to supply it with power vis the input plugs. Items can be inserted via the <a href="/AdvancedRocketry/1.12.2/blocks/Hatches.php">input hatch(s)</a>. An iron ingot and coal takes 300s, 5 minutes, to produce 1 steel. It is recommended you start early with this step!</p><p>In addition to steel, the Arc Furnace smelts Rutile Ore into Titanium (5s). If no other mods are present, sand can be smelted to silicon, but takes twice as long as steel. You will need a good portion of titanium and silicon as you progress further. </p>
     <hr>
     <a name="infrastructure"></a>
     <center><h2>Basic Infrastructure</h2></center>
@@ -33,7 +33,7 @@
     <li><a href="/AdvancedRocketry/1.12.2/blocks/PrecisionAssembler.php">Precision Assembler</a></li>
     <li><a href="/AdvancedRocketry/1.12.2/items/modularSpaceSuit.php">Suit Workstation</a></li>
     </ul>
-    The blueprints for these machines can be found in the <a href="/AdvancedRocketry/items/holoProjector.php">Holoprojector</a>. Together, they allow you to manufacture basic circuits, required by the components needed for space travel. Use the NEI or JEI to construct all the needed pieces. 
+    The blueprints for these machines can be found in the <a href="/AdvancedRocketry/1.12.2/items/holoProjector.php">Holoprojector</a>. Together, they allow you to manufacture basic circuits, required by the components needed for space travel. Use the NEI or JEI to construct all the needed pieces. 
     </p>
     <hr>
     <a name="fuelinfrastructure"></a>

@@ -28,7 +28,7 @@
 <ul class="menu">
   <li><a href="/AdvancedRocketry">Home</a></li>
   <li><a href="/AdvancedRocketry/1.12.2">1.12.2</a></li>
-  <li><a href="/AdvancedRocketry/1.16.2">1.16.2 </a></li>
+  <!-- <li><a href="/AdvancedRocketry/1.16.2">1.16.2 </a></li> -->
 </ul>
 </div>
 <div id="content">

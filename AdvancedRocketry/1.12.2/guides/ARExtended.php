@@ -18,14 +18,14 @@
     <a name="cofhworld"></a>
     <hr>
     <center><h2>CoFH World</h2></center>
-    <img align="left" src="../img/geothermal_vent.png" width=1000 height="700"/>
+    <img align="left" src="/AdvancedRocketry/img/geothermal_vent.png" width=1000 height="700"/>
     <p>CoFH World is one of the most versatile world generation mods out there, with a truly astounding array of options and that allows sequential generation, making it possible to recreate BuildCraft oil spouts without BuildCraft or to make trees out of ice on a flash-frozen planet. It also allows every Vanilla generation type and some custom ones like large clusters and stalacties and stalagmites, making it incredibly useful for designing custom generation features on other planets and a must if anything seriously custom needs to be done.</p>
     <p><a href="https://teamcofh.com/docs/1.12/cofh-world/">CoFH World Wiki</a></p>
     <a name="biometweaker"></a>
     <hr>
     <center><h2>BiomeTweaker</h2></center>
     </br>
-    <img align="left" src="../img/luma_plains.png" width="1000" height="700"/>
+    <img align="left" src="/AdvancedRocketry/img/luma_plains.png" width="1000" height="700"/>
     <p>BiomeTweaker is pretty much the end-all be-all for configuration here. It can create new biomes, change and/or completely replace blocks that are in already-generated biomes, add and remove features that generate in biomes, change biome names, and more. As a companion to Advanced Rocketry generation options, you can change biomes between types and have specific blocks on specific planets, if you\'re willing to learn the syntax, which is fairly simple. As with CoFH World, what you control here is only up to you, you can do almost anything if you put your mind to it.</p>
     <p><a href="https://github.com/superckl/BiomeTweaker/wiki">BiomeTweaker Wiki</a></p>';
     

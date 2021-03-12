@@ -1,7 +1,7 @@
 <?php
     $title = 'Mission Control';
     
-    $mainContent = '<h2>'.$title.'</h2><hr><center><h2>Overview</h2></center><img align="left" src="../img/rocket_demo.jpg" /><p>Missions are a useful undertaking to collect resources and explore.  In Advanced Rocketry missions can be performed to collect ore or harvest gasses from gas giants and return them to your base. Missions can be monitored from a <a href="../blocks/RocketMonitoringStation.php">rocket monitoring station</a>. However, before a rocket can mine an asteroid or harvest gas from a planet, one has to be found. To locate other planetary bodies, you will need satellites to collect data.</p>
+    $mainContent = '<h2>'.$title.'</h2><hr><center><h2>Overview</h2></center><img align="left" src="/AdvancedRocketry/img/rocket_demo.jpg" /><p>Missions are a useful undertaking to collect resources and explore.  In Advanced Rocketry missions can be performed to collect ore or harvest gasses from gas giants and return them to your base. Missions can be monitored from a <a href="../blocks/RocketMonitoringStation.php">rocket monitoring station</a>. However, before a rocket can mine an asteroid or harvest gas from a planet, one has to be found. To locate other planetary bodies, you will need satellites to collect data.</p>
     <br><br>
     <a name="satellites"></a>
     <hr>
@@ -21,7 +21,7 @@
     <a name="asteroidmining"></a>
     <hr>
     <center><h2>Asteroid Mining Missions</h2></center>
-    <img align="left" src="../img/missionAsteroid.jpg" />
+    <img align="left" src="/AdvancedRocketry/img/missionAsteroid.jpg" />
     <p>Asteroid mining missions are a way of gathering ores from space rocks and bringing them back to your base.  In order to conduct an asteroid mining mission the <a href="Rockets.php">rocket</a> must be equipped with one or more item storages, a guidance computer containing an asteroid ID chip that has been <a href="../blocks/Abdp.php">programmed and processed</a> and one or more drills.</p>
     <p>The data programmed into the asteroid ID chip will deterine the success of the mission.  Without enough distance data the rocket could completely miss the target and return empty.  Maxed out distance data will garuntee a successful harvest while having no data garuntees failure.  Any amount in the middle is a gamble.</p>
     <p>Mass data determines how much spoils the rocket will bring back.  Very little mass data will result in a very small harvest while a lot of mass data will garuntee a large return.</p>
@@ -29,7 +29,7 @@
     <p>Asteroid mining missions take a considerable amount of time to complete.  The amount of time taken can be reduced by adding more drills.</p>
     <a name="gasmining"></a>
     <hr><center><h2>Gas Harvesting Missions</h2></center>
-    <img align="left" src="../img/missionGasMission.jpg" />
+    <img align="left" src="/AdvancedRocketry/img/missionGasMission.jpg" />
     <p>Gas harvesting missions are the primary method of obtaining large amounts of gasses such as oxygen, nitrogen, and hydrogen.  Gas Harvesting missions cannot be performed by standard rockets.  Only craft built in the <a href="../blocks/UnmannedVehicleAssembler.php">unmanned vehicle assembler</a> can be used in gas harvesting missions.</p>
     <p>A gas harvesting mission must be launched from a space station orbiting a gas giant.</p>
     <p>Gas mining missions are the easiest way to refuel your rocket on the go while on the space station, often allowing a single stop at a gas giant to acquire more than enough rocket fuel for a while. They are extremely net positive on gas, and the only way to obtain nitrogen for terraforming planets within Advanced Rocketry itself. Once you have a space station, it is often easier to run a couple of gas mining missions and store the results for late fuel processing than to electrolyse water for hydrogen and oxygen</p>';

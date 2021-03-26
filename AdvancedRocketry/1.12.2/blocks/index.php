@@ -33,6 +33,7 @@
 <li><img class="icon" src="/AdvancedRocketry/img/laserDrill_icon.png"> <a href="LaserDrill.php">Orbital Laser Drill</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/oxygenVent_icon.png"> <a href="OxygenVent.php">Oxygen Vent</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/precision_icon.png"> <a href="PrecisionAssembler.php">Precision Assembler</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/precision_icon.png"> <a href="PrecisionLaserEtcher.php">Precision Laser Etcher</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/rocketAssemblingMachine_icon.png"> <a href="RocketAssemblingMachine.php">Rocket Assembling Machine</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/railgun_icon.png"> <a href="Railgun.php">Railgun</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/rocketEngine_icon.png"> <a href="RocketEngine.php">Rocket Engine</a></li>

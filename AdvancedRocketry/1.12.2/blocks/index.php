@@ -8,7 +8,7 @@
 <li><img class="icon" src="/AdvancedRocketry/img/abdp_icon.png"> <a href="Abdp.php">Astrobody Data Proccessor</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/beacon_icon.png"> <a href="Beacon.php">Beacon</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/biomeScanner_icon.png"> <a href="BiomeScanner.php">Biome Scanner</a></li>
-<li><img class="icon" src="/AdvancedRocketry/img/observatory_icon.png"> <a href="BlackHoleGenerator.php">Black Hole Generator</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/blackHoleGen_icon.png"> <a href="BlackHoleGenerator.php">Black Hole Generator</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/crystallizer_icon.png"> <a href="Centrifuge.php">Centrifuge</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/crystallizer_icon.png"> <a href="ChemicalReactor.php">Chemical Reactor</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/coil_icon.png"> <a href="Coils.php">Coils</a></li>

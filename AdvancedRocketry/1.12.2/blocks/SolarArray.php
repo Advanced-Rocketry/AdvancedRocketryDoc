@@ -17,13 +17,12 @@
     */    
     
     //NAME OF BLOCK
-    $title = 'Black Hole Generator';
+    $title = 'Solar Array Panel';
 
-    $imageDemoName = 'blackHoleGen_demo.png';
+    $imageDemoName = 'solarArrayPanel_demo.png';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The Black Hole Generator is a multi-block construction which creates power (rf) by siphoning the power of a black hole. Use the <a href="/AdvancedRocketry/1.12.2/items/holoProjector.php">Holo-Projector</a> to complete the structure, then right click the Black Hole Generator machine block.</p>
-    <p>The generator consumes raw materials such as dirt, cobblestone, netherrack, stone and gravel through the input hatch. When the items are consumed by the black hole, the generator collects the increased power generating 500 rf/t. The generator must be on a <a href="C:\Users\jlaw\Documents\Advanced Rocketry\AdvancedRocketryDoc\AdvancedRocketry\1.12.2\blocks\StationBuilder.php">space station</a> orbiting a black hole. Don\'t fear, these black holes are stable and will not attempt to suck the player into it.</p>';
+    $description1 = '<p>Yet another form of solar power, the Solar Array is a multiblock which accepts sunlight on top and on bottom allowing it to generate power even on space stations.  Use the <a href="/AdvancedRocketry/1.12.2/items/holoProjector.php">Holo-Projector</a> to complete the structure, then right click the Solar Array machine block.</p><p>The array is constructed of two power output hatches and require 63 solar array panels. Additionally, the solar array is more efficient and should be used in place of giant arrays of solar panel generators, to reduce lag and and fps drops.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';

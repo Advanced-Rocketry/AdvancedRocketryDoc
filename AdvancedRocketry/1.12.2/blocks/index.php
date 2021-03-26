@@ -17,8 +17,8 @@
 <li><img class="icon" src="/AdvancedRocketry/img/electrolyser_icon.png"> <a href="Electrolyser.php">Electrolyser</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/forceField_icon.png"> <a href="ForceField.php">Force Field Projector</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/fuelTank_icon.png"> <a href="FuelTank.php">Fuel Tank</a></li>
-<li><img class="icon" src="/AdvancedRocketry/img/fuellingStation_icon.png"> <a href="FuellingStation.php">Fuelling Station</a></li>
-<li><img class="icon" src="/AdvancedRocketry/img/gasChargePad_icon.png"> <a href="gasCharger.php">Gas Charger</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/fuellingStation_icon.png"> <a href="FuellingStation.php">Fueling Station</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/gasChargePad_icon.png"> <a href="gasCharger.php">Gas Charge Pad</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/gravityController_icon.png"> <a href="GravityController.php">Gravity Controller</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/guidanceComputer_icon.png"> <a href="GuidanceComputer.php">Guidance Computer</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/hatch_icon.png"> <a href="Hatches.php">Hatches</a></li>
@@ -41,6 +41,8 @@
 <li><img class="icon" src="/AdvancedRocketry/img/satelliteTerminal_icon.png"> <a href="SatelliteTerminal.php">Satellite Terminal</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/seal_icon.png"> <a href="Seal.php">Seal</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/seat_icon.png"> <a href="Seat.php">Seat</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/electricArcFurnace_icon.png"> <a href="SmallPlatePresser.php">Small Plate Presser</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/solarGenerator_icon.png"> <a href="SolarArray.php">Solar Array</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/solarGenerator_icon.png"> <a href="SolarGenerator.php">Solar Generator</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/solarGenerator_icon.png"> <a href="SpaceElevator.php">Space Elevator</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/rocketAssemblingMachine_icon.png"> <a href="StationBuilder.php">Station Builder</a></li>

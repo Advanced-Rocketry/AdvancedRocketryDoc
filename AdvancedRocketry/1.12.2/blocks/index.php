@@ -38,7 +38,8 @@
 <li><img class="icon" src="/AdvancedRocketry/img/rocketAssemblingMachine_icon.png"> <a href="RocketAssemblingMachine.php">Rocket Assembling Machine</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/railgun_icon.png"> <a href="Railgun.php">Railgun</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/rocketEngine_icon.png"> <a href="RocketEngine.php">Rocket Engine</a></li>
-<li><img class="icon" src="/AdvancedRocketry/img/monitoringStation_icon.png"> <a href="RocketMonitoringStation.php">Rocket Monitoring Station</a></li>RollingMachine.php">Rolling Machine</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/monitoringStation_icon.png"> <a href="RocketMonitoringStation.php">Rocket Monitoring Station</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/monitoringStation_icon.png"> <a href="RollingMachine.php">Rolling Machine</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/satelliteAssemblingMachine_icon.png"> <a href="SatelliteAssemblingMachine.php">Satellite Assembling Machine</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/satelliteHatch_icon.png"> <a href="SatelliteHatch.php">Satellite Bay</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/satelliteTerminal_icon.png"> <a href="SatelliteTerminal.php">Satellite Terminal</a></li>

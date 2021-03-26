@@ -8,6 +8,7 @@
 <li><img class="icon" src="/AdvancedRocketry/img/abdp_icon.png"> <a href="Abdp.php">Astrobody Data Proccessor</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/beacon_icon.png"> <a href="Beacon.php">Beacon</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/biomeScanner_icon.png"> <a href="BiomeScanner.php">Biome Scanner</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/observatory_icon.png"> <a href="BlackHoleGenerator.php">Black Hole Generator</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/crystallizer_icon.png"> <a href="ChemicalReactor.php">Chemical Reactor</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/coil_icon.png"> <a href="Coils.php">Coils</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/crystallizer_icon.png"> <a href="Crystallizer.php">Crystallizer</a></li>
@@ -26,7 +27,7 @@
 <li><img class="icon" src="/AdvancedRocketry/img/hatch_icon.png"> <a href="Loaders.php">Loaders and Unloaders</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/microwaveReciever_icon.png"> <a href="MicrowaveReciever.php">Microwave Reciever</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/motor_icon.png"> <a href="Motors.php">Motors</a></li>
-<li><img class="icon" src="/AdvancedRocketry/img/oxygenVent_icon.png"> <a href="Observatory.php">Observatory</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/observatory_icon.png"> <a href="Observatory.php">Observatory</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/oxygenScrubber_icon.png"> <a href="OxygenScrubber.php">CO2 Scrubber</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/laserDrill_icon.png"> <a href="LaserDrill.php">Orbital Laser Drill</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/oxygenVent_icon.png"> <a href="OxygenVent.php">Oxygen Vent</a></li>

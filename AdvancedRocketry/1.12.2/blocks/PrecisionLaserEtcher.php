@@ -22,7 +22,7 @@
     $imageDemoName = 'precision_etcher.png';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The Precision Laser Etcher is a multi-block construction which creates basic and advanced circuits at a reduced cost. Use the <a href="/AdvancedRocketry/1.12.2/items/holoProjector.php">Holo-Projector</a> to complete the structure, then right click the Precision Laser Etcher machine block.</p><p>Materials can be supplied through the input hatch and the product retrieved from the output hatch. The structure require two power input plugs and both need to be powered for the machine to operate.';
+    $description1 = '<p>The Precision Laser Etcher is a multi-block construction which creates basic and advanced circuits at a reduced cost. Use the <a href="/AdvancedRocketry/1.12.2/items/holoProjector.php">Holo-Projector</a> to complete the structure, then right click the Precision Laser Etcher machine block.</p><p>Materials can be supplied through the input hatch and the product retrieved from the output hatch. The structure requires two power input plugs but only one needs to be powered for the machine to operate.';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';

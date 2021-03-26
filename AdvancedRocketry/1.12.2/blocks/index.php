@@ -23,6 +23,7 @@
 <li><img class="icon" src="/AdvancedRocketry/img/guidanceComputer_icon.png"> <a href="GuidanceComputer.php">Guidance Computer</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/hatch_icon.png"> <a href="Hatches.php">Hatches</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/dockingPad_icon.png"> <a href="LandingPad.php">Docking Pad</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/monitoringStation_icon.png"> <a href="Lathe.php">Lathe</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/launchPad_icon.png"> <a href="LaunchPad.php">Launch Pad</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/hatch_icon.png"> <a href="Loaders.php">Loaders and Unloaders</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/microwaveReciever_icon.png"> <a href="MicrowaveReciever.php">Microwave Reciever</a></li>
@@ -31,11 +32,11 @@
 <li><img class="icon" src="/AdvancedRocketry/img/oxygenScrubber_icon.png"> <a href="OxygenScrubber.php">CO2 Scrubber</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/laserDrill_icon.png"> <a href="LaserDrill.php">Orbital Laser Drill</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/oxygenVent_icon.png"> <a href="OxygenVent.php">Oxygen Vent</a></li>
-<li><img class="icon" src="/AdvancedRocketry/img/precision_icon.png"> <a href="PrecisionAssembler.php">Precision Assembling Machine</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/precision_icon.png"> <a href="PrecisionAssembler.php">Precision Assembler</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/rocketAssemblingMachine_icon.png"> <a href="RocketAssemblingMachine.php">Rocket Assembling Machine</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/railgun_icon.png"> <a href="Railgun.php">Railgun</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/rocketEngine_icon.png"> <a href="RocketEngine.php">Rocket Engine</a></li>
-<li><img class="icon" src="/AdvancedRocketry/img/monitoringStation_icon.png"> <a href="RocketMonitoringStation.php">Rocket Monitoring Station</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/monitoringStation_icon.png"> <a href="RocketMonitoringStation.php">Rocket Monitoring Station</a></li>RollingMachine.php">Rolling Machine</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/satelliteAssemblingMachine_icon.png"> <a href="SatelliteAssemblingMachine.php">Satellite Assembling Machine</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/satelliteHatch_icon.png"> <a href="SatelliteHatch.php">Satellite Bay</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/satelliteTerminal_icon.png"> <a href="SatelliteTerminal.php">Satellite Terminal</a></li>

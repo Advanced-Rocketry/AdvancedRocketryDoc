@@ -19,7 +19,7 @@
     The base of the Construction pad is made from Launch Pad Blocks.  It can be any size between 3x3 and 16x16. The base does not have be a square, rectangular shapes also work. The height of the structure is defined by the Structure Tower Blocks and can be anywhere between 4 and 64 blocks tall.</p>
     <p>If multiple structure towers exist in the structure, then the height of the tallest tower is used. The base of the tower must be at the same level as the construction pad. The base of the tower also has to be touching the pad on one of the four faces and cannot be placed diagonally.
 
-    The Station Builder must be one block above the pad with the back of the machine facing the pad for the Strcuture to form. Larger construction pads require more time to scan and build the station!
+    The Station Builder must be one block above the pad with the back of the machine facing the pad for the Structure to form. Larger construction pads require more time to scan and build the station!
     </p>
     
     <hr>

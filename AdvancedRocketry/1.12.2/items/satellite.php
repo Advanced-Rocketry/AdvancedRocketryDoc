@@ -27,7 +27,7 @@
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';
-    $descriptionGUI ='<h2><center>Satellite Compenents</center></h2>
+    $descriptionGUI ='<h2><center>Satellite Components</center></h2>
     <table style="width:100%">
     <thead><h3>Satellite Types</h3></thead>
     <tr>

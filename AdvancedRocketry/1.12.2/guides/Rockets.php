@@ -20,7 +20,7 @@
     <center><h2>Interaction</h2></center>
     <img width=40% align="left" src="/AdvancedRocketry/img/rocket_gui.png" />
     <p>The interface on a rocket is fairly simple to navigate, the player\'s inventory is in the bottom left and accessible blocks built onto the rocket are in the top left.  Most inventories, such as chests and furnaces, built into the rocket can be accessed via this panel by clicking on the icon of the block.</p>
-    <p>The fuel bar on the top right displays the amount of fuel currently in the rocket.  If the rocket has a guidance computer with a planet ID chip inside, the select Dst button will bring up a screen of the local planet system and allow selection of the destination planet.  The "Dissassemble" button will convert the rocket back into blocks, but careful, you need a <a href="/AdvancedRocketry/1.12.2/blocks/RocketAssemblingMachine.php">rocket assembling machine</a> to reassemble the rocket again!</p>
+    <p>The fuel bar on the top right displays the amount of fuel currently in the rocket.  If the rocket has a guidance computer with a planet ID chip inside, the select Dst button will bring up a screen of the local planet system and allow selection of the destination planet.  The "Disassemble" button will convert the rocket back into blocks, but careful, you need a <a href="/AdvancedRocketry/1.12.2/blocks/RocketAssemblingMachine.php">rocket assembling machine</a> to reassemble the rocket again!</p>
     <a id="fueling"></a>
     <hr>
     <center><h2>Fueling and Launching</h2></center>
@@ -32,7 +32,7 @@
     <a id="usage"></a>
     <hr>
     <center><h2>Usage</h2></center>
-    <p>"I can build, fuel and launch rockets, but for what purpose? What can I REALLY do with these things?" FLY TO THE MOON, of course! But not only that you can launch satellites, mine distant asteroids and travel between a planet and its moon. Outlined below are the needed infrastructre to carry out these purposes.
+    <p>"I can build, fuel and launch rockets, but for what purpose? What can I REALLY do with these things?" FLY TO THE MOON, of course! But not only that you can launch satellites, mine distant asteroids and travel between a planet and its moon. Outlined below are the needed infrastructure to carry out these purposes.
     <p><h4>Player Transport</h4>
     Players can ride rockets to different planets and rockets are the only way to get to orbiting space stations.  To be able to ride a rocket, the rocket must have a <a href="/AdvancedRocketry/1.12.2/blocks/GuidanceComputer.php">guidance computer</a> with some destination programmed into it with a chip and a <a href="/AdvancedRocketry/1.12.2/blocks/Seat.php">seat</a>.  Once assembled and fueled, a player can right click on the rocket to ride it and press space to take off.</p>
     <h4>Cargo Transport</h4>

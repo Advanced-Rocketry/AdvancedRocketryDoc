@@ -181,7 +181,6 @@ li.current_page_item, .active{
   image-rendering: -moz-crisp-edges; 
   image-rendering: -o-crisp-edges; 
   image-rendering: crisp-edges;
-  image-rendering: pixelated;
 }
 
 #content .imageGUI{
@@ -189,7 +188,6 @@ li.current_page_item, .active{
   image-rendering: -moz-crisp-edges; 
   image-rendering: -o-crisp-edges; 
   image-rendering: crisp-edges;
-  image-rendering: pixelated;
 }
 
 #content img.icon {

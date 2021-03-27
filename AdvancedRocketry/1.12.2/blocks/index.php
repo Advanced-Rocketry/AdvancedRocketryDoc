@@ -6,11 +6,13 @@
 <p>Information about blocks can be found in the following list:<br /></p>
 <ul>
 <li><img class="icon" src="/AdvancedRocketry/img/abdp_icon.png"> <a href="Abdp.php">Astrobody Data Proccessor</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/warpController_icon.png"> <a href="SpaceStationControllers.php">Altitude Controller</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/beacon_icon.png"> <a href="Beacon.php">Beacon</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/biomeScanner_icon.png"> <a href="BiomeScanner.php">Biome Scanner</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/blackHoleGen_icon.png"> <a href="BlackHoleGenerator.php">Black Hole Generator</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/crystallizer_icon.png"> <a href="Centrifuge.php">Centrifuge</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/crystallizer_icon.png"> <a href="ChemicalReactor.php">Chemical Reactor</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/oxygenScrubber_icon.png"> <a href="OxygenScrubber.php">CO2 Scrubber</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/coil_icon.png"> <a href="Coils.php">Coils</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/crystallizer_icon.png"> <a href="Crystallizer.php">Crystallizer</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/cutting_icon.png"> <a href="Cutting.php">Cutting Machine</a></li>
@@ -23,6 +25,7 @@
 <li><img class="icon" src="/AdvancedRocketry/img/gravityController_icon.png"> <a href="GravityController.php">Gravity Controller</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/guidanceComputer_icon.png"> <a href="GuidanceComputer.php">Guidance Computer</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/hatch_icon.png"> <a href="Hatches.php">Hatches</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/warpController_icon.png"> <a href="SpaceStationControllers.php">Holographic Planet Selector</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/dockingPad_icon.png"> <a href="LandingPad.php">Docking Pad</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/monitoringStation_icon.png"> <a href="Lathe.php">Lathe</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/launchPad_icon.png"> <a href="LaunchPad.php">Launch Pad</a></li>
@@ -30,9 +33,11 @@
 <li><img class="icon" src="/AdvancedRocketry/img/microwaveReciever_icon.png"> <a href="MicrowaveReciever.php">Microwave Reciever</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/motor_icon.png"> <a href="Motors.php">Motors</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/observatory_icon.png"> <a href="Observatory.php">Observatory</a></li>
-<li><img class="icon" src="/AdvancedRocketry/img/oxygenScrubber_icon.png"> <a href="OxygenScrubber.php">CO2 Scrubber</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/warpController_icon.png"> <a href="SpaceStationControllers.php">Orientation Controller</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/laserDrill_icon.png"> <a href="LaserDrill.php">Orbital Laser Drill</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/oxygenVent_icon.png"> <a href="OxygenVent.php">Oxygen Vent</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/warpController_icon.png"> <a href="SpaceStationControllers.php">Orientation Controller</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/warpController_icon.png"> <a href="SpaceStationControllers.php">Planet Selector</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/precision_icon.png"> <a href="PrecisionAssembler.php">Precision Assembler</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/precision_icon.png"> <a href="PrecisionLaserEtcher.php">Precision Laser Etcher</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/rocketAssemblingMachine_icon.png"> <a href="RocketAssemblingMachine.php">Rocket Assembling Machine</a></li>
@@ -49,7 +54,8 @@
 <li><img class="icon" src="/AdvancedRocketry/img/solarGenerator_icon.png"> <a href="SolarArray.php">Solar Array</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/solarGenerator_icon.png"> <a href="SolarGenerator.php">Solar Generator</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/solarGenerator_icon.png"> <a href="SpaceElevator.php">Space Elevator</a></li>
-<li><img class="icon" src="/AdvancedRocketry/img/rocketAssemblingMachine_icon.png"> <a href="StationBuilder.php">Station Builder</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/warpController_icon.png"> <a href="SpaceStationControllers.php">Station Gravity Controllers</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/rocketAssemblingMachine_icon.png"> <a href="StationBuilder.php">Space Station Assembler</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/stationDockingPort_icon.png"> <a href="StationDockingPort.php">Station Docking Port</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/structureTower_icon.png"> <a href="StructureTower.php">Structure Tower</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/suitWorkstation_icon.png"> <a href="suitWorkstation.php">Suit Workstation</a></li>

@@ -64,7 +64,7 @@
     $fullBlock = 'YES';
     $sealable = 'YES';
     $tileEntity = 'YES';
-    $multiBlock = 'YES';
+    $multiBlock = 'NO';
     $other ='';
 
     include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');

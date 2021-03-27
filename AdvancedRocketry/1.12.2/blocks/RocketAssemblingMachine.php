@@ -34,7 +34,7 @@
     <li style="left: 1em;">the user input panel (my fancy way of saying two buttons)</li>
     <li style="left: 1em;">the machine status panel.</li></ol>
     </p>
-    <p>The Rocket statistic panel constains four readouts:
+    <p>The Rocket statistic panel contains four readouts:
     <ul>    
     <a name="rocketStats" />
     <li><b>Thrust:</b> How much thrust the engines are producing in newtons.  Higher teir engines/fuel provide more thrust per engine</li>

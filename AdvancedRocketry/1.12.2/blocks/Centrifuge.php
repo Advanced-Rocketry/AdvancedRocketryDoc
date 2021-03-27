@@ -22,7 +22,7 @@
     $imageDemoName = 'centrifuge_demo.png';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The centrifuge extracts trace amounts of raw materials like iron, gold, copper, tin and iriduim from enriched lava found in volcanic biomes. Use the <a href="/AdvancedRocketry/1.12.2/items/holoProjector.php">Holo-Projector</a> to complete the structure, then right click the Centrifuge machine block.</p> The centrifuge will also produce 1mB of lava.';
+    $description1 = '<p>The centrifuge extracts trace amounts of raw materials like iron, gold, copper, tin and iridium from enriched lava found in volcanic biomes. Use the <a href="/AdvancedRocketry/1.12.2/items/holoProjector.php">Holo-Projector</a> to complete the structure, then right click the Centrifuge machine block.</p> The centrifuge will also produce 1mB of lava.';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';

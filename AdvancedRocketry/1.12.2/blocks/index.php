@@ -30,7 +30,7 @@
 <li><img class="icon" src="/AdvancedRocketry/img/monitoringStation_icon.png"> <a href="Lathe.php">Lathe</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/launchPad_icon.png"> <a href="LaunchPad.php">Launch Pad</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/hatch_icon.png"> <a href="Loaders.php">Loaders and Unloaders</a></li>
-<li><img class="icon" src="/AdvancedRocketry/img/microwaveReciever_icon.png"> <a href="MicrowaveReciever.php">Microwave Reciever</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/microwaveReciever_icon.png"> <a href="MicrowaveReciever.php">Microwave Receiver</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/motor_icon.png"> <a href="Motors.php">Motors</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/observatory_icon.png"> <a href="Observatory.php">Observatory</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/warpController_icon.png"> <a href="SpaceStationControllers.php">Orientation Controller</a></li>
@@ -63,7 +63,7 @@
 <li><img class="icon" src="/AdvancedRocketry/img/rocketAssemblingMachine_icon.png"> <a href="UnmannedVehicleAssembler.php">Unmanned Vehicle Assembler</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/warpController_icon.png"> <a href="WarpController.php">Warp Controller</a></li>
 <li><img class="icon" src="/AdvancedRocketry/img/warpCore_icon.png"> <a href="WarpCore.php">Warp Core</a></li>
-<li><img class="icon" src="/AdvancedRocketry/img/wirelessTransciever_icon.png"> <a href="WirelessTransciever.php">Wireless Transciever</a></li>
+<li><img class="icon" src="/AdvancedRocketry/img/wirelessTransciever_icon.png"> <a href="WirelessTransciever.php">Wireless Transceiver</a></li>
 </ul>';
     
     $infoBarContent = ' Index of Advanced Rocketry Blocks and Machines';

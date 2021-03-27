@@ -24,7 +24,7 @@
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>Hatches are a way of inputting and outputting items, liquid, energy, and data from rockets and machines.</p>
     <p>There are three main different types of hatches: Fluid, Item, and Energy.</p>
-    <p>Fluid hatches, when built into a machine provides the capacity for the machine to accept fluids, this is nessessary for some recpies</p>
+    <p>Fluid hatches, when built into a machine provides the capacity for the machine to accept fluids, this is necessary for some recipes</p>
     <p>Item Hatches are used to provide a way of getting items into and out of a machine.  Most will move an itemstack over if there is room if the output stack cannot fit in the last slot.</p>
     <p>Energy Hatches are used to accept or output energy from a machine.</p>
     <p>Hatches can be linked directly to a rocket, a rocket assembler, or Docking Pad using a <a href="/AdvancedRocketry/1.12.2/items/linker.php">Linking tool</a>.</p>

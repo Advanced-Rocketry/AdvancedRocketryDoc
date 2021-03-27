@@ -22,7 +22,7 @@
     $imageDemoName = 'warpCore_demo.jpg';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p> The warp core multiblock structure is responsible for providing the fuel input for the starship as well as moving it around.  Dilithium crystals can be put into the top of the structure for fuel.  Though the warp core is a nessessary component of the starship.  The <a href="WarpController.php">warp controller</a> is repsponsible for actually choosing the destination of the starship.</p>
+    $description1 = '<p> The warp core multiblock structure is responsible for providing the fuel input for the starship as well as moving it around.  Dilithium crystals can be put into the top of the structure for fuel.  Though the warp core is a necessary component of the starship.  The <a href="WarpController.php">warp controller</a> is responsible for actually choosing the destination of the starship.</p>
     <p>A warp core block placed on a rocket allows the rocket to travel to other planets in the same solar system.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI

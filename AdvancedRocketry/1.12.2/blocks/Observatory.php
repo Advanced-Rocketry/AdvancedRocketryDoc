@@ -22,9 +22,9 @@
     $imageDemoName = 'observatory_demo.jpg';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The Observatory is a large multiblock structure that is capable of peering out into the cosmos and pinpoint distant asteroid that may contain valuble materials.  It\'s primary function is to locate these distant objects and program their coordinates into asteroid chips.</p>
-    <p>In order for the Obervatory to function, the structure must have at least one data bus with at least 100 distance data.  The Observatory must also be in a dark place with a clear view of the sky. This means that upon stations, you must rotate the station 180 degrees to be able to search for asteroids, as it will only ever be dark there.</p>
-    <br><br><p>The Obervatory also has a maximum observable distance which is a hard requirement for detecting certain kinds of asteroids (see configuring asteroid types <a href="../config/AsteroidConfiguration.php">here</a>).  The maximum observable distance is determined by the type of <a href="Motors.php">motor</a> and glass used in construction of the multiblock structure.  Higher teir motors provide greater observable distances.  Exchanging the glass for lens blocks also increases the maximum observable distance.</p>';
+    $description1 = '<p>The Observatory is a large multiblock structure that is capable of peering out into the cosmos and pinpoint distant asteroid that may contain valuable materials.  It\'s primary function is to locate these distant objects and program their coordinates into asteroid chips.</p>
+    <p>In order for the Observatory to function, the structure must have at least one data bus with at least 100 distance data.  The Observatory must also be in a dark place with a clear view of the sky. This means that upon stations, you must rotate the station 180 degrees to be able to search for asteroids, as it will only ever be dark there.</p>
+    <br><br><p>The Observatory also has a maximum observable distance which is a hard requirement for detecting certain kinds of asteroids (see configuring asteroid types <a href="../config/AsteroidConfiguration.php">here</a>).  The maximum observable distance is determined by the type of <a href="Motors.php">motor</a> and glass used in construction of the multiblock structure.  Higher tier motors provide greater observable distances.  Exchanging the glass for lens blocks also increases the maximum observable distance.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = 'observatory_gui.png';

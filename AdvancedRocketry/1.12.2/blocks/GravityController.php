@@ -23,7 +23,7 @@
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The area gravity controller is a machine that can be used to manipulate gravity within a certain radius in exchange for energy.  The gravity controller can also affect the direction of gravity.  When activated it does have a warmup and cooldown time so effects are not immediate.</p>
-    <p>The gravity controller has two modes for each direction, additive gravity, and replacment gravity.  Additive gravity adds the effects of the machine on top of what the entities in the area already experience.  Using the set/replacement mode, the machine will override gravity in the area with its own entirely.</p>';
+    <p>The gravity controller has two modes for each direction, additive gravity, and replacement gravity.  Additive gravity adds the effects of the machine on top of what the entities in the area already experience.  Using the set/replacement mode, the machine will override gravity in the area with its own entirely.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = 'gravityController_gui.png';

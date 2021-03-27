@@ -38,7 +38,7 @@
     $sealable = 'YES';
     $tileEntity = 'YES';
     $multiBlock = '';
-    $other ='<b>Teir 1</b><br />Number of slots: 4';
+    $other ='<b>Tier 1</b><br />Number of slots: 4';
 
     include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
 ?> 

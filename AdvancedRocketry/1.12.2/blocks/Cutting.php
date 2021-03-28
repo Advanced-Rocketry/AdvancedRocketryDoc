@@ -30,9 +30,9 @@
     
     $optionalSection='';
     
-    $sidebarImage = '';
-    $hardness = '';
-    $blastResistance = '';
+    $sidebarImage = 'cutting_block.png';
+    $hardness = '3';
+    $blastResistance = '0';
     $requiresTool = 'YES';
     $fullBlock = 'YES';
     $sealable = '';

@@ -19,7 +19,7 @@
     //NAME OF BLOCK
     $title = 'Space Station Controllers';
 
-    $imageDemoName = 'warpController_demo.jpg';
+    $imageDemoName = 'warpController_demo.png';
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>There are a number of blocks you can install on your space station to control various attributes of your station.</p>
@@ -39,7 +39,7 @@
     
     $optionalSection='';
     
-    $sidebarImage = 'warpController_block.png';
+    $sidebarImage = 'stationController_block.png';
 
     $hardness = '3';
     $blastResistance = '0';

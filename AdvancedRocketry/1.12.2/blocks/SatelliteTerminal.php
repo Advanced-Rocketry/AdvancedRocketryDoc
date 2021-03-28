@@ -18,7 +18,7 @@
     
     $title = 'Satellite Terminal';
 
-    $imageDemoName = 'satelliteTerminal_demo.jpg';
+    $imageDemoName = 'satelliteTerminal_demo.png';
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The Satellite Terminal is used to interface with satellites that have been launched into orbit.  In order to interface with a satellite the Satellite Terminal must be placed on the planet the satellite orbits around OR a space station orbiting in the same system as the satellite.</p>

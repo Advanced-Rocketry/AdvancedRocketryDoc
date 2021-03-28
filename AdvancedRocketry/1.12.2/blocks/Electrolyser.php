@@ -30,7 +30,7 @@
     
     $optionalSection='';
     
-    $sidebarImage = '';
+    $sidebarImage = 'electrolyser_block.png';
     $hardness = '';
     $blastResistance = '';
     $requiresTool = 'YES';

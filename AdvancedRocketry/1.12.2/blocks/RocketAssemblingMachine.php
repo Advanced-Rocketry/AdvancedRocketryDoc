@@ -19,7 +19,7 @@
     //NAME OF BLOCK
     $title = 'Rocket Assembling Machine';
 
-    $imageDemoName = 'rocketAssemblingMachineDemo.jpg';
+    $imageDemoName = 'guidanceAccessHatch_demo.png';
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The Rocket Assembling Machine is a block that takes power in the form of RF to either scan or build a rocket on a multiblock launch pad structure.</p>';

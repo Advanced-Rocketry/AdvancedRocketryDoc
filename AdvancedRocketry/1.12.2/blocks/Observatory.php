@@ -19,7 +19,7 @@
     //NAME OF BLOCK
     $title = 'Observatory';
 
-    $imageDemoName = 'observatory_demo.jpg';
+    $imageDemoName = 'observatory_demo.png';
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The Observatory is a large multiblock structure that is capable of peering out into the cosmos and pinpoint distant asteroid that may contain valuable materials.  It\'s primary function is to locate these distant objects and program their coordinates into asteroid chips.</p>

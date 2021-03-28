@@ -19,7 +19,7 @@
     //NAME OF BLOCK
     $title = 'Oxygen Vent';
 
-    $imageDemoName = 'energyCable_demo.jpg';
+    $imageDemoName = 'oxygen_demo.png';
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The Oxygen Vent can be placed in an area that is sealed and when running, will fill the area with air.  If the seal is broken then the air will immediately escape out to the environment.</p>
@@ -32,7 +32,7 @@
     $imageGUI = '';
     $descriptionGUI =''; 
     
-    $sidebarImage = '';
+    $sidebarImage = 'oxygenVent_block.png';
 
     $hardness = '3';
     $blastResistance = '';

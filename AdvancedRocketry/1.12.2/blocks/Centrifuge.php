@@ -30,7 +30,7 @@
     
     $optionalSection='';
     
-    $sidebarImage = '';
+    $sidebarImage = 'centrifuge_block.png';
     $hardness = '3';
     $blastResistance = '0';
     $requiresTool = 'YES';

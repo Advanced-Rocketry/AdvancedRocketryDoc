@@ -19,7 +19,7 @@
     //NAME OF BLOCK
     $title = 'Warp Controller';
 
-    $imageDemoName = 'warpController_demo.jpg';
+    $imageDemoName = 'warpController_demo.png';
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The warp controller is the control station block in a starship.  Simply placing the warp controller and <a href="WarpCore.php">warp core</a> anywhere on a space station can turn it into a mobile starship capable of warping between planets and even solar systems.  The control panel offered by the warp controller allows a player to view their current location as well as select destinations as well as view fuel storage on the starship.</p>';

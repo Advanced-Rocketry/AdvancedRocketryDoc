@@ -19,7 +19,7 @@
     //NAME OF BLOCK
     $title = 'Rocket Loaders/Unloaders';
 
-    $imageDemoName = 'hatch_demo2.jpg';
+    $imageDemoName = 'hatch_demo.png';
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>Loaders and Unloaders are used to load/unload fluids and items from the rocket.</p><p>They can be linked directly to a rocket, a rocket assembler, or Docking Pad using a <a href="/AdvancedRocketry/1.12.2/items/linker.php">Linking tool</a>.</p>

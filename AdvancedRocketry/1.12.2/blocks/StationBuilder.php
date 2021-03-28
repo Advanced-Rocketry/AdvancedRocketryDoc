@@ -19,7 +19,7 @@
     //NAME OF BLOCK
     $title = 'Space Station Assembler';
 
-    $imageDemoName = 'stationDockingPort_demo.jpg';
+    $imageDemoName = 'stationAssembler_demo.png';
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The Space Station Assembler is constructed in the same way as the <a href="RocketAssemblingMachine.php">Rocket Assembling Machine</a>.  However, rather than build rockets, it builds space station modules from the blocks placed on the pad.</p>
@@ -35,7 +35,7 @@
     <p>Once a station is built, it is possible to use <a href="StationDockingPort.php">Station Docking Ports</a> to launch new module and attach them to the station.</p>
     <p>Building a station module follows the same process as building a station for the first time, the major difference is that instead of an unprogrammed station chip in the top right slot, a chip programmed with the id of the target station must be placed there instead.  When building a station module, the chip does not get consumed.</p>'; 
     
-    $sidebarImage = 'rocketAssemblingMachine_block.png';
+    $sidebarImage = 'stationAssembler_block.png';
 
     $hardness = '3';
     $blastResistance = '0';

@@ -30,7 +30,7 @@
     
     $optionalSection='';
     
-    $sidebarImage = '';
+    $sidebarImage = 'lathe_block.png';
     $hardness = '';
     $blastResistance = '';
     $requiresTool = 'YES';

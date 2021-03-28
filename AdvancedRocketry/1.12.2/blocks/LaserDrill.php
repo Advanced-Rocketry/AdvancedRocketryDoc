@@ -17,12 +17,12 @@
     */    
     
     //NAME OF BLOCK
-    $title = 'Laser Drill';
+    $title = 'Orbital Laser Drill';
 
-    $imageDemoName = 'laserDrill_demo.jpg';
+    $imageDemoName = 'laserDrill_demo.png';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The Laser Drill is a mining device that can be placed on a space station to mine the planet below at the cost of an extreme amount of energy.</p>
+    $description1 = '<p>The Orbital Laser Drill is a mining device that can be placed on a space station to mine the planet below at the cost of an extreme amount of energy.</p>
     <p>The Laser Drill must be placed on a space station and must have a clear line of sight to the bottom of the world in order to function.  In future releases may also require the station pointing downward.</p>
     <br>
     <p>The laser drill can require around 20kRF/t, at the benefit of mining one block per tick, or 20 blocks per second. Not every block will be an ore, but it is still recommended to have robust power generation and item transport before setting a drill up, as is having robust ore processing to deal with the ore income. Something like and Immersive Engineering Arc Furnace or a Mekanism factories ore processing line is recommended to be able to keep up with the drill. To create the power, a good solution is as many satellites will fit into a <a href="MicrowaveReciever.php">microwave receiver</a> with as many large solar panels as you can fit into them.</p>

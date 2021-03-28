@@ -19,7 +19,7 @@
     //NAME OF BLOCK
     $title = 'Area Gravity Controller';
 
-    $imageDemoName = 'gravityController_demo.jpg';
+    $imageDemoName = 'areaGravityController_demo.png';
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The area gravity controller is a machine that can be used to manipulate gravity within a certain radius in exchange for energy.  The gravity controller can also affect the direction of gravity.  When activated it does have a warmup and cooldown time so effects are not immediate.</p>
@@ -39,7 +39,7 @@
     The on/off switch in the top right controls the state of the machine.  When off no effect on gravity will be produced and the machine will slow down rapidly.  The redstone tab changes how the machine responds to a redstone signal.
     </p>'; 
     
-    $sidebarImage = 'gravityController_block.png';
+    $sidebarImage = 'areaGravityController_block.png';
 
     $hardness = '2';
     $blastResistance = '0';

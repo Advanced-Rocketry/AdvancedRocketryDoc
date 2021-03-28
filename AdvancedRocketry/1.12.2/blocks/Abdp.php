@@ -19,7 +19,7 @@
     //NAME OF BLOCK
     $title = 'Astrobody Data Processor';
 
-    $imageDemoName = 'abdp_demo.jpg';
+    $imageDemoName = 'abdp_demo.png';
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The Astrobody Data Processor is essentially a computer that analyses data brought in from <a href="/AdvancedRocketry/1.12.2/items/satellite.php">satellites</a> and telescopes.  The purpose of this machine is to process data and program the analysed data into asteroid ID chips for use with asteroid mining missions.</p>

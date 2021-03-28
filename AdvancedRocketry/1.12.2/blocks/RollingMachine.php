@@ -30,7 +30,7 @@
     
     $optionalSection='';
     
-    $sidebarImage = '';
+    $sidebarImage = 'rolling_block.png';
     $hardness = '';
     $blastResistance = '';
     $requiresTool = 'YES';

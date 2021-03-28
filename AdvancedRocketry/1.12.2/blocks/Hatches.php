@@ -19,7 +19,7 @@
     //NAME OF BLOCK
     $title = 'Hatches and Loaders';
 
-    $imageDemoName = 'hatch_demo.jpg';
+    $imageDemoName = 'hatch_demo.png';
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>Hatches are a way of inputting and outputting items, liquid, energy, and data from rockets and machines.</p>

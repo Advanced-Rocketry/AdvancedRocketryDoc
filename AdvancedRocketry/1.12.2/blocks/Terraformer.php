@@ -30,7 +30,7 @@
     $imageGUI = '';
     $descriptionGUI =''; 
     
-    $sidebarImage = 'electrolyser_block.png';
+    $sidebarImage = 'terraformer_block.png';
 
     $hardness = '3';
     $blastResistance = '0';

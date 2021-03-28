@@ -19,7 +19,7 @@
     //NAME OF BLOCK
     $title = 'Railgun';
 
-    $imageDemoName = 'railgun_demo.jpg';
+    $imageDemoName = 'railgun_demo.png';
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The primary purpose of the railgun is to accelerate items to extremely high speed using a powerful magnet to essentially shoot items from one planet to its moon.  The railgun is not powerful enough to transport item stacks between planets and its range is limited to bodies within the same system (including space stations).  In order to allow cross dimensional item transfer, the railgun does act as a chunk loader and if the remote end gets unloaded somehow, the transfer will fail.</p>

@@ -30,7 +30,7 @@
     
     $optionalSection='';
     
-    $sidebarImage = '';
+    $sidebarImage = 'crystallizer_block.png';
     $hardness = '';
     $blastResistance = '';
     $requiresTool = 'YES';

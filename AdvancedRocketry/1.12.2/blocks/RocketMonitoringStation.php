@@ -19,7 +19,7 @@
     //NAME OF BLOCK
     $title = 'Rocket Monitoring Station';
 
-    $imageDemoName = '';
+    $imageDemoName = 'rocketMonitoring_demo.png';
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The Rocket Monitoring Station is used to remotely launch and monitor the progress of any rocket, manned or unmanned.  The Rocket Monitoring Station is actually <b>required</b> to launch unmanned rockets.  The Rocket Monitoring Station can be linked by shift-right clicking on a Rocket Monitoring Station with the linking tool (TODO:ADD LINK) then right-clicking on the rocket with the same linking tool.  Although the Monitoring Station technically allows unlimited range, if the chunk containing the rocket is not loaded then attempting to launch the rocket will have no effect.</p>';

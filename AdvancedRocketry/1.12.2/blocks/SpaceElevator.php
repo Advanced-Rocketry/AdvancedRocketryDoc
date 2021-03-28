@@ -19,7 +19,7 @@
     //NAME OF BLOCK
     $title = 'Space Elevator';
 
-    $imageDemoName = 'spaceElevator_demo.jpg';
+    $imageDemoName = 'spaceElevator_demo.png';
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The space elevator is a multiblock machine that provides an endpoint with paired space elevators.  Space Elevators can only transport players between bodies in the same system such as a planet and an orbiting station, two stations orbiting the same planet, or a planet and its moon.  Space elevators cannot transport players between two separate points on the same planet.</p>

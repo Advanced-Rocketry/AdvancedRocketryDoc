@@ -17,28 +17,29 @@
     */    
     
     //NAME OF BLOCK
-    $title = 'Pipe Seal';
+    $title = 'Gas Intake';
 
-    $imageDemoName = 'seal_demo.jpg';
+    $imageDemoName = 'unmannedVehicleAssembler_demo.jpg';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The seal block is designed to create a seal around any non sealable block (including air) to make it possible to transfer items, liquids, and energy to space station and base interiors while maintaining an O2 seal.</p>
-    <p>This block can create a seal around any 1x1 hole as long as the edges are all seal blocks.  Entities are able to pass through the center enabling constructs involving trains and carts.</p>';
+    $description1 = '<p>The gas intake is built onto an <a href="UnmannedVehicleAssembler.php">unmanned vehicle</a> to harvest gas from gas giant planets. Pressurized tanks are also needed on the vehicle in order to store the gases and bring them back to the space station. See <a href="\AdvancedRocketry\1.12.2\guides\Missions.php#gasmining">Mission Control: Gas Harvesting Missions</a> for more information.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';
-    $descriptionGUI =''; 
+    $descriptionGUI ='';
     
-    $sidebarImage = 'seal_block.png';
-
+    $optionalSection='';
+    
+    $sidebarImage = 'gasIntake_block.png';
     $hardness = '3';
     $blastResistance = '0';
     $requiresTool = 'YES';
     $fullBlock = 'YES';
     $sealable = 'YES';
-    $tileEntity = 'NO';
-    $multiBlock = 'NO';
+    $tileEntity = '';
+    $multiBlock = 'YES (vehicle)';
+    $hasNBT = '';
     $other ='';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
-?>
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+?> 

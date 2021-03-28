@@ -17,28 +17,29 @@
     */    
     
     //NAME OF BLOCK
-    $title = 'Pipe Seal';
+    $title = 'Drill';
 
-    $imageDemoName = 'seal_demo.jpg';
+    $imageDemoName = 'drill_demo.png';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The seal block is designed to create a seal around any non sealable block (including air) to make it possible to transfer items, liquids, and energy to space station and base interiors while maintaining an O2 seal.</p>
-    <p>This block can create a seal around any 1x1 hole as long as the edges are all seal blocks.  Entities are able to pass through the center enabling constructs involving trains and carts.</p>';
+    $description1 = '<p>Rockets need a drill to mine asteroids. The drill can be placed anywhere on the rocket and the more drills you add the quicker the mining mission completes. See <a href="\AdvancedRocketry\1.12.2\guides\Missions.php#asteroidmining">Mission Control: Asteroid Mining Missions</a> for more information.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';
-    $descriptionGUI =''; 
+    $descriptionGUI ='';
     
-    $sidebarImage = 'seal_block.png';
-
+    $optionalSection='';
+    
+    $sidebarImage = 'drill_block.png';
     $hardness = '3';
     $blastResistance = '0';
     $requiresTool = 'YES';
     $fullBlock = 'YES';
     $sealable = 'YES';
-    $tileEntity = 'NO';
-    $multiBlock = 'NO';
+    $tileEntity = '';
+    $multiBlock = 'YES (rocket)';
+    $hasNBT = '';
     $other ='';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
-?>
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+?> 

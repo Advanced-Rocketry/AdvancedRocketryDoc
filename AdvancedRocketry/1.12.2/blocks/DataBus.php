@@ -17,28 +17,29 @@
     */    
     
     //NAME OF BLOCK
-    $title = 'Pipe Seal';
+    $title = 'Data Bus';
 
-    $imageDemoName = 'seal_demo.jpg';
+    $imageDemoName = 'dataBus_demo.png';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The seal block is designed to create a seal around any non sealable block (including air) to make it possible to transfer items, liquids, and energy to space station and base interiors while maintaining an O2 seal.</p>
-    <p>This block can create a seal around any 1x1 hole as long as the edges are all seal blocks.  Entities are able to pass through the center enabling constructs involving trains and carts.</p>';
+    $description1 = '<p>The data bus imports data from <a href="\AdvancedRocketry\1.12.2\items\satellite.php">satellites</a> or <a href="\AdvancedRocketry\1.12.2\items\datachip.php">data chips</a> into the <a href="Observatory.php">Observatory</a> and <a href="abdp.php">Astrobody Data Processor</a>. See <a href="\AdvancedRocketry\1.12.2\guides\Missions.php">Mission Control</a> for more information on data and its usages.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';
-    $descriptionGUI =''; 
+    $descriptionGUI ='';
     
-    $sidebarImage = 'seal_block.png';
-
+    $optionalSection='';
+    
+    $sidebarImage = 'dataHatch_block.png';
     $hardness = '3';
     $blastResistance = '0';
     $requiresTool = 'YES';
     $fullBlock = 'YES';
     $sealable = 'YES';
-    $tileEntity = 'NO';
+    $tileEntity = '';
     $multiBlock = 'NO';
+    $hasNBT = '';
     $other ='';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
-?>
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+?> 

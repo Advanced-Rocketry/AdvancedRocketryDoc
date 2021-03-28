@@ -17,28 +17,29 @@
     */    
     
     //NAME OF BLOCK
-    $title = 'Pipe Seal';
+    $title = 'Station Light';
 
-    $imageDemoName = 'seal_demo.jpg';
+    $imageDemoName = 'stationLight_demo.png';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The seal block is designed to create a seal around any non sealable block (including air) to make it possible to transfer items, liquids, and energy to space station and base interiors while maintaining an O2 seal.</p>
-    <p>This block can create a seal around any 1x1 hole as long as the edges are all seal blocks.  Entities are able to pass through the center enabling constructs involving trains and carts.</p>';
+    $description1 = '<p>The station light provides light level 15. It requires no redstone signal to work and is preferable to torches in space stations as torches without oxygen will extinguish.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';
-    $descriptionGUI =''; 
+    $descriptionGUI ='';
     
-    $sidebarImage = 'seal_block.png';
-
-    $hardness = '3';
+    $optionalSection='';
+    
+    $sidebarImage = 'stationLight_block.png';
+    $hardness = '2';
     $blastResistance = '0';
     $requiresTool = 'YES';
     $fullBlock = 'YES';
     $sealable = 'YES';
-    $tileEntity = 'NO';
-    $multiBlock = 'NO';
-    $other ='';
+    $tileEntity = '';
+    $multiBlock = '';
+    $hasNBT = '';
+    $other ='Light Level: 15';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
-?>
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+?> 

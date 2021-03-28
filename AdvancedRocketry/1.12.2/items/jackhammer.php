@@ -17,27 +17,29 @@
     */    
     
     //NAME OF BLOCK
-    $title = 'CO2 Scrubber';
+    $title = 'Jackhammer';
 
-    $imageDemoName = 'energyCable_demo.jpg';
+    $imageDemoName = '';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>When placed next to an <a href="OxygenVent.php">Oxygen Vent</a>, the CO2 scrubber reduces the amount of Oxygen required and increases the power consumption. It requires carbon collection cartridges to scrub the CO2 and pass clean O2 to the oxygen vent.</p>';
+    $description1 = '<p>The jackhammer is a mining tool which works extremely fast, taking one click for most blocks. It is the only item capable of mining geodes. It can be enchanted like other pickaxes, but the effects of Efficiency enchantments can only be seen when mining extremely hard blocks like obsidian or geodes.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';
-    $descriptionGUI =''; 
+    $descriptionGUI ='';
     
-    $sidebarImage = 'oxygenScrubber_block.png';
-
-    $hardness = '3';
-    $blastResistance = '0';
-    $requiresTool = 'YES';
-    $fullBlock = 'YES';
-    $sealable = 'YES';
-    $tileEntity = 'YES';
-    $multiBlock = 'NO';
+    $optionalSection='';
+    
+    $sidebarImage = '\items\jackhammer.png';
+    $hardness = '';
+    $blastResistance = '';
+    $requiresTool = '';
+    $fullBlock = '';
+    $sealable = '';
+    $tileEntity = '';
+    $multiBlock = '';
+    $hasNBT = '';
     $other ='';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
-?>
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template.php');
+?> 

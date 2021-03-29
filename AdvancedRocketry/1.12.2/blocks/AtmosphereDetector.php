@@ -41,5 +41,5 @@
     $hasNBT = '';
     $other ='';
 
-    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12s.php');
+    include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
 ?> 

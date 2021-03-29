@@ -18,7 +18,7 @@
     //NAME OF BLOCK
     $title = 'Beacon';
 
-    $imageDemoName = 'beacon_demo.jpg';
+    $imageDemoName = 'beacon_demo.png';
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The Beacon is a fairly cheap multiblock structure that has several purposes.</p>

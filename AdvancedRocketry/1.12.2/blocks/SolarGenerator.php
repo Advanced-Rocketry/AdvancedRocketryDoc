@@ -23,8 +23,7 @@
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The Solar Generator is a solar panel that generates a small amount of power just by being in sunlight.</p>
-    <p>The panel will work as long as it has a direct line of sight to the sky (it does work under glass blocks) and it is not night time.</p>
-    <p>Note: this block only exists in MC1.10.2 versions of AR.</p>';
+    <p>The panel will work as long as it has a direct line of sight to the sky (it does work under glass blocks) and it is not night time.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';

@@ -25,7 +25,7 @@
     $description1 = '<p>The Satellite Bay is a special block for rockets that holds a satellite to be released upon reaching orbit.</p>
     <p>This block can be placed anywhere on the rocket and can be accessed once built by crouching and right clicking the rocket.</p>
     <p><h3>Future Plans:</h3></p>
-    <p>Require different Teirs for larger/heavier satellites</p>';
+    <p>Require different Tiers for larger/heavier satellites</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';

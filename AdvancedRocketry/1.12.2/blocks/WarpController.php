@@ -19,7 +19,7 @@
     //NAME OF BLOCK
     $title = 'Warp Controller';
 
-    $imageDemoName = 'warpController_demo.jpg';
+    $imageDemoName = 'warpController_demo.png';
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The warp controller is the control station block in a starship.  Simply placing the warp controller and <a href="WarpCore.php">warp core</a> anywhere on a space station can turn it into a mobile starship capable of warping between planets and even solar systems.  The control panel offered by the warp controller allows a player to view their current location as well as select destinations as well as view fuel storage on the starship.</p>';
@@ -30,7 +30,7 @@
     <p>
     A destination planet may be selected by clicking the "select planet" button.
     </p>
-    <p>The second panel contains the currently selected destination planet\'s icon and name.  Depending on the distance from the orbiting planet to the destination the fuel cost may increase or decrease.  Fuel cost is calculated by distance between the two planets.  So if you are activly trying to conserve fuel it may be beneficial to wait until two planets near each other in their orbits.</p>
+    <p>The second panel contains the currently selected destination planet\'s icon and name.  Depending on the distance from the orbiting planet to the destination the fuel cost may increase or decrease.  Fuel cost is calculated by distance between the two planets.  So if you are actively trying to conserve fuel it may be beneficial to wait until two planets near each other in their orbits.</p>
     <h3>Warp System Status</h3><p>
     Traveling from a planet to its moon is very cheap because they are so close together.  Though it may be easier to just use a rocket or <a href="spaceElevator.php">space elevator</a> at that point.  Warp ships are also able to travel between star systems.  However travelling to planets in other star systems is a very fuel consuming task due to the distances involved.</p>
     <p>
@@ -52,7 +52,7 @@
     The warp controller can also be used to discover new planets.  Placing an unprogrammed planet id chip into the slot and pressing the "search for planet" button will initiate a planet search.  Completing a planet search may take some time and also requires 100 of each kind of data.  Searching for planets is often unsuccessful and multiple attempts may need to be made.  Upon successful completion the planet id chip will be programmed and the planet will be make known to the warp controller.
     </p>
     <p>
-    Depending on the configuration of the world, some planet may need a certain artifact to be able to discover and visit.  If an artifact pertaining to a planet is placed in the artifact slots then when trying to discover a planet a planet with those artifacts is garunteed to be discovered.  If all planets with that set of artifacts are already known, then a random planet may be discovered instead.
+    Depending on the configuration of the world, some planet may need a certain artifact to be able to discover and visit.  If an artifact pertaining to a planet is placed in the artifact slots then when trying to discover a planet a planet with those artifacts is guaranteed to be discovered.  If all planets with that set of artifacts are already known, then a random planet may be discovered instead.
     </p>
     <p>As a side note: planets contained active <a href="Beacon.php">beacons</a> can be seen by all players, even if they have not yet discovered the planet.</p>';
     
@@ -64,7 +64,7 @@
     $fullBlock = 'YES';
     $sealable = 'YES';
     $tileEntity = 'YES';
-    $multiBlock = 'YES';
+    $multiBlock = 'NO';
     $other ='';
 
     include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');

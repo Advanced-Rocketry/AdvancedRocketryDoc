@@ -19,10 +19,10 @@
     //NAME OF BLOCK
     $title = 'CO2 Scrubber';
 
-    $imageDemoName = 'energyCable_demo.jpg';
+    $imageDemoName = 'oxygen_demo.png';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>When placed next to an <a href="OxygenVent.php">Oxygen Vent</a>,  the CO2 scrubber reduces the amount of Oxygen required and increases the power consumption.</p>';
+    $description1 = '<p>When placed next to an <a href="OxygenVent.php">Oxygen Vent</a>, the CO2 scrubber reduces the amount of Oxygen required and increases the power consumption. It requires carbon collection cartridges to scrub the CO2 and pass clean O2 to the oxygen vent.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';

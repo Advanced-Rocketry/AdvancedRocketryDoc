@@ -32,7 +32,7 @@
     
     $optionalSection='';
     
-    $sidebarImage = '';
+    $sidebarImage = 'precision_block.png';
     $hardness = '';
     $blastResistance = '';
     $requiresTool = 'YES';

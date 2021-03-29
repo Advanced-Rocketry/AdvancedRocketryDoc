@@ -24,10 +24,11 @@
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>Fuel Tanks are cylindrical 
     containers used to store rocket fuel onboard rockets.  Building fuel tanks into a rocket will increase the <a href="RocketAssemblingMachine.php#rocketStats">fuel storage capacity</a> of the rocket.</p>
+    <p>There are three types of tanks to provide fuel to the <a href="RocketEngine.php">engines</a>. The monopropellant engine requires monopropellant fuel tanks. The bipropellant engine requires both a bipropellant fuel tank to store hydrogen and an oxidizer fuel tank to store the oxygen.</p>
     <p>If a fuel tank is placed on top of or underneath another fuel tank, then the tanks will merge to become one larger tank.</p>
     <p>Fuel tanks cannot merge sideways or diagonally.</p>
     <p>If multiple fuel tanks are present on the rocket the fuel tanks will provide the same amount of storage
-    as one large fuel tank.</p><p>There are no penalties for number of fuel tanks or distance between a fuel tank and an <a href="RocketEngine.php">engine</a>.</p>';
+    as one large fuel tank.</p><p>There are no penalties for number of fuel tanks or distance between a fuel tank and an engine.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';

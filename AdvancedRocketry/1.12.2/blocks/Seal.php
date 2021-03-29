@@ -17,13 +17,13 @@
     */    
     
     //NAME OF BLOCK
-    $title = 'Seal';
+    $title = 'Pipe Seal';
 
     $imageDemoName = 'seal_demo.jpg';
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The seal block is designed to create a seal around any non sealable block (including air) to make it possible to transfer items, liquids, and energy to space station and base interiors while maintaining an O2 seal.</p>
-    <p>This block can create a seal around any 1x1 hole as long as the edges are all seal blocks.  Entities are able to pass through the center enabling contructs involving trains and carts.</p>';
+    <p>This block can create a seal around any 1x1 hole as long as the edges are all seal blocks.  Entities are able to pass through the center enabling constructs involving trains and carts.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';

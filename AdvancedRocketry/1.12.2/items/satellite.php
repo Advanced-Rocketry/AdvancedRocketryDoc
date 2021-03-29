@@ -27,7 +27,7 @@
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';
-    $descriptionGUI ='<h2><center>Satellite Compenents</center></h2>
+    $descriptionGUI ='<h2><center>Satellite Components</center></h2>
     <table style="width:100%">
     <thead><h3>Satellite Types</h3></thead>
     <tr>
@@ -37,31 +37,31 @@
     </tr>
     
     <tr>
-    <td><img align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/satellitePrimaryFunction0.png"/>Optical Sensor</td>
+    <td><img align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/items/satellitePrimaryFunction0.png"/>Optical Sensor</td>
     <td>Optical Telescope</td>
     <td>Data Collection</td>
     </tr>
     
     <tr>
-    <td><img align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/satellitePrimaryFunction1.png"/>Composition Sensor</td>
+    <td><img align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/items/satellitePrimaryFunction1.png"/>Composition Sensor</td>
     <td>Composition Scanner</td>
     <td>Data Collection</td>
     </tr>
     
     <tr>
-    <td><img align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/satellitePrimaryFunction2.png"/>Mass Detector</td>
+    <td><img align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/items/satellitePrimaryFunction2.png"/>Mass Detector</td>
     <td>Mass Scanner</td>
     <td>Data Collection</td>
     </tr>
     
     <tr>
-    <td><img align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/satellitePrimaryFunction3.png"/>Microwave Transmitter</td>
+    <td><img align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/items/satellitePrimaryFunction3.png"/>Microwave Transmitter</td>
     <td>Microwave Energy Satellite</td>
     <td>Energy Collection</td>
     </tr>
     
     <tr>
-    <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/satellitePrimaryFunction4.png"/>Ore Mapper*</td>
+    <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/items/satellitePrimaryFunction4.png"/>Ore Mapper*</td>
     <td>Ore Mapper</td>
     <td>Utility</td>
     </tr>
@@ -84,12 +84,12 @@
     </tr>
     
     <tr>
-    <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/satellitePowerSource0.png"/>Basic Solar Panel***</td>
+    <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/items/satellitePowerSource0.png"/>Basic Solar Panel***</td>
     <td>0.1 RF/t</td>
     </tr>
     
     <tr>
-    <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/satellitePowerSource1.png"/>Large Solar Panel</td>
+    <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/items/satellitePowerSource1.png"/>Large Solar Panel</td>
     <td>1 RF/t</td>
     </tr>
     </table>

@@ -28,7 +28,7 @@
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = 'suitWorkstation_gui.png';
     $descriptionGUI ='<p>To use the Suit Workstation a piece of the modular suit must be placed in the <font color="#009900">Armor holding slot</font>.  Once this is done the <font color="#990000">component slots</font> will show what components are installed in the piece of armor.</p>
-    <p>The <font color="000099">player armor slots</font> are on the right for easy access the the currently equipped armor.</p>'; 
+    <p>The <font color="000099">player armor slots</font> are on the right for easy access to the currently equipped armor.</p>'; 
     
     $sidebarImage = 'suitWorkstation_block.png';
 

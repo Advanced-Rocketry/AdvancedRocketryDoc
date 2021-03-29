@@ -73,7 +73,9 @@ Each recipe type has essentially the same tags.  The recipe types are as follows
 <li>crystallizer</li>
 </ul>
 <br>
-<p>Each of these types create a recipe for the corresponding machine.  Due to the complexity of recipes allowed in AdvancedRocketry\'s machines, the tags for the JSON may look a little different.</p> 
+<p>Each of these types create a recipe for the corresponding machine. <b>In Advanced Rocketry 1.5.0+ for Minecraft 1.12, both the XML recipes and JSON recipes will be accepted.  Recipes added as a resource pack may be saved in XML.</b></p>
+
+<p>This document will guide you through manually adding recipes to AR's various machines.<br />Each machine will generate a "MACHINENAME.xml" in the config/advancedRocketry folder with an empty set of "Recipes" tags.</p> Due to the complexity of recipes allowed in AdvancedRocketry's machines, the tags for the JSON may look a little different.</p> 
 <p>Below is a sample JSON that takes one bone and 10mb of nitrogen then converts it to 8 bonemeal and 10mb of water in the chemical reactor:</p>
 
 <pre class="configurationBlock">
@@ -120,13 +122,9 @@ Each recipe type has essentially the same tags.  The recipe types are as follows
 <li><code>energy:</code> Amount of energy per tick this recipe consumes.  Total amount of energy is this tag multiplied by the number entered for time.</li>
 </ul>
 <hr style="border-width: 5px;">
-<h3>NOTE: The below is being deprecated and will no longer be relevant for Advanced Rocketry versions targeting minecraft 1.13+</h3>
-<p><b>In Advanced Rocketry 1.5.0+ for Minecraft 1.12, both the XML recipes and JSON recipes will be accepted.  Recipes added as a resource pack may be saved in XML.</b></p>
-<p>This document will guide you through manually adding recipes to AR\'s various machines.<br />Each machine will generate a "MACHINENAME.xml" in the config/advancedRocketry folder with an empty set of "Recipes" tags.</p>
 
+<h3>Explanation of usable tags for XML:</h3>
 
-<p><h3>Explanation of usable tags:</h3></p>
-<hr style="border-width: 5px;">
 <p>The "Recipe" tag surrounds each recipe entry, this tag contains the "timeRequired" and "power" attributes, which determines the amount of time in ticks and the power consumption in RF/t respectively.</p>
 
 <p>Each recipe node must contain an input and output node.</p>

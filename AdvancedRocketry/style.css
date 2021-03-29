@@ -66,7 +66,7 @@ table, th, td {
   border: 1px solid #a9a9a9;
 }
 
-.main h2 {
+.main h2,h3 {
   color: #003864;
 }
 .main h1 {

@@ -112,7 +112,7 @@
 
         <a name="starSpec" ></a>
         <center><h3>Binary Star Specification</h3></center>
-        <p>In addition to having single star systems, Advanced rocketry allows Binary, Trinary, and even n-body star systems (As many stars as you want!).  It is much like defining a <a href="#basicSpec">normal star</a> except there\'s a slightly different set of tags.  Namely the 'x', 'y', 'numPlanets', and 'numGasGiants' tags are absent.  Additionally, there is a new 'separation' tag.  The 'speration' tag determines how far from the host star the sister star is located in solar radii.</p>
+        <p>In addition to having single star systems, Advanced rocketry allows Binary, Trinary, and even n-body star systems (As many stars as you want!).  It is much like defining a <a href="#basicSpec">normal star</a> except there's a slightly different set of tags.  Namely the 'x', 'y', 'numPlanets', and 'numGasGiants' tags are absent.  Additionally, there is a new 'separation' tag.  The 'speration' tag determines how far from the host star the sister star is located in solar radii.</p>
         <p>Unlike the top level star tag, when defining a binary or trinary system, the star tag must go inside the top level star tag immediately before the planet tags.  The name tag is currently unused.  Additionally, sister stars CAN be black holes.</p>
 
         <p>Example usage; generates a trinary star system with the planet Jole:</p>
@@ -329,7 +329,7 @@
 
         <a name="gravMult"></a>
         <center><h3>Gravitational Multiplier</h3></center>
-        <p>The "gravitationalMultiplier" tag specifies the density of the gravitational pull on a planet.  100 is earthlike.  Any value less than 100 will result in a gravitational pull less than that of Earth.  Any value higher than 110 may result in players being UNABLE to jump up blocks without assistance from stairs.  Values very close to 0 ( &#60; 10) may result in players being unable to fall. YOU HAVE BEEN WARNED.</p>
+        <p>The "gravitationalMultiplier" tag specifies the density of the gravitational pull on a planet.  100 is Earth-like.  Any value less than 100 will result in a gravitational pull less than that of Earth.  Any value higher than 110 may result in players being UNABLE to jump up blocks without assistance from stairs.  Values very close to 0 ( &#60; 10) may result in players being unable to fall. YOU HAVE BEEN WARNED.</p>
         <ul>
         <li>Max: 400</li>
         <li>Default: 100</li>
@@ -658,7 +658,7 @@
             &#60;/star&#62;
         &#60;/galaxy&#62;</pre><br>
 
-        <p>Example usage: If using a resource pack, be sure the texture you want to use, in this case <code>smiley.png</code>, is in the <code>advancedrocketry/assets</code> folder. Also be sure that there you include the same picture as <code>smileyLEO.jpg</code>. Notice the file extensions and naming conventions on the two files.</p>
+        <p>Example usage: If using a resource pack, be sure the texture you want to use, in this case <code>smiley.png</code>, is in the <code>advancedrocketry/assets/textures/planets</code> folder. Also be sure that you include a picture for the space station view. This should be saved as <code>smileyLEO.jpg</code>. Notice the file extensions and naming conventions on the two files.</p>
         <pre class="configurationBlock">
           &#60;galaxy&#62;
               &#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;

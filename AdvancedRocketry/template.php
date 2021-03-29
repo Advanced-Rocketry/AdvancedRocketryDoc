@@ -43,7 +43,7 @@
         <center><h2>Overview</h2></center>
         <div class='row'>
           <div class='col-4'>            
-            <img align="left" width='100%' src="../img/<?php echo $imageDemoName ?>" />         
+            <img align="left" width='100%' src="../../img/<?php echo $imageDemoName ?>" />         
           </div>          
           <div class=col-8>                   
             <?php echo $description1 ?>
@@ -63,7 +63,7 @@
             <?php echo $descriptionGUI ?>
           </div>
           <div class='col-4'>            
-            <img align="left" width='100%' src="../img/<?php echo $imageGUI ?>" />         
+            <img align="left" width='100%' src="../../img/<?php echo $imageGUI ?>" />         
           </div>          
         </div>
         <hr>
@@ -83,7 +83,7 @@
       <img style="width: 100%;" alt="Advanced Rocketry Logo" src="/AdvancedRocketry/logo.png" /><hr />
       <?php echo $title ?><hr>
       <?php if (!empty($sidebarImage)){?>
-        <img class="sidebarImage" src="../img/<?php echo $sidebarImage ?>" /><hr>
+        <img class="sidebarImage" src="../../img/<?php echo $sidebarImage ?>" /><hr>
       <?php } ?>
       <?php if (!empty($hardness)||($hardness === '0')){?>
         Hardness: <?php echo $hardness ?><br>

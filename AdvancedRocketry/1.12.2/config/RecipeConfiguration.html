@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  
+  <!--<meta http-equiv="Content-Type" content="text/html;  charset=iso-8859-1" />-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Official Advanced Rocketry Wiki" />
+  <meta name="keywords" content="advanced rocketry wiki minecraft mc rockets planets space exploration 1.12.2 mods" />
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/AdvancedRocketry/style.css" media="all" />
+<!--[if lt IE 6]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if lt IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]-->
+  <title>Advanced Rocketry</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/AdvancedRocketry/favicon.ico" />
+  
+</head>
+<body>
+<div class="container-fluid">
+  <div id="header">
+    <div class="float-left">
+      <center><h1>1.12.2 Documentation</h1></center>      
+    </div>
+    <div class="float-right">           
+      <a href="/AdvancedRocketry/index.html"><img src="/AdvancedRocketry/favicon.ico" title="Main Home"></a>
+    </div>
+    <div class="float-right">
+      <p>Click here for main home page.</p> 
+    </div>        
+  </div>
+  <nav class="navbar navbar-expand-md m-0 p-0 version" id="navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"><img src="/AdvancedRocketry/favicon.ico" width=100%></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav menu">
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/guides/index.html">Guides</a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/blocks/index.html">Blocks </a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/items/index.html">Items</a></li>  
+        <li class="nav-item"><a class="nav-link active" href="/AdvancedRocketry/1.12.2/config/index.html">Configuration<br/>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/Commands.html">Commands</a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/Biomes.html">Biomes</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-4 m-0 p-0">
+        <div class="mr-2 sidebar">
+          <img style="width: 100%;" alt="Advanced Rocketry Logo" src="/AdvancedRocketry/logo.png" />
+        </div>
+      </div>
+      <div class="col-lg-10 col-md-9 col-sm-8 main">
+        <h2>Advanced Rocketry Recipe Configuration</h2><hr>
+<br />
+<p>Welcome to the Advanced Rocketry advanced recipe configuration readme!<br /></p>
+
+<p>Since Advanced Rocketry 1.5.0, resource packs are the preferred way to configure recipes for Advanced Rocketry.  Advanced Rocketry provides its own recipe types; one for each machine.
+Each recipe type has essentially the same tags.  The recipe types are as follows:
+</p>
+<ul>
+<li>rollingmachine</li>
+<li>precisionassembler</li>
+<li>electricarcfurnace</li>
+<li>cuttingmachine</li>
+<li>chemicalreactor</li>
+<li>electrolyser</li>
+<li>crystallizer</li>
+</ul>
+<br>
+<p>Each of these types create a recipe for the corresponding machine.  Due to the complexity of recipes allowed in AdvancedRocketry\'s machines, the tags for the JSON may look a little different.</p> 
+<p>Below is a sample JSON that takes one bone and 10mb of nitrogen then converts it to 8 bonemeal and 10mb of water in the chemical reactor:</p>
+
+<pre class="configurationBlock">
+{
+    "type": "advancedrocketry:chemicalreactor",
+    "itemingredients":
+    [
+        {
+            "item": "minecraft:bone"
+        }
+    ],
+    "fluidingredients":
+    [
+        {
+            "fluid": "nitrogen",
+            "amount": 10
+        }
+    ],
+    "time": 100,
+    "energy": 1,
+    "itemresults":
+    [
+        {
+            "item": "minecraft:dye",
+            "data": 15,
+            "count": 8
+        }
+    ],
+    "fluidresults":
+    [
+        {
+            "fluid": "water",
+            "amount": 10
+        }
+    ]
+}</pre>
+
+<ul>
+<li><code>itemingredients:</code> itemstack ingredients that are to be used as the recipe input.  These work just like shapeless recipes except you CAN use the count tag here to specify the minimum accepted stacksize.</li>
+<li><code>fluidingredients:</code> Fluids used in the recipe input.  These tags are AR specific.  Like itemingredients, it is an array, however each element must use the "fluid" tag and "amount" tag to specify the fluid type and amount.  This uses the fluid dictionary</li>
+<li><code>itemresults:</code> Item outputs go here.  Just like itemingredients, this is an array of items.</li>
+<li><code>fluidresults:</code> Fluid outputs go here.  Just like fluidingredients, this is an array of objects containing "fluid" and "amount"</li>
+<li><code>time:</code> Amount of time the recipe takes in ticks.  It is also number of seconds multiplied by 20.  If you want it to take 5 seconds, then time should be 100 because 100 ticks = 5seconds * 20 ticks per second.
+<li><code>energy:</code> Amount of energy per tick this recipe consumes.  Total amount of energy is this tag multiplied by the number entered for time.</li>
+</ul>
+<hr style="border-width: 5px;">
+<h3>NOTE: The below is being deprecated and will no longer be relevant for Advanced Rocketry versions targeting minecraft 1.13+</h3>
+<p><b>In Advanced Rocketry 1.5.0+ for Minecraft 1.12, both the XML recipes and JSON recipes will be accepted.  Recipes added as a resource pack may be saved in XML.</b></p>
+<p>This document will guide you through manually adding recipes to AR\'s various machines.<br />Each machine will generate a "MACHINENAME.xml" in the config/advancedRocketry folder with an empty set of "Recipes" tags.</p>
+
+
+<p><h3>Explanation of usable tags:</h3></p>
+<hr style="border-width: 5px;">
+<p>The "Recipe" tag surrounds each recipe entry, this tag contains the "timeRequired" and "power" attributes, which determines the amount of time in ticks and the power consumption in RF/t respectively.</p>
+
+<p>Each recipe node must contain an input and output node.</p>
+
+<p>Each input node and output node must contain at least one of the following:</p>
+
+<ul>
+<li>"itemStack" node: &#60;itemStack&#62;"namespace:unlocallized_name" OR "blockid/itemid" [size] [meta]&#60;/itemStack&#62; where size and meta are optional</li>
+<li>"oreDict" node: &#60;oreDict&#62;"oreDictionaryName" [size] &#60;/oreDict&#62; where size (the stack size) is optional</li>
+<li>"fluidStack" node: &#60;fluidStack&#62;"fluidName" [size] &#60;/fluidStack&#62; where size (the number of millibuckets) is optional</li>
+</ul>
+
+<p>Example (2 spruce logs and five iron ore makes 1 gold ore)<br />
+<pre class="configurationBlock">
+--- ./config/advancedRocketry/CuttingMachine.xml ---
+&#60;Recipes&#62;
+    &#60;Recipe timeRequired="10" power="50"&#62;
+        &#60;input&#62;
+            &#60;itemStack>minecraft:log 2 1&#60;/itemStack&#62;
+            &#60;oreDict&#62;oreIron 5&#60;/oreDict&#62;
+        &#60;/input&#62;
+        &#60;output&#62;
+            &#60;itemStack&#62;minecraft:gold_ore&#60;/itemStack&#62;
+        &#60;/output&#62;
+    &#60;/Recipe&#62;
+&#60;/Recipes&#62;</pre>
+    <div id="footer">
+      <p></p> 
+    </div>
+  </div>
+</div>
+</body>
+</html>

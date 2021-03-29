@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  
+  <!--<meta http-equiv="Content-Type" content="text/html;  charset=iso-8859-1" />-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Official Advanced Rocketry Wiki" />
+  <meta name="keywords" content="advanced rocketry wiki minecraft mc rockets planets space exploration 1.12.2 mods" />
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/AdvancedRocketry/style.css" media="all" />
+<!--[if lt IE 6]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if lt IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]-->
+  <title>Advanced Rocketry</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/AdvancedRocketry/favicon.ico" />
+  
+</head>
+<body>
+<div class="container-fluid">
+  <div id="header">
+    <div class="float-left">
+      <center><h1>1.12.2 Documentation</h1></center>      
+    </div>
+    <div class="float-right">           
+      <a href="/AdvancedRocketry/index.html"><img src="/AdvancedRocketry/favicon.ico" title="Main Home"></a>
+    </div>
+    <div class="float-right">
+      <p>Click here for main home page.</p> 
+    </div>        
+  </div>
+  <nav class="navbar navbar-expand-md m-0 p-0 version" id="navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"><img src="/AdvancedRocketry/favicon.ico" width=100%></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav menu">
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/guides/index.html">Guides</a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/blocks/index.html">Blocks </a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/items/index.html">Items</a></li>  
+        <li class="nav-item"><a class="nav-link active" href="/AdvancedRocketry/1.12.2/config/index.html">Configuration<br/>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/Commands.html">Commands</a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/Biomes.html">Biomes</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-4 m-0 p-0">
+        <div class="mr-2 sidebar">
+          <img style="width: 100%;" alt="Advanced Rocketry Logo" src="/AdvancedRocketry/logo.png" />
+        </div>
+      </div>
+      <div class="col-lg-10 col-md-9 col-sm-8 main">
+        <h2>Advanced Rocketry Asteroid Configuration (1.1.6+)</h2><hr><br>
+        <p>Welcome to the Advanced Rocketry Asteroid Configuration readme! This document will list and explain the meanings of the different settings available.</p>
+        <p>The asteroid config is located in the "./config/advRocketry/asteroidConfig.xml" file.  This config is used to specify the traits of asteroids that can be found in the <a href="../blocks/Observatory.php">observatory</a> ingame.</p>
+        <p>The configuration must be surrounded with "Asteroids" tags</p>
+        <p><h3>Explanation of usable tags:</h3></p>
+        <hr style="border-width: 5px;">
+        
+        <a name="asteroidSpec"></a>
+        <center><h3>Asteroid Specification</h3></center>
+
+        <p>The "asteroid" tag is used to begin and end the Specification of a new type of asteroid.  The tag has several fields:
+        <ul>
+        <li><code>name</code> - The name of the asteroid type.</li>
+        <li><code>distance</code> - The minimum viewable distance the observatory must have to be able to discover this asteroid type. Note that the max distance is 200 and the min distance is 35, and asteroid wieghts are calculated out of the available asteroids at the distance</li>
+        <li><code>mass</code> - The total amount of blocks that can be harvested from this asteroid.</li>
+        <li><code>massVariability</code> - The range of uncertainty of the number of blocks in an asteroid (must be between 0 and 1). (number = mass +/- 0.5*mass*massVariability)</li>
+        <li><code>minLevel</code> - unused, to be removed.</li>
+        <li><code>richness</code> - The ratio of the ore to rock content of the asteroid, 1.0 would make the asteroid 100% ore.</li>
+        <li><code>richnessVariability</code> - The range of uncertainty of the ratio of ore to stone (must be between 0 and 1).</li>
+        <li><code>probability</code> - The probability relative to other asteroids of showing up in the list during gameplay.  Note that the probabilities are normallized so sums of probabilities greater than 1 are allowed.</li>
+        <li><code>timeMultiplier</code> - The multiplier on the amount of time requires to mine an asteroid.</li>
+        </ul></p>
+        <p>
+        The only tags allowed inside the asteroid specification are "ore" tags.  The ore tags contain an "itemstack" and "chance" field.  The "itemstack" field should contain the unlocaillized name of a block or item optionally followed by a space and meta value.  The "chance" field should contain an integer and its purpose is to specify the chances of that particular stack being mined compared to other stacks in the asteroid.  Most asteroids should contain a healthy mix of all the stacks specified.
+        </p>
+        <p>Example asteroid:  contains iron, gold, redstone ores, and charcoal (coal with metavalue 1)</p>
+        
+        <pre class="configurationBlock">
+        &#60;Asteroids&#62;
+            ...
+            &#60;asteroid name="Large Asteroid" distance="10" mass="1000" massVariability="0.5" minLevel="0" probability="1" richness="0.8" richnessVariability="0.5"&#62;
+                &#60;ore itemStack="minecraft:iron_ore" chance="15" /&#62;
+                &#60;ore itemStack="minecraft:gold_ore" chance="10" /&#62;
+                &#60;ore itemStack="minecraft:redstone_ore" chance="10" /&#62;
+                &#60;ore itemStack="minecraft:coal 1" chance="20" /&#62;
+            &#60;/asteroid&#62;
+            ...
+        &#60;/Asteroids&#62;</pre>
+      </div>
+    </div>
+    <div id="footer">
+      <p></p> 
+    </div>
+  </div>
+</div>
+</body>
+</html>

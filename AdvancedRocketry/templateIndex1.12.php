@@ -22,9 +22,17 @@
 <body>
 <div class="container-fluid">
   <div id="header">
-    
+    <div class="float-left">
+      <center><h1>1.12.2 Documentation</h1></center>      
+    </div>
+    <div class="float-right">           
+      <a href="/AdvancedRocketry/index.html"><img src="/AdvancedRocketry/favicon.ico" title="Main Home"></a>
+    </div>
+    <div class="float-right">
+      <p>Click here for main home page.</p> 
+    </div>        
   </div>
-  <nav class="navbar navbar-expand-md m-0 p-0" id="navigation">
+  <nav class="navbar navbar-expand-md m-0 p-0 version" id="navigation">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"><img src="/AdvancedRocketry/favicon.ico" width=100%></span>
     </button>

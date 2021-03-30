@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  
+  <!--<meta http-equiv="Content-Type" content="text/html;  charset=iso-8859-1" />-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Official Advanced Rocketry Wiki" />
+  <meta name="keywords" content="advanced rocketry wiki minecraft mc rockets planets space exploration 1.12.2 mods" />
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/AdvancedRocketry/style.css" media="all" />
+<!--[if lt IE 6]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if lt IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]-->
+  <title>Advanced Rocketry</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/AdvancedRocketry/favicon.ico" />
+  
+</head>
+<body>
+<div class="container-fluid">
+  <div id="header">
+    <div class="float-left">
+      <center><h1>1.12.2 Documentation</h1></center>      
+    </div>
+    <div class="float-right">           
+      <a href="/AdvancedRocketry/index.html"><img src="/AdvancedRocketry/favicon.ico" title="Main Home"></a>
+    </div>
+    <div class="float-right">
+      <p>Click here for main home page.</p> 
+    </div>        
+  </div>
+  <nav class="navbar navbar-expand-md m-0 p-0 version" id="navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"><img src="/AdvancedRocketry/favicon.ico" width=100%></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav menu">
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/AdvancedRocketry/1.12.2/guides/index.html">Guides</a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/blocks/index.html">Blocks </a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/items/index.html">Items</a></li>  
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/config/index.html">Configuration<br/>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/Commands.html">Commands</a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/Biomes.html">Biomes</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-4 m-0 p-0">
+        <div class="mr-2 sidebar">
+          <img style="width: 100%;" alt="Advanced Rocketry Logo" src="/AdvancedRocketry/logo.png" /><hr>
+          <h3>Table of Contents:</h3>
+            <ol style="padding-left:15px;">
+              <li><a href="#step1">Build the Chemical Reactor and Electrolyser</a></li>
+              <li><a href="#step2">Build the Launch Pad</a></li>
+              <li><a href="#step3">Build the Rocket</a></li>
+              <li><a href="#step4">Assemble the Rocket</a></li>
+              <li><a href="#step5">Interacting with the Rocket</a></li>
+              <li><a href="#step6">Craft a Linker</a></li>
+              <li><a href="#step7">Fuel the Rocket</a></li>
+              <li><a href="#step8">Launch the Rocket - Manned</a></li>              
+              <li><a href="#step9">Launch the Rocket - Un-Manned</a></li>
+            </ol>
+        </div>
+      </div>
+      <div class="col-lg-10 col-md-9 col-sm-8 main">
+        <h2>Rockets</h2>
+        <div class=row>
+          <div class="col-lg-3 col-md-4 col-sm-5">
+            <img class="float-left" width="100%" src="/AdvancedRocketry/img/rocket_demo.jpg">
+          </div>
+          <div class="col-lg-9 col-md-8 col-sm-7">
+            <p>Up Up and Away! The rockets are one of the coolest parts of the mod. But with great coolness comes a little work. This is not like other space mods where you plop down a rocket, throw in some fuel and blast off. These rockets have to be carefully built, fueled and programmed with a destination. But these aren't just transport vehicles, these rockets have other jobs like satellite deployment, cargo hauling and mining missions.</p>
+          </div>
+        </div>
+        
+        <a name="step1"></a>
+        <hr style="border-width:5px">
+        <h3>Step 1: Build the <a href="/AdvancedRocketry/1.12.2/blocks/ChemicalReactor.php" title="Click to learn more">Chemical Reactor</a> and <a href="/AdvancedRocketry/1.12.2/blocks/Electrolyser.php" title="Click to learn more">Electrolyser</a></h3>
+        <p>While you are carefully building and planning your Space Force Air Base, these machines can be creating your rocket fuel so its ready when you are ready to launch. The electrolyser accepts water through its fluid input hatch and splits it into oxygen and hydrogen. Oxygen will fill one of the machine's fluid output hatches and hydrogen the other. These liquids are pumped into the chemical reactor to produce rocket fuel or pumped directly to a rocket's bipropellant tanks.</p>
+        
+        <hr style="border-width:5px">
+      
+        <a name="step2"></a>
+        <h3>Step 2: Build the Launch Pad</h3>
+        <div class=row>
+          
+          <div class="col-lg-9 col-md-8 col-sm-7">
+            <p>Rockets are built and launched from a <a href="/AdvancedRocketry/1.12.2/blocks/LaunchPad.php" title="Click to learn more">launch pad</a>. A good starting launch pad is a 5x5 square of launch pad blocks, 25 total. In addition to the launch pad, you will need <a href="/AdvancedRocketry/1.12.2/blocks/StructureTower.php" title="Click to learn more">structure tower</a> blocks at the edge of the launch pad and extending up to a height of one block higher than your rocket, for safe measures.</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-5">
+            <img class="float-left" width="100%" src="/AdvancedRocketry/img/structureTowerDemo.jpg">
+          </div>
+        </div>      
+
+        <hr style="border-width:5px">
+        <a name="step3"></a>
+        <h3>Step 3: Build the Rocket</h3>
+        <p>The most basic requirements for a rocket are the <a href="/AdvancedRocketry/1.12.2/blocks/RocketEngine.php" title="Click to learn more">engine</a>, <a href="/AdvancedRocketry/1.12.2/blocks/FuelTank.php" title="Click to learn more">fuel tanks</a>, <a href="/AdvancedRocketry/1.12.2/blocks/GuidanceComputer.php" title="Click to learn more">guidance computer</a> and a payload. Payloads are what the rocket is carrying which can be either a person, cargo, satellite or space station modules. Payloads are described more below. Any other block can be used to complete the rocket build and you have complete creativity on how your rocket looks. The number of engines and fuel tanks is dependant on the weight of the blocks you've chosen. Engines provide thrust, and each rocket needs enough thrust to get your rocket through the atmosphere. As the number of engines increase so does the number of fuel tanks required. The rocket needs enough fuel to get to your destination and back. You must find a balance between mass, thrust and fuel capacity to launch a successful rocket.
+        </p>
+        
+        <hr style="border-width:5px">
+        <a name="step4"></a>
+        <h3>Step 4: Assemble the Rocket </h3>
+        <div class=row>
+          <div class="col-lg-3 col-md-4 col-sm-5">
+            <img class="float-left" width="100%" src="/AdvancedRocketry/img/minSizeLaunchPad.jpg">
+          </div>
+          <div class="col-lg-9 col-md-8 col-sm-7">
+            <p>
+              Right now, your rocket is just a bunch of blocks on a launch pad. To assemble those into a rocket, you will need the <a href="/AdvancedRocketry/1.12.2/blocks/RocketAssemblingMachine.php" title="Click to learn more">Rocket Assembling Machine</a>. This block will need to be placed on the edge of the launch pad and one block higher. Once powered, you can interact with the assembling machine to first <b>scan</b> the rocket. This will check that the rockets has all required blocks and will also calculate the mass, thrust and fuel ratios. The results of the scan will display on the GUI of the assembling machine. When you are "Clear for liftoff!", press build to assemble your rocket. 
+            </p>
+          </div>
+        </div>
+        
+
+        <hr style="border-width:5px">
+        <a name="step5"></a>
+        <h3>Step 5: Interact with the Rocket</h3>
+        <div class=row>
+         
+          <div class="col-lg-9 col-md-8 col-sm-7">
+            <p>Once your rocket is assembled, you can right click to interact with it. In top left of the GUI you can see all the storage items loaded on the rocket including chests*, satellite bays and the guidance computer. Clicking on any of these icons will bring up that block's GUI and you can interact with it. On the right is the fuel gauge. On the bottom right are two very important buttons. The "Select DST" button is for flight and brings up the map of the solar system allowing you to choose a possible destination for the rocket. You will need more preparation before you can take off, so don't get trigger happy yet. The "Disassemble" button allows you to disassemble your rocket back into just a bunch of blocks. 
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-5">
+            <img class="float-left" width="100%" src="/AdvancedRocketry/img/rocket_gui.png">
+          </div>
+        </div>
+        
+        <hr style="border-width:5px">
+        <a name="step6"></a>
+        <h3>Step 6: Craft a <a href="/AdvancedRocketry/1.12.2/items/linker.php" title="Click to learn more">Linker</a></h3>
+        <p>There are a number of infrastructure blocks which help to monitor and maintain assembled rockets. The Linker is an essential tool which allows you to link an infrastructure block, like the fueling station in the next step, rocket monitoring station or a docking pad. To link, shift-right click on a infrastructure block then shift-right click on the assembled rocket.
+        </p>
+        
+        <hr style="border-width:5px">
+        <a name="step7"></a>
+        <h3>Step 7: Fuel the Rocket</h3>
+        <p>By now, you should have a nice supply of rocket fuel, or if you want to use <a href="/AdvancedRocketry/1.12.2/blocks/RocketEngine.php" title="Click to learn more">bipropellant engines</a>, a good supply of hydrogen and oxygen. To get the fuel into the assembled rocket, you need a <a href="/AdvancedRocketry/1.12.2/blocks/" title="Click to learn more">Fueling Station.</a> Craft and place the fueling station within 5 blocks of the assembled rocket and supply it with power and fluids. If you are using bipropellant, its best to use two fueling stations, one for each liquid. The fueling station will accept buckets of fluid, or fluid piped in from other mods. Use the linker to link the fueling station to the rocket and remember to select the fueling station first. Interact with the rocket and you should see the fuel gauge rising.  
+        </p>
+
+        <hr style="border-width:5px">
+        <a name="step8"></a>
+        <h3>Step 8: Launch the Rocket - Manned</h3>
+        <div class=row>
+         
+          <div class="col-lg-9 col-md-8 col-sm-7">
+            <p>It is almost time to launch. If you haven't yet, craft a <a href="/AdvancedRocketry/1.12.2/blocks/suitWorkstation.php" title="Click to learn more">Suit Workstation</a> and make a space suit. Be sure to charge it with oxygen using the <a href="/AdvancedRocketry/1.12.2/blocks/gasCharger.php" title="Click to learn more">Gas Charge Pad</a> and pumping oxygen to it. Next you need to install a <a href="/AdvancedRocketry/1.12.2/blocks/Seat.php" title="Click to learn more">seat</a> in your rocket. A seat is needed when the payload is a player. The seat needs to be installed during the build phase prior to assembly so it becomes part of the rocket multi-block. You will also need a <a href="/AdvancedRocketry/1.12.2/items/idChip.php" title="Click to learn more">Planet ID Chip</a>. With a seat installed, a planet chip in your inventory and a space suit on, right-click your fully fueled and assembled rocket. Instead of interacting with the rocket, you will sit in it. To bring up the rocket GUI, press 'C' by default. (check your keybindings). Click on the guidance computer and put your planet ID chip in the slot. Press escape and 'C' again to get into the rocket GUI, then press "Select DST" and select Luna. Read the on-screen instructions, or just press spacebar to take off. Good Luck, Spaceman! 
+            </p>
+            <h3 style="font-size: 20px">IMPORTANT: Rockets can only travel from a planet to its moon and back OR a space station and a planet and back. They DO NOT travel from planet to planet. See <a href="WarpShip.html" title="Click to learn more">Warp Ship</a> for more details on intergalactic travel.</h3>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-5">
+            <img class="float-left" width="100%" src="/AdvancedRocketry/img/moon.png">
+          </div>
+        </div>
+        
+        
+        <hr style="border-width:5px">
+        <a name="step9"></a>
+        <h3>Step 9: Launch the Rocket - Un-Manned</h3>
+        <p>There are four types of payloads rockets can carry. The first is players, see <a href="#step8">Step 8</a>. The rest are un-manned rockets and are determined by the blocks used to build the rocket. 
+            <ul>
+              <li>Cargo - install any amount of chests for the rocket to carry items to and from destinations. This is nice for sending items from a planet or moon back to your space station. Requires a planet ID chip or a programmed space station ID chip in the guidance computer. See <a href="/AdvancedRocketry/1.12.2/blocks/Loaders.php" title="Click to learn more">Loaders and Unloaders</a> and <a href="/AdvancedRocketry/1.12.2/blocks/LandingPad.php" title="Click to learn more">Docking Pad</a> to learn more about automating rockets.</li>
+              <li>Satellites - install a satellite bay for the rocket to carry an assembled satellite and deploy it in space. Putting a planet Id chip and selecting your current planet will ensure the rocket's safe return back to the launch pad. If not, call in search and rescue as your rocket could land anywhere within 100 blocks of where it launched. More on this in <a href="Sattellites.html" title="Click to learn more">Satellites</a> guide. A satellite bay can only carry one satellite, however multiple bays can be placed on a single rocket, a wise method to conserve fuel.</li>
+              <li>Space Station Modules - install a satellite bay for the rocket to carry an assembled space station module. This module is either deployed in orbit if its a new station or attached to an existing station docking port. Requires a space station ID chip in the guidance computer. See See <a href="SpaceStations.html" title="Click to learn more">Space Stations</a> for more details.</li>
+              <li>Asteroid Mining Missions - install a drill and chests for the rocket to mine an asteroid and bring back ores and other material. Iridium, by default, can only be obtained through asteroid mining. Requires a programmed asteroid ID chip in the guidance computer. See <a href="AsteroidMissions.html" title="Click to learn more">Asteroid Mining Missions</a> for more details.</li>              
+            </ul>
+        Since there is no person onboard these rockets, you will have to launch them remotely. Craft and place a <a href="/AdvancedRocketry/1.12.2/blocks/RocketMonitoringStation.php" title="Click to learn more">Rocket Monitoring System</a> where ever you want! The monitoring station technically has unlimited range, however if the chunk containing the rocket isn't loaded, then hitting the launch button will have no effect. Link the rocket monitoring system to your un-manned rocket then right-click to see the GUI and information about the rocket. Hit launch when you are ready. It will take a few seconds before the rocket reacts.
+        </p>
+
+        <a href="/AdvancedRocketry/1.12.2/blocks/" title="Click to learn more"></a>
+
+      </div>
+    </div>
+  <div id="footer"><p></p> </div>
+  </div>
+</div>
+</body>
+</html>

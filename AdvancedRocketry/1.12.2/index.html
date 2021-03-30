@@ -14,7 +14,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="/AdvancedRocketry/style.css" media="all" />
-  <!--[if lt IE 6]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if lt IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]-->
+<!--[if lt IE 6]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if lt IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]-->
   <title>Advanced Rocketry</title>
   <link rel="shortcut icon" type="image/x-icon" href="/AdvancedRocketry/favicon.ico" />
   
@@ -32,33 +32,36 @@
       <p>Click here for main home page.</p> 
     </div>        
   </div>
-  <nav class="navbar navbar-expand-md m-0 p-0 version" id="navigation">
+  <nav class="navbar navbar-expand-sm m-0 p-0 version" id="navigation">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"><img src="/AdvancedRocketry/favicon.ico" width=100%></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/AdvancedRocketry/1.12.2/index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/guides/index.html">Guides</a></li>
         <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/blocks/index.html">Blocks </a></li>
         <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/items/index.html">Items</a></li>  
-        <li class="nav-item"><a class="nav-link active" href="/AdvancedRocketry/1.12.2/config/index.html">Configuration<br/>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/config/index.html">Configuration<br/>
         <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/Commands.html">Commands</a></li>
         <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/Biomes.html">Biomes</a></li>
       </ul>
     </div>
   </nav>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 m-0 p-0">
+ <div class="container-fluid">
+    <div class="row">      
+      <div class="col-lg-2 col-md-3 col-sm-4 m-0 p-0">
         <div class="mr-2 sidebar">
-          <img style="width: 100%;" alt="Advanced Rocketry Logo" src="/AdvancedRocketry/logo.png" /><hr /><?php echo $infoBarContent; ?>
+          <img style="width: 100%;" alt="Advanced Rocketry Logo" src="/AdvancedRocketry/logo.png" />
         </div>
       </div>
       <div class="col-lg-10 col-md-9 col-sm-8 main">
-          <?php echo $mainContent; ?>
-      </div>
+        <h2>Advanced Rocketry Documentation</h2>
 
+        <p>Thank you for installing and playing the AR mod. If you are new to AR, please see the Guides link at the top to get started.</p>
+
+        <p>If you are a modpack developer or just want to customize and build your own solar system, check out the Configurations link at the top.</p>
+      </div>
     </div>
     <div id="footer">
       <p></p>

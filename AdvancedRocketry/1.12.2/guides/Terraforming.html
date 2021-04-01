@@ -68,86 +68,138 @@
         <h2>Terraforming</h2>
         <div class=row>
           <div class="col-lg-3 col-md-4 col-sm-5">
-            <img class="float-left" width="100%" src="/AdvancedRocketry/img/stationBuildTutorial_2.png">
+            <img class="float-left" width="100%" src="/AdvancedRocketry/img/luna0.png">
           </div>
           <div class="col-lg-9 col-md-8 col-sm-7">
-            <p>WIP - COME BACK LATER</p>
+            <p>There are a lot of planets to explore and sometimes you find one that can't sustain life, but may have valuable resources to gather. Or maybe, you just want to terraform for the fun of it. However you justify it, AR has the means to change any planet to a sustainable living environment.</p>
           </div>
         </div>
         
-        <!--<a name="step1"></a>
+        <a name="step1"></a>
         <hr style="border-width:5px">
-        <h3>Step 1: Build the <a href="/AdvancedRocketry/1.12.2/blocks/SatelliteAssemblingMachine.php" title="Click to learn more">Satellite Assembling Machine</a></h3>
-        <p>The Satellite assembling machine is a multi-block machine that requires a power input hatch block under it to operate. It's recommended to visit the link above and familiarize yourself with the GUI of this machine.</p>
+        <h3>Step 1: Read <a href="Satellites.html" title="Click to learn more">Satellites</a></h3>
+        <p>This guide assumes you know the basics of building and launching satellites.</p>
         
         <hr style="border-width:5px">
       
         <a name="step2"></a>
-        <h3>Step 2: Craft a Chassis and Components</h3>
-        <div class=row>
-          
-          <div class="col-lg-9 col-md-8 col-sm-7">
-            <p>Before you can place any parts in the assembling machine, you must have a satellite chassis in the top left slot. The top right slot of the machine is reserved for a <a href="/AdvancedRocketry/1.12.2/items/satellite.php" title="Click to learn more">satellite type</a> component. This satellite type component determines what job the satellite performs. It can be one of the following:
-            <ul>
-              <li>Optical Sensor - gathers distance data used in Asteroid Mining Missions. Requires a satellite ID chip in the left middle slot.</li>
-              <li>Composition Sensor - gathers composition data used in Asteroid Mining Missions. Requires a satellite ID chip in the left middle slot.</li>
-              <li>Mass Detector - gathers mass data used in Asteroid Mining Missions. Requires a satellite ID chip in the left middle slot.</li>
-              <li>Microwave Transmitter - generates power to send to a Microwave Receiver. Requires a satellite ID chip in the left middle slot.</li>
-              <li>Ore Mapper - scans the area around the player to find ores. Requires a <a href="/AdvancedRocketry/1.12.2/items/oreScanner.php" title="Click to learn more">Ore Scanner</a> in the left middle slot. Click the link to read more about the requirements for this satellite to increase its efficiency.</li>
-              <li>Biome Changer - scans the planet and records its biomes. Requires a <a href="/AdvancedRocketry/1.12.2/items/biomeChanger.php" title="Click to learn more">Biome Changer Remote</a> in the left middle slot.</li>
-            </ul></p>
-          </div>
-        </div>      
+        <h3>Step 2: Launch a Biome Changer Satellite</h3>
+        <p>Launch a satellite outfitted with a biome changer type, power and power storage. Remember to use the <a href="/AdvancedRocketry/1.12.2/items/biomeChanger.php" title="Click to learn more">biome changer remote</a> in place of an id chip. Launch the satellite in orbit over the planet you wish to terraform.</p>
 
         <hr style="border-width:5px">
         <a name="step3"></a>
-        <h3>Step 3: Add Power and Data Storage</h3>
-        <p>The top row of slots on the right is reserved for power generation. All satellites require a <a href="/AdvancedRocketry/1.12.2/items/satellite.php" title="Click to learn more">solar panel</a> to operate. In some satellites, the more power generation the greater its effects. It is recommended to fill all three slots. The bottom row is for power or data storage. Power storage is primarily for the <a href="/AdvancedRocketry/1.12.2/blocks/MicrowaveReciever.php" title="Click to learn more">Microwave Receiver</a> satellites and uses batteries. The other satellites need <a href="/AdvancedRocketry/1.12.2/items/datachip.php" title="Click to learn more">Data Chips</a> to store the information they process.
+        <h3>Step 3: Scan Biomes</h3>
+        <div class=row>
+          
+          <div class="col-lg-8 col-md-7 col-sm-6">
+            <p>Shift-right click with the biome changer remote in a biome you wish to use in your terraforming. This does not have to be on the same planet as the satellite. For example, you could launch the satellite on Luna, then go to Earth and start scanning biomes. 
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-6">
+            <img class="float-left" width="100%" src="/AdvancedRocketry/img/biomeChanger_gui.png">
+          </div>
+        </div>         
         </p>
         
         <hr style="border-width:5px">
         <a name="step4"></a>
-        <h3>Step 4: Build the Satellite</h3>
+        <h3>Step 4: Change the Biome</h3>
         <div class=row>
-          
+          <div class="col-lg-4 col-md-5 col-sm-6">
+            <img class="float-left" width="100%" src="/AdvancedRocketry/img/biomeChanger_inProcess.png">
+          </div>
           <div class="col-lg-8 col-md-7 col-sm-6">
             <p>
-              Once you have Steps 2 and 3 completed and have placed an id chip or link in the left middle slot, you can build the satellite. The picture shows a completed satellite used for gathering distance data. Pressing the "Build" button will produce a new satellite item and if you hover over it in your inventory you can see all the information regarding the satellite. You will also see that the id chip has been programmed with the ID of the newly made satellite and a description of the type of satellite.
-            </p>
-          </div>
-          <div class="col-lg-4 col-md-5 col-sm-6">
-            <img class="float-left" width="100%" src="/AdvancedRocketry/img/satelliteBuild_complete.png">
-          </div>
+              On planet you wish to terraform, the one with the satellite,  shift-right click with the biome changer remote to select the biome you wish to change to. You can hover over the remote in your inventory to see the information about the satellite and current biome. By default, all remotes are set to ocean biome. Once you have selected your biome, right click the ground and the satellite will change the blocks around you to the new biome. 
+            </p>            
+          </div>          
         </div>
-        
+        <p>
+          Technical Note: This does not alter the atmosphere or gravity. It will not generate new blocks such as mountains or structures. It will simply repaint the area to the chosen biome. However, the F3 menu will register as the changed biome. This also appears to only alter the top block.
+        </p>
+        <hr style="border-width:5px">
+        <h3>WARNING: The Atmosphere Terraformer and Biome Changer Satellite combination below will alter the ENTIRE planet. As such, the Terraformer must be enabled in the Advanced Rocketry configs.</h3>
         <hr style="border-width:5px">
         <a name="step5"></a>
-        <h3>Step 5: Copy the Chip </h3>
+        <h3>Step 5: Build the <a href="/AdvancedRocketry/1.12.2/blocks/Terraformer.php" title="Click to learn more">Atmosphere Terraformer</a></h3>
         <p>
-          PLEASE COPY THE ID CHIP. Once the satellite is launched, there is no getting it back so the ID chip is your only link to that satellite. To copy it, place a blank ID chip (or ore scanner/biome changer remote) in the right-most slot of the top left-hand side. Place the programmed chip in the middle left slot and press the green "Write to Secondary Chip" button to the far right, outside the GUI.  
-        </p>
+          The Atmosphere Terraformer is a large, expensive multi-block structure. It requires power, nitrogen, oxygen and a linked biome changer remote. It must be built on the same planet which has a biome changer satellite in orbit.  
+        </p>        
 
         <hr style="border-width:5px">
         <a name="step6"></a>
-        <h3>Step 6: Launch the Satellite</h3>
-        <div class=row>
-          <div class="col-lg-3 col-md-4 col-sm-5">
-            <img class="float-left" width="100%" src="/AdvancedRocketry/img/missionAsteroid.jpg">
-          </div>
-          <div class="col-lg-9 col-md-8 col-sm-7">
-            <p>Its time to launch your satellite. Place the assembled satellite in a satellite bay on an assembled rocket. See <a href="Rockets.html#step9" title="Click to learn more">Un-manned Rocket Launch</a> for more details. Once your satellite is in space, you can use the programmed chips or ore scanner/biome changer remote. Click the links below for more information on how to use the satellite you launched:
-                <ul>
-                  <li>For data gathering satellites, see <a href="AsteroidMissions.html" title="Click to learn more">Asteroid Mining Missions</a></li>
-                  <li>For power gathering satellites, see <a href="/AdvancedRocketry/1.12.2/blocks/MicrowaveReciever.php" title="Click to learn more">Microwave Receiver</a></li>
-                  <li>For ore scanning satellites, see <a href="/AdvancedRocketry/1.12.2/items/oreScanner.php" title="Click to learn more">Ore Scanner</a></li>
-                  <li>For biome scanning satellites, see <a href="Terraforming.html" title="Click to learn more">Terraforming</a></li>
-                </ul>
+        <h3>Step 6: Change the Atmosphere</h3>
+        <div class=row>          
+          <div class="col">
+            <p>Once built, powered and provided fluids, place the biome changer remote in the slot. Press either "Increase Atm" or "Decrease Atm" depending on which you want. Earth's atmosphere is 1.0 and breathable air is anywhere between 0.76 and 2.0.
             </p>
-          </div>          
+            <p>Once you begin changing the atmosphere the terrain will change as well. The atmosphere terraformer only changes the atmosphere, but sends a signal via the remote to the biome changer satellite that the atmosphere has changed. The satellite then begins changing the biomes to one which can exists in the current atmosphere. There is no way to change the atmosphere and preserve the current terrain.</p>
+            <p>When you have reached your preferred atmosphere, turn off the terraformer. The biome satellite will still continue to change the biome until all blocks have changed. Any new chunks generated will first generate as their native biome, then the satellite will begin to change them. It appears to only change the top layer block as, in the example below, there was still moon turf under the grass.</p>
+          </div>
         </div>
+        <div class="row">
+          <div class="col">
+            <figure class="figure">
+              <img class="figure-img img-fluid rounded" src="/AdvancedRocketry/img/luna1.png">
+              <figcaption class="figure-caption">Beginning to Terraform Luna</figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <img class="figure-img img-fluid rounded" src="/AdvancedRocketry/img/luna4.png">
+              <figcaption class="figure-caption">Luna at 0.75 atm</figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <img class="figure-img img-fluid rounded" src="/AdvancedRocketry/img/luna2.png">
+              <figcaption class="figure-caption">Luna at 1.0 atm</figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <img class="figure-img img-fluid rounded" src="/AdvancedRocketry/img/luna3.png">
+              <figcaption class="figure-caption">Luna at 16.0 atm, Unbreathable and Very Hot</figcaption>
+            </figure>
+          </div>        
+        </div>
+        <p>Note: Sometimes its required to logout/login in order for the satellite to register the change in atmosphere and begin altering blocks.</p>
         
+        <hr style="border-width:5px">
+        <a name="step7"></a>
+        <h3>Step 7: Build the <a href="/AdvancedRocketry/1.12.2/blocks/GravityController.php" title="Click to learn more">Area Gravity Controller</a></h3>
+        <p>
+          This is a completely optional addition to your planet. In our example above, some might like hopping around on a terraformed Luna with low gravity, others may want it to be closer to the Earth's. You could even increase the lack of gravity and make your hops more like leaps. The Area Gravity Controller adjust the gravity in a determined range. The GUI of the machine has a slider where you can adjust the range and a second slider which allows you to adjust the gravitational pull. 
+        </p> 
+
+        <hr style="border-width:5px">
+        <a name="devs"></a>
+        <h3>For Modpack Devs and Server Owners</h3>
+        <p>
+          There are a number of config options for the Atmosphere Terraformer including the time it takes to change the atm and the need for fluids at all. 
+          <pre><code>
+            # Max number of blocks allowed to be changed per tick
+            I:terraformBlockPerTick=1
+          
         
-        <a href="/AdvancedRocketry/1.12.2/blocks/" title="Click to learn more"></a>-->
+            # Multplier for atmosphere change speed
+            D:terraformMult=1.0
+          </code></pre>
+          The multiplier in this case is inverse. A multiplier of 1000 will slow the Atmosphere Terraformer down, while a multiplier of 0.001 will speed it up. Use with caution as it could lag servers.
+          <pre><code>
+            # Whether the Terraformer should consume fluids at all, independent of rate
+            B:TerraformerRequiresFluids=true
+            B:allowTerraforming=true
+          </code></pre>
+        </p> 
+        <hr style="border-width:5px">
+        <a name="devs"></a>
+        <h3>Idea for Server Owners</h3>
+        <p>
+          Most servers disable terraforming since it is planet-wide affecting all players. However, it is possible to make planets discoverable only with certain items (see <a href="/AdvancedRocketry/1.12.2/config/AdvancedPlanetConfiguration.html#artifact">PlanetDefs: Artifacts</a>). You could give custom items to players which are linked to a single planet and let them terraform that planet to their hearts desire. Only players with the artifact could warp to that planet, therefore keeping it safe from all the other players on the server.
+        </p>
+        
+        <a href="/AdvancedRocketry/1.12.2/blocks/" title="Click to learn more"></a>
 
       </div>
     </div>

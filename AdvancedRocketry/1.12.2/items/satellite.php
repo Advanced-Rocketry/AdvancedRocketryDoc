@@ -85,12 +85,12 @@
     
     <tr>
     <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/items/satellitePowerSource0.png"/>Basic Solar Panel***</td>
-    <td>0.1 RF/t</td>
+    <td>4 FE/t</td>
     </tr>
     
     <tr>
     <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/items/satellitePowerSource1.png"/>Large Solar Panel</td>
-    <td>1 RF/t</td>
+    <td>40 FE/t</td>
     </tr>
     </table>
     <font size=2px>*** Does not work with Microwave Transmitter unless it has storage</font>
@@ -105,12 +105,12 @@
     
     <tr>
     <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/items/battery0.png"/>Small Battery</td>
-    <td>100 RF</td>
+    <td>10000 FE</td>
     </tr>
     
     <tr>
     <td><img align=left width=16px style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/items/battery1.png"/>2x Small Battery</td>
-    <td>400 RF</td>
+    <td>40000 FE</td>
     </tr>
     </table>
     

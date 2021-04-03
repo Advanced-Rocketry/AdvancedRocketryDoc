@@ -3,9 +3,14 @@ body {
   font-family: "Trebuchet MS";
   color: #666666;
   font-size: 15pt;
-  letter-spacing: -0.5px;
+  /*letter-spacing: -0.5px;*/
   text-align: left;
   background-color: #A0A0A0;
+  background: url("/AdvancedRocketry/img/spaceBG.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;  
   box-sizing: border-box;
 }
 
@@ -53,6 +58,10 @@ table, th, td {
   border-bottom:rgb(1, 61, 94) 4px solid;
   color: rgb(1, 61, 94);
   text-shadow: 0.5px 0.5px 3px whitesmoke;
+}
+
+#navigation .nav-item{
+  font-family: "Trebuchet MS";
 }
 #navigation .nav-item .active{
   color: rgb(1, 61, 94);  

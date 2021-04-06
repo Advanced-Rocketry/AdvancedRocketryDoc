@@ -14,7 +14,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="/AdvancedRocketry/style.css" media="all" />
-  <!--[if lt IE 6]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if lt IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]-->
+<!--[if lt IE 6]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if lt IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]-->
   <title>Advanced Rocketry</title>
   <link rel="shortcut icon" type="image/x-icon" href="/AdvancedRocketry/favicon.ico" />
   
@@ -37,12 +37,12 @@
       <span class="navbar-toggler-icon"><img src="/AdvancedRocketry/favicon.ico" width=100%></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav menu">
         <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/guides/index.html">Guides</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/AdvancedRocketry/1.12.2/guides/index.html">Guides</a></li>
         <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/blocks/index.html">Blocks </a></li>
         <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/items/index.html">Items</a></li>  
-        <li class="nav-item"><a class="nav-link active" href="/AdvancedRocketry/1.12.2/config/index.html">Configuration<br/>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/config/index.html">Configuration<br/>
         <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/Commands.html">Commands</a></li>
         <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/Biomes.html">Biomes</a></li>
       </ul>
@@ -50,19 +50,28 @@
   </nav>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 m-0 p-0">
+      <div class="col-lg-2 col-md-3 col-sm-4 m-0 p-0">
         <div class="mr-2 sidebar">
-          <img style="width: 100%;" alt="Advanced Rocketry Logo" src="/AdvancedRocketry/logo.png" /><hr /><?php echo $infoBarContent; ?>
+          <img style="width: 100%;" alt="Advanced Rocketry Logo" src="/AdvancedRocketry/logo.png" />
         </div>
       </div>
       <div class="col-lg-10 col-md-9 col-sm-8 main">
-          <?php echo $mainContent; ?>
+        <h2>Advanced Rocketry Guides</h2><hr>
+        <p>Your goal to journey among the stars will not be an easy one. There is much you must do. If you are new to AR, please visit the Getting Started and Rockets guides. For veteran players, click on a guide below, or visit the block/item's page from the links above.</p><br>
+        <p>Step-by-Step Guides:        
+          <ul>
+          <li><img class="icon" src="/AdvancedRocketry/img/rocket_icon.png"> <a href="GettingStarted.html">Getting Started</a> - Machines and Manufacturing</li>
+          <li><img class="icon" src="/AdvancedRocketry/img/rocket_icon.png"> <a href="Rockets.html">Rockets</a> - Prepping, Building and Launching Rockets</li>
+          <li><img class="icon" src="/AdvancedRocketry/img/rocket_icon.png"> <a href="Satellites.html">Satellites</a> - Building Satellites</li>
+          <li><img class="icon" src="/AdvancedRocketry/img/rocket_icon.png"> <a href="AsteroidMissions.html">Asteroid Mining Missions</a> - Collecting Data and Mining Asteroids</li>
+          <li><img class="icon" src="/AdvancedRocketry/img/rocket_icon.png"> <a href="SpaceStations.html">Space Stations</a> - Building a Livable Space Station</li>
+          <li><img class="icon" src="/AdvancedRocketry/img/rocket_icon.png"> <a href="StationAddons.html">Space Station Addons</a> - Interplanetary Travel, Gas Mining Missions, Orbital drills and more!</li>
+          <li><img class="icon" src="/AdvancedRocketry/img/rocket_icon.png"> <a href="Terraforming.html">Terraforming</a> - Creating Livable Planets</li>    
+          </ul>
+        </p>
       </div>
-
     </div>
-    <div id="footer">
-      <p></p>
-    </div>
+  <div id="footer"><p></p> </div>
   </div>
 </div>
 </body>

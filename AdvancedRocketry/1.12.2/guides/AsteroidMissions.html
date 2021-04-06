@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  
+  <!--<meta http-equiv="Content-Type" content="text/html;  charset=iso-8859-1" />-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Official Advanced Rocketry Wiki" />
+  <meta name="keywords" content="advanced rocketry wiki minecraft mc rockets planets space exploration 1.12.2 mods" />
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/AdvancedRocketry/style.css" media="all" />
+<!--[if lt IE 6]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if lt IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]-->
+  <title>Advanced Rocketry</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/AdvancedRocketry/favicon.ico" />
+  
+</head>
+<body>
+<div class="container-fluid">
+  <div id="header">
+    <div class="float-left">
+      <center><h1>1.12.2 Documentation</h1></center>      
+    </div>
+    <div class="float-right">           
+      <a href="/AdvancedRocketry/index.html"><img src="/AdvancedRocketry/favicon.ico" title="Main Home"></a>
+    </div>
+    <div class="float-right">
+      <p>Click here for main home page.</p> 
+    </div>        
+  </div>
+  <nav class="navbar navbar-expand-md m-0 p-0 version" id="navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"><img src="/AdvancedRocketry/favicon.ico" width=100%></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav menu">
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/AdvancedRocketry/1.12.2/guides/index.html">Guides</a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/blocks/index.html">Blocks </a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/items/index.html">Items</a></li>  
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/config/index.html">Configuration<br/>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/Commands.html">Commands</a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/Biomes.html">Biomes</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-4 m-0 p-0">
+        <div class="mr-2 sidebar">
+          <img style="width: 100%;" alt="Advanced Rocketry Logo" src="/AdvancedRocketry/logo.png" /><hr>
+          <h3>Table of Contents:</h3>
+            <ol style="padding-left:15px;">
+              <li><a href="#step1">Build the Satellite Assembling Machine</a></li>
+              <li><a href="#step2">Craft a Chassis and Components</a></li>
+              <li><a href="#step3">Add Power and Data Storage</a></li>
+              <li><a href="#step4">Build the Satellite and Copy the Chip</a></li>
+              <li><a href="#step5">Launch the Satellite</a></li>
+            </ol>
+        </div>
+      </div>
+      <div class="col-lg-10 col-md-9 col-sm-8 main">
+        <h2>Asteroid Mining Missions</h2>
+        <div class=row>
+          <div class="col-lg-3 col-md-4 col-sm-5">
+            <img class="float-left" width="100%" src="/AdvancedRocketry/img/missionAsteroid.jpg">
+          </div>
+          <div class="col-lg-9 col-md-8 col-sm-7">
+            <p>Mining asteroids is a good way to get specific ore materials. By default, its the only way to get iridium. Asteroids are highly configurable so the raw materials you find and the amount of the materials could vary from pack to pack. The Observatory is your best friend when determining what materials are available in the asteroids.</p>
+          </div>
+        </div>
+        
+        <a name="step1"></a>
+        <hr style="border-width:5px">
+        <h3>Step 1: Read <a href="Rockets.html">Rockets</a> and <a href="Satellites.html">Satellites</a></h3>
+        <p>This guide assumes you know how to build and launch rockets and satellites.</p>
+        
+        <hr style="border-width:5px">
+      
+        <a name="step2"></a>
+        <h3>Step 2: Craft Satellite Terminals</h3>
+        <p>Launch at least one of each of the data gathering satellites. The satellites gather data rather slowly, so launch the satellites first and let them get started gathering the data you need. Be sure to keep the ID chips, and hopefully you have copies in case you've lost one. Each satellite can be linked to only one terminal, so craft as many terminals as you need, place them and supply them with power. Place the satellite ID chips in the top right corner. You should see information about the satellite and the amount of data it has gathered so far. 
+        </p>     
+
+        <hr style="border-width:5px">
+        <a name="step3"></a>
+        <h3>Step 3: Build the <a href="/AdvancedRocketry/1.12.2/blocks/Observatory.php" title="Click to learn more">Observatory</a></h3>
+        <p>While your satellites slowly gather data, build the Observatory. The Observatory searches the cosmos and finds asteroids. Once built, be sure to click on the main Observatory block and turn it on. Check it out at night! The Observatory starts with an observable distance of 35 (basic motor and glass), but can be upgraded using <a href="/AdvancedRocketry/1.12.2/blocks/Motors.php">motors</a> and a lens instead of glass. Some asteroids can only be found if the observable distance is high enough.
+        </p>
+        
+        <hr style="border-width:5px">
+        <a name="step4"></a>
+        <h3>Step 4: Scan for Asteroids</h3>
+        <div class=row>
+          
+          <div class="col-lg-8 col-md-7 col-sm-6">
+            <p>
+              Once you have 100 distance data, download the data into a data chip in the satellite terminal by clicking "Connect" then "Store to Chip". Place that chip in the data bus in the Observatory. On the "Asteroids" tab, click "Scan" and you should see the asteroid list fill with available asteroids. Clicking on an asteroid shows you the composition of the asteroid and the materials you can mine.   
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-6">
+            <img class="float-left" width="100%" src="/AdvancedRocketry/img/observatoryScan_demo.png">
+          </div>
+        </div>
+
+        <hr style="border-width:5px">
+        <a name="step5"></a>
+        <h3>Step 5: Add Coordinates to an Asteroid ID Chip</h3>
+        <p>Once you've identified a good asteroid to mine you need to be able to tell your mining rocket where it's at. Place an unprogrammed asteroid chip in the chip slot on the "Asteroid" tab in the Observatory. Select the asteroid on the list and click on the <b>gears</b>. There is no button, but if you hover over the gears it says "Process discovery". Once you click the <b>gears</b>, the asteroid's location will be programmed into the chip. This process can only be done at night, with a clear view of the sky. It can be done at anytime on a space station.
+        </p> 
+
+        <hr style="border-width:5px">
+        <a name="step6"></a>
+        <h3>Step 6: Build the <a href="/AdvancedRocketry/1.12.2/blocks/Observatory.php" title="Click to learn more">Astrobody Data Processor</a></h3>
+        <p>The Astrobody Data Processor, ABDP, is responsible for programming asteroid ID chips with data. There are three data hatches on the back which can be used to store data downloaded from satellite terminals. Each hatch is assigned one of the three data types. You can either manually download data into data chips and place them in the ABDP or automate the process using <a href="/AdvancedRocketry/1.12.2/blocks/WirelessTransciever.php">Wireless Transceivers</a>. 
+        </p>
+        
+        <hr style="border-width:5px">
+        <a name="step7"></a>
+        <h3>Step 7: Add Data to an Asteroid ID Chip</h3>
+        <p>It is recommended to wait until you have at least 1000 data for each data type before using an asteroid chip in a mining mission as this will produce the best results. Press the power button next to each data type's research icon you wish to program the chip with, and the available data for that type will be programmed into the chip. This process can take awhile so if you plan on doing extensive mining operations, use multiple ABDP's. 
+        </p>        
+        
+        <hr style="border-width:5px">
+        <a name="step8"></a>
+        <h3>Step 8: Launch and Observe the Mission</h3>
+        <p>After building a <a href="Rockets.html#step9">rocket outfitted for a mining mission</a>, place the programmed asteroid ID chip in the guidance computer. Launch the rocket and monitor the progress of the mission in the rocket monitoring station. 
+        </p>
+
+        <hr style="border-width:5px">
+        <a name="step9"></a>
+        <h3>Step 9: Automating Mining Missions</h3>
+        <p>With the help of <a href="/AdvancedRocketry/1.12.2/blocks/Loaders.php" title="Click to learn more">Loaders/Unloaders</a>, <a href="/AdvancedRocketry/1.12.2/blocks/GuidanceAccessHatch.php" title="Click to learn more">Guidance Computer Access Hatch</a> and <a href="/AdvancedRocketry/1.12.2/blocks/LandingPad.php" title="Click to learn more">Docking Pads</a>, you can automate mining missions provided you have plenty of programmed asteroid chips. See each block's link to discover more.
+        </p>
+        
+        <a href="/AdvancedRocketry/1.12.2/blocks/" title="Click to learn more"></a>
+
+      </div>
+    </div>
+  <div id="footer"><p></p> </div>
+  </div>
+</div>
+</body>
+</html>

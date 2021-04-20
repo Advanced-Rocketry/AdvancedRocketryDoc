@@ -552,16 +552,18 @@
         <a name="biomeIds"></a>
         <center><h3>Biome Ids</h3></center>
 
-        <p>The "biomeIds" tag specifies a comma separated list of biome ids to generate on the planet.  This list can include both vanilla and modded biome ids.  If this tag is not included then the planet will automatically generate a list of biomes from its atmosphere density, gravitationalMultiplier, and distance from the sun.</p>
+        <p>The "biomeIds" tag specifies a comma separated list of biome ids (namespace:biome) to generate on the planet.  This list can include both vanilla and modded biome ids.  If this tag is not included then the planet will automatically generate a list of biomes from its atmosphere density, gravitationalMultiplier, and distance from the sun.</p>
 
         <p>A list of vanilla biomes can be found <a href=http://minecraft.gamepedia.com/Biome>here</a></p>
+
+        <p>SYNTAX WARNING: Common mistake is to put a space after the commas. NO SPACES!</p>
 
         <p>Example usage; Planet will generate only ocean and ice plains</p>
         <pre class="configurationBlock">
         &#60;galaxy&#62;
             &#60;star name="Sol" temp="100" x="0" y="0" numPlanets="1"&#62;
                 &#60;planet name="Earth"&#62;
-                    &#60;biomeIds&#62;0,12&#60;/biomeIds&#62;
+                    &#60;biomeIds&#62;minecraft:plains,minecraft:forest&#60;/biomeIds&#62;
                     ...
                 &#60;/planet&#62;
             &#60;/star&#62;

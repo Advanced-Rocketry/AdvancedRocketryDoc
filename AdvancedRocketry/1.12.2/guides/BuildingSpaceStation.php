@@ -10,7 +10,7 @@
     <hr>
     <a name="basics"></a>
     <center><h2>Building a Construction Pad</h2></center>
-    <img align="left" width="256px" src="../img/RocketAssemblyPad.gif" />
+    <img align="left" width="256px" src="/AdvancedRocketry/img/RocketAssemblyPad.gif" />
     <p>
     Similarly to building a rocket, Space Stations must be built on a construction pad.  Though instead of using a <a href="../blocks/RocketAssemblingMachine.php">Rocket Assembling Machine</a>, a <a href="../blocks/StationBuilder.php">Station Builder</a> must be used instead.  Note: it is possible to have both the Rocket Assembling Machine and Station Build sharing a single pad.
     </p>
@@ -19,13 +19,13 @@
     The base of the Construction pad is made from Launch Pad Blocks.  It can be any size between 3x3 and 16x16. The base does not have be a square, rectangular shapes also work. The height of the structure is defined by the Structure Tower Blocks and can be anywhere between 4 and 64 blocks tall.</p>
     <p>If multiple structure towers exist in the structure, then the height of the tallest tower is used. The base of the tower must be at the same level as the construction pad. The base of the tower also has to be touching the pad on one of the four faces and cannot be placed diagonally.
 
-    The Station Builder must be one block above the pad with the back of the machine facing the pad for the Strcuture to form. Larger construction pads require more time to scan and build the station!
+    The Station Builder must be one block above the pad with the back of the machine facing the pad for the Structure to form. Larger construction pads require more time to scan and build the station!
     </p>
     
     <hr>
     <a name="building"></a>
     <center><h2>Constucting the Station</h2></center>
-    <img align="left" width="256px" src="../img/stationBuildTutorial_1.png" />
+    <img align="left" width="256px" src="/AdvancedRocketry/img/stationBuildTutorial_1.png" />
     <p>
     Now that the construction pad is complete, it\'s time to actually build a space station!  Exactly what the station should look like is entirely up to you, though you should consider some things when building a station.</p>
     <p>The first time you go to your new station the rocket will land in the center of the first module you send up, so it is advised that the structure either be a landing platform of some kind or have a landing platform on top.  It\'s possible to change where the rockets land later by placing <a href="../blocks/LandingPad.php">docking pads</a> on the station while in orbit.</p>
@@ -39,7 +39,7 @@
     <hr>
     <a name="launching"></a>
     <center><h2>Launching the Station</h2></center>
-    <img align="left" width="256px" src="../img/stationBuildTutorial_2.png" />
+    <img align="left" width="256px" src="/AdvancedRocketry/img/stationBuildTutorial_2.png" />
     <p>
     Now that you have the space station container, it must be put into orbit.  To launch the station into orbit, the station container must be placed on a rocket in a satellite bay.  If a guidance computer with a copy of the station chip is placed on the rocket, the rocket will land on the station after inserting it into orbit.  Otherwise the rocket itself will be lost!
     </p>
@@ -51,7 +51,7 @@
     <hr>
     <a name="modules"></a>
     <center><h2>Adding Modules to a Station (Optional)</h2></center>
-    <img align="left" src="../img/stationDockingPort_demo.jpg" />
+    <img align="left" src="/AdvancedRocketry/img/stationDockingPort_demo.jpg" />
     <p>There are two main methods of expanding a space station.  One of them, of course, is flying up and placing blocks by hand.  There is another method that may make it easier for automation and placing large segments at a time.</p>
     <p><a href="../blocks/StationDockingPort.php">Station Docking ports</a> provide an excellent method for adding modules to a station.  The usage is fairly simple.  First, place one docking port on the station in orbit and give it a unique name.  Then build the structure you want to connect on the construction pad.  The structure has to contain a station docking port with the Target Id having the string as the one used in the "My Id" textbox on its counterpart in orbit.</p>
     <br><br>

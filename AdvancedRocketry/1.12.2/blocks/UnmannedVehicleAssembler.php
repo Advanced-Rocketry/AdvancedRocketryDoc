@@ -35,7 +35,7 @@
     <p>Once the Unmanned Vehicle Assembler is placed, <a href=./StructureTower.php>Structure Tower</a> blocks can be placed on the top and sides of the machine to determine the area in which to build the vehicle.</p>
     <br>
     <p>A bar must extend from the top of the vertical tower to determine the length of the area to build.</p>
-    <p>The video to the left illistrates the effects of modifying the size of the gantry in various ways, where the white box indicates the valid building area for the machine.</p>'; 
+    <p>The video to the left illustrates the effects of modifying the size of the gantry in various ways, where the white box indicates the valid building area for the machine.</p>'; 
     
     $sidebarImage = 'rocketAssemblingMachine_block.png';
 

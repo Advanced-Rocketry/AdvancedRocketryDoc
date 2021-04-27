@@ -22,10 +22,10 @@
     $imageDemoName = 'forceField_demo.jpg';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>When activated with a redstone signal a forcefield will slowly emerge from the front face of the block.  This forcefield cannot be broken by normal means.  The forcefield retracts when the redstone signal is removed.  The forcefield blocks are airtight and, as such, can be used to seal stations and bases.
+    $description1 = '<p>When activated with a redstone signal a force field will slowly emerge from the front face of the block.  This force field cannot be broken by normal means.  The force field retracts when the redstone signal is removed.  The force field blocks are airtight and, as such, can be used to seal stations and bases.
     </p>
     <p>
-    The forcefield projector can project a field up to 32 blocks away.  The field stops extending as soon as it hits a non-replacable block.</p>';
+    The force field projector can project a field up to 32 blocks away.  The field stops extending as soon as it hits a non-replaceable block.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';

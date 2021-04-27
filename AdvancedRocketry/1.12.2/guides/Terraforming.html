@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  
+  <!--<meta http-equiv="Content-Type" content="text/html;  charset=iso-8859-1" />-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Official Advanced Rocketry Wiki" />
+  <meta name="keywords" content="advanced rocketry wiki minecraft mc rockets planets space exploration 1.12.2 mods" />
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/AdvancedRocketry/style.css" media="all" />
+<!--[if lt IE 6]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if lt IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]-->
+  <title>Advanced Rocketry</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/AdvancedRocketry/favicon.ico" />
+  
+</head>
+<body>
+<div class="container-fluid">
+  <div id="header">
+    <div class="float-left">
+      <center><h1>1.12.2 Documentation</h1></center>      
+    </div>
+    <div class="float-right">           
+      <a href="/AdvancedRocketry/index.html"><img src="/AdvancedRocketry/favicon.ico" title="Main Home"></a>
+    </div>
+    <div class="float-right">
+      <p>Click here for main home page.</p> 
+    </div>        
+  </div>
+  <nav class="navbar navbar-expand-md m-0 p-0 version" id="navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"><img src="/AdvancedRocketry/favicon.ico" width=100%></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav menu">
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/AdvancedRocketry/1.12.2/guides/index.html">Guides</a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/blocks/index.html">Blocks </a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/items/index.html">Items</a></li>  
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/config/index.html">Configuration<br/>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/Commands.html">Commands</a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/Biomes.html">Biomes</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-4 m-0 p-0">
+        <div class="mr-2 sidebar">
+          <img style="width: 100%;" alt="Advanced Rocketry Logo" src="/AdvancedRocketry/logo.png" /><hr>
+          <h3>Table of Contents:</h3>
+            <ol style="padding-left:15px;">
+              <li><a href="#step1">Read Satellites</a></li>
+              <li><a href="#step2">Launch a Biome Changer Satellite</a></li>
+              <li><a href="#step3">Scan Biomes</a></li>
+              <li><a href="#step4">Change the Biome</a></li>
+              <li><a href="#step5">Build the Atmosphere Terraformer</a></li>
+              <li><a href="#step6">Change the Atmosphere</a></li>
+              <li><a href="#step7">Build the Area Gravity Controller</a></li>
+            </ol>
+        </div>
+      </div>
+      <div class="col-lg-10 col-md-9 col-sm-8 main">
+        <h2>Terraforming</h2>
+        <div class=row>
+          <div class="col-lg-3 col-md-4 col-sm-5">
+            <img class="float-left" width="100%" src="/AdvancedRocketry/img/luna0.png">
+          </div>
+          <div class="col-lg-9 col-md-8 col-sm-7">
+            <p>There are a lot of planets to explore and sometimes you find one that can't sustain life, but may have valuable resources to gather. Or maybe, you just want to terraform for the fun of it. However you justify it, AR has the means to change any planet to a sustainable living environment.</p>
+          </div>
+        </div>
+        
+        <a name="step1"></a>
+        <hr style="border-width:5px">
+        <h3>Step 1: Read <a href="Satellites.html" title="Click to learn more">Satellites</a></h3>
+        <p>This guide assumes you know the basics of building and launching satellites.</p>
+        
+        <hr style="border-width:5px">
+      
+        <a name="step2"></a>
+        <h3>Step 2: Launch a Biome Changer Satellite</h3>
+        <p>Launch a satellite outfitted with a biome changer type, power and power storage. Remember to use the <a href="/AdvancedRocketry/1.12.2/items/biomeChanger.php" title="Click to learn more">biome changer remote</a> in place of an id chip. Launch the satellite in orbit over the planet you wish to terraform.</p>
+
+        <hr style="border-width:5px">
+        <a name="step3"></a>
+        <h3>Step 3: Scan Biomes</h3>
+        <div class=row>
+          
+          <div class="col-lg-8 col-md-7 col-sm-6">
+            <p>Shift-right click with the biome changer remote in a biome you wish to use in your terraforming. This does not have to be on the same planet as the satellite. For example, you could launch the satellite on Luna, then go to Earth and start scanning biomes. 
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-6">
+            <img class="float-left" width="100%" src="/AdvancedRocketry/img/biomeChanger_gui.png">
+          </div>
+        </div>         
+        </p>
+        
+        <hr style="border-width:5px">
+        <a name="step4"></a>
+        <h3>Step 4: Change the Biome</h3>
+        <div class=row>
+          <div class="col-lg-4 col-md-5 col-sm-6">
+            <img class="float-left" width="100%" src="/AdvancedRocketry/img/biomeChanger_inProcess.png">
+          </div>
+          <div class="col-lg-8 col-md-7 col-sm-6">
+            <p>
+              On planet you wish to terraform, the one with the satellite,  shift-right click with the biome changer remote to select the biome you wish to change to. You can hover over the remote in your inventory to see the information about the satellite and current biome. By default, all remotes are set to ocean biome. Once you have selected your biome, right click the ground and the satellite will change the blocks around you to the new biome. 
+            </p>            
+          </div>          
+        </div>
+        <p>
+          Technical Note: This does not alter the atmosphere or gravity. It will not generate new blocks such as mountains or structures. It will simply repaint the area to the chosen biome. However, the F3 menu will register as the changed biome. This also appears to only alter the top block.
+        </p>
+        <hr style="border-width:5px">
+        <h3>WARNING: The Atmosphere Terraformer and Biome Changer Satellite combination below will alter the ENTIRE planet. As such, the Terraformer must be enabled in the Advanced Rocketry configs.</h3>
+        <hr style="border-width:5px">
+        <a name="step5"></a>
+        <h3>Step 5: Build the <a href="/AdvancedRocketry/1.12.2/blocks/Terraformer.php" title="Click to learn more">Atmosphere Terraformer</a></h3>
+        <p>
+          The Atmosphere Terraformer is a large, expensive multi-block structure. It requires power, nitrogen, oxygen and a linked biome changer remote. It must be built on the same planet which has a biome changer satellite in orbit.  
+        </p>        
+
+        <hr style="border-width:5px">
+        <a name="step6"></a>
+        <h3>Step 6: Change the Atmosphere</h3>
+        <div class=row>          
+          <div class="col">
+            <p>Once built, powered and provided fluids, place the biome changer remote in the slot. Press either "Increase Atm" or "Decrease Atm" depending on which you want. Earth's atmosphere is 1.0 and breathable air is anywhere between 0.76 and 2.0.
+            </p>
+            <p>Once you begin changing the atmosphere the terrain will change as well. The atmosphere terraformer only changes the atmosphere, but sends a signal via the remote to the biome changer satellite that the atmosphere has changed. The satellite then begins changing the biomes to one which can exists in the current atmosphere. There is no way to change the atmosphere and preserve the current terrain.</p>
+            <p>When you have reached your preferred atmosphere, turn off the terraformer. The biome satellite will still continue to change the biome until all blocks have changed. Any new chunks generated will first generate as their native biome, then the satellite will begin to change them. It appears to only change the top layer block as, in the example below, there was still moon turf under the grass.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <figure class="figure">
+              <img class="figure-img img-fluid rounded" src="/AdvancedRocketry/img/luna1.png">
+              <figcaption class="figure-caption">Beginning to Terraform Luna</figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <img class="figure-img img-fluid rounded" src="/AdvancedRocketry/img/luna4.png">
+              <figcaption class="figure-caption">Luna at 0.75 atm</figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <img class="figure-img img-fluid rounded" src="/AdvancedRocketry/img/luna2.png">
+              <figcaption class="figure-caption">Luna at 1.0 atm</figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <img class="figure-img img-fluid rounded" src="/AdvancedRocketry/img/luna3.png">
+              <figcaption class="figure-caption">Luna at 16.0 atm, Unbreathable and Very Hot</figcaption>
+            </figure>
+          </div>        
+        </div>
+        <p>Note: Sometimes its required to logout/login in order for the satellite to register the change in atmosphere and begin altering blocks.</p>
+        
+        <hr style="border-width:5px">
+        <a name="step7"></a>
+        <h3>Step 7: Build the <a href="/AdvancedRocketry/1.12.2/blocks/GravityController.php" title="Click to learn more">Area Gravity Controller</a></h3>
+        <p>
+          This is a completely optional addition to your planet. In our example above, some might like hopping around on a terraformed Luna with low gravity, others may want it to be closer to the Earth's. You could even increase the lack of gravity and make your hops more like leaps. The Area Gravity Controller adjust the gravity in a determined range. The GUI of the machine has a slider where you can adjust the range and a second slider which allows you to adjust the gravitational pull. 
+        </p> 
+
+        <hr style="border-width:5px">
+        <a name="devs"></a>
+        <h3>For Modpack Devs and Server Owners</h3>
+        <p>
+          There are a number of config options for the Atmosphere Terraformer including the time it takes to change the atm and the need for fluids at all. 
+          <pre><code>
+            # Max number of blocks allowed to be changed per tick
+            I:terraformBlockPerTick=1
+          
+        
+            # Multplier for atmosphere change speed
+            D:terraformMult=1.0
+          </code></pre>
+          The multiplier in this case is inverse. A multiplier of 1000 will slow the Atmosphere Terraformer down, while a multiplier of 0.001 will speed it up. Use with caution as it could lag servers.
+          <pre><code>
+            # Whether the Terraformer should consume fluids at all, independent of rate
+            B:TerraformerRequiresFluids=true
+            B:allowTerraforming=true
+          </code></pre>
+        </p> 
+        <hr style="border-width:5px">
+        <a name="devs"></a>
+        <h3>Idea for Server Owners</h3>
+        <p>
+          Most servers disable terraforming since it is planet-wide affecting all players. However, it is possible to make planets discoverable only with certain items (see <a href="/AdvancedRocketry/1.12.2/config/AdvancedPlanetConfiguration.html#artifact">PlanetDefs: Artifacts</a>). You could give custom items to players which are linked to a single planet and let them terraform that planet to their hearts desire. Only players with the artifact could warp to that planet, therefore keeping it safe from all the other players on the server.
+        </p>
+        
+        <a href="/AdvancedRocketry/1.12.2/blocks/" title="Click to learn more"></a>
+
+      </div>
+    </div>
+  <div id="footer"><p></p> </div>
+  </div>
+</div>
+</body>
+</html>

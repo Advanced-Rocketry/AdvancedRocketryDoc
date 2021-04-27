@@ -2,110 +2,84 @@ body {
   margin: 0;
   font-family: "Trebuchet MS";
   color: #666666;
-  font-size: 13pt;
-  letter-spacing: -0.5px;
+  font-size: 15pt;
+  /*letter-spacing: -0.5px;*/
   text-align: left;
   background-color: #A0A0A0;
+  background: url("/AdvancedRocketry/img/spaceBG.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;  
+  box-sizing: border-box;
 }
 
 table, th, td {
     border: 1px solid black;
 }
 
-#container {
-  margin: 0px auto;
-  width: 1300px;
-}
 #header {
   background: #4a4947 none repeat scroll 0%;
   width: 100%;
-  height: 86px;
+  height: 64px;
+  margin:auto;
   
 }
 #header h1 {
   color: #ffffff;
   font-size: 35pt;
-  padding-left: 10px;
-  padding-top: 10px;
   text-shadow: 2px 2px 0.5px rgb(1, 61, 94);
-}
-
-#update-title{
-  font-size:1.75rem;
-  display: block;
-  width: fit-content;
+  padding-left:10px;
 }
 
 #navigation {
   border: 1px solid #dbdad5;
-  border-left: 1px solid #dbdad5;
-  border-right: 1px solid #dbdad5;
-  border-bottom: 1px solid #dbdad5;
   background-image: url("example.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 35px;
-  text-align: right;
+  /*height: 35px;
+  text-align: right;*/
 }
 
-#navigation ul {
-  margin: 0px auto;
-  list-style-type: none;
-  list-style-image: none;
-  list-style-position: outside;
-  
-}
 #navigation ul li {
-  display: inline;
+  /*display: inline;*/
   text-transform: uppercase;
 }
-#navigation ul li a {
+#navigation .nav-link {
+  border:transparent 4px solid;
   letter-spacing: 1px;
   text-decoration: none;
   color:whitesmoke;
-  float: left;
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-top:3px;
   font-size: 18px;
   text-shadow: 0.5px 0.5px 0.5px #666666;
 }
-#navigation ul li a:hover {
-  background: transparent url(avnav.gif) repeat-x scroll 50% 0px;
-  color: #666666;
-  text-shadow: 0.5px 0.5px 0.5px #7c7b7b;
+#navigation .nav-link:hover {
+  border-top:rgb(1, 61, 94) 4px solid;
+  border-bottom:rgb(1, 61, 94) 4px solid;
+  color: rgb(1, 61, 94);
+  text-shadow: 0.5px 0.5px 3px whitesmoke;
 }
-li.current_page_item, .active{
-  background: transparent url(avnav.gif) repeat-x scroll 50% 0px;
-  color: #464646;
+
+#navigation .nav-item{
+  font-family: "Trebuchet MS";
+}
+#navigation .nav-item .active{
+  color: rgb(1, 61, 94);  
+  text-shadow: 0.5px 0.5px 3px whitesmoke;
   font-weight: bolder;
 }
-#content {
-  width: 1300px;
-  margin: 0px auto;
-  height: auto;
-}
-#content .commentbox {
-  border-top: 3px solid #d4cbb4;
-  padding: 2px 5px;
-  color: #918e85;
-  background-color: #fbf4e2;
-  text-transform: uppercase;
-  font-size: 11px;
-}
-#content .left {
-  float: left;
-  width: 80%;
+
+.main {
   background-color: #cccccc;
   padding: 10px;
   border: 1px solid #a9a9a9;
 }
 
-#content .left h2 {
-  color: #405b5b;
+.main h2,h3 {
+  color: #003864;
 }
-#content .left h1 {
-  color: #405b5b;
+.main h1 {
+  color: #003864;
   font-size: 40pt;
 }
 /*#content .left p {
@@ -113,7 +87,7 @@ li.current_page_item, .active{
   vertical-align: top;
 }*/
 
-#content .left blockquote {
+.main blockquote {
   border-left: 3px solid #dbdad5;
   padding: 5px;
   background-color: #f3f2f2;
@@ -123,39 +97,35 @@ li.current_page_item, .active{
   width: 600px;
   font-style: italic;
 }
-#content .left img {
+.main img {
   border: 1px solid #a9a9a9;
   margin: -6px 6px 6px -6px;
   padding: 4px;
   position: relative;
 }
 
-#content .left a {
-  color:#005C8F;
+.main a {
+  color:#005c8f;
 }
 
-#content .left li {
+.main li {
     margin: 16px;
 }
 
-#content .right {
-  border: 1px solid #e6e4e4;
+.sidebar {
+  border: 1px solid #a9a9a9;
   padding: 10px;
-  margin-top: 0px;
-  margin-left: 10px;
-  float: right;
-  width: 250px;
   color: #6b7372;
   font-size: 11pt;
   background-color: #cccccc;
 }
-#content .right h3 {
+.sidebar h3 {
   color: #73817f;
   font-size: 16pt;
   font-weight: bold;
   text-transform: uppercase;
 }
-#content .right ul {
+.sidebar ul {
   list-style-type: none;
   list-style-image: none;
   list-style-position: outside;
@@ -163,19 +133,27 @@ li.current_page_item, .active{
   padding-left: 1em;
   text-indent: -1em;
 }
-#content .right li {
-  padding: 2px;
+
+.sidebar ol{
+  margin-left: 10px;
+}
+.sidebar li {
+  padding: 4px;
   font-size: 16px;
 }
-#content .right li a {
+.sidebar li a {
   text-decoration: none;
   color: #8a8a8a;
 }
-#content .right li a:hover {
+.sidebar li a:hover {
   border-bottom: 1px dashed #8a8a8a;
 }
 
-#content .sidebarImage{
+.sidebar img{
+  max-width: 250px;
+}
+
+.sidebarImage{
   height: 128px;
   image-rendering: -webkit-optimize-contrast; 
   image-rendering: -moz-crisp-edges; 
@@ -184,7 +162,7 @@ li.current_page_item, .active{
   image-rendering: pixelated;
 }
 
-#content .imageGUI{
+.imageGUI{
   image-rendering: -webkit-optimize-contrast; 
   image-rendering: -moz-crisp-edges; 
   image-rendering: -o-crisp-edges; 
@@ -192,12 +170,20 @@ li.current_page_item, .active{
   image-rendering: pixelated;
 }
 
-#content img.icon {
-    height: 16px;
-    width: 16px;
+img.icon {
+    height: 32px;
+    width: 32px;
     padding: 0px;
     margin: 2px;
     border: none;
+}
+
+img.item-icon {
+  height: 16px;
+  width: 16px;
+  padding: 0px;
+  margin: 2px;
+  border: none;
 }
 
 
@@ -206,28 +192,26 @@ li.current_page_item, .active{
   clear: both;
   text-align: center;
   font-size: 8pt;
-  width: 1300px;
 }
 #footer a {
   color: #405b5b;
   text-decoration: none;
 }
 
-#content .left ul {
+.main ul {
     list-style: outside disc;
 }
 
-#content .left ul li {
+.main ul li {
     position: relative;
-    padding-right: 1em;  
-    font-style: italic;
+    padding-right: 1em;
 }​
 
-#content .left ol {
+.main ol {
     list-style: outside disc;
 }
 
-#content .left ol li {
+.main ol li {
     position: relative;
     padding-right: 1em;
     font-style: italic;
@@ -237,6 +221,35 @@ li.current_page_item, .active{
   font-weight:bolder;
   font-size:32px;
 }
+
 code{
-  color:#405b5b;
+  color:#005c8f;
+  font-size:100%;
+}
+
+.version .navbar-nav{
+flex: 1;
+margin: auto !important;
+display: flex;
+justify-content: space-between;
+}
+
+#commandList{
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 720px){
+  #header{
+    display: none;
+  }
+}
+
+.configurationBlock{
+  border: 1px dashed black; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin:0; 
+  background-color: #DDD; 
+  overflow:auto;
+  color:#005c8f;
 }

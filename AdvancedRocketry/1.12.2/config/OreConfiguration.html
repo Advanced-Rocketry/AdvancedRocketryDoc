@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  
+  <!--<meta http-equiv="Content-Type" content="text/html;  charset=iso-8859-1" />-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Official Advanced Rocketry Wiki" />
+  <meta name="keywords" content="advanced rocketry wiki minecraft mc rockets planets space exploration 1.12.2 mods" />
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/AdvancedRocketry/style.css" media="all" />
+<!--[if lt IE 6]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if lt IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]-->
+  <title>Advanced Rocketry</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/AdvancedRocketry/favicon.ico" />
+  
+</head>
+<body>
+<div class="container-fluid">
+  <div id="header">
+    <div class="float-left">
+      <center><h1>1.12.2 Documentation</h1></center>      
+    </div>
+    <div class="float-right">           
+      <a href="/AdvancedRocketry/index.html"><img src="/AdvancedRocketry/favicon.ico" title="Main Home"></a>
+    </div>
+    <div class="float-right">
+      <p>Click here for main home page.</p> 
+    </div>        
+  </div>
+  <nav class="navbar navbar-expand-md m-0 p-0 version" id="navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"><img src="/AdvancedRocketry/favicon.ico" width=100%></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav menu">
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/guides/index.html">Guides</a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/blocks/index.html">Blocks </a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/items/index.html">Items</a></li>  
+        <li class="nav-item"><a class="nav-link active" href="/AdvancedRocketry/1.12.2/config/index.html">Configuration<br/>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/Commands.html">Commands</a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/Biomes.html">Biomes</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-4 m-0 p-0">
+        <div class="mr-2 sidebar">
+          <img style="width: 100%;" alt="Advanced Rocketry Logo" src="/AdvancedRocketry/logo.png" />
+        </div>
+      </div>
+      <div class="col-lg-10 col-md-9 col-sm-8 main">
+        <h2>Advanced Rocketry Ore Configuration</h2><hr>
+        <br />
+        
+        <p>Welcome to the Advanced Rocketry(AR) advanced ore configuration readme!<br />
+        This document will guide you through manually configuring ore for spawning on AR's various planets.</p>
+        
+        <p>Default ore configurations are loaded from "./config/advRocketry/oreConfig.xml". This file can be used to specify which ores are generated on different planet types. If a type of planet is not specified, then it will use standard overworld generation.</p>
+        
+        <p>There are two factors that determine the planet type: Atmosphere Pressure and Temperature.  A list of each can be found below:  </p>
+        
+        <h3>Temperature Ranges:</h3>
+        <ol start="0">
+          <li><b>Very Hot</b>: usually spawns mars or venus like planets</li>
+          <li><b>Hot</b>: Tends to spawn more desert and jungle biomes</li>
+          <li><b>Normal</b>: Just like the overworld, but with a limited set of random biomes</li>
+          <li><b>Cold</b>: Spawns more of the colder biomes</li>
+          <li><b>Frigid</b>: Spawns only cold biomes</li>
+          <li><b>Snowball</b>: Also only spawns cold biomes</li>
+        </ol>
+        <h3>Pressure Ranges:</h3>
+        <ol start="0">
+          <li><b>High Pressure</b>: usually spawns mars or venus like planets or swampy planets, has a small chance of spawning biomes with heavy storms.</li>
+          <li><b>Normal</b>: Similar to the overworld</li>
+          <li><b>Low</b>: Stars are visible even during the day, barely has enough atmosphere to support life</li>
+          <li><b>None</b>: Dead worlds, the moon for example.</li>
+        </ol>
+        <br />
+
+        <h3>Explanation of usable tags:</h3>
+        <hr style="border-width: 5px;">
+        
+        <h3>OreGen tag</h3>
+        <p>The "OreGen" defines a new type of planet to define the ore generation for.  The "OreGen" tag contains "pressure" and "temp" attributes.  These attributes specify the type of planet for which to define ore gen.  Both attributes use integers corresponding to the temperature and pressure tables above and at least one of the tags must be present.</p>
+        <p>Defining only one of the tags will use the same configuration for all of the undefined tag's values.  For example if I do not define the "temp" tag and define pressure to be 3, then I am defining ore generation for all planets with no atmosphere regardless of the surface temperature.</p>
+        <p>Planet type definitions are also read into the game in order, so if I define one type of oregen for all low pressure planets then farther down the file i define oregen for low pressure and high temperature planets, then low pressure high temperature planets will have a different oregen than other low pressure planets, however if I reverse the order then the entry for low pressure high temperature planets will be overwritten.</p>
+        
+        <h3>ore tag</h3>
+        <p>The "ore" tag specifies an entry for a type of ore to spawn.  This tag has the following attributes:
+        <ul>
+          <li><code>block</code>: the name or id of the block</li>
+          <li><code>meta</code>: optional attribute to specify the meta value of the block</li>
+          <li><code>minHeight</code>: minimum height at which to  spawn the ore (between 1 and maxHeight)</li>
+          <li><code>maxHeight</code>: maximum height at which to spawn the ore (between minHeight and 255)</li>
+          <li><code>clumpSize</code>: amount of ores to generate in each clump
+              <ul>
+                <li>The vanilla veinSize property</li>
+                <li>This is not the number of ore blocks in a vein; that is a more complex nonlinear relationship</li>
+                <li>Vanilla coal has a size of 16, while iron has a size of 8</li>
+                <li>Please note that sizes over 100 can mean veins the size of villages, yielding 5k+ ore</li>
+                <li>Sizes over 48 are not recommended to be spawned more than a few times pre chunk, as they can become unreasonably large and common</li>
+              </ul>
+          </li>
+          <li><code>chancePerChunk</code>: maximum number of clumps that can be spawned in a given chunk</li>
+        </ul>
+        </p>
+        <h3>Example</h3>
+        <p> All planets with no atmosphere will spawn large quantities of iron blocks except those with high temperature, which will instead spawn gold blocks<br />
+        <pre class="configurationBlock">
+        --- ./config/advancedRocketry/OreConfiguration.xml ---
+
+        &#60;OreConfig&#62;
+            &#60;oreGen pressure="3"&#62;
+              &#60;ore block="minecraft:iron_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="64" /&#62;
+            &#60;/oreGen&#62;
+            &#60;oreGen pressure="3" temp="5"&#62;
+              &#60;ore block="minecraft:gold_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="64" /&#62;
+            &#60;/oreGen&#62;
+        &#60;/OreConfig></pre>
+      </div>
+    </div>
+    <div id="footer">
+      <p></p> 
+    </div>
+  </div>
+</div>
+</body>
+</html>

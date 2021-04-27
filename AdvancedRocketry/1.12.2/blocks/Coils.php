@@ -22,8 +22,8 @@
     $imageDemoName = 'coil_demo.jpg';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>Coils are used in the construction of multiblock machines throughout the mod.  Coils also come in several teirs, higher teir coils being more powerful, but more expensive to make.</p>
-    <p>The primary usage of coils is in the <a href="ElectricArcFurnace.php">Electric Arc Furnace</a>.  Using higher teir coils in some machines can decrease the amount of time required for a recipe.  Like the motors, the speed increases stack multiplicitivly.</p>';
+    $description1 = '<p>Coils are used in the construction of multiblock machines throughout the mod.  Coils also come in several tiers, higher tier coils being more powerful, but more expensive to make. Using higher tier coils in some machines can decrease the amount of time required for a recipe.  Like the motors, the speed modifiers are multiplicative, so if an Arc Furnace had 3 Iridium coils the actual speed boost would be 8x (2x*2x*2x).</p>
+    <p>The primary usage of coils is in the <a href="ElectricArcFurnace.php">Electric Arc Furnace</a>.';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';
@@ -38,7 +38,7 @@
     $sealable = 'YES';
     $tileEntity = 'NO';
     $multiBlock = 'NO';
-    $other = '<br><b>Other Coils</b><br>Speed Multiplier: 1x<hr><b>Gold Coil</b><br>Speed Multiplier: 1.11x<hr><b>Aluminum Coil</b><br>Speed Multiplier: 1.25x<hr><b>Titanium Coil</b><br>Speed Multiplier: 1.33x<hr><b>Iridium Coil</b><br>Speed Multiplier: 2x<hr><p>Note: The modifiers are multiplicative, so if an Arc Furnace had 3 Iridium coils the actual speed boost would be 8x (2x*2x*2x).</p>';
+    $other = '<br><b>Other Coils</b><br>Speed Multiplier: 1x<hr><b>Gold Coil</b><br>Speed Multiplier: 1.11x<hr><b>Aluminum Coil</b><br>Speed Multiplier: 1.25x<hr><b>Titanium Coil</b><br>Speed Multiplier: 1.33x<hr><b>Iridium Coil</b><br>Speed Multiplier: 2x<hr></p>';
 
     include($_SERVER["DOCUMENT_ROOT"].'/AdvancedRocketry/template1.12.php');
 ?> 

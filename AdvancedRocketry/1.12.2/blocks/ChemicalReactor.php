@@ -22,7 +22,7 @@
     $imageDemoName = 'chemicalReactor_demo.png';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The Chemical Reactor is a multi-block construction which processes fluids, most commonly hydrogen and oxygen, and creates outputs. Hydrogen and Oxygen, typically pumped in from the <a href="Electrolyser.php">Electrolyser</a>, create Rocket Fuel. The other simple ecipe it can do by default is to make a large amount of bone mean per bone, 5, using a small amount of nitrogen in the process and thereby almost doubling bonemeal efficiency. Use the <a href="/AdvancedRocketry/1.12.2/items/holoProjector.php">Holo-Projector</a> to complete the structure, then right click the Chemical Reactor machine block.</p><p>In additon to Rocket Fuel, it accepts item inputs as well, such as adding the airtight seal enchantment to  armor, allowing you a basic space suit\'s tank and vacuum-protection abilities.  <a href="Coils.php".php">Coils</a> and <a href="/Motors.php">Motors</a> can be used to increase speed and effeciency. ';
+    $description1 = '<p>The Chemical Reactor is a multi-block construction which processes fluids, most commonly hydrogen and oxygen, and creates outputs. Hydrogen and Oxygen, typically pumped in from the <a href="Electrolyser.php">Electrolyser</a>, create Rocket Fuel. The other simple recipe it can do by default is to make a large amount of bone meal per bone, 5, using a small amount of nitrogen in the process and thereby almost doubling bone meal efficiency. Use the <a href="/AdvancedRocketry/1.12.2/items/holoProjector.php">Holo-Projector</a> to complete the structure, then right click the Chemical Reactor machine block.</p><p>In addition to Rocket Fuel, it accepts item inputs as well, such as adding the airtight seal enchantment to  armor, allowing you a basic space suit\'s tank and vacuum-protection abilities.  <a href="Coils.php".php">Coils</a> and <a href="/Motors.php">Motors</a> can be used to increase speed and efficiency. ';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = '';
@@ -30,7 +30,7 @@
     
     $optionalSection='';
     
-    $sidebarImage = '';
+    $sidebarImage = 'crystallizer_block.png';
     $hardness = '';
     $blastResistance = '';
     $requiresTool = 'YES';

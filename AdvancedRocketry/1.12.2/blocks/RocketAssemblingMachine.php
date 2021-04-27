@@ -19,7 +19,7 @@
     //NAME OF BLOCK
     $title = 'Rocket Assembling Machine';
 
-    $imageDemoName = 'rocketAssemblingMachineDemo.jpg';
+    $imageDemoName = 'guidanceAccessHatch_demo.png';
     
     //USE <p></p> to make a new paragraph 
     $description1 = '<p>The Rocket Assembling Machine is a block that takes power in the form of RF to either scan or build a rocket on a multiblock launch pad structure.</p>';
@@ -34,7 +34,7 @@
     <li style="left: 1em;">the user input panel (my fancy way of saying two buttons)</li>
     <li style="left: 1em;">the machine status panel.</li></ol>
     </p>
-    <p>The Rocket statistic panel constains four readouts:
+    <p>The Rocket statistic panel contains four readouts:
     <ul>    
     <a name="rocketStats" />
     <li><b>Thrust:</b> How much thrust the engines are producing in newtons.  Higher teir engines/fuel provide more thrust per engine</li>

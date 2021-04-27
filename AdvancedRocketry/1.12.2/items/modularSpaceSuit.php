@@ -37,6 +37,7 @@
     <p>When wearing the modular helmet, a display indicating what components are installed on what parts of the suit in the top left corner of the screen.</p>';
     
     $optionalSection = '<h2><center>Space Suit Components</center></h2>
+    <a name="headcomponents"></a>
     <table style="width:100%">
     <thead class="center"><h3><center><img align=center style="image-rendering: -webkit-optimize-contrast; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: crisp-edges; border: none" width=32px src="/AdvancedRocketry/img/items/space_helmet.png" />Helmet Components</h3></center></thead>
     <tr>
@@ -53,7 +54,7 @@
     </tr>
     <tr>
     <td id="atmAnalyser"><img  width=16px align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/items/atmosphereAnalyzer.png"/>Atmosphere Analyzer</td>
-    <td>If equipped in the spacesuit, a display in the lwer left hand corner of the screen displaying current atmosphere and breathability will be shown.<br>The same information can be displayed if the item is right clicked in the world</td>
+    <td>If equipped in the spacesuit, a display in the lower left hand corner of the screen displaying current atmosphere and oxygen levels will be shown.<br>The same information can be displayed if the item is right clicked in the world</td>
     </tr>
     <tr>
     <td id="foggles"><img  width=16px align=left style="margin: 0px; margin-right: 10px; padding: 0px; border: none;" src="/AdvancedRocketry/img/items/itemUpgrade4.png"/>Anti-Fog Visor</td>
@@ -65,6 +66,7 @@
     </tr>
     </table>
     <br>
+    <a name="chestcomponents"></a>
     <table style="width:100%">
     <thead><h3><center><img align=center style="image-rendering: -webkit-optimize-contrast; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: crisp-edges; border: none" width=32px src="/AdvancedRocketry/img/items/space_chestplate.png" />Chestplate Components</h3></thead></center>
     <tr>
@@ -83,6 +85,7 @@
     </tr>
     </table>
     <br>
+    <a name="legcomponents"></a>
     <table style="width:100%">
     <thead><h3><center><img align=center style="image-rendering: -webkit-optimize-contrast; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: crisp-edges; border: none" width=32px src="/AdvancedRocketry/img/items/space_leggings.png" />Legging Components</h3></thead></center>
     <tr>
@@ -96,6 +99,7 @@
     </table>
     
     <br><br>
+    <a name="bootcomponents"></a>
     <table style="width:100%">
     <thead><h3><center><img align=center style="image-rendering: -webkit-optimize-contrast; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: crisp-edges; border: none" width=32px src="/AdvancedRocketry/img/items/space_boots.png" />Boot Components</h3></thead></center>
     <tr>

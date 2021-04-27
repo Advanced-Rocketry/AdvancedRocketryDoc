@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  
+  <!--<meta http-equiv="Content-Type" content="text/html;  charset=iso-8859-1" />-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Official Advanced Rocketry Wiki" />
+  <meta name="keywords" content="advanced rocketry wiki minecraft mc rockets planets space exploration 1.12.2 mods" />
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/AdvancedRocketry/style.css" media="all" />
+<!--[if lt IE 6]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if lt IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]--><!--[if IE 7]>  <link rel="stylesheet" type="text/css" href="ie.css" />  <![endif]-->
+  <title>Advanced Rocketry</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/AdvancedRocketry/favicon.ico" />
+  
+</head>
+<body>
+<div class="container-fluid">
+  <div id="header">
+    <div class="float-left">
+      <center><h1>1.12.2 Documentation</h1></center>      
+    </div>
+    <div class="float-right">           
+      <a href="/AdvancedRocketry/index.html"><img src="/AdvancedRocketry/favicon.ico" title="Main Home"></a>
+    </div>
+    <div class="float-right">
+      <p>Click here for main home page.</p> 
+    </div>        
+  </div>
+  <nav class="navbar navbar-expand-md m-0 p-0 version" id="navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"><img src="/AdvancedRocketry/favicon.ico" width=100%></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav menu">
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/guides/index.html">Guides</a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/blocks/index.html">Blocks </a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/items/index.html">Items</a></li>  
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/config/index.html">Configuration<br/>
+        <li class="nav-item"><a class="nav-link active" href="/AdvancedRocketry/1.12.2/Commands.html">Commands</a></li>
+        <li class="nav-item"><a class="nav-link" href="/AdvancedRocketry/1.12.2/Biomes.html">Biomes</a></li>
+      </ul>
+    </div>
+  </nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-4 m-0 p-0">
+      <div class="mr-2 sidebar">
+        <img style="width: 100%;" alt="Advanced Rocketry Logo" src="/AdvancedRocketry/logo.png" />
+      </div>    
+    </div>
+    <div class="col-lg-10 col-md-9 col-sm-8 main">
+      <h2>Commands</h2><hr>
+      <p>List of commands provided by Advanced Rocketry as of 0.8.1 unless otherwise specified:</p>
+      <p>
+        <ul id="commandList">
+          <li><code>/advancedRocketry help</code>: Prints a list of commands. (non functional?)</li>
+          <li><code>/advancedRocketry filldata [datatype] [amountFill]</code>: If the player is holding an item capable of handling all the datatypes the datatype specified is set to contain amountFill data.  If amountFill is not specified then then the item is completely filled with that data type.  If no datatype is specified then all datatypes are completely filled.</li>
+          <li><code>/advancedRocketry givestation [stationID]</code>: Give the player a station id chip with destination of stationID.</li>
+          <li><code>/advancedRocketry goto [dimid]</code>: Teleports the player executing the command to the given dimension at the same coordinates (It may stick you in a wall!!!).
+          <li><code>/advancedRocketry goto station [stationId]</code>: Teleports the player executing the command to the spawn point of the station passed in the command.
+          <li><code>/advancedRocketry fetch [playerName]</code>: Brings the specified player to your current coordinates and dimension.
+          <li><code>/advancedRocketry planet delete [dimid]</code>: Deletes the specified dimension and its moons, but does NOT delete the world files on disk.</li>
+          <li><code>/advancedRocketry planet generate [starId] [name] [atmosphere randomness] [distance Randomness] [gravity randomness] (atmosphere base) (distance base) (gravity base)</code>: Creates a planet with the specified name and properties as follows: atmosphere = atmosphere base +/- atmosphere randomness, distance = distance base +/- distance randomness, gravity = gravity base +/- gravity randomness.  If no base is specified than overworld-like base is used.  For starId see "/advancedRocketry star list"</li>
+          <li><code>/advancedRocketry planet generate [starId] gas [name] [atmosphere randomness] [distance Randomness] [gravity randomness] (atmosphere base) (distance base) (gravity base)</code>: Creates a Gas Giant with the specified properties.  Gas Giants cannot be landed on, but this may mean something in the future.</li>
+          <li><code>/advancedRocketry planet generate [planetId] moon (gas) [name] [atmosphere randomness] [distance Randomness] [gravity randomness] (atmosphere base) (distance base) (gravity base)</code>: Creates a moon around the planet specified with the given properties.  By including gas after moon it is possible to generate a gas giant as a moon.</li>
+          <li><code>/advancedRocketry planet list</code>: Lists the dimension names and their IDs to chat.</li>
+          <li><code>/advancedRocketry planet reset</code>: Resets the dimension the player is currently on to a global default</li>
+          <li><code>/advancedRocketry planet reset [dimid]</code>: Resets the dimension specified to a global default</li>
+          <li><code>/advancedRocketry planet set [property] ...</code>: sets a property of the planet that the player is currently on</li>
+              <ul>
+              <li>atmosphereDensity [integer]: how thick the atmosphere is; determines fog thickness and atmosphere type. (100 being overworld-like)</li>
+              <li>averageTemperature [integer]: how hot the planet is; determines the biomes that spawn.</li>
+              <li>fogColor [decimal RED] [decimal GREEN] [decmial BLUE]: color of the fog.</li>
+              <li>gravitationalMultiplier [decimal]: how strong the gravity on the planet is (1.0 being overworld-like).</li>
+              <li>orbitTheta [decimal]: angular position in orbit with respect to the orbiting body.</li>
+              <li>orbitalDist [integer]: orbital distance with respect to the orbiting body.</li>
+              <li>rotationalPeriod [integer]: how long the day night cycle is in ticks.</li>
+              <li>skyColor [decimal RED] [decimal GREEN] [decmial BLUE]: Color of the sky.</li>
+              </ul>
+          <li><code>/advancedRocketry planet get [property]</code>: prints the specified property (see /advancedRocketry planet set) to console of the planet that the player is currently on</li>
+          <li><code>/advancedRocketry star generate [name] [temperature] [x position] [y position]</code>: Generates a new star with the supplied name, temperature and coordinates.  The temperature has the range of 0 to 1000, where the 100 is Sol-like</li>
+          <li><code>/advancedRocketry star set [star id] [property] ...</code>: sets the specified property</li>
+              <ul>
+              <li>temperature [integer]: the temperature of the star from 0 to 1000 (100 is Sol-like)</li>
+              <li>pos [integer x] [integer y]: the coordinates of the star</li>
+              </ul>
+          <li><code>/advancedRocketry star get [star id] [property]</code>: returns the specified property, same properties as set, but with the additional "planets" property, which list planets orbiting said star</li>
+          <li><code>/advancedRocketry star list</code>: lists existing stars\' ids, names, and number of planets</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+  <div id="footer"><p></p>
+  </div>
+</div>
+</div>
+</body>
+</html>

@@ -16,11 +16,11 @@
     
     */    
 
-    <p><font color="red">Warning! Currently the Space Elevator is broken!
+    $description1 = '<p><font color="red">Warning! Currently the Space Elevator is broken!
     List of bugs:
-    When entering the capsule, it may tell you that the space elevator is turned off but you can still use it (You can't disable it as it always comeback to off when trying to turning it on in the gui). You may need to press the on/off button at least once for it to transport you.
+    When entering the capsule, it may tell you that the space elevator is turned off but you can still use it (You cant disable it as it always comeback to off when trying to turning it on in the gui). You may need to press the on/off button at least once for it to transport you.
     After the first use, the tether may disappears and never appear again (until you break the multiblock and build it again) or simply never appear.
-    When going down the space elevator, you will receive fall damage and possibly die because of it. Make sure to have fall damage immunity or jump off the capsule before it lands down and have a method to negate the fall damage.</font></p>
+    When going down the space elevator, you will receive fall damage and possibly die because of it. Make sure to have fall damage immunity or jump off the capsule before it lands down and have a method to negate the fall damage.</font></p>';
                                                                                                                 
     //NAME OF BLOCK
     $title = 'Space Elevator';
@@ -34,7 +34,7 @@
     //FILL IN THIS PART IF THE BLOCK HAS A GUI
     $imageGUI = 'spaceElevator_gui.png';
     $descriptionGUI ='<p>In order to use the space elevator, you need to link the space elevators using the <a href="/AdvancedRocketry/1.12.2/items/linker.php">linker</a>, shift right-click the first elevator with the linker then shift right-click the second elevator to link them.</p>
-    <p>Once you have linked the two space elevators, click "Summon Capsule" in the second space elevator to summon the capsule, enter it and wait 10s for it to move to the first space elevator and vice-verse.</p>
+    <p>Once you have linked the two space elevators, click "Summon Capsule" in the second space elevator to summon the capsule, enter it and wait 10s for it to move to the first space elevator and vice-verse.</p>';
     
     $sidebarImage = 'spaceElevator_block.png';
 

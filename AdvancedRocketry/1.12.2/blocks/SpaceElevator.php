@@ -16,19 +16,21 @@
     
     */    
 
-    $description1 = '<p><font color="red">Warning! Currently the Space Elevator is broken!
-    List of bugs:
-    When entering the capsule, it may tell you that the space elevator is turned off but you can still use it (You cant disable it as it always comeback to off when trying to turning it on in the gui). You may need to press the on/off button at least once for it to transport you.
-    After the first use, the tether may disappears and never appear again (until you break the multiblock and build it again) or simply never appear.
-    When going down the space elevator, you will receive fall damage and possibly die because of it. Make sure to have fall damage immunity or jump off the capsule before it lands down and have a method to negate the fall damage.</font></p>';
+    
                                                                                                                 
     //NAME OF BLOCK
     $title = 'Space Elevator';
 
     $imageDemoName = 'spaceElevator_demo.png';
+
+    $description1 = '<p><font color="red">Warning! Currently the Space Elevator is broken!
+    List of bugs:
+    When entering the capsule, it may tell you that the space elevator is turned off but you can still use it (You cant disable it as it always comeback to off when trying to turning it on in the gui). You may need to press the on/off button at least once for it to transport you.
+    After the first use, the tether may disappears and never appear again (until you break the multiblock and build it again) or simply never appear.
+    When going down the space elevator, you will receive fall damage and possibly die because of it. Make sure to have fall damage immunity or jump off the capsule before it lands down and have a method to negate the fall damage.</font></p>';
     
     //USE <p></p> to make a new paragraph 
-    $description1 = '<p>The space elevator is a multiblock machine that allow you to move between a planet and its orbiting space station. Space elevators cannot transport players between two separate points on the same planet.</p>
+    '<p>The space elevator is a multiblock machine that allow you to move between a planet and its orbiting space station. Space elevators cannot transport players between two separate points on the same planet.</p>
     <p>Space Elevators require 100000RF on the sending pad to transport a player to his/her destination. In order to initiate the transport the player must stand on the capsule for 10 seconds.</p>';
     
     //FILL IN THIS PART IF THE BLOCK HAS A GUI

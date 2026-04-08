@@ -1,6 +1,22 @@
 # AdvancedRocketryDoc
 Website containing documentation for the Minecraft mod Advanced Rocketry
 
+## Docker deployment
+
+This repo now includes a containerized deployment flow for Linux hosts:
+
+1. Build and run the site with Docker:
+   `docker compose up -d --build`
+2. Or run the included installer on an Ubuntu or Debian server:
+   `sudo bash install.sh`
+3. The installer will:
+   - ask which domain to use
+   - optionally request a Let's Encrypt certificate with Certbot
+   - install Docker, Nginx, and Certbot if needed
+   - start the Dockerized Nginx + PHP-FPM app stack on `127.0.0.1:8080`
+   - generate and enable a host Nginx vhost for the chosen domain
+
+The generated Nginx config is based on `nginx.site.conf.template`.
 
 ## Adding a new Block page
 

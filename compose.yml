@@ -1,0 +1,17 @@
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: docker/nginx/Dockerfile
+    container_name: advancedrocketrydoc-nginx
+    restart: unless-stopped
+    depends_on:
+      - php
+    ports:
+      - "127.0.0.1:8080:80"
+  php:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    container_name: advancedrocketrydoc-php
+    restart: unless-stopped

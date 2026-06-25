@@ -3,15 +3,41 @@ services:
     build:
       context: .
       dockerfile: docker/nginx/Dockerfile
-    container_name: advancedrocketrydoc-nginx
+    container_name: ${APP_NAME}-nginx
     restart: unless-stopped
     depends_on:
       - php
     ports:
-      - "127.0.0.1:8080:80"
+      - "${NGINX_HOST}:${NGINX_PORT}:80"
+    volumes:
+      - ./AdvancedRocketry:/var/www/html/AdvancedRocketry:ro
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    environment:
+      - TZ=${TZ}
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
   php:
     build:
       context: .
       dockerfile: docker/php/Dockerfile
-    container_name: advancedrocketrydoc-php
+    container_name: ${APP_NAME}-php
     restart: unless-stopped
+    volumes:
+      - ./AdvancedRocketry:/var/www/html/AdvancedRocketry:ro
+    environment:
+      - TZ=${TZ}
+      - PHP_DISPLAY_ERRORS=${PHP_DISPLAY_ERRORS}
+      - PHP_LOG_ERRORS=${PHP_LOG_ERRORS}
+      - PHP_MAX_EXECUTION_TIME=${PHP_MAX_EXECUTION_TIME}
+      - PHP_MEMORY_LIMIT=${PHP_MEMORY_LIMIT}
+      - PHP_POST_MAX_SIZE=${PHP_POST_MAX_SIZE}
+      - PHP_UPLOAD_MAX_FILESIZE=${PHP_UPLOAD_MAX_FILESIZE}
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

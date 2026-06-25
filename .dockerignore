@@ -2,3 +2,9 @@
 .gitignore
 README.md
 deploy.php
+install.sh
+nginx.site.conf.template
+*.md
+.DS_Store
+Thumbs.db
+.env.local
